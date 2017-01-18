@@ -45,3 +45,13 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#custom
+config/
+node_modules/
+bower_components/
+old-code/
+*~
+*#
+test.js
+routes/.event.js.swo
