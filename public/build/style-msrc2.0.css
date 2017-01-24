@@ -1,0 +1,261 @@
+.font-blocky-drk {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+.font-blocky-lt {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #e6e6e6;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body,
+footer {
+  background-color: #fff;
+  color: #e6e6e6;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+a {
+  color: #e6e6e6;
+}
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vertical-center h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* Custom Button Styles */
+.btn-dark {
+  border-radius: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* Navbar style */
+.navbar {
+  background-color: rgba(5, 5, 5, 0.6);
+  color: #e6e6e6;
+}
+.nav-links {
+  font-family: 'Padauk', sans-serif;
+  color: #e6e6e6;
+}
+/*Bootstrap carousel*/
+.carousel,
+.item,
+.active {
+  height: 100%;
+}
+.carousel-inner {
+  height: 100%;
+}
+.header {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+/* Custom Horizontal Rule */
+hr.small {
+  left: 0;
+  max-width: 155px;
+  line-height: 10%;
+}
+/* Fullpage bootstrap carousel*/
+.fill {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.slide-1 {
+  background: url("../img/bg.jpg") no-repeat center center scroll;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.slide-2 {
+  background: url("../img/newyork.jpg") no-repeat center center scroll;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.slide-3 {
+  background: url("../img/paris.jpg") no-repeat center center scroll;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.slide-4 {
+  background: url("../img/sanfran.jpg") no-repeat center center scroll;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+/* Mid shore regional council logo style */
+.logo-set-cursive {
+  font-family: 'Alex Brush', cursive;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+  color: #e6e6e6;
+  float: left;
+}
+.logo-set-std {
+  font-family: 'Padauk', sans-serif;
+  color: #e6e6e6;
+  float: left;
+}
+#logo_lrg {
+  font-size: 33px;
+  font-family: 'Alex Brush', cursive;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+  color: #e6e6e6;
+  float: left;
+}
+#logo_med {
+  font-size: 25px;
+  padding-top: 4px;
+  line-height: 40%;
+  font-family: 'Alex Brush', cursive;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+  color: #e6e6e6;
+  float: left;
+}
+#logo_sm {
+  font-size: 12px;
+  line-height: 10%;
+  font-family: 'Padauk', sans-serif;
+  color: #e6e6e6;
+  float: left;
+}
+/* End logo style*/
+/* Home page statistics section */
+.impact {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  background-color: transparent;
+  padding: 25px 0;
+}
+.impact-header {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  background-color: transparent;
+  padding: 25px 0;
+  font-size: 40px;
+}
+.impact-body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  background-color: transparent;
+  padding: 25px 0;
+  font-size: 27px;
+}
+/* Home page aside to About Committees and Partners*/
+.aside {
+  z-index: 10;
+  height: 600px;
+  background-size: 100% 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #e6e6e6;
+}
+.aside-about {
+  z-index: 10;
+  height: 600px;
+  background-size: 100% 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #e6e6e6;
+  background: url("../img/about.jpg") no-repeat center center scroll;
+}
+.aside-committee {
+  z-index: 10;
+  height: 600px;
+  background-size: 100% 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #e6e6e6;
+  background: url("../img/committee.jpg") no-repeat center center scroll;
+}
+.aside-partners {
+  z-index: 10;
+  height: 600px;
+  background-size: 100% 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #e6e6e6;
+  background: url("../img/partners.jpg") no-repeat center center scroll;
+}
+/* All page's Footer section*/
+footer {
+  background-color: #071e35;
+  left: 0;
+  padding: 50px 0;
+  line-height: 80%;
+}
+#to-top {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
