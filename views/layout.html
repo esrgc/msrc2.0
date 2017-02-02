@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
     <!-- Bootstrap Core CSS -->
     <link href="./stylesheet/bootstrap.css" rel="stylesheet">
     <link href="./stylesheet/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
+    <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Padauk|Source+Sans+Pro" rel="stylesheet">
 
     <title>{{title}}</title>
     <!-- Grunt:dev compiled css from style.less-->
-    <link rel='stylesheet' href='/build/style-msrc2.0.css' />
-  </head>
+    <link href="./build/style-msrc2.0.css" rel="stylesheet"/>
+</head>
 
-  <body>
-  	{{> nav}}
+<body>
+    {{> nav}} {{{body}}} {{> footer}}
 
-    {{{body}}}
-
-    {{> footer}}
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="./lib/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="./lib/bootstrap.min.js"></script>
+    <script src="./lib/bootstrap.js"></script>
+    <!--<script src="./lib/masonry.pkgd.min.js"></script>-->
+    <script src="./lib/masonry.pkgd.js"></script>
+    <script src="./lib/imagesloaded.pkgd.min.js"></script>
     <!-- custom dashboard functions concat and minified via Grunt-->
-    <script src="./build/msrc2.0-dashboard.min.js"></script>
-    
+    <script src="./build/msrc2.0-dashboard.js"></script>
+    <!--<script src="./build/msrc2.0-dashboard.min.js"></script>-->
+</body>
 
-  </body>
 </html>

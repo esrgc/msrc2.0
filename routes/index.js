@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.use(function(req, res, next){
 	res.locals.path = req.path.replace('/', '');
-	console.log('Path: ....')
+	console.log('Path: ....');
 	console.log(res.locals.path);
 	next();
 });
@@ -33,6 +33,16 @@ router.get('/committees', function(req, res){
 router.get('/partners', function(req, res){
 	res.render('partners', { title: 'Partners'});	
 });
+
+
+
+
+
+/// remove from routes when complete
+router.get('/testing', function(req, res){
+	res.render('testing', { title: 'testing'});	
+});
+
 
 
 module.exports = router;

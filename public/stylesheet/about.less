@@ -1,0 +1,369 @@
+//import other css
+@import "home.less";
+//variables
+@angle-color: #515151;
+//css
+.all_wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.about_bg {
+    background: url("@{images}/about.jpg") no-repeat center center scroll;
+    .fill;
+}
+
+.committees_bg {
+    background: url("@{images}/committees.jpg") no-repeat center center scroll;
+    .fill;
+}
+
+.partners_bg {
+    background: url("@{images}/partners.jpg") no-repeat center center scroll;
+    .fill;
+}
+
+.angle_wrapper {
+    position: relative;
+}
+
+.skew {
+    transform: skewY(130deg);
+    -webkit-transform: skewY(130deg);
+    -moz-transform: skewY(130deg);
+    -ms-transform: skewY(130deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.angle {
+    position: fixed;
+    right: 0;
+    background-color: @angle-color;
+    overflow: hidden;
+    height: 40%;
+    width: 75%;
+}
+
+.text-angle-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    bottom: 27px;
+}
+
+.angle-text {
+    .font-blocky-lt;
+    position: fixed;
+    font-size: 60px;
+}
+
+.angle1 p {
+    .angle;
+    .skew;
+    width: 1320px;
+    margin-right: -70px;
+    opacity: 0.25;
+    bottom: -70px;
+    z-index: 1;
+}
+
+.angle2 p {
+    .angle;
+    .skew;
+    width: 1320px;
+    opacity: 0.5;
+    margin-right: -200px;
+    bottom: -70px;
+    z-index: 2;
+}
+
+.angle3 p {
+    .angle;
+    .skew;
+    width: 1320px;
+    opacity: 0.75;
+    margin-right: -350px;
+    bottom: -70px;
+    z-index: 3;
+}
+
+.angle4 {
+    .angle;
+    .skew;
+    width: 1320px;
+    opacity: 1;
+    height: 50%;
+    margin-right: -550px;
+    bottom: -100px;
+    z-index: 0;
+}
+
+.angle1 p:not(.ac_collapse) {
+    .angle;
+    .skew;
+    width: 100%;
+    height: 95%;
+    opacity: 0.25;
+    margin-right: 0;
+    bottom: -100px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    z-index: 100 !important;
+}
+
+.angle2 p:not(.ac_collapse) {
+    .angle;
+    .skew;
+    width: 100%;
+    height: 95%;
+    opacity: 0.5;
+    margin-right: 0;
+    bottom: -100px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    z-index: 100 !important;
+}
+
+.angle3 p:not(.ac_collapse) {
+    .angle;
+    .skew;
+    width: 100%;
+    height: 95%;
+    opacity: 0.75;
+    margin-right: 0;
+    bottom: -100px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    z-index: 100 !important;
+}
+
+.float-left {
+    position: absolute;
+    left: 0;
+    width: 55%;
+    height: 80%;
+}
+
+.slide-toggle-close,
+.slide-toggle-open {
+    .no-gutters;
+    font-family: 'FontAwesome';
+    font-size: 35px;
+    color: @logo-color;
+}
+
+.slide-toggle-close::after {
+    content: "\f067";
+}
+
+.slide-toggle-open::after {
+    content: "\f068";
+}
+
+#about-landing {
+    .font-blocky-lt;
+    top: 200px;
+    left: 80px;
+    font-size: 22px;
+    overflow: hidden;
+}
+
+// Members pop out
+#members-div p.ac_collapse {
+    display: none;
+    overflow: hidden;
+}
+
+#members-div p:not(.ac_collapse) {
+    display: block;
+    position: relative;
+    opacity: 1;
+    background: #7eaece;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #5996a6, #7eaece);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #5996a6, #7eaece);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #5996a6, #7eaece);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #5996a6, #7eaece);
+    /* Standard syntax */
+    border: inset 5px;
+    top: 250px;
+    left: 20px;
+    z-index: auto;
+}
+
+#members-div p {
+    padding: 10px 10px;
+    font-size: 22px;
+    .font-blocky-lt;
+}
+
+// Spotlight pop out image grid
+.grid {
+    display: block;
+    position: relative;
+    //used background color for dimensions/overlap settings
+    background: #7eaece;
+    max-width: 100%;
+    min-width: 85%;
+    max-height: 950px;
+    width: 100%;
+    //bottom: 110px;
+    //top: 200px;
+    //left: 20px;
+    //right: 20px;
+    //height: 500px;
+    z-index: 1000;
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.transitions-enabled {
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -ms-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+}
+
+.grid #images .gridItem img {
+    -webkit-transition-property: left, right, top;
+    -moz-transition-property: left, right, top;
+    -ms-transition-property: left, right, top;
+    -o-transition-property: left, right, top;
+    transition-property: left, right, top;
+}
+
+#images {
+    width: 103.125%;
+    overflow: hidden;
+}
+
+.grid-box {
+    width: 33.33%;
+    //width: 360px;
+}
+
+.gridItem {
+    width: 33.33%;
+    //width: 360px;
+    float: left;
+    //adjust for tender overlap of images
+    margin: 0 -60px -60px;
+}
+
+.gridItem img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.grid-item--gigante {
+	width: 66.66%;
+}
+
+@media only screen and( max-width: 40em) {
+    .gridItem {
+        width: 49.2%;
+    }
+}
+
+@media only screen and (max-width: 20em) {
+    #images {
+        width: 100%;
+        margin-left: 0;
+    }
+    .gridItem {
+        width: 100%;
+       margin-left: 0;
+       margin-right: 0;
+    }
+}
+
+//
+.spotlight-wrapper {
+    display: block;
+    flex-wrap: wrap;
+    position: relative;
+    float: left;
+    text-align: center;
+    max-height: 900px;
+    width: 75%;
+    min-height: 600px;
+    top: 210px;
+    //left: 35px;
+    right: 0;
+    z-index: 1000;
+}
+
+#grid-item a {
+	.font-blocky-lt;
+	font-size: 35px;
+	z-index: 1500;
+	position: relative;
+	bottom: 60px;
+	height: 40%;
+	width: 100%;
+	padding-bottom: -60px;
+}
+
+
+
+
+// Records pop out
+#records.ac_collapse {
+    display: none;
+    overflow: hidden;
+}
+
+#records:not(.ac_collapse) {
+    display: block;
+    position: relative;
+    opacity: 1;
+    z-index: auto;
+}
+
+// elements for partners page
+.partners_bgc {
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.partner-skew1 {
+    .partners_bgc;
+    transform: skew(0deg, -30deg);
+    -webkit-transform: skew(0deg, -30deg);
+    -ms-transform: skew(0deg, -30deg);
+    -moz-transform: skew(0deg, -30deg);
+}
+
+.partner-skew2 {
+    .partners_bgc;
+    transform: skew(0deg, 30deg);
+    -webkit-transform: skew(0deg, 30deg);
+    -ms-transform: skew(0deg, 30deg);
+    -moz-transform: skew(0deg, 30deg);
+}
+
+.footer_wrapper_all {
+    display: block;
+    position: relative;
+    width: 100%;
+}

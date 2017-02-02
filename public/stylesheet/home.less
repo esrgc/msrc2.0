@@ -1,0 +1,429 @@
+// Variables
+@logo-color: #e6e6e6;
+@hover-color: #2e4d6b;
+@nav-color: rgba(5, 5, 5, 0.6);
+@footer-color: #071e35;
+@images: "../img";
+//Mixins
+.font-helvetica {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-blocky-drk {
+    .font-helvetica;
+    color: #333333;
+}
+
+.font-blocky-lt {
+    .font-helvetica;
+    color: @logo-color;
+}
+
+//CSS
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body,
+{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+body,
+footer {
+    background-color: #fff;
+    color: @logo-color;
+    .font-blocky-drk;
+}
+
+body {
+    padding-bottom: 95px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    position: relative;
+}
+
+//use to make nav not float over carousel
+
+/*
+body {
+    padding-top: 60px;
+}
+*/
+
+a {
+    color: @logo-color;
+    //text-decoration: none;
+}
+
+a:hover {
+    color: @hover-color;
+}
+
+p {
+    color: @logo-color;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    > .col,
+    > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Navbar style */
+
+.navbar {
+    background-color: @nav-color;
+    color: @logo-color;
+}
+
+.navbar-header a {
+    height: 55px;
+}
+
+
+.nav-links {
+    font-family: 'Padauk', sans-serif;
+    color: @logo-color;
+}
+
+.nav {
+    overflow-y: hidden !important;
+}
+
+
+/*Bootstrap carousel*/
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-control .left > i,
+.carousel-control .right > i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control .right > i {
+    left: auto;
+    right: 20px;
+}
+
+
+/*Carousel wrapper*/
+
+.header {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    left: 0;
+    max-width: 155px;
+    line-height: 10%;
+}
+
+
+/* Fullpage bootstrap carousel*/
+
+.fill {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.slide-1 {
+    background: url("@{images}/bg.jpg") no-repeat center center scroll;
+    .fill;
+}
+
+.slide-2 {
+    background: url("@{images}/newyork.jpg") no-repeat center center scroll;
+    .fill;
+}
+
+.slide-3 {
+    background: url("@{images}/paris.jpg") no-repeat center center scroll;
+    .fill;
+}
+
+.slide-4 {
+    background: url("@{images}/sanfran.jpg") no-repeat center center scroll;
+    .fill;
+}
+
+
+/* Mid shore regional council logo style */
+
+.logo-set-cursive {
+    font-family: 'Alex Brush', cursive;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+    color: @logo-color;
+    float: left;
+}
+
+.logo-set-std {
+    font-family: 'Padauk', sans-serif;
+    color: @logo-color;
+    float: left;
+}
+
+#logo_lrg {
+    font-size: 36px;
+    .logo-set-cursive;
+}
+
+#logo_med {
+    font-size: 27px;
+    //padding-top: 4px;
+    line-height: 40%;
+    .logo-set-cursive;
+}
+
+#logo_sm {
+    font-size: 13px;
+    line-height: 10%;
+    .logo-set-std;
+}
+
+
+
+/* Home page statistics section */
+
+.impact {
+    .font-blocky-drk;
+    background-color: transparent;
+    padding: 25px 0;
+}
+
+.impact-header {
+    .impact;
+    font-size: 40px;
+}
+
+.impact-body {
+    .impact;
+    font-size: 27px;
+}
+
+
+/* Home page aside to About Committees and Partners*/
+
+
+/*
+*
+* testing for responsive figures
+*/
+
+.figure-nest {
+    display: block;
+    position: relative;
+
+    z-index: 0;
+}
+
+.aside-float {
+    position: absolute;
+    //float: bottom;
+    padding-bottom: 220px;
+    bottom: 0;
+    z-index: 20;
+    width: 100%;
+    background-color: rgba(35, 35, 35, 0.6);
+    .font-blocky-lt;
+    height: 150px;
+    font-size: 25px;
+    line-height: 150px;
+    text-align: center;
+}
+
+figure {
+    position: relative;
+    bottom: 0;
+    padding: 0px;
+    z-index: 0;
+}
+
+@media (min-width: 36em) {
+    figure {
+        display: block;
+        float: left;
+        width: 33.33333333%;
+    }
+}
+
+// end testing
+
+/* All page's Footer section*/
+
+.footer_wrapper_home {
+    .footer_wrapper_all;
+    height: 120px;
+}
+
+.footer_buffer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: @footer-color;
+    padding-top: 73px;
+}
+
+.footer {
+    display: block;
+    position: relative;
+    background-color: @footer-color;
+    max-height: 350px;
+    width: 100%;
+    padding: 20px 0;
+    line-height: 80%;
+    z-index: 0;
+    .transition-all;
+}
+
+.footer_button_div {
+    background-color: transparent;
+    opacity: 1;
+}
+
+#footer_button {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    position: fixed;
+    left: 48.5%;
+    bottom: 75px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -ms-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    transition: All 1s ease;
+}
+
+#footer_button.is-open {
+    color: #515151;
+}
+
+#footer_higher {
+    width: 100%;
+    background: @footer-color;
+    padding: 25px 0;
+    z-index: 80;
+}
+
+#footer_higher #footer_content {
+    width: 100%;
+    margin: 0 auto;
+    height: 240px;
+    z-index: 80;
+}
+
+#footer_content {
+    line-height: 80%;
+    z-index: 10;
+}
+
+.footer-bottom {
+    background-color: @footer-color;
+    bottom: 0;
+    padding-top: 25px;
+    opacity: 0.65;
+    width: 100%;
+    z-index: 900;
+}
+
+.transition-all {
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -ms-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    transition: All 1s ease;
+}
+
+#to-top {
+    display: none;
+    position: fixed;
+    bottom: 120px;
+    right: 5px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.clear {
+    clear: both;
+}
