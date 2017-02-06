@@ -34,6 +34,12 @@ img {
   width: 100%;
   height: auto;
 }
+iframe:focus {
+  outline: none;
+}
+iframe[seamless] {
+  display: block;
+}
 .row {
   position: relative;
 }
@@ -411,9 +417,10 @@ figure {
   -o-background-size: cover;
 }
 .committees_bg {
-  position: fixed;
+  position: absolute;
   background: url("../img/committees.jpg") no-repeat center center fixed;
   background-attachment: fixed;
+  overflow: hidden;
   display: block;
   width: 100%;
   height: 100%;
@@ -450,7 +457,18 @@ figure {
 .angle {
   position: fixed;
   right: 0;
-  background-color: #515151;
+  opacity: 1;
+  background: #cccccc;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #f2f2f2, #cccccc);
+  /* Standard syntax */
+  border: #ffffff 5px;
   overflow: hidden;
   height: 40%;
   width: 75%;
@@ -463,14 +481,25 @@ figure {
 }
 .angle-text {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #e6e6e6;
+  color: #333333;
   position: fixed;
   font-size: 60px;
 }
 .angle1 p {
   position: fixed;
   right: 0;
-  background-color: #515151;
+  opacity: 1;
+  background: #cccccc;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #f2f2f2, #cccccc);
+  /* Standard syntax */
+  border: #ffffff 5px;
   height: 40%;
   width: 75%;
   transform: skewY(130deg);
@@ -491,7 +520,18 @@ figure {
 .angle2 p {
   position: fixed;
   right: 0;
-  background-color: #515151;
+  opacity: 1;
+  background: #cccccc;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #f2f2f2, #cccccc);
+  /* Standard syntax */
+  border: #ffffff 5px;
   height: 40%;
   width: 75%;
   transform: skewY(130deg);
@@ -512,7 +552,18 @@ figure {
 .angle3 p {
   position: fixed;
   right: 0;
-  background-color: #515151;
+  opacity: 1;
+  background: #cccccc;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #f2f2f2, #cccccc);
+  /* Standard syntax */
+  border: #ffffff 5px;
   height: 40%;
   width: 75%;
   transform: skewY(130deg);
@@ -533,7 +584,18 @@ figure {
 .angle4 {
   position: fixed;
   right: 0;
-  background-color: #515151;
+  opacity: 1;
+  background: #cccccc;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #f2f2f2, #cccccc);
+  /* Standard syntax */
+  border: #ffffff 5px;
   height: 40%;
   width: 75%;
   transform: skewY(130deg);
@@ -546,16 +608,27 @@ figure {
   transition: all 0.5s ease-in-out;
   overflow: hidden;
   width: 1320px;
-  opacity: 1;
+  opacity: 0.99;
   height: 50%;
   margin-right: -550px;
   bottom: -100px;
-  z-index: 0;
+  z-index: 3;
 }
 .angle1 p:not(.ac_collapse) {
   position: fixed;
   right: 0;
-  background-color: #515151;
+  opacity: 1;
+  background: #cccccc;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #f2f2f2, #cccccc);
+  /* Standard syntax */
+  border: #ffffff 5px;
   overflow: hidden;
   height: 40%;
   width: 75%;
@@ -569,7 +642,7 @@ figure {
   transition: all 0.5s ease-in-out;
   width: 100%;
   height: 95%;
-  opacity: 0.25;
+  opacity: 0.88;
   margin-right: 0;
   bottom: -100px;
   transform: rotate(0deg);
@@ -581,7 +654,18 @@ figure {
 .angle2 p:not(.ac_collapse) {
   position: fixed;
   right: 0;
-  background-color: #515151;
+  opacity: 1;
+  background: #cccccc;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #f2f2f2, #cccccc);
+  /* Standard syntax */
+  border: #ffffff 5px;
   overflow: hidden;
   height: 40%;
   width: 75%;
@@ -595,7 +679,7 @@ figure {
   transition: all 0.5s ease-in-out;
   width: 100%;
   height: 95%;
-  opacity: 0.5;
+  opacity: 0.88;
   margin-right: 0;
   bottom: -100px;
   transform: rotate(0deg);
@@ -607,7 +691,18 @@ figure {
 .angle3 p:not(.ac_collapse) {
   position: fixed;
   right: 0;
-  background-color: #515151;
+  opacity: 1;
+  background: #cccccc;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #f2f2f2, #cccccc);
+  /* Standard syntax */
+  border: #ffffff 5px;
   overflow: hidden;
   height: 40%;
   width: 75%;
@@ -621,7 +716,7 @@ figure {
   transition: all 0.5s ease-in-out;
   width: 100%;
   height: 95%;
-  opacity: 0.75;
+  opacity: 0.88;
   margin-right: 0;
   bottom: -100px;
   transform: rotate(0deg);
@@ -642,7 +737,7 @@ figure {
   margin-left: 0;
   font-family: 'FontAwesome';
   font-size: 35px;
-  color: #e6e6e6;
+  color: #333333;
 }
 .slide-toggle-close > .col,
 .slide-toggle-open > .col,
@@ -665,97 +760,95 @@ figure {
   font-size: 22px;
   overflow: hidden;
 }
-#members-div figcaption.ac_collapse {
-  display: none;
-  overflow: hidden;
-}
-#members-div figcaption:not(.ac_collapse) {
+#membersDiv {
   display: block;
-  position: relative;
-  opacity: 1;
-  background: #7eaece;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #a3c2c2, #7eaece);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #a3c2c2, #7eaece);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #a3c2c2, #7eaece);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #a3c2c2, #7eaece);
-  /* Standard syntax */
-  border: inset 5px;
+  position: fixed;
   top: 250px;
-  left: 20px;
+  left: 0;
+  bottom: 350px;
+  padding-bottom: -350px;
+  height: 65%;
+  max-height: 100vh;
+  width: 35%;
   z-index: 1000;
+  text-align: center;
 }
-#members-div figcaption {
-  padding: 10px 10px;
-  font-size: 16px;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #e6e6e6;
-}
-#members-div {
-  z-index: 1001;
-}
-#members2-div figcaption.ac_collapse {
-  display: none;
-  overflow: hidden;
-}
-#members2-div figcaption:not(.ac_collapse) {
+.membersDiv_open {
   display: block;
-  position: relative;
+  position: absolute;
   opacity: 1;
-  background: #7eaece;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #a3c2c2, #7eaece);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #a3c2c2, #7eaece);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #a3c2c2, #7eaece);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #a3c2c2, #7eaece);
-  /* Standard syntax */
-  border: inset 5px;
-  top: 250px;
-  z-index: 1000;
-}
-#members2-div figcaption {
-  padding: 10px 10px;
-  font-size: 16px;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #e6e6e6;
-}
-#members2-div {
-  z-index: 1001;
-}
-#votingMem.hidden {
-  display: none;
-}
-#votingMem:not(.hidden) {
-  position: relative;
-  opacity: 1;
-  background: #7eaece;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #a3c2c2, #7eaece);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #a3c2c2, #7eaece);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #a3c2c2, #7eaece);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #a3c2c2, #7eaece);
-  /* Standard syntax */
-  border: inset 5px;
-  top: 250px;
-  padding: 10px 10px;
-  font-size: 16px;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #e6e6e6;
+  width: 100%;
+  font-size: 45px;
   z-index: 2000;
 }
-#nonVoting.hidden {
-  display: none;
+.membersDiv_open figcaption {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #e6e6e6;
+  font-size: 12px;
 }
-#nonVoting:not(.hidden) {
+.membersDiv_open ul li {
+  left: 100px;
+  margin: 0 auto;
+  padding: 25px 25px;
+  text-align: center;
+}
+.membersDiv_bg {
+  position: relative;
+  opacity: 1;
+  background: #8c8c8c;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #333333, #8c8c8c);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #333333, #8c8c8c);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #333333, #8c8c8c);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #333333, #8c8c8c);
+  /* Standard syntax */
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+#membersDiv2 {
+  display: block;
+  position: fixed;
+  top: 250px;
+  left: 35%;
+  bottom: 350px;
+  padding-bottom: -350px;
+  height: 65%;
+  max-height: 100vh;
+  width: 35%;
+  text-align: center;
+}
+.membersDiv2_open {
+  display: block;
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  width: 100%;
+  font-size: 45px;
+  z-index: 2000;
+}
+.membersDiv2_open figcaption {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #e6e6e6;
+  font-size: 12px;
+}
+.membersDiv2_open ul li {
+  left: 100px;
+  margin: 0 auto;
+  padding: 25px 25px;
+  text-align: center;
+}
+.membersDiv2_bg {
+  position: relative;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+}
+#votingMem {
   position: relative;
   opacity: 1;
   background: #7eaece;
@@ -768,13 +861,28 @@ figure {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #a3c2c2, #7eaece);
   /* Standard syntax */
-  border: inset 5px;
-  top: 250px;
   padding: 10px 10px;
   font-size: 16px;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #e6e6e6;
-  z-index: 2000;
+}
+#nonVoting {
+  position: relative;
+  opacity: 1;
+  background: #7eaece;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #a3c2c2, #7eaece);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #a3c2c2, #7eaece);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #a3c2c2, #7eaece);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #a3c2c2, #7eaece);
+  /* Standard syntax */
+  padding: 10px 10px;
+  font-size: 16px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #e6e6e6;
 }
 .grid {
   display: block;
@@ -873,17 +981,29 @@ figure {
   color: #333333;
   font-size: 16px;
   width: 100%;
-  height: 50%;
+  height: 90%;
   padding-bottom: -60px;
   bottom: 60px;
   z-index: 2000;
 }
 #textBox.imgHeader {
-  font-size: 15px;
+  height: 50%;
+  font-size: 20px;
   color: white;
 }
 #textBox.imgHeader strong {
-  font-size: 40px;
+  height: 50%;
+  font-size: 60px;
+  color: white;
+}
+#textBox.imgHeader-sm {
+  height: 50%;
+  font-size: 17px;
+  color: white;
+}
+#textBox.imgHeader-sm strong {
+  height: 50%;
+  font-size: 37px;
   color: white;
 }
 #records.ac_collapse {
@@ -919,6 +1039,12 @@ figure {
   width: 50%;
   float: left;
   margin: 0 -60px -60px;
+  overflow-y: auto;
+}
+.sowHighlight {
+  margin: 6em;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 .record-item--gigante {
   width: 100%;
@@ -926,30 +1052,114 @@ figure {
 #leftDiv {
   display: block;
   position: fixed;
-  background: #e6e6e6;
-  opacity: 0.15;
+  opacity: 1;
+  background: #8c8c8c;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #333333, #8c8c8c);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #333333, #8c8c8c);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #333333, #8c8c8c);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #333333, #8c8c8c);
+  /* Standard syntax */
+  opacity: 0.6;
   left: 0;
   bottom: 0;
   height: 100%;
   width: 50%;
   z-index: 100;
+  text-align: center;
 }
 .left_Div {
   display: block;
-  position: relative;
+  position: absolute;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #e6e6e6;
-  top: 250px;
+  top: 120px;
   width: 50%;
   left: 25%;
   font-size: 45px;
   z-index: 200;
 }
 .left_Div ul li img {
-  display: block;
   left: 100px;
   width: 200px;
+  margin: 0 auto;
+  padding: 25px 25px;
   text-align: center;
+}
+#rightDiv {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 75;
+  text-align: center;
+}
+.right_Div {
+  display: block;
+  position: relative;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #e6e6e6;
+  width: 100%;
+}
+#execDiv {
+  opacity: 1;
+  background: #8c8c8c;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #333333, #8c8c8c);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #333333, #8c8c8c);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #333333, #8c8c8c);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #333333, #8c8c8c);
+  /* Standard syntax */
+  opacity: 0.75;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 2em;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+#advisDiv {
+  display: block;
+  position: fixed;
+  opacity: 1;
+  background: #8c8c8c;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #333333, #8c8c8c);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #333333, #8c8c8c);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #333333, #8c8c8c);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #333333, #8c8c8c);
+  /* Standard syntax */
+  top: 500px;
+  opacity: 0.75;
+  width: 50%;
+  height: auto;
+  max-height: 100vh;
+  bottom: 100px;
+  overflow-y: scroll;
+}
+.years,
+.advisCommittees,
+#execButton,
+#advisButton {
+  cursor: pointer;
+}
+.archive_months,
+.members {
+  margin-left: 6em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  cursor: pointer;
+  z-index: 1000;
 }
 .partners_bgc {
   position: fixed;

@@ -9,6 +9,12 @@
 @angle-color: #515151;
 @from-color: #a3c2c2;
 @to-color: #7eaece;
+
+@drk-from-color: #333333;
+@drk-to-color: #8c8c8c;
+
+@lt-from-color: #f2f2f2;
+@lt-to-color: #cccccc;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // background transition mixin
@@ -16,7 +22,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 .shaded_bg() {
     opacity: 1;
-    background: #7eaece;
+    background: @to-color;
     /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left top, @from-color, @to-color);
     /* For Safari 5.1 to 6.0 */
@@ -26,7 +32,52 @@
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(to bottom right, @from-color, @to-color);
     /* Standard syntax */
-    border: inset 5px;
+    //border: inset 5px;
+}
+
+.shaded_bg-drk() {
+    opacity: 1;
+    background: @drk-to-color;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, @drk-from-color, @drk-to-color);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, @drk-from-color, @drk-to-color);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, @drk-from-color, @drk-to-color);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, @drk-from-color, @drk-to-color);
+    /* Standard syntax */
+    //border: inset 5px;
+}
+
+.shaded_bg-drk2() {
+    opacity: 1;
+    background: @drk-to-color;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, @drk-from-color, @drk-to-color );
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, @drk-from-color, @drk-to-color );
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, @drk-from-color, @drk-to-color );
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, @drk-from-color, @drk-to-color );
+    /* Standard syntax */
+    //border: inset 5px;
+}
+
+.shaded_bg-lt() {
+    opacity: 1;
+    background: @lt-to-color;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, @lt-from-color, @lt-to-color );
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, @lt-from-color, @lt-to-color );
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, @lt-from-color, @lt-to-color );
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, @lt-from-color, @lt-to-color );
+    /* Standard syntax */
+    border: #ffffff 5px;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -47,9 +98,10 @@
 }
 
 .committees_bg {
-	position: fixed;
+	position: absolute;
     background: url("@{images}/committees.jpg") no-repeat center center fixed;
     background-attachment: fixed;
+    overflow: hidden;
     .fill;
 }
 
@@ -81,7 +133,8 @@
 .angle {
     position: fixed;
     right: 0;
-    background-color: @angle-color;
+    //background-color: @angle-color;
+    .shaded_bg-lt;
     overflow: hidden;
     height: 40%;
     width: 75%;
@@ -95,7 +148,7 @@
 }
 
 .angle-text {
-    .font-blocky-lt;
+    .font-blocky-drk;
     position: fixed;
     font-size: 60px;
 }
@@ -138,11 +191,11 @@
     .skew;
     overflow: hidden;
     width: 1320px;
-    opacity: 1;
+    opacity: 0.99;
     height: 50%;
     margin-right: -550px;
     bottom: -100px;
-    z-index: 0;
+    z-index: 3;
 }
 
 .angle1 p:not(.ac_collapse) {
@@ -150,7 +203,7 @@
     .skew;
     width: 100%;
     height: 95%;
-    opacity: 0.25;
+    opacity: 0.88;
     margin-right: 0;
     bottom: -100px;
     transform: rotate(0deg);
@@ -165,7 +218,7 @@
     .skew;
     width: 100%;
     height: 95%;
-    opacity: 0.5;
+    opacity: 0.88;
     margin-right: 0;
     bottom: -100px;
     transform: rotate(0deg);
@@ -180,7 +233,7 @@
     .skew;
     width: 100%;
     height: 95%;
-    opacity: 0.75;
+    opacity: 0.88;
     margin-right: 0;
     bottom: -100px;
     transform: rotate(0deg);
@@ -202,7 +255,7 @@
     .no-gutters;
     font-family: 'FontAwesome';
     font-size: 35px;
-    color: @logo-color;
+    color: @drk-from-color;
 }
 
 .slide-toggle-close::after {
@@ -225,28 +278,54 @@
 // Members pop out
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-#members-div figcaption.ac_collapse {
-    display: none;
-    overflow: hidden;
+#membersDiv {
+	display: block;
+	position: fixed;
+	//background: @logo-color;
+	//.shaded_bg-drk;
+	//opacity: 0.6;
+	top: 250px;
+	left: 0;
+	bottom: 350px;
+	padding-bottom: -350px;
+	height: 65%;
+	max-height: 100vh;
+	width: 35%;
+	z-index: 1000;
+	text-align: center;
 }
 
-#members-div figcaption:not(.ac_collapse) {
-    display: block;
-    position: relative;
-    .shaded_bg;
-    top: 250px;
-    left: 20px;
-    z-index: 1000;
+.membersDiv_open {
+	display: block;
+	position: absolute;
+	opacity: 1;
+	//position: relative;
+	//top: 120px;
+	width: 100%;
+	//left: 25%;
+	font-size: 45px;
+	z-index: 2000;
 }
 
-#members-div figcaption {
-    padding: 10px 10px;
-    font-size: 16px;
-    .font-blocky-lt;
+.membersDiv_open figcaption {
+	.font-blocky-lt;
+	font-size: 12px;
 }
 
-#members-div {
-    z-index: 1001;
+.membersDiv_open ul li{
+	left: 100px;
+	//width: 200px;
+	margin: 0 auto;
+	padding: 25px 25px;
+	text-align: center;
+}
+
+.membersDiv_bg {
+	position: relative;
+	.shaded_bg-drk;
+	opacity: 0.6;
+	width: 100%;
+	height: 100%;
 }
 
 ////////////////////////////////////////////////////////////
@@ -254,60 +333,81 @@
 // secondary members popouts
 ////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
-#members2-div figcaption.ac_collapse {
-    display: none;
-    overflow: hidden;
+#membersDiv2 {
+	display: block;
+	position: fixed;
+	//background: @logo-color;
+	//.shaded_bg-drk;
+	//opacity: 0.6;
+	top: 250px;
+	left: 35%;
+	bottom: 350px;
+	padding-bottom: -350px;
+	height: 65%;
+	max-height: 100vh;
+	width: 35%;
+	//z-index: 1000;
+	text-align: center;
 }
 
-#members2-div figcaption:not(.ac_collapse) {
-    display: block;
+.membersDiv2_open {
+	display: block;
+	position: absolute;
+	opacity: 1;
+	//position: relative;
+	top: 0;
+	width: 100%;
+	//left: 25%;
+	font-size: 45px;
+	z-index: 2000;
+}
+
+.membersDiv2_open figcaption {
+	.font-blocky-lt;
+	font-size: 12px;
+}
+
+.membersDiv2_open ul li{
+	left: 100px;
+	//width: 200px;
+	margin: 0 auto;
+	padding: 25px 25px;
+	text-align: center;
+}
+
+.membersDiv2_bg {
+	position: relative;
+	//.shaded_bg-drk;
+	//top: 250px;
+	opacity: 0.6;
+	width: 100%;
+	height: 100%;
+	padding: 20px 20px;
+}
+
+#votingMem {
     position: relative;
     .shaded_bg;
-    top: 250px;
     //left: 20px;
-    z-index: 1000;
-}
-
-#members2-div figcaption {
+    //top: 250px;
     padding: 10px 10px;
     font-size: 16px;
     .font-blocky-lt;
+    //z-index: 2000;
 }
 
-#members2-div {
-    z-index: 1001;
-}
-
-
-#votingMem.hidden {
-    display: none;
-}
-
-#votingMem:not(.hidden) {
+#nonVoting {
     position: relative;
     .shaded_bg;
     //left: 20px;
-    top: 250px;
+    //top: 250px;
     padding: 10px 10px;
     font-size: 16px;
     .font-blocky-lt;
-    z-index: 2000;
+    //z-index: 2000;
 }
 
-#nonVoting.hidden {
-    display: none;
-}
 
-#nonVoting:not(.hidden) {
-    position: relative;
-    .shaded_bg;
-    //left: 20px;
-    top: 250px;
-    padding: 10px 10px;
-    font-size: 16px;
-    .font-blocky-lt;
-    z-index: 2000;
-}
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Spotlight pop out image grid
@@ -433,19 +533,34 @@
     .font-blocky-drk;
     font-size: 16px;
     width: 100%;
-    height: 50%;
+    height: 90%;
+    //max-height: 100vh;
     padding-bottom: -60px;
     bottom: 60px;
     z-index: 2000;
 }
 
 #textBox.imgHeader {
-	font-size: 15px; 
+	height: 50%;
+	font-size: 20px; 
 	color: white;
 }
 
 #textBox.imgHeader strong {
-	font-size: 40px; 
+	height: 50%;
+	font-size: 60px; 
+	color: white;
+}
+
+#textBox.imgHeader-sm {
+	height: 50%;
+	font-size: 17px; 
+	color: white;
+}
+
+#textBox.imgHeader-sm strong {
+	height: 50%;
+	font-size: 37px; 
 	color: white;
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -492,9 +607,14 @@
     float: left;
     //adjust for tender overlap of images
     margin: 0 -60px -60px;
+    overflow-y: auto;
 }
 
-.records-gridItem figcaption {}
+.sowHighlight {
+	margin: 6em;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
 
 .record-item--gigante {
     width: 100%;
@@ -507,20 +627,23 @@
 #leftDiv {
 	display: block;
 	position: fixed;
-	background: @logo-color;
-	opacity: 0.15;
+	//background: @logo-color;
+	.shaded_bg-drk;
+	opacity: 0.6;
 	left: 0;
 	bottom: 0;
 	height: 100%;
 	width: 50%;
 	z-index: 100;
+	text-align: center;
 }
 
 .left_Div {
 	display: block;
-	position: relative;
+	position: absolute;
+
 	.font-blocky-lt;
-	top: 250px;
+	top: 120px;
 	width: 50%;
 	left: 25%;
 	font-size: 45px;
@@ -528,16 +651,72 @@
 }
 
 .left_Div ul li img {
-	display: block;
 	left: 100px;
 	width: 200px;
-	//height: 100px;
+	margin: 0 auto;
+	padding: 25px 25px;
 	text-align: center;
 }
 
+#rightDiv {
+	display: block;
+	position: fixed;
+	//background: @logo-color;
+	//opacity: 0.6;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 50%;
+	z-index: 75;
+	text-align: center;
+}
 
+.right_Div {
+	display: block;
+	position: relative;
+	.font-blocky-lt;
+	width: 100%;
+	//z-index: 200;
+}
 
+#execDiv {
+	.shaded_bg-drk2;
+	opacity: 0.75;
+	width: 100%;
+	//top: 250px;
+	//height: 100%;
+	margin-top: 0;
+	margin-bottom: 2em;
+	max-height: 100vh;
+	overflow-y: scroll;
+}
 
+#advisDiv {
+	display: block;
+	position: fixed;
+	.shaded_bg-drk2;
+	top: 500px;
+	opacity: 0.75;
+	width: 50%;
+	height: auto;
+	max-height: 100vh;
+	bottom: 100px;
+	overflow-y: scroll;
+}
+
+.years, .advisCommittees,
+#execButton, #advisButton {
+	cursor: pointer;
+}
+
+.archive_months, .members {
+	margin-left: 6em;
+	margin-top: 0;
+	margin-bottom: 1em;
+	//font-size: medium;
+	cursor: pointer;
+	z-index: 1000;
+}
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////

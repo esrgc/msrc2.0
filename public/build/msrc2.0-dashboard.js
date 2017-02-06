@@ -5,8 +5,23 @@
 //
 
 $(window).load(function() {
+    // for my first trick now you see them...no you dont
     // hide footer but not the sicky footer or toggle button
     $(".footer").hide();
+    //hide execDiv untill  activated by button
+    $("#execDiv").hide();
+    //hide advisDiv untill  activated by button
+    $("#advisDiv").hide();
+    //hide membersDiv
+    $('#membersDiv').hide();
+
+    $("#membersDiv2").hide();
+    //hide votingMem div until activated
+    $("#votingMem").hide();
+    //hide nonVoting div until activated
+    $("#nonVoting").hide();
+
+
 
     // helper function for masonry and imagesLoaded
     $.fn.masonryImagesReveal = function($items) {
@@ -42,7 +57,7 @@ $(window).load(function() {
 
     var $hideSpotlight = $('#masonry-container-spotlight').masonry();
     $hideSpotlight.hide();
-    
+
     // init masonry container for records
     var $records = $('#masonry-container-records').masonry({
         columnWidth: '.grid-box-records',
@@ -53,9 +68,9 @@ $(window).load(function() {
     });
 
     $records.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
-	
 
-    
+
+
     var $hideRecords = $('#masonry-container-records').masonry();
     $hideRecords.hide();
 
@@ -153,15 +168,15 @@ $(document).ready(function() {
         //alert(attrID);
 
         if (attrID == 'btn1') {
-            $(this).parent().siblings().find('#members2-div > figcaption').toggleClass('ac_collapse');
-            $(this).parent().find('#members-div > figcaption').toggleClass('ac_collapse');
-            
+            $("#membersDiv").toggle('slide');
+            $("#membersDiv2").toggle('slide');
+
         } else if (attrID == 'btn2') {
-        	$('.spotlight-wrapper').css({"z-index": "1000"});
+            $('.spotlight-wrapper').css({ "z-index": "1000" });
             $spotlight.slideToggle('slow');
             $spotlight.masonry();
         } else if (attrID == 'btn3') {
-        	$('.records-wrapper').css({"z-index": "1000"});
+            $('.records-wrapper').css({ "z-index": "1000" });
             $records.slideToggle('slow');
             $records.masonry();
         } else {
@@ -209,24 +224,57 @@ $(document).ready(function() {
     });
 
 
+
     // setup expanding divs for voting members 
     var $votingMem = $('#votingMem-button');
     $votingMem.on('click', function(e) {
-    	e.preventDefault();
-
-    	//var attrID = $(this).attr('id');
-    	//alert(attrID);
-    	$("#votingMem").toggleClass("hidden");
+        e.preventDefault();
+        //var attrID = $(this).attr('id');
+        //alert(attrID);
+        $("#votingMem").toggle("slide");
+        $("#membersDiv2").css({ "z-index": "2000" });
     });
 
     // setup expanding divs for non-voting members 
     var $nonVoting = $('#nonVoting-button');
     $nonVoting.on('click', function(e) {
-    	e.preventDefault();
+        e.preventDefault();
+        //var attrID = $(this).attr('id');
+        //alert(attrID);
+        $("#nonVoting").toggle("slide");
+        $("#membersDiv2").css({ "z-index": "2000" });
 
-    	//var attrID = $(this).attr('id');
-    	//alert(attrID);
-    	$("#nonVoting").toggleClass("hidden");
     });
+
+
+
+
+
+    //hide execDiv untill  activated by button
+    //$("#execDiv").hide();
+    $("#execButton").click(function(e) {
+        e.preventDefault();
+        $("#rightDiv").find('#execDiv').toggle("slide");
+    });
+    //hide expanding months layout in executive committee pop out
+    $(".archive_months").hide();
+    $(".years").click(function() {
+        $(this).find('ul').slideToggle();
+    });
+
+    //hide advisDiv untill  activated by button
+    //$("#advisDiv").hide();
+    $("#advisButton").click(function(e) {
+        e.preventDefault();
+        $("#rightDiv").find('#advisDiv').toggle("slide");
+    });
+    //hide expanding advisCommittees descriptions
+    $(".members").hide();
+    $(".advisCommittees").click(function() {
+        $(this).find('ul').slideToggle();
+    });
+
+
+
     //.end doc ready function
 });
