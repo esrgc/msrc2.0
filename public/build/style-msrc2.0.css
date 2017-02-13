@@ -577,64 +577,55 @@ figure.effect-move:hover h3 i {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-figure.effect-shade {
-  opacity: 1;
-  background: #8c8c8c;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #333333, #8c8c8c);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #333333, #8c8c8c);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #333333, #8c8c8c);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #333333, #8c8c8c);
-  /* Standard syntax */
-}
-figure.effect-shade img {
-  opacity: 0.95;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: scale3d(1.05, 1.05, 1);
-  transform: scale3d(1.05, 1.05, 1);
-}
-figure.effect-shade figcaption::before {
+div.effect-shade h1::before {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.5);
+  background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+  background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
   content: '';
-  -webkit-transition: -webkit-transform 0.6s;
-  transition: transform 0.6s;
-  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
-  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
-}
-figure.effect-shade h4 {
-  position: absolute;
-  margin: 3em;
-  padding: 0 1em;
-  max-width: 150px;
-  border-right: 4px solid #fff;
-  text-align: center;
   opacity: 0;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
+  -webkit-transform: translate3d(0, 50%, 0);
+  transform: translate3d(0, 50%, 0);
 }
-figure.effect-shade h1 {
-  text-align: center;
+div.effect-shade h4 {
+  position: absolute;
+  top: 95%;
+  left: 0;
+  width: 100%;
+  color: #484c61;
+  -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+  transition: transform 0.35s, color 0.35s;
+  -webkit-transform: translate3d(0, -95%, 0);
+  transform: translate3d(0, -95%, 0);
 }
-figure.effect-shade:hover a {
-  opacity: 0.6;
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
+div.effect-shade h4::before,
+div.effect-shade p {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
 }
-figure.effect-shade:hover figcaption::before {
-  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
-  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+div.effect-shade p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
 }
-figure.effect-shade:hover h4 {
+div.effect-shade:hover h4 {
+  color: #fff;
+  -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -80px, 0);
+  transform: translate3d(0, -100%, 0) translate3d(0, -80px, 0);
+}
+div.effect-shade:hover h1::before,
+div.effect-shade:hover p {
   opacity: 1;
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 .all_wrapper {
   height: 100%;
@@ -1607,20 +1598,45 @@ figure.effect-shade:hover h4 {
   -moz-transform: skew(0deg, 30deg);
 }
 #imgContainer {
-  max-width: 640px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 100px;
+  bottom: 0;
+  left: 27.34%;
+  max-width: 860px;
   margin: 0 auto;
+  z-index: 10;
 }
 #imgContainer .imgContainer {
+  box-sizing: inherit;
   width: 100%;
   line-height: 0;
   font-size: 0;
 }
-.image {
+#counties .image {
   display: inline-block;
   padding: 5px;
-  width: 33.33%;
+  width: 33.333%;
 }
-.image img {
+#counties .image img {
+  vertical-align: top;
+}
+#gilligan .image {
+  display: inline-block;
+  padding: 5px;
+  width: 18.18%;
+  height: 70px;
+}
+#gilligan .image img {
+  vertical-align: top;
+}
+#gilligan2 .image {
+  display: inline-block;
+  padding: 5px;
+  width: 16.666%;
+  height: 70px;
+}
+#gilligan2 .image img {
   vertical-align: top;
 }
 .partners-wrapper {
