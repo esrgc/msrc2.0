@@ -1,98 +1,49 @@
-<div class="col-lg-6 pull-left">
-    <ul class="list-unstyled">
+<div class="col-lg-8 col-sm-6 col-xs-12 pull-left">
+    <ul class="list-unstyled" align="left">
         <li>
-            <p>Chairman: Name</p>
+            <p>Chairman: Walter Chase</p>
         </li>
         <li>
-            <p>1st Vice Chair: Name</p>
+            <p>1<sup>st</sup> Vice Chair: Dirck Bartlett</p>
         </li>
         <li>
-            <p>2nd Vice Chair: Name</p>
+            <p>2<sup>nd</sup> Vice Chair: Ricky Travers</p>
         </li>
         <li>
-            <p>3rd Vice Chair: Name</p>
+            <p>3<sup>rd</sup> Vice Chair: Dan Franklin</p>
         </li>
         <li>
-            <p>Secretary: Name</p>
+            <p>Secretary: Allen Nelson</p>
         </li>
         <li>
-            <p>Tresurer: Name</p>
+            <p>Tresurer: Kurt Fuchs</p>
+        </li>
+        <li>
+            <p>General Assembly: Delegate Christopher Adams</p>
+        </li>
+        <li>
+            <p>Member At Large: Jeannie Haddaway-Riccio</p>
+        </li>
+        <li>
+            <p>Member At Large: James Redman</p>
         </li>
     </ul>
 </div>
-<div class="col-lg-6 pull-right">
+<div class="col-lg-4 col-sm-6 col-xs-12 pull-right">
     <ul class="list-unstyled">
         <li>
             <p><u>Meeting Minutes</u></p>
         </li>
-        <li class="years">
-            <p>2017</p>
-            <ul class="list-unstyled archive_months" id="exec2017">
-                <li>January</li>
-                <li>February</li>
-                <li>March</li>
-                <li>April</li>
-                <li>May</li>
-                <li>June</li>
-                <li>July</li>
-                <li>August</li>
-                <li>September</li>
-                <li>October</li>
-                <li>November</li>
-                <li>December</li>
-            </ul>
-        </li>
-        <li class="years">
-            <p>2016</p>
-            <ul class="list-unstyled archive_months" id="exec2016">
-                <li>January</li>
-                <li>February</li>
-                <li>March</li>
-                <li>April</li>
-                <li>May</li>
-                <li>June</li>
-                <li>July</li>
-                <li>August</li>
-                <li>September</li>
-                <li>October</li>
-                <li>November</li>
-                <li>December</li>
-            </ul>
-        </li>
-        <li class="years">
-            <p>2015</p>
-            <ul class="list-unstyled archive_months" id="exec2015">
-                <li>January</li>
-                <li>February</li>
-                <li>March</li>
-                <li>April</li>
-                <li>May</li>
-                <li>June</li>
-                <li>July</li>
-                <li>August</li>
-                <li>September</li>
-                <li>October</li>
-                <li>November</li>
-                <li>December</li>
-            </ul>
-        </li>
-        <li class="years">
-            <p>2014</p>
-            <ul class="list-unstyled archive_months" id="exec2014">
-                <li>January</li>
-                <li>February</li>
-                <li>March</li>
-                <li>April</li>
-                <li>May</li>
-                <li>June</li>
-                <li>July</li>
-                <li>August</li>
-                <li>September</li>
-                <li>October</li>
-                <li>November</li>
-                <li>December</li>
-            </ul>
-        </li>
+        <!-- append output from python path_tools.py here -->
+        <!-- example run dialoge from terminal 
+
+                python path_tools.py -r D:\flint\msrc\msrc2.0\public\documents\exec_min -o D:\flint\msrc\msrc2.0\views\partials\exec_min.html
+             
+
+        output will be based on windows file path not unix style
+        with Sublime find and replace root with . and \ with /
+        -->{{> exec_min}}
+        <!--end python output-->
     </ul>
     <br>
     <br>

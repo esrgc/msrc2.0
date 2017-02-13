@@ -1,15 +1,39 @@
-
 <nav class="navbar navbar-inverse navbar-fixed-top">
-      <!--<div class="godown-60" id="godown"></div>-->
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#" id="logo">{{> logo}}</a>
+    <!--<div class="godown-60" id="godown"></div>-->
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-lg-6 col-sm-6 col-xs-8">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" id="logo">{{> logo}}</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-4 transition-all">
+                <ul class="nav navbar-nav navbar-right text-vertical-center" id="myTopnav">
+                    <li>
+                        <a href="./index" id="nav-links">
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./about" id="nav-links">
+                            <p>About</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./committees" id="nav-links">
+                            <p>Committees</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./partners" id="nav-links">
+                            <p>Partners</p>
+                        </a>
+                    </li>
+                    <li class="icon" >
+                        <i class="fa fa-bars fa-fw fa-2x" onclick="mobileNav()"></i>
+                    </li>
+                </ul>
+            </div>
         </div>
-          <ul class="nav navbar-nav navbar-right text-vertical-center">
-            <li><a href="./index" id="nav-links"><p>Home</p></a></li>
-            <li><a href="./about" id="nav-links"><p>About</p></a></li>
-            <li><a href="./committees" id="nav-links"><p>Committees</p></a></li>
-            <li><a href="./partners" id="nav-links"><p>Partners</p></a></li>
-          </ul>
-      </div>
-  </nav>
+    </div>
+</nav>

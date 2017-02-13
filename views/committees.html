@@ -3,42 +3,51 @@
     <div class="all_wrapper container-fluid no-padding">
         <div class="committees_bg">
             <div class="row container-fluid">
-                <div class="col-lg-6 col-md-6 col-sm-8 transition-all" id="leftDiv">
+                <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4 transition-all" id="leftDiv">
                     <div class="left_Div">
                         <ul class="list-unstyled text-center" id="execButton">
-                            <li id="svgCenter"><img src="./img/ic_people_outline_black_24px.svg"></li>
+                            <li>
+                                <i class="fa fa-users fa-fw fa-5x"></i>
+                            </li>
                             <li>
                                 <hr>
                             </li>
                             <li>
-                                <p style="font-size: 45px;">Executive Committee</p>
+                                <h2>Executive Committee</h2>
                             </li>
                         </ul>
                         <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
                         <ul class="list-unstyled text-center" id="advisButton">
-                            <li id="svgCenter"><img src="./img/ic_textsms_black_24px.svg"></li>
+                            <li>
+                                <i class="fa fa-comments fa-fw fa-5x"></i>
+                            </li>
                             <li>
                                 <hr>
                             </li>
                             <li>
-                                <p style="font-size: 45px;">Advisory Committees</p>
+                                <h2>Advisory Committees</h2>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-8 transition-all" id="rightDiv">
+                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 transition-all" id="rightDiv">
                     <div class="row right_Div" id="execDiv">
                         <br>
                         <br>
                         <br>
-                        <strong style="font-size: 45px;">MSRC's Executive Committee</strong>
+                        <h2>MSRC's Executive Committee</h2>
                         <br> {{> execDiv}}
                     </div>
                     <div class="row right_Div" id="advisDiv">
+                        <h2>MSRC's Advisory Committees</h2>
                         <br>
-                        <br>
-                        <br>
-                        <strong style="font-size: 45px;">MSRC's Advisory Committees</strong>
+                        <p>The Advisory Committees provide the Mid-Shore Regional Council
+                            <br> with oversite, recommendations, and/or policy guidance regarding
+                            <br>these specific areas of importance.</p>
                         <br> {{> advisDiv}}
                     </div>
                 </div>

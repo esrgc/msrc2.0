@@ -13,15 +13,13 @@
     <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Padauk|Source+Sans+Pro" rel="stylesheet">
-
     <title>{{title}}</title>
     <!-- Grunt:dev compiled css from style.less-->
-    <link href="./build/style-msrc2.0.css" rel="stylesheet"/>
+    <link href="./build/style-msrc2.0.css" rel="stylesheet" />
 </head>
 
 <body>
     {{> nav}} {{{body}}} {{> footer}}
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="./lib/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -29,9 +27,14 @@
     <!--<script src="./lib/masonry.pkgd.min.js"></script>-->
     <script src="./lib/masonry.pkgd.js"></script>
     <script src="./lib/imagesloaded.pkgd.min.js"></script>
+    <!-- FlowTypeJS responsive typography-->
+    <script src="./lib/flowtype.js"></script>
     <!-- custom dashboard functions concat and minified via Grunt-->
     <script src="./build/msrc2.0-dashboard.js"></script>
     <!--<script src="./build/msrc2.0-dashboard.min.js"></script>-->
+    <script>
+    $('body').flowtype();
+    </script>
 </body>
 
 </html>

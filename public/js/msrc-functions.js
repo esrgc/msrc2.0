@@ -4,24 +4,51 @@
  */
 //
 
+// responsive nav function
+function mobileNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav navbar-nav navbar-right text-vertical-center") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav navbar-nav navbar-right text-vertical-center";
+    }
+}
+
+
 $(window).load(function() {
     // for my first trick now you see them...no you dont
-    // hide footer but not the sicky footer or toggle button
+    // hide alot of things that can open later
     $(".footer").hide();
-    //hide execDiv untill  activated by button
     $("#execDiv").hide();
-    //hide advisDiv untill  activated by button
     $("#advisDiv").hide();
-    //hide membersDiv
     $('#membersDiv').hide();
+    $("#membersDiv2, #votingMem, #nonVoting").hide();
+    $("#masonry-container-spotlight").hide();
+    $("#masonry-container-records").hide();
+    $('#images, #recordsImages').hide();
+    $("#broadband").hide();
+    $("#tech").hide();
+    $("#health").hide();
+    $("#gis").hide();
+    $("#data").hide();
+    $("#ceds").hide();
+    $("#f1").hide();
+    $("#f2").hide();
+    $("#f3").hide();
+    $("#workPlan").hide();
+    $("#meetMinutes").hide();
+    $("#byLaws").hide();
+    $("#theMSRC").hide();
 
-    $("#membersDiv2").hide();
-    //hide votingMem div until activated
-    $("#votingMem").hide();
-    //hide nonVoting div until activated
-    $("#nonVoting").hide();
 
+});
 
+$(document).ready(function() {
+
+    // carousel rotation speed
+    $('.carousel').carousel({
+        interval: 5000 //set speed in ms
+    });
 
     // helper function for masonry and imagesLoaded
     $.fn.masonryImagesReveal = function($items) {
@@ -43,76 +70,28 @@ $(window).load(function() {
 
         return this;
     };
-
-    // init masonry js with imagesLoaded for spotlight
-    var $spotlight = $('#masonry-container-spotlight').masonry({
-        columnWidth: '.grid-box-spotlight',
-        itemSelector: '.gridItem',
-        isFitWidth: true,
-        percentPosition: true,
-        isAnimated: true
+    /// masonry for partners top image set for counties
+    var $partners = $('#masonry-container-partners').masonry({
+        columnWidth: '.grid-box-partners',
+        itemSelector: '.gridItem-partners',
+        gutter: 1,
+        stagger: 45,
     });
 
-    $spotlight.masonryImagesReveal($('#images').find('.gridItem'));
+    $partners.masonryImagesReveal($('#topImages').find('.gridItem-partners'));
 
-    var $hideSpotlight = $('#masonry-container-spotlight').masonry();
-    $hideSpotlight.hide();
+    /// masonry for the rest of partners
 
-    // init masonry container for records
-    var $records = $('#masonry-container-records').masonry({
-        columnWidth: '.grid-box-records',
-        itemSelector: '.records-gridItem',
-        isFitWidth: true,
-        percentPosition: true,
-        isAnimated: true
+    var $gilligan = $('#masonry-container-theRest').masonry({
+        columnWidth: '.grid-box-partBottom',
+        itemSelector: '.gridItem-partBottom',
+        gutter: 1,
+        stagger: 45,
     });
 
-    $records.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
+    $gilligan.masonryImagesReveal($('#bottomImages').find('.gridItem-partBottom'));
 
 
-
-    var $hideRecords = $('#masonry-container-records').masonry();
-    $hideRecords.hide();
-
-
-});
-
-
-// on window resize reshuffle masonry images
-$(window).resize(function() {
-
-    // init masonry js with imagesLoaded
-    var $resizeSpotlight = $('#masonry-container-spotlight').masonry({
-        columnWidth: '.grid-box-spotlight',
-        itemSelector: '.gridItem',
-        isFitWidth: true,
-        percentPosition: true,
-        isAnimated: true
-    });
-
-    $resizeSpotlight.masonry();
-
-    // init masonry js with imagesLoaded
-    var $resizeRecords = $('#masonry-container-records').masonry({
-        columnWidth: '.grid-box-records',
-        itemSelector: '.records-gridItem',
-        isFitWidth: true,
-        percentPosition: true,
-        isAnimated: true
-    });
-
-    $resizeRecords.masonry();
-
-});
-
-
-
-$(document).ready(function() {
-
-    // carousel rotation speed
-    $('.carousel').carousel({
-        interval: 5000 //set speed in ms
-    });
 
     //#to-top button appears after scrolling
     var fixed = false;
@@ -144,7 +123,7 @@ $(document).ready(function() {
     // add click toggle to all but last child merely for decoration
     // setup function to toggle on click
     */
-    $(".angle_wrapper > div:not(:last-child) p").click(function() {
+    $(".angle_wrapper > div:not(:last-child) h1").click(function() {
         /*e.preventDefault();*/
         /*
         // the magic
@@ -165,27 +144,86 @@ $(document).ready(function() {
         var attrID = $(this).attr('id');
         var $spotlight = $('#masonry-container-spotlight').masonry();
         var $records = $('#masonry-container-records').masonry();
-        //alert(attrID);
+        var $textBox = $('.textBox');
+
+        // helper function for masonry and imagesLoaded
+        $.fn.masonryImagesReveal = function($items) {
+            var msnry = this.data('masonry');
+            var itemSelector = msnry.options.itemSelector;
+            // hide by default
+            $items.hide();
+            // append to container
+            this.append($items);
+            $items.imagesLoaded().progress(function(imgLoad, image) {
+                // get item
+                // image is imagesLoaded class, not <img>, <img> is image.img
+                var $item = $(image.img).parents(itemSelector);
+                // un-hide item
+                $item.show();
+                // masonry does its thing
+                msnry.appended($item);
+            });
+
+            return this;
+        };
 
         if (attrID == 'btn1') {
+
             $("#membersDiv").toggle('slide');
             $("#membersDiv2").toggle('slide');
 
         } else if (attrID == 'btn2') {
             $('.spotlight-wrapper').css({ "z-index": "1000" });
-            $spotlight.slideToggle('slow');
-            $spotlight.masonry();
+
+            // init masonry js with imagesLoaded for spotlight
+            var $spotlight = $('#masonry-container-spotlight').masonry({
+                columnWidth: '.grid-box-spotlight',
+                itemSelector: '.gridItem',
+                gutter: 1,
+                stagger: 45,
+            });
+
+            $spotlight.masonryImagesReveal($('#images').find('.gridItem'));
+
+            //$("#masonry-container-spotlight").masonry('revealItemElements','.gridItem');
+            $("#masonry-container-spotlight").toggle('slow');
+
+            $spotlight.masonry('layout');
+            if ($('.textBox').is(":visible")) {
+                $('.textBox').hide("slow");
+            }
+
         } else if (attrID == 'btn3') {
             $('.records-wrapper').css({ "z-index": "1000" });
-            $records.slideToggle('slow');
-            $records.masonry();
+            var $hideSpotlight = $('#masonry-container-spotlight').masonry();
+            $hideSpotlight.hide();
+
+            // init masonry container for records
+            var $records = $('#masonry-container-records').masonry({
+                columnWidth: '.grid-box-records',
+                itemSelector: '.records-gridItem',
+                gutter: 1,
+                stagger: 45,
+            });
+
+            $records.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
+
+
+            $("#masonry-container-records").toggle('slow');
+
+            $records.masonry('layout');
+            if ($('.textBox').is(":visible")) {
+                $('.textBox').hide("slow");
+            }
         } else {
 
         }
 
+
+
         /* the foo*/
         if ($(this).hasClass("slide-toggle-open")) {
-            $(this).removeClass("slide-toggle-open").nextAll(".angle_wrapper > div:not(:last-child p").slideUp(500).removeClass("slide-toggle-open");
+            $(this).removeClass("slide-toggle-open").nextAll(".angle_wrapper > div:not(:last-child) h1").slideUp(500).removeClass("slide-toggle-open");
             return;
         }
         /* the bar*/
@@ -204,35 +242,171 @@ $(document).ready(function() {
 
 
     var $clickSpotlight = $('#masonry-container-spotlight').masonry();
-    // change size of item on click with toggle class
+    // make masonry images clickable 
     $clickSpotlight.on('click', '.gridItem', function(e) {
         e.preventDefault();
-        $(this).toggleClass('grid-item--gigante');
-        $(this).children("#textBox").toggleClass("hidden");
-        // trigger layout after item size changes
-        $clickSpotlight.masonry();
+        // on click pull up div
+        var attrID = $(this).attr('id');
+        var sliceID = attrID.substr(10);
+        //alert(attrID);
+        //alert(sliceID);
+        if (sliceID == 'broadband') {
+            if ($("#broadband").is(":hidden")) {
+                $('.textBox').hide("slow");
+                $('#broadband').toggle('slide');
+            } else {
+
+            }
+        } else if (sliceID == 'tech') {
+            if ($("#tech").is(":hidden")) {
+                $('.textBox').hide("slow");
+                $('#tech').toggle('slide');
+            } else {
+
+            }
+        } else if (sliceID == 'health') {
+            if ($("#health").is(":hidden")) {
+                $('.textBox').hide("slow");
+                $('#health').toggle('slide');
+            } else {
+
+            }
+        } else if (sliceID == 'gis') {
+            if ($("#gis").is(":hidden")) {
+                $('.textBox').hide("slow");
+                $('#gis').toggle('slide');
+            } else {
+
+            }
+        } else if (sliceID == 'data') {
+            if ($("#data").is(":hidden")) {
+                $('.textBox').hide("slow");
+                $('#data').toggle('slide');
+            } else {
+
+            }
+        } else if (sliceID == 'ceds') {
+            if ($("#ceds").is(":hidden")) {
+                $('.textBox').hide("slow");
+                $('#ceds').toggle('slide');
+            } else {
+
+            }
+        } else if (sliceID == 'f1') {
+            if ($("#f1").is(":hidden")) {
+                $('.textBox').hide("slow");
+                $('#f1').toggle('slide');
+            } else {
+
+            }
+        } else if (sliceID == 'f2') {
+            if ($("#f2").is(":hidden")) {
+                $('.textBox').hide("slow");
+                $('#f2').toggle('slide');
+            } else {
+
+            }
+        } else if (sliceID == 'f3') {
+            if ($("#f3").is(":hidden")) {
+                $('.textBox').hide("slow");
+                $('#f3').toggle('slide');
+            } else {
+
+            }
+        } else {
+            //$sliceID.toggle('slide');
+        }
     });
+
+
 
     var $clickRecords = $('#masonry-container-records').masonry();
     // change size of item on click with toggle class
     $clickRecords.on('click', '.records-gridItem', function(e) {
+
+        //e.stopPropagation();
         e.preventDefault();
-        $(this).toggleClass('record-item--gigante');
-        $(this).children("#textBox").toggleClass("hidden");
-        // trigger layout after item size changes
-        $clickRecords.masonry();
+
+        var attrID = $(this).attr('id');
+        var sliceID = attrID.substr(10);
+        //alert(attrID);
+        //alert(sliceID);
+        if (sliceID == 'workPlan') {
+            if ($("#workPlan").is(":hidden")) {
+                $('.records-textBox').hide("slow");
+                $('#workPlan').toggle('slide');
+            } else {
+
+            }
+        } else if (sliceID == 'theMSRC') {
+            if ($("#theMSRC").is(":hidden")) {
+                $('.records-textBox').hide("slow");
+                $('#theMSRC').toggle('slide');
+            } else {
+
+            }
+        } else if (sliceID == 'byLaws') {
+            if ($("#byLaws").is(":hidden")) {
+                $('.records-textBox').hide("slow");
+                $('#byLaws').toggle('slide');
+            } else {
+
+            }
+        } else if (sliceID == 'meetMinutes') {
+            if ($("#meetMinutes").is(":hidden")) {
+                $('.records-textBox').hide("slow");
+                $('#meetMinutes').toggle('slide');
+            } else {
+
+            }
+        } else {
+
+        }
+
+
     });
 
+    // setup textBox to close on click
+    $(".textBox, .records-textBox").click(function() {
+        var attrID = $(this).attr('id');
+        if ($(this).is(':visible')) {
+            $(this).toggle('slide');
+        }
+    });
 
 
     // setup expanding divs for voting members 
     var $votingMem = $('#votingMem-button');
     $votingMem.on('click', function(e) {
         e.preventDefault();
+
         //var attrID = $(this).attr('id');
         //alert(attrID);
-        $("#votingMem").toggle("slide");
-        $("#membersDiv2").css({ "z-index": "2000" });
+        if ($("#nonVoting").is(":visible")) {
+            $("#nonVoting").toggle("slide");
+        }
+
+        if ($("#votingMem").is(":hidden")) {
+
+            $("#membersDiv2").animate({
+                "z-index": "1000",
+                "opacity": "1"
+            });
+
+            $("#membersDiv2, #votingMem").fadeIn(875);
+
+
+        } else {
+
+            $("#membersDiv2, #votingMem").fadeOut(850);
+            $("#membersDiv2").animate({
+                "z-index": "0",
+                "opacity": "0"
+
+            });
+
+
+        }
     });
 
     // setup expanding divs for non-voting members 
@@ -241,19 +415,38 @@ $(document).ready(function() {
         e.preventDefault();
         //var attrID = $(this).attr('id');
         //alert(attrID);
-        $("#nonVoting").toggle("slide");
-        $("#membersDiv2").css({ "z-index": "2000" });
+        if ($("#votingMem").is(":visible")) {
+            $("#votingMem").toggle("slide");
+        }
+
+        if ($("#nonVoting").is(":hidden")) {
+
+            $("#membersDiv2").css({
+                "z-index": "1000",
+                "opacity": "1"
+            });
+
+            $("#membersDiv2, #nonVoting ").fadeIn(875);
+        } else {
+            $("#membersDiv2, #nonVoting ").fadeOut(850);
+
+            $("#membersDiv2").css({
+                "z-index": "0",
+                "opacity": "0"
+
+            });
+        }
 
     });
-
-
-
-
 
     //hide execDiv untill  activated by button
     //$("#execDiv").hide();
     $("#execButton").click(function(e) {
         e.preventDefault();
+        e.stopPropagation();
+        if ($("#advisDiv").is(":visible")) {
+            $("#rightDiv").find('#advisDiv').toggle("slide");
+        }
         $("#rightDiv").find('#execDiv').toggle("slide");
     });
     //hide expanding months layout in executive committee pop out
@@ -266,6 +459,10 @@ $(document).ready(function() {
     //$("#advisDiv").hide();
     $("#advisButton").click(function(e) {
         e.preventDefault();
+        if ($("#execDiv").is(":visible")) {
+            $("#rightDiv").find('#execDiv').toggle("slide");
+        }
+
         $("#rightDiv").find('#advisDiv').toggle("slide");
     });
     //hide expanding advisCommittees descriptions
@@ -274,7 +471,16 @@ $(document).ready(function() {
         $(this).find('ul').slideToggle();
     });
 
-
-
+    // initial setup for flowtype
+    $('body').flowtype({
+        minFont: 8,
+        maxFont: 16,
+        fontRatio: 45
+    });
+    $('#membersSlide').flowtype({
+        minFont: 8,
+        maxFont: 14,
+        fontRatio: 32
+    });
     //.end doc ready function
 });

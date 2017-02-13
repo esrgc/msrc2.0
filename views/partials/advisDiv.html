@@ -1,8 +1,5 @@
-<div class="col-lg-12">
-    <p>The Advisory Committees provide the Mid-Shore Regional Council
-        <br> with oversite, recommendations, and/or policy guidance regarding
-        <br>these specific areas of importance.</p>
-    <ul class="list-unstyled">
+<div class="col-lg-8 col-sm-6 col-xs-12 pull-left">
+    <ul class="list-unstyled" align="left">
         <li class="advisCommittees">
             <p>Comprehensive Economic Development Strategy (CEDS)</p>
             <ul class="members list-unstyled" align="left">
@@ -104,7 +101,7 @@
                 <li>Scott Warner, MSRC Executive Director</li>
                 <br>
                 <p><u>Key</u>
-                    <br> ESRGC = Eastern Shore Regional GIS Cooperative (esrgc.org)
+                    <br> ESRGC = <a href='http://www.esrgc.org'>Eastern Shore Regional GIS Cooperative (esrgc.org)</a>
                     <br> GIS = Geographic Information Systems</p>
             </ul>
         </li>
@@ -139,6 +136,26 @@
                     <br> MSRC = Mid-Shore Regional Council</p>
             </ul>
         </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+</div>
+<div class="col-lg-4 col-sm-6 col-xs-12 pull-right">
+    <ul class="list-unstyled">
+        <li>
+            <p><u>Meeting Minutes</u></p>
+        </li>
+        <!-- append output from python path_tools.py here -->
+        <!-- example run dialoge from terminal 
+
+                python path_tools.py -r D:\flint\msrc\msrc2.0\public\documents\advis_min -o D:\flint\msrc\msrc2.0\views\partials\advis_min.html
+             
+
+        output will be based on windows file path not unix style
+        with Sublime find and replace root with . and \ with /
+        -->{{> advis_min}}
+        <!--end python output-->
     </ul>
     <br>
     <br>
