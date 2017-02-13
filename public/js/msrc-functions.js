@@ -70,27 +70,6 @@ $(document).ready(function() {
 
         return this;
     };
-    /// masonry for partners top image set for counties
-    var $partners = $('#masonry-container-partners').masonry({
-        columnWidth: '.grid-box-partners',
-        itemSelector: '.gridItem-partners',
-        gutter: 1,
-        stagger: 45,
-    });
-
-    $partners.masonryImagesReveal($('#topImages').find('.gridItem-partners'));
-
-    /// masonry for the rest of partners
-
-    var $gilligan = $('#masonry-container-theRest').masonry({
-        columnWidth: '.grid-box-partBottom',
-        itemSelector: '.gridItem-partBottom',
-        gutter: 1,
-        stagger: 45,
-    });
-
-    $gilligan.masonryImagesReveal($('#bottomImages').find('.gridItem-partBottom'));
-
 
 
     //#to-top button appears after scrolling
