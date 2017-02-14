@@ -1,6 +1,8 @@
 /*
- * Custom jQuery functions
+ * Custom jQuery functions 
+ * for MSRC2.0
  * 
+ * Author: Carl Flint, ESRGC
  */
 //
 

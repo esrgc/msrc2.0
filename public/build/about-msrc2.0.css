@@ -66,22 +66,12 @@
 .angle {
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   overflow: hidden;
   height: 40%;
@@ -100,34 +90,14 @@
   overflow-y: auto;
 }
 .angle1 h1 {
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
@@ -147,34 +117,14 @@
   z-index: 1;
 }
 .angle2 h1 {
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
@@ -194,34 +144,14 @@
   z-index: 2;
 }
 .angle3 h1 {
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
@@ -241,34 +171,14 @@
   z-index: 3;
 }
 .angle4 {
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
@@ -370,34 +280,14 @@
   }
 }
 .angle1 h1:not(.ac_collapse) {
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   overflow: hidden;
   height: 40%;
@@ -422,34 +312,14 @@
   z-index: 100 !important;
 }
 .angle2 h1:not(.ac_collapse) {
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   overflow: hidden;
   height: 40%;
@@ -474,34 +344,14 @@
   z-index: 100 !important;
 }
 .angle3 h1:not(.ac_collapse) {
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   overflow: hidden;
   height: 40%;
@@ -595,22 +445,12 @@
 }
 .membersDiv_bg {
   position: absolute;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #8c8c8c;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #333333, #8c8c8c);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #333333, #8c8c8c);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #333333, #8c8c8c);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #333333, #8c8c8c);
-  /* Standard syntax */
   padding: 20px 20px;
   opacity: 0.6;
   width: 100%;
@@ -651,22 +491,12 @@
 }
 .membersDiv2_bg {
   position: relative;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #8c8c8c;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #333333, #8c8c8c);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #333333, #8c8c8c);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #333333, #8c8c8c);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #333333, #8c8c8c);
-  /* Standard syntax */
   height: 100%;
   opacity: 0.6;
   padding: 20px 20px;
@@ -731,11 +561,10 @@
   -ms-animation: moveFromBottom 300ms ease;
   -o-animation: moveFromBottom 300ms ease;
   animation: moveFromBottom 300ms ease;
-  /*-webkit-transition-property: left, right, top;
-    -moz-transition-property: left, right, top;
-    -ms-transition-property: left, right, top;
-    -o-transition-property: left, right, top;
-    transition-property: left, right, top;*/
+  -moz-transition-property: left, right, top;
+  -ms-transition-property: left, right, top;
+  -o-transition-property: left, right, top;
+  transition-property: left, right, top;
 }
 .transitions-enabled.grid {
   -webkit-transition: all 300ms linear;
@@ -949,22 +778,12 @@
 #leftDiv {
   display: block;
   position: fixed;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #8c8c8c;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #333333, #8c8c8c);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #333333, #8c8c8c);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #333333, #8c8c8c);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #333333, #8c8c8c);
-  /* Standard syntax */
   opacity: 0.6;
   left: 0;
   bottom: 0;
@@ -1010,22 +829,12 @@
 #execDiv {
   display: block;
   position: fixed;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #8c8c8c;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #333333, #8c8c8c);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #333333, #8c8c8c);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #333333, #8c8c8c);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #333333, #8c8c8c);
-  /* Standard syntax */
   opacity: 0.75;
   width: 50%;
   margin-top: 0;
@@ -1036,22 +845,12 @@
 #advisDiv {
   display: block;
   position: fixed;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #8c8c8c;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #333333, #8c8c8c);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #333333, #8c8c8c);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #333333, #8c8c8c);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #333333, #8c8c8c);
-  /* Standard syntax */
   top: 500px;
   opacity: 0.75;
   width: 50%;
@@ -1864,22 +1663,12 @@ div.effect-shade:hover p {
 .angle {
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   overflow: hidden;
   height: 40%;
@@ -1898,34 +1687,14 @@ div.effect-shade:hover p {
   overflow-y: auto;
 }
 .angle1 h1 {
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
@@ -1945,34 +1714,14 @@ div.effect-shade:hover p {
   z-index: 1;
 }
 .angle2 h1 {
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
@@ -1992,34 +1741,14 @@ div.effect-shade:hover p {
   z-index: 2;
 }
 .angle3 h1 {
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
@@ -2039,34 +1768,14 @@ div.effect-shade:hover p {
   z-index: 3;
 }
 .angle4 {
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
@@ -2168,34 +1877,14 @@ div.effect-shade:hover p {
   }
 }
 .angle1 h1:not(.ac_collapse) {
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   overflow: hidden;
   height: 40%;
@@ -2220,34 +1909,14 @@ div.effect-shade:hover p {
   z-index: 100 !important;
 }
 .angle2 h1:not(.ac_collapse) {
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   overflow: hidden;
   height: 40%;
@@ -2272,34 +1941,14 @@ div.effect-shade:hover p {
   z-index: 100 !important;
 }
 .angle3 h1:not(.ac_collapse) {
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   position: fixed;
   right: 0;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #cccccc;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  /* Standard syntax */
   border: #ffffff 5px;
   overflow: hidden;
   height: 40%;
@@ -2393,22 +2042,12 @@ div.effect-shade:hover p {
 }
 .membersDiv_bg {
   position: absolute;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #8c8c8c;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #333333, #8c8c8c);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #333333, #8c8c8c);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #333333, #8c8c8c);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #333333, #8c8c8c);
-  /* Standard syntax */
   padding: 20px 20px;
   opacity: 0.6;
   width: 100%;
@@ -2449,22 +2088,12 @@ div.effect-shade:hover p {
 }
 .membersDiv2_bg {
   position: relative;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #8c8c8c;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #333333, #8c8c8c);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #333333, #8c8c8c);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #333333, #8c8c8c);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #333333, #8c8c8c);
-  /* Standard syntax */
   height: 100%;
   opacity: 0.6;
   padding: 20px 20px;
@@ -2529,11 +2158,10 @@ div.effect-shade:hover p {
   -ms-animation: moveFromBottom 300ms ease;
   -o-animation: moveFromBottom 300ms ease;
   animation: moveFromBottom 300ms ease;
-  /*-webkit-transition-property: left, right, top;
-    -moz-transition-property: left, right, top;
-    -ms-transition-property: left, right, top;
-    -o-transition-property: left, right, top;
-    transition-property: left, right, top;*/
+  -moz-transition-property: left, right, top;
+  -ms-transition-property: left, right, top;
+  -o-transition-property: left, right, top;
+  transition-property: left, right, top;
 }
 .transitions-enabled.grid {
   -webkit-transition: all 300ms linear;
@@ -2747,22 +2375,12 @@ div.effect-shade:hover p {
 #leftDiv {
   display: block;
   position: fixed;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #8c8c8c;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #333333, #8c8c8c);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #333333, #8c8c8c);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #333333, #8c8c8c);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #333333, #8c8c8c);
-  /* Standard syntax */
   opacity: 0.6;
   left: 0;
   bottom: 0;
@@ -2808,22 +2426,12 @@ div.effect-shade:hover p {
 #execDiv {
   display: block;
   position: fixed;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #8c8c8c;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #333333, #8c8c8c);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #333333, #8c8c8c);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #333333, #8c8c8c);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #333333, #8c8c8c);
-  /* Standard syntax */
   opacity: 0.75;
   width: 50%;
   margin-top: 0;
@@ -2834,22 +2442,12 @@ div.effect-shade:hover p {
 #advisDiv {
   display: block;
   position: fixed;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  /* Standard syntax */
   opacity: 1;
   background: #8c8c8c;
-  /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #333333, #8c8c8c);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #333333, #8c8c8c);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #333333, #8c8c8c);
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #333333, #8c8c8c);
-  /* Standard syntax */
   top: 500px;
   opacity: 0.75;
   width: 50%;

@@ -18,8 +18,7 @@ module.exports = function(grunt) {
           paths: ['public/stylesheet']
         },
         files: {
-          "public/build/style-<%= pkg.name %>.css": "public/stylesheet/style.less",
-          "public/build/about-<%= pkg.name %>.css": "public/stylesheet/about.less"
+          "public/build/style-<%= pkg.name %>.css": "public/stylesheet/style.less"
         }
       },
       prod: {
@@ -34,8 +33,7 @@ module.exports = function(grunt) {
           
         },
         files: {
-          "public/build/style-<%= pkg.name %>.min.css": "public/stylesheet/style.less",
-          "public/build/about-<%= pkg.name %>.min.css": "public/stylesheet/about.less"
+          "public/build/style-<%= pkg.name %>.min.css": "public/stylesheet/style.less"
         }
       }
     },
