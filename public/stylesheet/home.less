@@ -1,5 +1,4 @@
 @import "about.less";
-
 // Variables
 @logo-color: #e6e6e6;
 @hover-color: #2e4d6b;
@@ -316,7 +315,7 @@ hr.small {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/* Fullpage bootstrap carousel*/
+/* Fullpage background images*/
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -392,7 +391,7 @@ hr.small {
     display: inline-block;
     position: absolute;
     margin-left: 158px;
-   margin-top: 0;
+    margin-top: 0;
     //font-size: 27px;
     //padding-top: 4px;
     line-height: 30%;
@@ -403,13 +402,31 @@ hr.small {
     display: inline-block;
     position: absolute;
     //font-size: 13px;
-    line-height: 5%;
+    line-height: 60%;
     .logo-set-std;
 }
 
 @media screen and (max-width:570px) {
     #logo_med {
         margin-left: 137px;
+    }
+}
+
+@media screen and (max-width:485px) {
+    #logo_sm {
+        padding-top: 20px;
+    }
+    #logo_med {
+        line-height: 90%;
+        padding-bottom: 5px;
+    }
+    #logo_lrg {
+        font-size: 33px;
+        margin-bottom: 0;
+        line-height: 100%;
+    }
+    .navbar-header {
+        height: 87px;
     }
 }
 
@@ -441,6 +458,79 @@ hr.small {
     background-color: rgba(214, 214, 214, 0.5);
 }
 
+@media screen and (max-width: 1200px) {
+    div.effect-shade h1 {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    div.effect-shade h1 {
+        padding-top: 42px;
+    }
+}
+
+/////////////////////////////////////////
+/////////////////////////
+// transition effect for index.html economic impact
+/////////////////////////
+/////////////////////////////////////////
+div.effect-shade h1::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+    background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+    content: '';
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+}
+
+div.effect-shade h4 {
+    position: absolute;
+    top: 95%;
+    left: 0;
+    width: 100%;
+    color: #484c61;
+    -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+    transition: transform 0.35s, color 0.35s;
+    -webkit-transform: translate3d(0, -95%, 0);
+    transform: translate3d(0, -95%, 0);
+}
+
+div.effect-shade h4::before,
+div.effect-shade p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+div.effect-shade p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+}
+
+div.effect-shade:hover h4 {
+    color: #fff;
+    -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -80px, 0);
+    transform: translate3d(0, -100%, 0) translate3d(0, -80px, 0);
+}
+
+div.effect-shade:hover h1::before,
+div.effect-shade:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -448,9 +538,7 @@ hr.small {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 // responsive figure grid settings
-
 .figure-nest {
     display: block;
     position: relative;
@@ -531,7 +619,7 @@ figure {
     text-align: center;
     //font-size: 20px;
     position: fixed;
-    left: 48.5%;
+    //left: 48.5%;
     bottom: 75px;
     color: white;
     cursor: pointer;
@@ -543,26 +631,33 @@ figure {
     transition: All 1s ease;
 }
 
+
 /* Extra small devices */
-@media screen and (max-width:544px){
-    .fa-3x{
-        font-size:20px;
+
+@media screen and (max-width:544px) {
+    .fa-3x {
+        font-size: 20px;
     }
     #cpyRight {
         font-size: 8px;
     }
 }
+
+
 /* Small devices */
-@media screen and (min-width:545px) and (max-width:768px){
-    .fa-3x{
-        font-size:30px;
+
+@media screen and (min-width:545px) and (max-width:768px) {
+    .fa-3x {
+        font-size: 30px;
     }
 }
 
+
 /* Large devices */
-@media screen and (min-width:800px){
-    .fa-3x{
-        font-size:42px;
+
+@media screen and (min-width:800px) {
+    .fa-3x {
+        font-size: 42px;
     }
 }
 
@@ -679,6 +774,7 @@ figure {
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
 }
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // fancy css3 transition effects on hover
@@ -706,8 +802,8 @@ figure.effect-move .floater::before {
     height: 10px;
     background: #fff;
     content: '';
-    -webkit-transform: translate3d(0,10px,0);
-    transform: translate3d(0,10px,0);
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
 }
 
 figure.effect-move h3 {
@@ -717,8 +813,8 @@ figure.effect-move h3 {
     padding: 1em 1.5em;
     width: 100%;
     text-align: center;
-    -webkit-transform: translate3d(0,-30px,0);
-    transform: translate3d(0,-30px,0);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
 }
 
 figure.effect-move h3 i {
@@ -726,8 +822,8 @@ figure.effect-move h3 i {
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0,-30px,0);
-    transform: translate3d(0,-30px,0);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
 }
 
 figure.effect-move .floater::before,
@@ -740,67 +836,6 @@ figure.effect-move:hover .floater::before,
 figure.effect-move:hover h3,
 figure.effect-move:hover h3 i {
     opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// transition effect for index.html economic impact
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-div.effect-shade h1::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
-    background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
-    content: '';
-    opacity: 0;
-    -webkit-transform: translate3d(0,50%,0);
-    transform: translate3d(0,50%,0);
-}
-
-div.effect-shade h4 {
-    position: absolute;
-    top: 95%;
-    left: 0;
-    width: 100%;
-    color: #484c61;
-    -webkit-transition: -webkit-transform 0.35s, color 0.35s;
-    transition: transform 0.35s, color 0.35s;
-    -webkit-transform: translate3d(0,-95%,0);
-    transform: translate3d(0,-95%,0);
-}
-
-div.effect-shade h4::before,
-div.effect-shade p {
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-}
-
-div.effect-shade p {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 2em;
-    width: 100%;
-    opacity: 0;
-    -webkit-transform: translate3d(0,10px,0);
-    transform: translate3d(0,10px,0);
-}
-
-div.effect-shade:hover h4 {
-    color: #fff;
-    -webkit-transform: translate3d(0,-100%,0) translate3d(0,-80px,0);
-    transform: translate3d(0,-100%,0) translate3d(0,-80px,0);
-}
-
-div.effect-shade:hover h1::before ,
-div.effect-shade:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }

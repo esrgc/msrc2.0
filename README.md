@@ -4,6 +4,7 @@
 ### File structure tree
 *excluding prebuilt libs, node_modules etc.*
 ```
+.
 ┣━ [bin]
 ┃  ┣━ [config]
 ┃  ┃  ┗━ index.js
