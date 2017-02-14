@@ -218,7 +218,7 @@ ul#myTopnav li.icon {
     display: none;
 }
 
-@media screen and (max-width:830px) {
+@media screen and (min-width: 310px) and (max-width:830px) {
     ul#myTopnav li:not(:first-child) {
         display: none;
         float: right;
@@ -227,19 +227,26 @@ ul#myTopnav li.icon {
         position: fixed;
         float: left;
         display: inline-block;
-        right: 5px;
-        top: 10px;
+        right: 20px;
+        top: 15px;
+        padding-left: 15px;
+        z-index: 10;
+    }
+    .nav-links {
+        right: 35px;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width:830px) {
+@media screen and (min-width: 310px) and (max-width:830px) {
     ul#myTopnav.responsive {
         position: relative;
     }
     ul#myTopnav.responsive li.icon {
         position: fixed;
-        right: 10px;
-        top: 20px;
+        right: 20px;
+        top: 15px;
+        padding-left: 15px;
+        z-index: 10;
     }
     ul#myTopnav.responsive li {
         float: none;
@@ -249,28 +256,10 @@ ul#myTopnav li.icon {
         display: block;
         text-align: left;
     }
-}
-
-@media screen and (max-width:767px) {
-    ul#myTopnav.responsive {
-        position: relative;
-    }
-    ul#myTopnav.responsive li.icon {
-        position: fixed;
-        right: 10px;
-        top: 20px;
-    }
-    ul#myTopnav.responsive li {
-        float: none;
-        display: inline;
-    }
-    ul#myTopnav.responsive li a {
-        display: block;
-        text-align: left;
+    .nav-links {
+right: 35px;
     }
 }
-
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
