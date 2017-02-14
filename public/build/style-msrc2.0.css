@@ -148,7 +148,7 @@ ul#myTopnav li.icon {
   display: none;
 }
 @media screen and (max-width: 830px) {
-  ul#myTopnav li:not(: first-child) {
+  ul#myTopnav li:not(:first-child) {
     display: none;
     float: right;
   }
@@ -185,7 +185,7 @@ ul#myTopnav li.icon {
   ul#myTopnav.responsive li.icon {
     position: fixed;
     right: 10px;
-    top: 25px;
+    top: 20px;
   }
   ul#myTopnav.responsive li {
     float: none;
@@ -351,6 +351,23 @@ hr.small {
   }
   .navbar-header {
     height: 87px;
+  }
+}
+@media screen and (max-width: 434px) {
+  #logo_sm {
+    font-size: 8px;
+    padding-top: 27px;
+  }
+  #logo_med {
+    line-height: 90%;
+    padding-bottom: 5px;
+    margin-left: 145px;
+  }
+  #logo_lrg {
+    font-size: 40px;
+    margin-left: -20px;
+    margin-bottom: 0;
+    line-height: 100%;
   }
 }
 /* Home page statistics section */
@@ -599,7 +616,10 @@ figure {
 }
 @media screen and (max-width: 432px) {
   .footer-bottom {
-    padding-top: 10px;
+    padding-top: 20px;
+  }
+  #footer_button {
+    bottom: 71px;
   }
 }
 /* all pages transitions setting*/
