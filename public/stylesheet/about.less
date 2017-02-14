@@ -268,6 +268,28 @@
     }
 }
 
+@media screen and (max-width:430px) {
+    .angle1 h1 {
+        .skew2;
+        bottom: -90px;
+        margin-right: -360px;
+    }
+    .angle2 h1 {
+        .skew2;
+        bottom: -120px;
+        margin-right: -420px
+    }
+    .angle3 h1 {
+        .skew2;
+        bottom: -150px;
+        margin-right: -490px;
+    }
+    .angle4 {
+        .skew2;
+        bottom: -500px;
+    }
+}
+
 .angle1 h1:not(.ac_collapse) {
     .angle;
     .skew;
@@ -368,7 +390,7 @@
     top: -2px;
     bottom: 0;
     opacity: 1;
-    width: 100%;
+    width: 90%;
     overflow-y: auto;
     z-index: 2000;
 }
@@ -419,7 +441,7 @@
     opacity: 1;
     top: 0;
     bottom: 0;
-    width: 100%;
+    width: 90%;
     overflow-y: auto;
     z-index: 2000;
 }
@@ -486,6 +508,14 @@
     }
 }
 
+@media screen and (max-width:430px) {
+    #membersDiv {
+        top: 165px;
+    }
+    #membersDiv2 {
+        top: 165px;
+    }
+}
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Spotlight pop out image grid
@@ -749,6 +779,17 @@
     }
 }
 
+@media only screen and (max-width: 430px) {
+    .records-wrapper {
+        left: 0;
+        width: 90%;
+    }
+    .spotlight-wrapper {
+        left: 0;
+        width: 90%;
+    }
+}
+
 .sowHighlight {
     margin: 6em;
     margin-top: 0;
@@ -848,6 +889,7 @@
     position: fixed;
     .shaded_bg-drk2;
     opacity: 0.75;
+    top: 58px;
     width: 50%;
     margin-top: 0;
     margin-bottom: 2em;
@@ -859,13 +901,23 @@
     display: block;
     position: fixed;
     .shaded_bg-drk2;
-    top: 500px;
+    //top: 500px;
+    top: 40%;
     opacity: 0.75;
     width: 50%;
     height: auto;
     max-height: 100vh;
     bottom: 100px;
     overflow-y: auto;
+}
+
+@media screen and (max-width: 430px) {
+    #execDiv {
+        top: 88px;
+    }
+    #advisDiv {
+        top: 88px;
+    }
 }
 
 .years,
@@ -996,7 +1048,6 @@
         z-index: 10;
     }
 }
-
 
 #gilligan .image:hover,
 #gilligan2 .image:hover {

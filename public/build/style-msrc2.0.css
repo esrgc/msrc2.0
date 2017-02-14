@@ -148,26 +148,44 @@ ul#myTopnav li.icon {
   display: none;
 }
 @media screen and (max-width: 830px) {
-  ul#myTopnav li:not(:first-child) {
+  ul#myTopnav li:not(: first-child) {
     display: none;
-    float: left;
+    float: right;
   }
   ul#myTopnav li.icon {
     position: fixed;
-    float: right;
+    float: left;
     display: inline-block;
-    right: 10px;
+    right: 5px;
     top: 10px;
   }
 }
-@media screen and (max-width: 830px) {
+@media screen and (min-width: 768px) and (max-width: 830px) {
   ul#myTopnav.responsive {
     position: relative;
   }
   ul#myTopnav.responsive li.icon {
     position: fixed;
     right: 10px;
-    top: 10px;
+    top: 20px;
+  }
+  ul#myTopnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul#myTopnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 767px) {
+  ul#myTopnav.responsive {
+    position: relative;
+  }
+  ul#myTopnav.responsive li.icon {
+    position: fixed;
+    right: 10px;
+    top: 25px;
   }
   ul#myTopnav.responsive li {
     float: none;
@@ -487,6 +505,7 @@ figure {
   margin: 0 auto;
   text-align: center;
   position: fixed;
+  left: 48.5%;
   bottom: 75px;
   color: white;
   cursor: pointer;
@@ -498,12 +517,24 @@ figure {
   transition: All 1s ease;
 }
 /* Extra small devices */
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 430px) {
+  #cpyRight {
+    font-size: 6px;
+  }
+  .fa-3x {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 431px) and (max-width: 544px) {
   .fa-3x {
     font-size: 20px;
   }
   #cpyRight {
     font-size: 8px;
+  }
+  #footContact {
+    padding: 0 0;
+    right: 4px;
   }
 }
 /* Small devices */
@@ -935,6 +966,55 @@ figure.effect-move:hover h3 i {
     bottom: -500px;
   }
 }
+@media screen and (max-width: 430px) {
+  .angle1 h1 {
+    transform: skewY(170deg);
+    -webkit-transform: skewY(170deg);
+    -moz-transform: skewY(170deg);
+    -ms-transform: skewY(170deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: -90px;
+    margin-right: -360px;
+  }
+  .angle2 h1 {
+    transform: skewY(170deg);
+    -webkit-transform: skewY(170deg);
+    -moz-transform: skewY(170deg);
+    -ms-transform: skewY(170deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: -120px;
+    margin-right: -420px;
+  }
+  .angle3 h1 {
+    transform: skewY(170deg);
+    -webkit-transform: skewY(170deg);
+    -moz-transform: skewY(170deg);
+    -ms-transform: skewY(170deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: -150px;
+    margin-right: -490px;
+  }
+  .angle4 {
+    transform: skewY(170deg);
+    -webkit-transform: skewY(170deg);
+    -moz-transform: skewY(170deg);
+    -ms-transform: skewY(170deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: -500px;
+  }
+}
 .angle1 h1:not(.ac_collapse) {
   position: fixed;
   right: 0;
@@ -1084,7 +1164,7 @@ figure.effect-move:hover h3 i {
   top: -2px;
   bottom: 0;
   opacity: 1;
-  width: 100%;
+  width: 90%;
   overflow-y: auto;
   z-index: 2000;
 }
@@ -1131,7 +1211,7 @@ figure.effect-move:hover h3 i {
   opacity: 1;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 90%;
   overflow-y: auto;
   z-index: 2000;
 }
@@ -1191,6 +1271,14 @@ figure.effect-move:hover h3 i {
 @media screen and (max-width: 830px) {
   .membersDiv2 {
     left: 75%;
+  }
+}
+@media screen and (max-width: 430px) {
+  #membersDiv {
+    top: 165px;
+  }
+  #membersDiv2 {
+    top: 165px;
   }
 }
 .grid {
@@ -1397,6 +1485,16 @@ figure.effect-move:hover h3 i {
     margin-right: 0;
   }
 }
+@media only screen and (max-width: 430px) {
+  .records-wrapper {
+    left: 0;
+    width: 90%;
+  }
+  .spotlight-wrapper {
+    left: 0;
+    width: 90%;
+  }
+}
 .sowHighlight {
   margin: 6em;
   margin-top: 0;
@@ -1492,6 +1590,7 @@ figure.effect-move:hover h3 i {
   background: -moz-linear-gradient(left, #333333, #8c8c8c);
   background: linear-gradient(to left, #333333, #8c8c8c);
   opacity: 0.75;
+  top: 58px;
   width: 50%;
   margin-top: 0;
   margin-bottom: 2em;
@@ -1507,13 +1606,21 @@ figure.effect-move:hover h3 i {
   background: -o-linear-gradient(left, #333333, #8c8c8c);
   background: -moz-linear-gradient(left, #333333, #8c8c8c);
   background: linear-gradient(to left, #333333, #8c8c8c);
-  top: 500px;
+  top: 40%;
   opacity: 0.75;
   width: 50%;
   height: auto;
   max-height: 100vh;
   bottom: 100px;
   overflow-y: auto;
+}
+@media screen and (max-width: 430px) {
+  #execDiv {
+    top: 88px;
+  }
+  #advisDiv {
+    top: 88px;
+  }
 }
 .years,
 .advisCommittees,

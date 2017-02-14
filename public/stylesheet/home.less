@@ -219,27 +219,46 @@ ul#myTopnav li.icon {
 }
 
 @media screen and (max-width:830px) {
-    ul#myTopnav li:not(:first-child) {
+    ul#myTopnav li:not(: first-child) {
         display: none;
-        float: left;
+        float: right;
     }
     ul#myTopnav li.icon {
         position: fixed;
-        float: right;
+        float: left;
         display: inline-block;
-        right: 10px;
+        right: 5px;
         top: 10px;
     }
 }
 
-@media screen and (max-width:830px) {
+@media screen and (min-width: 768px) and (max-width:830px) {
     ul#myTopnav.responsive {
         position: relative;
     }
     ul#myTopnav.responsive li.icon {
         position: fixed;
         right: 10px;
-        top: 10px;
+        top: 20px;
+    }
+    ul#myTopnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul#myTopnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:767px) {
+    ul#myTopnav.responsive {
+        position: relative;
+    }
+    ul#myTopnav.responsive li.icon {
+        position: fixed;
+        right: 10px;
+        top: 25px;
     }
     ul#myTopnav.responsive li {
         float: none;
@@ -619,7 +638,7 @@ figure {
     text-align: center;
     //font-size: 20px;
     position: fixed;
-    //left: 48.5%;
+    left: 48.5%;
     bottom: 75px;
     color: white;
     cursor: pointer;
@@ -634,12 +653,25 @@ figure {
 
 /* Extra small devices */
 
-@media screen and (max-width:544px) {
+@media screen and (max-width:430px) {
+    #cpyRight {
+        font-size: 6px;
+    }
+    .fa-3x {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:431px) and (max-width:544px) {
     .fa-3x {
         font-size: 20px;
     }
     #cpyRight {
         font-size: 8px;
+    }
+    #footContact {
+        padding: 0 0;
+        right: 4px;
     }
 }
 

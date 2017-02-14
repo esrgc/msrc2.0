@@ -454,14 +454,23 @@ $(document).ready(function() {
 
     // initial setup for flowtype
     $('body').flowtype({
-        minFont: 8,
+        minFont: 6,
         maxFont: 16,
         fontRatio: 45
     });
+
     $('#membersSlide').flowtype({
         minFont: 8,
         maxFont: 14,
         fontRatio: 32
     });
+
+/*
+    $('.navbar-brand').flowtype({
+        minFont: 7,
+        maxFont: 40,
+        fontRatio: 67
+    });*/
+    
     //.end doc ready function
 });
