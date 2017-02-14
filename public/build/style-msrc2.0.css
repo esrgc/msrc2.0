@@ -1571,34 +1571,91 @@ figure.effect-move:hover h3 i {
 #imgContainer .imgContainer {
   box-sizing: inherit;
   width: 100%;
-  line-height: 0;
-  font-size: 0;
 }
 #counties .image {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
   display: inline-block;
-  padding: 5px;
-  width: 33.333%;
+  padding: 2px;
+  width: 31.313%;
 }
 #counties .image img {
   vertical-align: top;
 }
+#counties .image h4 {
+  position: relative;
+  opacity: 0;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  line-height: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
 #gilligan .image {
   display: inline-block;
-  padding: 5px;
+  padding: 2px;
   width: 18.18%;
   height: 70px;
 }
 #gilligan .image img {
   vertical-align: top;
 }
+#gilligan .image h4 {
+  position: relative;
+  opacity: 0;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  line-height: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
 #gilligan2 .image {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
   display: inline-block;
-  padding: 5px;
-  width: 16.666%;
+  padding: 2px;
+  width: 18.18%;
   height: 70px;
 }
 #gilligan2 .image img {
   vertical-align: top;
+}
+#gilligan2 .image a h4 {
+  position: relative;
+  opacity: 0;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  line-height: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+#counties .image:hover {
+  position: relative;
+  background: rgba(180, 180, 180, 0.5);
+}
+#counties .image:hover a h4 {
+  background: rgba(210, 210, 210, 0.5);
+  position: absolute;
+  opacity: 1;
+  line-height: 100%;
+  -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -80px, 0);
+  transform: translate3d(0, -100%, 0) translate3d(0, -80px, 0);
+  z-index: 10;
+}
+#gilligan .image:hover,
+#gilligan2 .image:hover {
+  position: relative;
+  background: rgba(180, 180, 180, 0.5);
+}
+#gilligan .image:hover a h4,
+#gilligan2 .image:hover a h4 {
+  background: rgba(210, 210, 210, 0.5);
+  position: absolute;
+  opacity: 1;
+  line-height: 100%;
+  -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -30px, 0);
+  transform: translate3d(0, -100%, 0) translate3d(0, -30px, 0);
+  z-index: 10;
 }
 .partners-wrapper {
   display: inline-block;
