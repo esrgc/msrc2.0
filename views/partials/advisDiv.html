@@ -1,8 +1,8 @@
 <div class="col-lg-8 col-sm-6 col-xs-12 pull-left">
     <ul class="list-unstyled" align="left">
-        <li class="advisCommittees">
+        <li class="advisCommittees" >
             <p>Comprehensive Economic Development Strategy (CEDS)</p>
-            <ul class="members list-unstyled" align="left">
+            <ul class="members list-unstyled" align="left" id="comCEDS">
                 <li>Adelaide Eckardt, Senator - Maryland District 37</li>
                 <li>Alan Silverstein, Talbot County Chamber of Commerce</li>
                 <li>Allen Nelson, Dorchester County - Cambridge Resident</li>
@@ -62,7 +62,7 @@
         </li>
         <li class="advisCommittees">
             <p>Emercency Management</p>
-            <ul class="members list-unstyled" align="left">
+            <ul class="members list-unstyled" align="left" id="comEM">
                 <li>Ken Decker, Caroline County Administer</li>
                 <li>Bryan Ebling, Caroline County Emergency Services Director</li>
                 <li>Jeremy Goldman, Dorchester County Emergency Services Director and County Manager</li>
@@ -70,9 +70,9 @@
                 <li>Andy Hollis, Talbot County Manager</li>
             </ul>
         </li>
-        <li class="advisCommittees">
+        <li class="advisCommittees" >
             <p>Geographic Information Science (GIS)</p>
-            <ul class="members list-unstyled" align="left">
+            <ul class="members list-unstyled" align="left" id="comGIS">
                 <li>Joe Miller, Caroline County GIS Coordinator</li>
                 <li>Jim McCormick, Caroline County</li>
                 <li>Chris Kepheart, Caroline County</li>
@@ -107,15 +107,15 @@
         </li>
         <li class="advisCommittees">
             <p>Information Technology</p>
-            <ul class="members list-unstyled" align="left">
+            <ul class="members list-unstyled" align="left" id="comIT">
                 <li>Jim McCormick, Jr., Caroline County Department of Information Technologies Director</li>
                 <li>Donald Keyes, Dorchester County Technology Department Director</li>
                 <li>Parker Durham, Talbot County Information Technology Department Director</li>
             </ul>
         </li>
-        <li class="advisCommittees">
+        <li class="advisCommittees" >
             <p>Maryland Upper Shore Transit (MUST)</p>
-            <ul class="members list-unstyled" align="left">
+            <ul class="members list-unstyled" align="left" id="comMUST">
                 <li>John General, MUST Coordinator</li>
                 <li>Santo Grande, DCS/DCT President and Chief Executive Officer</li>
                 <li>Jerome Stanley, DCT Transportation Coordinator</li>
@@ -143,9 +143,6 @@
 </div>
 <div class="col-lg-4 col-sm-6 col-xs-12 pull-right">
     <ul class="list-unstyled">
-        <li>
-            <p><u>Meeting Minutes</u></p>
-        </li>
         <!-- append output from python path_tools.py here -->
         <!-- example run dialoge from terminal 
 
@@ -154,7 +151,22 @@
 
         output will be based on windows file path not unix style
         with Sublime find and replace root with . and \ with /
-        -->{{> advis_min}}
+        -->
+        <div class="advisMins" id="advisMin-CEDS">
+            {{> advis_min-CEDS}}
+        </div>
+        <div class="advisMins" id="advisMin-EM">
+            {{> advis_min-EM}}
+        </div>
+        <div class="advisMins" id="advisMin-GIS">
+            {{> advis_min-GIS}}
+        </div>
+        <div class="advisMins" id="advisMin-IT">
+            {{> advis_min-IT}}
+        </div>
+        <div class="advisMins" id="advisMin-MUST">
+            {{> advis_min-MUST}}
+        </div>
         <!--end python output-->
     </ul>
     <br>

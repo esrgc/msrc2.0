@@ -1,0 +1,284 @@
+//import other css
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+@import "home.less";
+@import "about.less";
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////
+// Media queries
+////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+@media screen and (max-width:1550px) {
+    .angle1 {
+        margin-right: -170px;
+    }
+    .angle2 {
+        margin-right: -300px;
+    }
+    .angle3 {
+        margin-right: -450px;
+    }
+    .angle4 {
+        margin-right: -650px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #membersDiv2 {
+        width: 50%;
+        left: 50%;
+        right: 5%;
+    }
+    #membersDiv {
+        width: 50%;
+    }
+}
+
+@media only screen and( max-width: 1040px) {
+    .gridItem {
+        width: 32.33%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .grid-box-spotlight {
+        width: 32.33%;
+    }
+}
+
+@media only screen and (min-width: 701px) and ( max-width: 1040px) {
+    .records-gridItem {
+        width: 99%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .grid-box-records {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:830px) {
+    .membersDiv2 {
+        left: 75%;
+    }
+    .angle1 {
+        margin-right: -220px;
+        bottom: -150px;
+    }
+    .angle2 {
+        margin-right: -350px;
+        bottom: -150px;
+    }
+    .angle3 {
+        margin-right: -500px;
+        bottom: -150px;
+    }
+    .angle4 {
+        margin-right: -700px;
+        bottom: -150px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .fa-3x {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .footer_buffer {
+        padding-top: 60px;
+    }
+    /*    .advisMins {
+        top: -100px;
+        bottom: -60px;
+        padding-bottom: 60px;
+    }*/
+}
+
+
+/* Small devices */
+
+@media screen and (min-width:545px) and (max-width:768px) {
+    .fa-3x {
+        font-size: 30px;
+    }
+}
+
+
+/* Extra small devices */
+
+@media screen and (min-width:431px) and (max-width:544px) {
+    .fa-3x {
+        font-size: 20px;
+    }
+    #cpyRight {
+        font-size: 8px;
+    }
+    #footContact {
+        padding: 0 0;
+        right: 4px;
+    }
+}
+
+@media screen and (max-width:677px) {
+    .angle1 {
+        .skew2;
+        bottom: -80px;
+        margin-right: -260px;
+    }
+    .angle2 {
+        .skew2;
+        bottom: -140px;
+        margin-right: -370px
+    }
+    .angle3 {
+        .skew2;
+        bottom: -190px;
+        margin-right: -500px;
+    }
+    .angle4 {
+        .skew2;
+        bottom: -500px;
+    }
+    .angle-text.ac_collapse {
+        .antiSkew2;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .grid {
+        left: 0;
+    }
+    #recordsImages {
+        width: 99%;
+        margin-left: 0;
+    }
+    .records-gridItem {
+        width: 99%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #images {
+        width: 100%;
+        margin-left: 0;
+    }
+    .gridItem {
+        width: 98%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .grid-box-spotlight {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 659px) {
+    .footer_buffer {
+        padding-top: 90px;
+    }
+    #footer_button {
+        bottom: 92px;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    .footer_buffer {
+        padding-top: 73px;
+    }
+    #footer_button {
+        bottom: 75px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    // footer text, icons and parts
+    #cpyRight {
+        font-size: 6px;
+    }
+    .fa-3x {
+        font-size: 15px;
+    }
+    .footer-bottom {
+        padding-top: 20px;
+    }
+    #footer_button {
+        bottom: 71px;
+    }
+    // masonry wrappers and slidy div icons
+    .records-wrapper {
+        left: 0;
+        width: 90%;
+    }
+    .spotlight-wrapper {
+        left: 0;
+        width: 90%;
+    }
+    .slide-toggle-close {
+        font-size: 15px;
+    }
+    .slide-toggle-open {
+        font-size: 15px;
+    }
+    // slidy divs and internal parts
+    .angle1 {
+        .skew2;
+        bottom: 20px;
+        margin-right: -500px;
+    }
+    .angle1:not(.ac_collapse) {
+        height: 75%;
+    }
+    .angle2 {
+        .skew2;
+        bottom: -20px;
+        margin-right: -550px
+    }
+    .angle2:not(.ac_collapse) {
+        height: 75%;
+    }
+    .angle3 {
+        .skew2;
+        bottom: -55px;
+        margin-right: -600px;
+    }
+    .angle3:not(.ac_collapse) {
+        height: 75%;
+    }
+    .angle4 {
+        .skew2;
+        bottom: -500px;
+    }
+    #about-landing {
+        .font-blocky-lt;
+        top: 100px;
+        left: 80px;
+        overflow: hidden;
+    }
+    #membersDiv {
+        top: 65px;
+    }
+    .membersDiv_open ul li {
+        h3 {
+            font-size: 15px;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
+    #membersDiv2 {
+        top: 65px;
+    }
+    .membersDiv2_open ul li {
+        h3 {
+            font-size: 15px;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
+    #execDiv {
+        top: 65px;
+    }
+    #advisDiv {
+        top: 65px;
+    }
+}

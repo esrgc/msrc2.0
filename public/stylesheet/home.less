@@ -180,7 +180,7 @@ p {
     padding-top: 10px;
 }
 
-.nav-links {
+#nav-links p{
     font-family: 'Padauk', sans-serif;
     color: @logo-color;
 }
@@ -221,19 +221,20 @@ ul#myTopnav li.icon {
 @media screen and (min-width: 310px) and (max-width:830px) {
     ul#myTopnav li:not(:first-child) {
         display: none;
-        float: right;
+        float: left;
     }
     ul#myTopnav li.icon {
         position: fixed;
-        float: left;
+        float: right;
         display: inline-block;
         right: 20px;
         top: 15px;
         padding-left: 15px;
         z-index: 10;
     }
-    .nav-links {
-        right: 35px;
+    #nav-links p{
+        right: 10px;
+
     }
 }
 
@@ -256,8 +257,9 @@ ul#myTopnav li.icon {
         display: block;
         text-align: left;
     }
-    .nav-links {
-right: 35px;
+    #nav-links p{
+        position: relative;
+        padding-right: 40px;
     }
 }
 
@@ -660,47 +662,7 @@ figure {
 }
 
 
-/* Extra small devices */
 
-@media screen and (max-width:430px) {
-    #cpyRight {
-        font-size: 6px;
-    }
-    .fa-3x {
-        font-size: 15px;
-    }
-}
-
-@media screen and (min-width:431px) and (max-width:544px) {
-    .fa-3x {
-        font-size: 20px;
-    }
-    #cpyRight {
-        font-size: 8px;
-    }
-    #footContact {
-        padding: 0 0;
-        right: 4px;
-    }
-}
-
-
-/* Small devices */
-
-@media screen and (min-width:545px) and (max-width:768px) {
-    .fa-3x {
-        font-size: 30px;
-    }
-}
-
-
-/* Large devices */
-
-@media screen and (min-width:800px) {
-    .fa-3x {
-        font-size: 42px;
-    }
-}
 
 #footer_button.is-open {
     color: #515151;
@@ -734,38 +696,7 @@ figure {
     z-index: 900;
 }
 
-@media screen and (max-width: 769px) {
-    .footer_buffer {
-        padding-top: 60px;
-    }
-}
 
-@media screen and (max-width: 659px) {
-    .footer_buffer {
-        padding-top: 90px;
-    }
-    #footer_button {
-        bottom: 92px;
-    }
-}
-
-@media screen and (max-width: 544px) {
-    .footer_buffer {
-        padding-top: 73px;
-    }
-    #footer_button {
-        bottom: 75px;
-    }
-}
-
-@media screen and (max-width: 432px) {
-    .footer-bottom {
-        padding-top: 20px;
-    }
-    #footer_button {
-        bottom: 71px;
-    }
-}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////

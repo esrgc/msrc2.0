@@ -1,22 +1,4 @@
-/*
- * Custom jQuery functions 
- * for MSRC2.0
- * 
- * Author: Carl Flint, ESRGC
- */
-//
-
-// responsive nav function
-function mobileNav() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "nav navbar-nav navbar-right text-vertical-center") {
-        x.className += " responsive";
-    } else {
-        x.className = "nav navbar-nav navbar-right text-vertical-center";
-    }
-}
-
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $(window).load(function() {
     // for my first trick now you see them...no you dont
     // hide alot of things that can open later
@@ -24,7 +6,7 @@ $(window).load(function() {
     $("#execDiv").hide();
     $("#advisDiv").hide();
     $('#membersDiv').hide();
-    $("#membersDiv2, #votingMem, #nonVoting").hide();
+    $("#membersDiv2, #votingMem, #nonVoting, .membersDiv2_bg").hide();
     $("#masonry-container-spotlight").hide();
     $("#masonry-container-records").hide();
     $('#images, #recordsImages').hide();
@@ -41,39 +23,32 @@ $(window).load(function() {
     $("#meetMinutes").hide();
     $("#byLaws").hide();
     $("#theMSRC").hide();
-
-
+    $(".advisMins").hide();
+    $(".members").hide();
 });
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* 
+ * Author: Carl Flint, ESRGC
+ */
 
+// responsive nav function
+function mobileNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav navbar-nav navbar-right text-vertical-center") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav navbar-nav navbar-right text-vertical-center";
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+ * Author: Carl Flint
+ */
+
+// populate a button to return to top of page when scrolling down
 $(document).ready(function() {
-
-    // carousel rotation speed
-    $('.carousel').carousel({
-        interval: 5000 //set speed in ms
-    });
-
-    // helper function for masonry and imagesLoaded
-    $.fn.masonryImagesReveal = function($items) {
-        var msnry = this.data('masonry');
-        var itemSelector = msnry.options.itemSelector;
-        // hide by default
-        $items.hide();
-        // append to container
-        this.append($items);
-        $items.imagesLoaded().progress(function(imgLoad, image) {
-            // get item
-            // image is imagesLoaded class, not <img>, <img> is image.img
-            var $item = $(image.img).parents(itemSelector);
-            // un-hide item
-            $item.show();
-            // masonry does its thing
-            msnry.appended($item);
-        });
-
-        return this;
-    };
-
-
     //#to-top button appears after scrolling
     var fixed = false;
     $(document).scroll(function() {
@@ -98,6 +73,53 @@ $(document).ready(function() {
             }
         }
     });
+});
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+ * Custom jQuery functions 
+ * for MSRC2.0
+ * 
+ * Author: Carl Flint, ESRGC
+ */
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+$(window).load(function() {
+    // helper function for masonry and imagesLoaded
+    $.fn.masonryImagesReveal = function($items) {
+        var msnry = this.data('masonry');
+        var itemSelector = msnry.options.itemSelector;
+        // hide by default
+        $items.hide();
+        // append to container
+        this.append($items);
+        $items.imagesLoaded().progress(function(imgLoad, image) {
+            // get item
+            // image is imagesLoaded class, not <img>, <img> is image.img
+            var $item = $(image.img).parents(itemSelector);
+            // un-hide item
+            $item.show();
+            // masonry does its thing
+            msnry.appended($item);
+        });
+
+        return this;
+    };
+
+    var $msrySpotlight = $('#masonry-container-spotlight').masonry();
+    //$msrySpotlight.masonryImagesReveal($('#images').find('.gridItem'));
+    $msrySpotlight.masonry('layout');
+
+    var $msryRecords = $('#masonry-container-records').masonry();
+    //$msryRecords.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
+    $msryRecords.masonry('layout');
+});
+
+$(document).ready(function() {
+
+    // carousel rotation speed
+    $('.carousel').carousel({
+        interval: 5000 //set speed in ms
+    });
 
     /*
     // zAccordion About pop out
@@ -110,6 +132,7 @@ $(document).ready(function() {
         // the magic
         */
         $(this).find(".slide-toggle-close").toggleClass("slide-toggle-open");
+        $(this).parent('div').toggleClass("ac_collapse");
         $(this).toggleClass("ac_collapse");
         /*
         //hide about text when opening accordion div
@@ -117,15 +140,15 @@ $(document).ready(function() {
         $('#about-landing').toggle('fast');
         /*
         //reveal accordion divs hidden text
-        //need to bundle this snippit into an if else function
-        //$('#members-div > p').toggleClass('ac_collapse');
-
         //test to get jquery traverse tree
         */
         var attrID = $(this).attr('id');
         var $spotlight = $('#masonry-container-spotlight').masonry();
         var $records = $('#masonry-container-records').masonry();
         var $textBox = $('.textBox');
+
+        alert(attrID);
+        console.log(attrID);
 
         // helper function for masonry and imagesLoaded
         $.fn.masonryImagesReveal = function($items) {
@@ -149,53 +172,59 @@ $(document).ready(function() {
         };
 
         if (attrID == 'btn1') {
-
+            
             $("#membersDiv").toggle('slide');
             $("#membersDiv2").toggle('slide');
 
         } else if (attrID == 'btn2') {
+            
             $('.spotlight-wrapper').css({ "z-index": "1000" });
-
             // init masonry js with imagesLoaded for spotlight
-            var $spotlight = $('#masonry-container-spotlight').masonry({
+            var $spotlightMasonry = $('#masonry-container-spotlight').masonry({
                 columnWidth: '.grid-box-spotlight',
                 itemSelector: '.gridItem',
+                percentPosition: true,
                 gutter: 1,
-                stagger: 45,
+                //stagger: 45,
+                //containerStyle: null,
+                initLayout: false
             });
 
-            $spotlight.masonryImagesReveal($('#images').find('.gridItem'));
-
-            //$("#masonry-container-spotlight").masonry('revealItemElements','.gridItem');
+            $spotlightMasonry.masonryImagesReveal($('#images').find('.gridItem'));
             $("#masonry-container-spotlight").toggle('slow');
+            $spotlightMasonry.masonry();
 
-            $spotlight.masonry('layout');
             if ($('.textBox').is(":visible")) {
                 $('.textBox').hide("slow");
             }
 
-        } else if (attrID == 'btn3') {
-            $('.records-wrapper').css({ "z-index": "1000" });
-            var $hideSpotlight = $('#masonry-container-spotlight').masonry();
-            $hideSpotlight.hide();
-
-            // init masonry container for records
-            var $records = $('#masonry-container-records').masonry({
-                columnWidth: '.grid-box-records',
-                itemSelector: '.records-gridItem',
-                gutter: 1,
-                stagger: 45,
+            $spotlightMasonry.on('layoutComplete', function() {
+                console.log('complete');
             });
 
-            $records.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
+        } else if (attrID == 'btn3') {
+           
+            $('.records-wrapper').css({ "z-index": "1000" });
+            // init masonry container for records
+            var $recordsMasonry = $('#masonry-container-records').masonry({
+                columnWidth: '.grid-box-records',
+                itemSelector: '.records-gridItem',
+                percentPosition: true,
+                gutter: 1,
+                //stagger: 45,
+                containerStyle: null,
+                initLayout: false
+            });
 
+            $recordsMasonry.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
 
             $("#masonry-container-records").toggle('slow');
 
-            $records.masonry('layout');
             if ($('.textBox').is(":visible")) {
                 $('.textBox').hide("slow");
             }
+            //$recordsMasonry.masonry("layoutItems", '.records-gridItem', true );
+            $recordsMasonry.masonry();
         } else {
 
         }
@@ -356,6 +385,18 @@ $(document).ready(function() {
     });
 
 
+
+    //.end doc ready function
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+* Author: Carl Flint
+*/
+
+$(document).ready(function() {
     // setup expanding divs for voting members 
     var $votingMem = $('#votingMem-button');
     $votingMem.on('click', function(e) {
@@ -364,7 +405,7 @@ $(document).ready(function() {
         //var attrID = $(this).attr('id');
         //alert(attrID);
         if ($("#nonVoting").is(":visible")) {
-            $("#nonVoting").toggle("slide");
+            $("#nonVoting, .membersDiv2_bg").toggle("slide");
         }
 
         if ($("#votingMem").is(":hidden")) {
@@ -374,12 +415,12 @@ $(document).ready(function() {
                 "opacity": "1"
             });
 
-            $("#membersDiv2, #votingMem").fadeIn(875);
+            $("#membersDiv2, #votingMem, .membersDiv2_bg").fadeIn(875);
 
 
         } else {
 
-            $("#membersDiv2, #votingMem").fadeOut(850);
+            $("#membersDiv2, #votingMem, .membersDiv2_bg").fadeOut(850);
             $("#membersDiv2").animate({
                 "z-index": "0",
                 "opacity": "0"
@@ -397,7 +438,7 @@ $(document).ready(function() {
         //var attrID = $(this).attr('id');
         //alert(attrID);
         if ($("#votingMem").is(":visible")) {
-            $("#votingMem").toggle("slide");
+            $("#votingMem, .membersDiv2_bg").toggle("slide");
         }
 
         if ($("#nonVoting").is(":hidden")) {
@@ -407,9 +448,9 @@ $(document).ready(function() {
                 "opacity": "1"
             });
 
-            $("#membersDiv2, #nonVoting ").fadeIn(875);
+            $("#membersDiv2, #nonVoting, .membersDiv2_bg").fadeIn(875);
         } else {
-            $("#membersDiv2, #nonVoting ").fadeOut(850);
+            $("#membersDiv2, #nonVoting, .membersDiv2_bg").fadeOut(850);
 
             $("#membersDiv2").css({
                 "z-index": "0",
@@ -419,6 +460,17 @@ $(document).ready(function() {
         }
 
     });
+
+
+});
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+* Author: Carl Flint, ESRGC
+*/
+
+
+$(document).ready(function() {
 
     //hide execDiv untill  activated by button
     //$("#execDiv").hide();
@@ -447,10 +499,73 @@ $(document).ready(function() {
         $("#rightDiv").find('#advisDiv').toggle("slide");
     });
     //hide expanding advisCommittees descriptions
-    $(".members").hide();
-    $(".advisCommittees").click(function() {
-        $(this).find('ul').slideToggle();
+
+    /*move to top when done*/
+
+    var $membersUL = $(".members");
+    var $advisMins = $(".advisMins");
+    var $comOpen = $(".advisCommittees").click(function() {
+
+        var $header = $(this);
+        //get next element
+        //alert($header.attr('id'));
+        var $content = $header.find('ul');
+        // open the content needed
+        $content.stop(true, true).slideToggle(500, function() {
+            //execute this after toggle slide is done
+            //alert($content.attr('id'));
+            $header.addClass(function() {
+                return $content.is(":visible");
+            });
+        });
+        // toggle minutes based on open members
+        if ($content.attr('id') == 'comGIS') {
+            $('#advisMin-GIS').slideToggle(500);
+            $('#advisMin-CEDS').hide();
+            $('#advisMin-EM').hide();
+            $('#advisMin-IT').hide();
+            $('#advisMin-MUST').hide();
+        } else if ($content.attr('id') == 'comCEDS') {
+            $('#advisMin-CEDS').slideToggle(500);
+            $('#advisMin-GIS').hide();
+            $('#advisMin-EM').hide();
+            $('#advisMin-IT').hide();
+            $('#advisMin-MUST').hide();
+        } else if ($content.attr('id') == 'comEM') {
+            $('#advisMin-EM').slideToggle(500);
+            $('#advisMin-GIS').hide();
+            $('#advisMin-CEDS').hide();
+            $('#advisMin-IT').hide();
+            $('#advisMin-MUST').hide();
+        } else if ($content.attr('id') == 'comIT') {
+            $('#advisMin-IT').slideToggle(500);
+            $('#advisMin-GIS').hide();
+            $('#advisMin-CEDS').hide();
+            $('#advisMin-EM').hide();
+            $('#advisMin-MUST').hide();
+        } else if ($content.attr('id') == 'comMUST') {
+            $('#advisMin-MUST').slideToggle(500);
+            $('#advisMin-GIS').hide();
+            $('#advisMin-CEDS').hide();
+            $('#advisMin-EM').hide();
+            $('#advisMin-IT').hide();
+        } else {
+            $('#advisMin-GIS').hide();
+            $('#advisMin-CEDS').hide();
+            $('#advisMin-EM').hide();
+            $('#advisMin-IT').hide();
+            $('#advisMin-MUST').hide();
+        }
+        //$comOpen.not($header);
+        $membersUL.not($content).stop(true, true).slideUp();
+
+
     });
+
+});
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$(document).ready(function() {
 
     // initial setup for flowtype
     $('body').flowtype({
@@ -464,13 +579,16 @@ $(document).ready(function() {
         maxFont: 14,
         fontRatio: 32
     });
+    $('.angle-text ac_collapse').flowtype({
+        minFont: 8,
+        maxFont: 20
+    });
+    /*
+        $('.navbar-brand').flowtype({
+            minFont: 7,
+            maxFont: 40,
+            fontRatio: 67
+        */
 
-/*
-    $('.navbar-brand').flowtype({
-        minFont: 7,
-        maxFont: 40,
-        fontRatio: 67
-    });*/
-    
-    //.end doc ready function
 });
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
