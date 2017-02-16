@@ -70,8 +70,8 @@ $(document).ready(function() {
         var $records = $('#masonry-container-records').masonry();
         var $textBox = $('.textBox');
 
-        alert(attrID);
-        console.log(attrID);
+        //alert(attrID);
+        //console.log(attrID);
 
         // helper function for masonry and imagesLoaded
         $.fn.masonryImagesReveal = function($items) {

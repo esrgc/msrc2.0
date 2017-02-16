@@ -5,7 +5,36 @@
 @nav-color: rgba(5, 5, 5, 0.6);
 @footer-color: #071e35;
 @images: "../img";
-//Mixins
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+// fonts
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+.font-cursive {
+    @font-face {
+        font-family: "Alex Brush script=latin rev=2";
+        font-style: normal;
+        //font-weight: 400;
+        src: url("https://fonts.gstatic.com/s/alexbrush/v6/IdwaSrUcr-IskDo5YUNTVfk_vArhqVIZ0nv9q090hN8.woff2") format("woff2");
+        unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    }   
+}
+
+.logo-set-cursive {
+    
+    .font-cursive;
+    font-family: 'Alex Brush', cursive;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+    color: @logo-color;
+    float: left;
+}
+
+.logo-set-std {
+    font-family: 'Padauk', sans-serif;
+    color: @logo-color;
+    float: left;
+}
+
 .font-helvetica {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -46,7 +75,7 @@ footer {
 }
 
 body {
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 95px;
 }
 
@@ -97,8 +126,6 @@ a {
 
 a:hover {
     color: @hover-color;
-    //text-decoration: none;
-    //.shaded_bg-drk;
 }
 
 p {
@@ -171,8 +198,9 @@ p {
     color: @logo-color;
 }
 
-.navbar-header a {
-    height: 57px;
+.navbar-header {
+    position: relative;
+    height: 60px;
 }
 
 .navbar-brand {
@@ -376,89 +404,91 @@ hr.small {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-.logo-set-cursive {
-    font-family: 'Alex Brush', cursive;
-    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
-    color: @logo-color;
-    float: left;
-}
-
-.logo-set-std {
-    font-family: 'Padauk', sans-serif;
-    color: @logo-color;
-    float: left;
+#logoBrand {
+    display: inline-block;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    height: 56px;
 }
 
 #logo_lrg {
     display: inline-block;
-    position: absolute;
-    margin-top: 0;
-    margin-bottom: -20px;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0;
+    //margin-bottom: -20px;
     //font-size: 36px;
-    line-height: 40%;
+    //line-height: 40%;
     .logo-set-cursive;
 }
 
 #logo_med {
     display: inline-block;
-    position: absolute;
-    margin-left: 158px;
-    margin-top: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    //margin-left: 158px;
+    margin: 0 0 10px 10px;
     //font-size: 27px;
     //padding-top: 4px;
-    line-height: 30%;
+    //line-height: 30%;
     .logo-set-cursive;
 }
 
 #logo_sm {
     display: inline-block;
-    position: absolute;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin: -12px 0 0 0;
     //font-size: 13px;
-    line-height: 60%;
+    //line-height: 60%;
     .logo-set-std;
 }
 
-@media screen and (max-width:570px) {
-    #logo_med {
-        margin-left: 137px;
-    }
-}
+// @media screen and (max-width:570px) {
+//     #logo_med {
+//         margin-left: 137px;
+//     }
+// }
 
-@media screen and (max-width:485px) {
-    #logo_sm {
-        padding-top: 20px;
-    }
-    #logo_med {
-        line-height: 90%;
-        padding-bottom: 5px;
-    }
-    #logo_lrg {
-        font-size: 33px;
-        margin-bottom: 0;
-        line-height: 100%;
-    }
-    .navbar-header {
-        height: 87px;
-    }
-}
+// @media screen and (max-width:485px) {
+//     #logo_sm {
+//         padding-top: 20px;
+//     }
+//     #logo_med {
+//         line-height: 90%;
+//         padding-bottom: 5px;
+//     }
+//     #logo_lrg {
+//         font-size: 33px;
+//         margin-bottom: 0;
+//         line-height: 100%;
+//     }
+//     .navbar-header {
+//         height: 87px;
+//     }
+// }
 
-@media screen and (max-width:434px) {
-    #logo_sm {
-        font-size: 8px;
-        padding-top: 27px;
-    }
-    #logo_med {
-        line-height: 90%;
-        padding-bottom: 5px;
-        margin-left: 145px;
-    }
-    #logo_lrg {
-        font-size: 40px;
-        margin-left: -20px;
-        margin-bottom: 0;
-        line-height: 100%;
-    }
-}
+// @media screen and (max-width:434px) {
+//     #logo_sm {
+//         font-size: 8px;
+//         padding-top: 27px;
+//     }
+//     #logo_med {
+//         line-height: 90%;
+//         padding-bottom: 5px;
+//         margin-left: 145px;
+//     }
+//     #logo_lrg {
+//         //font-size: 40px;
+//         //margin-left: -20px;
+//         margin-bottom: 0;
+//         line-height: 100%;
+//     }
+// }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
