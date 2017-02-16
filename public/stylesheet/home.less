@@ -17,11 +17,10 @@
         //font-weight: 400;
         src: url("https://fonts.gstatic.com/s/alexbrush/v6/IdwaSrUcr-IskDo5YUNTVfk_vArhqVIZ0nv9q090hN8.woff2") format("woff2");
         unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-    }   
+    }
 }
 
 .logo-set-cursive {
-    
     .font-cursive;
     font-family: 'Alex Brush', cursive;
     text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
@@ -203,12 +202,23 @@ p {
     height: 60px;
 }
 
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#logoLarge {
+    //.grayscale;
+    height: 58px;
+    //background: @logo-color;
+}
+
 .navbar-brand {
     padding: 0 0;
     padding-top: 10px;
 }
 
-#nav-links p{
+#nav-links p {
     font-family: 'Padauk', sans-serif;
     color: @logo-color;
 }
@@ -247,7 +257,7 @@ ul#myTopnav li.icon {
 }
 
 @media screen and (min-width: 310px) and (max-width:830px) {
-    ul#myTopnav li:not(:first-child) {
+    ul#myTopnav li:not(: first-child) {
         display: none;
         float: left;
     }
@@ -260,9 +270,8 @@ ul#myTopnav li.icon {
         padding-left: 15px;
         z-index: 10;
     }
-    #nav-links p{
+    #nav-links p {
         right: 10px;
-
     }
 }
 
@@ -285,7 +294,7 @@ ul#myTopnav li.icon {
         display: block;
         text-align: left;
     }
-    #nav-links p{
+    #nav-links p {
         position: relative;
         padding-right: 40px;
     }
@@ -447,48 +456,6 @@ hr.small {
     //line-height: 60%;
     .logo-set-std;
 }
-
-// @media screen and (max-width:570px) {
-//     #logo_med {
-//         margin-left: 137px;
-//     }
-// }
-
-// @media screen and (max-width:485px) {
-//     #logo_sm {
-//         padding-top: 20px;
-//     }
-//     #logo_med {
-//         line-height: 90%;
-//         padding-bottom: 5px;
-//     }
-//     #logo_lrg {
-//         font-size: 33px;
-//         margin-bottom: 0;
-//         line-height: 100%;
-//     }
-//     .navbar-header {
-//         height: 87px;
-//     }
-// }
-
-// @media screen and (max-width:434px) {
-//     #logo_sm {
-//         font-size: 8px;
-//         padding-top: 27px;
-//     }
-//     #logo_med {
-//         line-height: 90%;
-//         padding-bottom: 5px;
-//         margin-left: 145px;
-//     }
-//     #logo_lrg {
-//         //font-size: 40px;
-//         //margin-left: -20px;
-//         margin-bottom: 0;
-//         line-height: 100%;
-//     }
-// }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -691,9 +658,6 @@ figure {
     transition: All 1s ease;
 }
 
-
-
-
 #footer_button.is-open {
     color: #515151;
 }
@@ -725,8 +689,6 @@ figure {
     width: 100%;
     z-index: 900;
 }
-
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////

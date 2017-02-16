@@ -7,6 +7,72 @@
 // Media queries
 ////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
+////////////////////////////////////
+
+/* Landscape small device */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
+/*and (-webkit-min-device-pixel-ratio: 2)*/
+
+and (orientation: landscape) {
+    .navbar.navbar-fixed-bottom,
+    .footer_button_div {
+        position: fixed;
+        bottom: 10px;
+        padding-bottom: -10px;
+    }
+    #footer_button {
+        position: fixed;
+        bottom: 35px;
+        padding-bottom: -35px;
+        left: 50%;
+    }
+    #footer_higher #footer_content {
+        height: 210px;
+        //overflow-y: auto;
+    }
+    .footer-bottom {
+        //display: none;
+        //bottom: -110px;
+        font-size: 8px;
+    }
+    #about-landing {
+        .font-blocky-lt;
+        top: 65px;
+        left: 25px;
+        overflow: hidden;
+    }
+    .angle1 {
+        .skew;
+        bottom: 120px;
+        margin-right: -320px;
+    }
+    .angle1:not(.ac_collapse) {
+        height: 60%;
+    }
+    .angle2 {
+        .skew;
+        bottom: 120px;
+        margin-right: -320px
+    }
+    .angle2:not(.ac_collapse) {
+        height: 60%;
+    }
+    .angle3 {
+        .skew;
+        bottom: 120px;
+        margin-right: -320px;
+    }
+    .angle3:not(.ac_collapse) {
+        height: 60%;
+    }
+    .angle4 {
+        .skew;
+        bottom: -500px;
+    }
+}
+
+//////////////////////////////////////////////////////
 @media screen and (max-width:1550px) {
     .angle1 {
         margin-right: -170px;
@@ -175,9 +241,9 @@
     .footer_buffer {
         padding-top: 90px;
     }
-    #footer_button {
-        bottom: 92px;
-    }
+    // #footer_button {
+    //     bottom: 92px;
+    // }
 }
 
 @media screen and (max-width: 544px) {
