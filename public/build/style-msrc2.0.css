@@ -300,7 +300,7 @@ ul#myTopnav li.icon {
   display: none;
 }
 @media screen and (min-width: 310px) and (max-width: 830px) {
-  ul#myTopnav li:not(: first-child) {
+  ul#myTopnav li:not(:first-child) {
     display: none;
     float: left;
   }
