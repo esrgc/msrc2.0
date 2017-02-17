@@ -1925,8 +1925,8 @@ figure.effect-move:hover h3 i {
   }
   #footer_button {
     position: fixed;
-    bottom: 35px;
-    padding-bottom: -35px;
+    bottom: 30px;
+    padding-bottom: -30px;
     left: 50%;
   }
   #footer_higher #footer_content {
