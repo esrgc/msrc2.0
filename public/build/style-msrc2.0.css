@@ -1154,7 +1154,7 @@ figure.effect-move:hover h3 i {
 .membersDiv_open ul li {
   left: 100px;
   margin: 0 auto;
-  padding: 25px 20px;
+  padding: 10px 20px;
   text-align: center;
 }
 .membersDiv_bg {
@@ -1236,6 +1236,9 @@ figure.effect-move:hover h3 i {
   color: #e6e6e6;
   margin-top: 0;
   margin-bottom: 0.5em;
+}
+#nonVoting-button {
+  padding-top: 10px;
 }
 .grid {
   display: block;
@@ -1922,8 +1925,8 @@ figure.effect-move:hover h3 i {
   }
   #footer_button {
     position: fixed;
-    bottom: 35px;
-    padding-bottom: -35px;
+    bottom: 52px;
+    padding-bottom: -52px;
     left: 50%;
   }
   #footer_higher #footer_content {
@@ -1934,7 +1937,7 @@ figure.effect-move:hover h3 i {
     margin: 10px 0;
   }
   .footer_buffer {
-    padding-top: 50px;
+    padding-top: 55px;
   }
   .footer-bottom,
   .fa-3x {
@@ -2096,8 +2099,8 @@ figure.effect-move:hover h3 i {
   }
   #footer_button {
     position: fixed;
-    bottom: 35px;
-    padding-bottom: -35px;
+    bottom: 51px;
+    padding-bottom: -51px;
     left: 50%;
   }
   #footer_higher #footer_content {
@@ -2377,6 +2380,9 @@ figure.effect-move:hover h3 i {
   #membersDiv,
   #membersDiv2 {
     top: 55px;
+  }
+  hr {
+    margin: 10px 0;
   }
   #membersDiv,
   #membersDiv2 {
