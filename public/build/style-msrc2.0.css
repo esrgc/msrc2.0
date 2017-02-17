@@ -2046,6 +2046,10 @@ figure.effect-move:hover h3 i {
     width: 65%;
     top: 49px;
   }
+  #advisButton li h2,
+  #execButton li h2 {
+    font-size: 18px;
+  }
   .archive_months,
   .members {
     margin-left: 5px;
