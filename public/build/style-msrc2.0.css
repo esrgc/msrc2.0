@@ -1294,9 +1294,8 @@ figure.effect-move:hover h3 i {
   position: fixed;
   float: left;
   text-align: center;
-  width: 90%;
+  width: 100%;
   top: 140px;
-  left: 35px;
   padding: 0;
   margin: 0;
   right: 0;
@@ -1450,7 +1449,7 @@ figure.effect-move:hover h3 i {
   left: 0;
   bottom: 0;
   height: 100%;
-  width: 50%;
+  width: 35%;
   z-index: 100;
   text-align: center;
 }
@@ -1460,7 +1459,7 @@ figure.effect-move:hover h3 i {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #e6e6e6;
   top: 220px;
-  width: 50%;
+  width: 35%;
   left: 25%;
   z-index: 200;
 }
@@ -1479,7 +1478,7 @@ figure.effect-move:hover h3 i {
   padding-bottom: -60px;
   overflow-y: auto;
   height: 100vh;
-  width: 50%;
+  width: 65%;
   z-index: 75;
   text-align: center;
 }
@@ -1501,7 +1500,8 @@ figure.effect-move:hover h3 i {
   background: linear-gradient(to left, #333333, #8c8c8c);
   opacity: 0.75;
   top: 58px;
-  width: 50%;
+  height: 90%;
+  width: 65%;
   margin-top: 0;
   margin-bottom: 2em;
   max-height: 100vh;
@@ -1518,7 +1518,8 @@ figure.effect-move:hover h3 i {
   background: linear-gradient(to left, #333333, #8c8c8c);
   opacity: 0.75;
   top: 58px;
-  width: 50%;
+  height: 90%;
+  width: 65%;
   margin-top: 0;
   margin-bottom: 2em;
   max-height: 100vh;
@@ -1539,7 +1540,7 @@ figure.effect-move:hover h3 i {
 }
 .archive_months,
 .members {
-  margin-left: 6em;
+  margin-left: 10px;
   margin-top: 0;
   margin-bottom: 1em;
   cursor: pointer;
@@ -1852,6 +1853,10 @@ figure.effect-move:hover h3 i {
     -ms-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
   }
+  #cpyRight,
+  .fa-3x {
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 700px) {
   .grid {
@@ -1862,7 +1867,7 @@ figure.effect-move:hover h3 i {
     margin-left: 0;
   }
   .records-gridItem {
-    width: 99%;
+    width: 98%;
     margin-left: 0;
     margin-right: 0;
   }
@@ -1880,7 +1885,20 @@ figure.effect-move:hover h3 i {
   }
 }
 /* Landscape medium-large device */
-@media only screen and (min-device-width: 321px) and (max-device-width: 740px) and (orientation: landscape) {
+@media only screen and (min-device-width: 410px) and (max-device-width: 740px) and (orientation: landscape) {
+  #logoBrand {
+    padding-top: 10px;
+  }
+  #logoBrand ul li h2 {
+    font-size: 20px;
+  }
+  #logoBrand ul li h3 {
+    font-size: 16px;
+  }
+  #logoBrand ul li p {
+    padding-top: 5px;
+    font-size: 10px;
+  }
   .navbar #navWrapper,
   .navbar-header,
   #logoBrand {
@@ -2013,17 +2031,40 @@ figure.effect-move:hover h3 i {
   .records-textBox {
     bottom: 0;
   }
+  #leftDiv {
+    width: 35%;
+  }
   .left_Div {
     top: 60px;
   }
+  #rightDiv {
+    height: 70%;
+    width: 65%;
+  }
   #execDiv,
   #advisDiv {
+    height: 70%;
+    width: 65%;
     top: 49px;
   }
+  .archive_months,
+  .members {
+    margin-left: 5px;
+  }
 }
-@media only screen and (min-device-width: 321px) and (max-device-width: 740px) and (orientation: portrait) {
-  body {
-    font-size: 22px;
+@media only screen and (min-device-width: 410px) and (max-device-width: 740px) and (orientation: portrait) {
+  #logoBrand {
+    padding-top: 10px;
+  }
+  #logoBrand ul li h2 {
+    font-size: 20px;
+  }
+  #logoBrand ul li h3 {
+    font-size: 16px;
+  }
+  #logoBrand ul li p {
+    padding-top: 5px;
+    font-size: 10px;
   }
   .navbar #navWrapper,
   .navbar-header,
@@ -2059,15 +2100,6 @@ figure.effect-move:hover h3 i {
   }
   hr.small {
     margin: 10px 0;
-  }
-  h1 {
-    font-size: 3em;
-  }
-  h2 {
-    font-size: 2em;
-  }
-  h3 {
-    font-size: 1.6em;
   }
   .footer_buffer {
     padding-top: 50px;
@@ -2170,21 +2202,51 @@ figure.effect-move:hover h3 i {
   }
   #membersDiv,
   #membersDiv2 {
-    height: 620px;
+    height: 600px;
   }
   .records-textBox {
     bottom: 0;
   }
+  #leftDiv {
+    width: 35%;
+  }
   .left_Div {
     top: 60px;
   }
+  #rightDiv {
+    height: 85%;
+    width: 65%;
+  }
   #execDiv,
   #advisDiv {
+    height: 85%;
+    width: 65%;
     top: 49px;
+  }
+  #advisButton,
+  #execButton {
+    padding-top: 80px;
+  }
+  .archive_months,
+  .members {
+    margin-left: 5px;
   }
 }
 /* Landscape small mobile device */
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: landscape) {
+  #logoBrand {
+    padding-top: 10px;
+  }
+  #logoBrand ul li h2 {
+    font-size: 20px;
+  }
+  #logoBrand ul li h3 {
+    font-size: 16px;
+  }
+  #logoBrand ul li p {
+    padding-top: 5px;
+    font-size: 10px;
+  }
   .navbar #navWrapper,
   .navbar-header,
   #logoBrand {
@@ -2193,7 +2255,7 @@ figure.effect-move:hover h3 i {
     margin-bottom: 1px;
   }
   #nav-links p {
-    font-size: 8px;
+    font-size: 10px;
     padding-right: 20px;
     margin-bottom: -10px;
   }
@@ -2323,5 +2385,192 @@ figure.effect-move:hover h3 i {
   #execDiv,
   #advisDiv {
     top: 49px;
+  }
+  .archive_months,
+  .members {
+    margin-left: 5px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: portrait) {
+  #logoBrand {
+    padding-top: 10px;
+  }
+  #logoBrand ul li h2 {
+    font-size: 16px;
+  }
+  #logoBrand ul li h3 {
+    font-size: 14px;
+  }
+  #logoBrand ul li p {
+    padding-top: 5px;
+    font-size: 8px;
+  }
+  .navbar #navWrapper,
+  .navbar-header,
+  #logoBrand {
+    height: 35px;
+    min-height: 35px;
+    margin-bottom: 1px;
+  }
+  #nav-links p {
+    font-size: 8px;
+    padding-right: 20px;
+    margin-bottom: -10px;
+  }
+  .navbar.navbar-fixed-bottom,
+  .footer_button_div {
+    position: fixed;
+    bottom: 10px;
+    padding-bottom: -10px;
+  }
+  .header {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  #footer_button {
+    position: fixed;
+    bottom: 35px;
+    padding-bottom: -35px;
+    left: 50%;
+  }
+  #footer_higher #footer_content {
+    height: 150px;
+    font-size: 6px;
+  }
+  hr.small {
+    margin: 10px 0;
+  }
+  .footer_buffer {
+    padding-top: 50px;
+  }
+  .footer-bottom {
+    font-size: 6px;
+  }
+  .fa-3x {
+    font-size: 8px;
+  }
+  .fa-5x {
+    font-size: 22px;
+  }
+  .footer-bottom {
+    padding-top: 0;
+  }
+  #about-landing {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #e6e6e6;
+    font-size: 8px;
+    width: 65%;
+    top: 90px;
+    left: 25px;
+    overflow: hidden;
+  }
+  .angle-text.ac_collapse {
+    transform: skewY(-170deg) rotate(-10deg);
+    -webkit-transform: skewY(-170deg) rotate(-10deg);
+    -moz-transform: skewY(-170deg) rotate(-10deg);
+    -ms-transform: skewY(-170deg) rotate(-10deg);
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    left: 42.5%;
+  }
+  .slide-toggle-close,
+  .slide-toggle-open {
+    font-size: 17px;
+  }
+  .angle1 {
+    transform: skewY(170deg);
+    -webkit-transform: skewY(170deg);
+    -moz-transform: skewY(170deg);
+    -ms-transform: skewY(170deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: -15px;
+    margin-right: -530px;
+  }
+  .angle1:not(.ac_collapse) {
+    height: 75%;
+  }
+  .angle2 {
+    transform: skewY(170deg);
+    -webkit-transform: skewY(170deg);
+    -moz-transform: skewY(170deg);
+    -ms-transform: skewY(170deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: -60px;
+    margin-right: -580px;
+  }
+  .angle2:not(.ac_collapse) {
+    height: 75%;
+  }
+  .angle3 {
+    transform: skewY(170deg);
+    -webkit-transform: skewY(170deg);
+    -moz-transform: skewY(170deg);
+    -ms-transform: skewY(170deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: -100px;
+    margin-right: -630px;
+  }
+  .angle3:not(.ac_collapse) {
+    height: 75%;
+  }
+  .angle4 {
+    transform: skewY(170deg);
+    -webkit-transform: skewY(170deg);
+    -moz-transform: skewY(170deg);
+    -ms-transform: skewY(170deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: -300px;
+    margin-right: -700px;
+  }
+  .spotlight-wrapper,
+  .records-wrapper,
+  #membersDiv,
+  #membersDiv2 {
+    top: 55px;
+  }
+  #membersDiv,
+  #membersDiv2 {
+    height: 375px;
+  }
+  .records-textBox {
+    bottom: 0;
+  }
+  #leftDiv {
+    width: 35%;
+  }
+  .left_Div {
+    top: 60px;
+  }
+  #rightDiv,
+  #execDiv,
+  #advisDiv {
+    height: 80%;
+    width: 65%;
+  }
+  #execButton,
+  #advisButton {
+    padding-top: 80px;
+  }
+  #execDiv,
+  #advisDiv {
+    top: 49px;
+  }
+  .archive_months,
+  .members {
+    margin-left: 5px;
   }
 }
