@@ -6,72 +6,6 @@
 ////////////////////////////////////////////
 // Media queries
 ////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////
-
-/* Landscape small device */
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
-/*and (-webkit-min-device-pixel-ratio: 2)*/
-
-and (orientation: landscape) {
-    .navbar.navbar-fixed-bottom,
-    .footer_button_div {
-        position: fixed;
-        bottom: 10px;
-        padding-bottom: -10px;
-    }
-    #footer_button {
-        position: fixed;
-        bottom: 35px;
-        padding-bottom: -35px;
-        left: 50%;
-    }
-    #footer_higher #footer_content {
-        height: 210px;
-        //overflow-y: auto;
-    }
-    .footer-bottom {
-        //display: none;
-        //bottom: -110px;
-        font-size: 8px;
-    }
-    #about-landing {
-        .font-blocky-lt;
-        top: 65px;
-        left: 25px;
-        overflow: hidden;
-    }
-    .angle1 {
-        .skew;
-        bottom: 120px;
-        margin-right: -320px;
-    }
-    .angle1:not(.ac_collapse) {
-        height: 60%;
-    }
-    .angle2 {
-        .skew;
-        bottom: 120px;
-        margin-right: -320px
-    }
-    .angle2:not(.ac_collapse) {
-        height: 60%;
-    }
-    .angle3 {
-        .skew;
-        bottom: 120px;
-        margin-right: -320px;
-    }
-    .angle3:not(.ac_collapse) {
-        height: 60%;
-    }
-    .angle4 {
-        .skew;
-        bottom: -500px;
-    }
-}
-
 //////////////////////////////////////////////////////
 @media screen and (max-width:1550px) {
     .angle1 {
@@ -237,114 +171,474 @@ and (orientation: landscape) {
     }
 }
 
-@media screen and (max-width: 659px) {
-    .footer_buffer {
-        padding-top: 90px;
-    }
-    // #footer_button {
-    //     bottom: 92px;
-    // }
-}
+// @media screen and (max-width: 659px) {
+//     .footer_buffer {
+//         padding-top: 90px;
+//     }
+//     // #footer_button {
+//     //     bottom: 92px;
+//     // }
+// }
+// @media screen and (max-width: 544px) {
+//     .footer_buffer {
+//         padding-top: 73px;
+//     }
+//     #footer_button {
+//         bottom: 75px;
+//     }
+// }
+// @media screen and (max-width:430px) {
+//     // footer text, icons and parts
+//     #cpyRight {
+//         font-size: 6px;
+//     }
+//     .fa-3x {
+//         font-size: 15px;
+//     }
+//     .footer-bottom {
+//         padding-top: 20px;
+//     }
+//     #footer_button {
+//         bottom: 71px;
+//     }
+//     // masonry wrappers and slidy div icons
+//     .records-wrapper {
+//         left: 0;
+//         width: 90%;
+//     }
+//     .spotlight-wrapper {
+//         left: 0;
+//         width: 90%;
+//     }
+//     .slide-toggle-close {
+//         font-size: 15px;
+//     }
+//     .slide-toggle-open {
+//         font-size: 15px;
+//     }
+//     // slidy divs and internal parts
+//     .angle1 {
+//         .skew2;
+//         bottom: 20px;
+//         margin-right: -500px;
+//     }
+//     .angle1:not(.ac_collapse) {
+//         height: 75%;
+//     }
+//     .angle2 {
+//         .skew2;
+//         bottom: -20px;
+//         margin-right: -550px
+//     }
+//     .angle2:not(.ac_collapse) {
+//         height: 75%;
+//     }
+//     .angle3 {
+//         .skew2;
+//         bottom: -55px;
+//         margin-right: -600px;
+//     }
+//     .angle3:not(.ac_collapse) {
+//         height: 75%;
+//     }
+//     .angle4 {
+//         .skew2;
+//         bottom: -500px;
+//     }
+//     #about-landing {
+//         .font-blocky-lt;
+//         top: 100px;
+//         left: 80px;
+//         overflow: hidden;
+//     }
+//     #membersDiv {
+//         top: 65px;
+//     }
+//     .membersDiv_open ul li {
+//         h3 {
+//             font-size: 15px;
+//         }
+//         p {
+//             font-size: 10px;
+//         }
+//     }
+//     #membersDiv2 {
+//         top: 65px;
+//     }
+//     .membersDiv2_open ul li {
+//         h3 {
+//             font-size: 15px;
+//         }
+//         p {
+//             font-size: 10px;
+//         }
+//     }
+//     #execDiv {
+//         top: 65px;
+//     }
+//     #advisDiv {
+//         top: 65px;
+//     }
+// }
+////////////////////////////////////////////////////////////
+////////////////////////////////////
 
-@media screen and (max-width: 544px) {
-    .footer_buffer {
-        padding-top: 73px;
+/* Landscape medium-large device */
+
+@media only screen and (min-device-width: 321px) and (max-device-width: 740px) and (orientation: landscape) {
+    .navbar #navWrapper,
+    .navbar-header,
+    #logoBrand {
+        height: 35px;
+        min-height: 35px;
+        margin-bottom: 1px;
+    }
+    #nav-links p {
+        font-size: 12px;
+        padding-right: 20px;
+        margin-bottom: -10px;
+    }
+    .navbar.navbar-fixed-bottom,
+    .footer_button_div {
+        position: fixed;
+        bottom: 10px;
+        padding-bottom: -10px;
+    }
+    .header {
+        min-width: 100vw;
+        min-height: 100vh;
     }
     #footer_button {
-        bottom: 75px;
+        position: fixed;
+        bottom: 35px;
+        padding-bottom: -35px;
+        left: 50%;
     }
-}
-
-@media screen and (max-width:430px) {
-    // footer text, icons and parts
-    #cpyRight {
-        font-size: 6px;
+    #footer_higher #footer_content {
+        height: 170px;
+        font-size: 8px;
     }
+    hr.small {
+        margin: 10px 0;
+    }
+    .footer_buffer {
+        padding-top: 50px;
+    }
+    .footer-bottom,
     .fa-3x {
-        font-size: 15px;
+        font-size: 12px;
+    }
+    .fa-5x {
+        font-size: 32px;
     }
     .footer-bottom {
-        padding-top: 20px;
-    }
-    #footer_button {
-        bottom: 71px;
-    }
-    // masonry wrappers and slidy div icons
-    .records-wrapper {
-        left: 0;
-        width: 90%;
-    }
-    .spotlight-wrapper {
-        left: 0;
-        width: 90%;
-    }
-    .slide-toggle-close {
-        font-size: 15px;
-    }
-    .slide-toggle-open {
-        font-size: 15px;
-    }
-    // slidy divs and internal parts
-    .angle1 {
-        .skew2;
-        bottom: 20px;
-        margin-right: -500px;
-    }
-    .angle1:not(.ac_collapse) {
-        height: 75%;
-    }
-    .angle2 {
-        .skew2;
-        bottom: -20px;
-        margin-right: -550px
-    }
-    .angle2:not(.ac_collapse) {
-        height: 75%;
-    }
-    .angle3 {
-        .skew2;
-        bottom: -55px;
-        margin-right: -600px;
-    }
-    .angle3:not(.ac_collapse) {
-        height: 75%;
-    }
-    .angle4 {
-        .skew2;
-        bottom: -500px;
+        padding-top: 0;
     }
     #about-landing {
         .font-blocky-lt;
-        top: 100px;
-        left: 80px;
+        top: 90px;
+        left: 25px;
         overflow: hidden;
     }
-    #membersDiv {
-        top: 65px;
+    .angle-text.ac_collapse {
+        left: 25%;
     }
-    .membersDiv_open ul li {
-        h3 {
-            font-size: 15px;
-        }
-        p {
-            font-size: 10px;
-        }
+    .slide-toggle-close,
+    .slide-toggle-open {
+        font-size: 17px;
     }
+    .angle1 {
+        .skew;
+        bottom: 120px;
+        margin-right: -530px;
+    }
+    .angle1:not(.ac_collapse) {
+        height: 70%;
+    }
+    .angle2 {
+        .skew;
+        bottom: 120px;
+        margin-right: -580px;
+    }
+    .angle2:not(.ac_collapse) {
+        height: 70%;
+    }
+    .angle3 {
+        .skew;
+        bottom: 120px;
+        margin-right: -630px;
+    }
+    .angle3:not(.ac_collapse) {
+        height: 70%;
+    }
+    .angle4 {
+        .skew;
+        bottom: 100px;
+        margin-right: -700px;
+    }
+    .spotlight-wrapper,
+    .records-wrapper,
+    #membersDiv,
     #membersDiv2 {
-        top: 65px;
+        top: 55px;
     }
-    .membersDiv2_open ul li {
-        h3 {
-            font-size: 15px;
-        }
-        p {
-            font-size: 10px;
-        }
+    #membersDiv,
+    #membersDiv2 {
+        height: 250px;
     }
-    #execDiv {
-        top: 65px;
+    .records-textBox {
+        bottom: 0;
     }
+    .left_Div {
+        top: 60px;
+    }
+    #execDiv,
     #advisDiv {
-        top: 65px;
+        top: 49px;
+    }
+}
+
+@media only screen and (min-device-width: 321px) and (max-device-width: 740px) and (orientation: portrait) {
+    body {
+        font-size: 22px;
+    }
+    .navbar #navWrapper,
+    .navbar-header,
+    #logoBrand {
+        height: 35px;
+        min-height: 35px;
+        margin-bottom: 1px;
+    }
+    #nav-links p {
+        font-size: 12px;
+        padding-right: 20px;
+        margin-bottom: -10px;
+    }
+    .navbar.navbar-fixed-bottom,
+    .footer_button_div {
+        position: fixed;
+        bottom: 10px;
+        padding-bottom: -10px;
+    }
+    .header {
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+    #footer_button {
+        position: fixed;
+        bottom: 35px;
+        padding-bottom: -35px;
+        left: 50%;
+    }
+    #footer_higher #footer_content {
+        height: 170px;
+        font-size: 8px;
+    }
+    hr.small {
+        margin: 10px 0;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.6em;
+    }
+    .footer_buffer {
+        padding-top: 50px;
+    }
+    .footer-bottom,
+    .fa-3x {
+        font-size: 10px;
+    }
+    .fa-5x {
+        font-size: 32px;
+    }
+    .footer-bottom {
+        padding-top: 0;
+    }
+    #about-landing {
+        .font-blocky-lt;
+        top: 90px;
+        left: 25px;
+        font-size: 10px;
+        overflow: hidden;
+    }
+    .angle-text.ac_collapse {
+        .antiSkew2;
+        left: 35%;
+    }
+    .slide-toggle-close,
+    .slide-toggle-open {
+        font-size: 17px;
+    }
+    .angle1 {
+        .skew2;
+        bottom: -20px;
+        margin-right: -530px;
+    }
+    .angle1:not(.ac_collapse) {
+        height: 85%;
+    }
+    .angle2 {
+        .skew2;
+        bottom: -60px;
+        margin-right: -580px;
+    }
+    .angle2:not(.ac_collapse) {
+        height: 85%;
+    }
+    .angle3 {
+        .skew2;
+        bottom: -100px;
+        margin-right: -630px;
+    }
+    .angle3:not(.ac_collapse) {
+        height: 85%;
+    }
+    .angle4 {
+        .skew2;
+        bottom: -240px;
+        margin-right: -700px;
+    }
+    .spotlight-wrapper,
+    .records-wrapper,
+    #membersDiv,
+    #membersDiv2 {
+        top: 55px;
+    }
+    #membersDiv,
+    #membersDiv2 {
+        height: 620px;
+    }
+    .records-textBox {
+        bottom: 0;
+    }
+    .left_Div {
+        top: 60px;
+    }
+    #execDiv,
+    #advisDiv {
+        top: 49px;
+    }
+}
+
+////////////////////////////////////////////////////////////
+////////////////////////////////////
+
+/* Landscape small mobile device */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: landscape) {
+    .navbar #navWrapper,
+    .navbar-header,
+    #logoBrand {
+        height: 35px;
+        min-height: 35px;
+        margin-bottom: 1px;
+    }
+    #nav-links p {
+        font-size: 8px;
+        padding-right: 20px;
+        margin-bottom: -10px;
+    }
+    .navbar.navbar-fixed-bottom,
+    .footer_button_div {
+        position: fixed;
+        bottom: 10px;
+        padding-bottom: -10px;
+    }
+    .header {
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+    #footer_button {
+        position: fixed;
+        bottom: 35px;
+        padding-bottom: -35px;
+        left: 50%;
+    }
+    #footer_higher #footer_content {
+        height: 150px;
+        font-size: 8px;
+    }
+    hr.small {
+        margin: 10px 0;
+    }
+    .footer_buffer {
+        padding-top: 50px;
+    }
+    .footer-bottom,
+    .fa-3x {
+        font-size: 8px;
+    }
+    .fa-5x {
+        font-size: 22px;
+    }
+    .footer-bottom {
+        padding-top: 0;
+    }
+    #about-landing {
+        .font-blocky-lt;
+        top: 90px;
+        left: 25px;
+        overflow: hidden;
+    }
+    .angle-text.ac_collapse {
+        left: 42.5%;
+    }
+    .slide-toggle-close,
+    .slide-toggle-open {
+        font-size: 17px;
+    }
+    .angle1 {
+        .skew;
+        bottom: 120px;
+        margin-right: -530px;
+    }
+    .angle1:not(.ac_collapse) {
+        height: 60%;
+    }
+    .angle2 {
+        .skew;
+        bottom: 120px;
+        margin-right: -580px;
+    }
+    .angle2:not(.ac_collapse) {
+        height: 60%;
+    }
+    .angle3 {
+        .skew;
+        bottom: 120px;
+        margin-right: -630px;
+    }
+    .angle3:not(.ac_collapse) {
+        height: 60%;
+    }
+    .angle4 {
+        .skew;
+        bottom: 100px;
+        margin-right: -700px;
+    }
+    .spotlight-wrapper,
+    .records-wrapper,
+    #membersDiv,
+    #membersDiv2 {
+        top: 55px;
+    }
+    #membersDiv,
+    #membersDiv2 {
+        height: 150px;
+    }
+    .records-textBox {
+        bottom: 0;
+    }
+    .left_Div {
+        top: 60px;
+    }
+    #execDiv,
+    #advisDiv {
+        top: 49px;
     }
 }

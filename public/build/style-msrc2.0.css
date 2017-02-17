@@ -176,7 +176,7 @@ footer {
   color: #333333;
 }
 body {
-  font-size: 16px;
+  font-size: 18px;
   padding-bottom: 95px;
 }
 img {
@@ -365,8 +365,8 @@ ul#myTopnav li.icon {
 .header {
   display: block;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -381,8 +381,8 @@ hr.small {
 /* Fullpage background images*/
 .fill {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -393,8 +393,8 @@ hr.small {
 .slide-1 {
   background: url("../img/bg.jpg") no-repeat center center scroll;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -404,8 +404,8 @@ hr.small {
 .slide-2 {
   background: url("../img/newyork.jpg") no-repeat center center scroll;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -415,8 +415,8 @@ hr.small {
 .slide-3 {
   background: url("../img/paris.jpg") no-repeat center center scroll;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -426,8 +426,8 @@ hr.small {
 .slide-4 {
   background: url("../img/sanfran.jpg") no-repeat center center scroll;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -767,8 +767,8 @@ figure.effect-move:hover h3 i {
   background: url("../img/about.jpg") no-repeat center center scroll;
   background-attachment: fixed;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -781,8 +781,8 @@ figure.effect-move:hover h3 i {
   background-attachment: fixed;
   overflow: hidden;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -793,8 +793,8 @@ figure.effect-move:hover h3 i {
   position: relative;
   background: url("../img/partners.jpg") no-repeat center center;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1695,90 +1695,6 @@ figure.effect-move:hover h3 i {
   bottom: 0;
   padding-bottom: -60px;
 }
-/* Landscape small device */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: /*and (-webkit-min-device-pixel-ratio: 2)*/ landscape) {
-  .navbar.navbar-fixed-bottom,
-  .footer_button_div {
-    position: fixed;
-    bottom: 10px;
-    padding-bottom: -10px;
-  }
-  #footer_button {
-    position: fixed;
-    bottom: 35px;
-    padding-bottom: -35px;
-    left: 50%;
-  }
-  #footer_higher #footer_content {
-    height: 210px;
-  }
-  .footer-bottom {
-    font-size: 8px;
-  }
-  #about-landing {
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #e6e6e6;
-    top: 65px;
-    left: 25px;
-    overflow: hidden;
-  }
-  .angle1 {
-    transform: skewY(130deg);
-    -webkit-transform: skewY(130deg);
-    -moz-transform: skewY(130deg);
-    -ms-transform: skewY(130deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: 120px;
-    margin-right: -320px;
-  }
-  .angle1:not(.ac_collapse) {
-    height: 60%;
-  }
-  .angle2 {
-    transform: skewY(130deg);
-    -webkit-transform: skewY(130deg);
-    -moz-transform: skewY(130deg);
-    -ms-transform: skewY(130deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: 120px;
-    margin-right: -320px;
-  }
-  .angle2:not(.ac_collapse) {
-    height: 60%;
-  }
-  .angle3 {
-    transform: skewY(130deg);
-    -webkit-transform: skewY(130deg);
-    -moz-transform: skewY(130deg);
-    -ms-transform: skewY(130deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: 120px;
-    margin-right: -320px;
-  }
-  .angle3:not(.ac_collapse) {
-    height: 60%;
-  }
-  .angle4 {
-    transform: skewY(130deg);
-    -webkit-transform: skewY(130deg);
-    -moz-transform: skewY(130deg);
-    -ms-transform: skewY(130deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: -500px;
-  }
-}
 @media screen and (max-width: 1550px) {
   .angle1 {
     margin-right: -170px;
@@ -1963,45 +1879,231 @@ figure.effect-move:hover h3 i {
     width: 98%;
   }
 }
-@media screen and (max-width: 659px) {
-  .footer_buffer {
-    padding-top: 90px;
+/* Landscape medium-large device */
+@media only screen and (min-device-width: 321px) and (max-device-width: 740px) and (orientation: landscape) {
+  .navbar #navWrapper,
+  .navbar-header,
+  #logoBrand {
+    height: 35px;
+    min-height: 35px;
+    margin-bottom: 1px;
   }
-}
-@media screen and (max-width: 544px) {
-  .footer_buffer {
-    padding-top: 73px;
+  #nav-links p {
+    font-size: 12px;
+    padding-right: 20px;
+    margin-bottom: -10px;
+  }
+  .navbar.navbar-fixed-bottom,
+  .footer_button_div {
+    position: fixed;
+    bottom: 10px;
+    padding-bottom: -10px;
+  }
+  .header {
+    min-width: 100vw;
+    min-height: 100vh;
   }
   #footer_button {
-    bottom: 75px;
+    position: fixed;
+    bottom: 35px;
+    padding-bottom: -35px;
+    left: 50%;
   }
-}
-@media screen and (max-width: 430px) {
-  #cpyRight {
-    font-size: 6px;
+  #footer_higher #footer_content {
+    height: 170px;
+    font-size: 8px;
   }
+  hr.small {
+    margin: 10px 0;
+  }
+  .footer_buffer {
+    padding-top: 50px;
+  }
+  .footer-bottom,
   .fa-3x {
-    font-size: 15px;
+    font-size: 12px;
+  }
+  .fa-5x {
+    font-size: 32px;
   }
   .footer-bottom {
-    padding-top: 20px;
+    padding-top: 0;
+  }
+  #about-landing {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #e6e6e6;
+    top: 90px;
+    left: 25px;
+    overflow: hidden;
+  }
+  .angle-text.ac_collapse {
+    left: 25%;
+  }
+  .slide-toggle-close,
+  .slide-toggle-open {
+    font-size: 17px;
+  }
+  .angle1 {
+    transform: skewY(130deg);
+    -webkit-transform: skewY(130deg);
+    -moz-transform: skewY(130deg);
+    -ms-transform: skewY(130deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: 120px;
+    margin-right: -530px;
+  }
+  .angle1:not(.ac_collapse) {
+    height: 70%;
+  }
+  .angle2 {
+    transform: skewY(130deg);
+    -webkit-transform: skewY(130deg);
+    -moz-transform: skewY(130deg);
+    -ms-transform: skewY(130deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: 120px;
+    margin-right: -580px;
+  }
+  .angle2:not(.ac_collapse) {
+    height: 70%;
+  }
+  .angle3 {
+    transform: skewY(130deg);
+    -webkit-transform: skewY(130deg);
+    -moz-transform: skewY(130deg);
+    -ms-transform: skewY(130deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: 120px;
+    margin-right: -630px;
+  }
+  .angle3:not(.ac_collapse) {
+    height: 70%;
+  }
+  .angle4 {
+    transform: skewY(130deg);
+    -webkit-transform: skewY(130deg);
+    -moz-transform: skewY(130deg);
+    -ms-transform: skewY(130deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: 100px;
+    margin-right: -700px;
+  }
+  .spotlight-wrapper,
+  .records-wrapper,
+  #membersDiv,
+  #membersDiv2 {
+    top: 55px;
+  }
+  #membersDiv,
+  #membersDiv2 {
+    height: 250px;
+  }
+  .records-textBox {
+    bottom: 0;
+  }
+  .left_Div {
+    top: 60px;
+  }
+  #execDiv,
+  #advisDiv {
+    top: 49px;
+  }
+}
+@media only screen and (min-device-width: 321px) and (max-device-width: 740px) and (orientation: portrait) {
+  body {
+    font-size: 22px;
+  }
+  .navbar #navWrapper,
+  .navbar-header,
+  #logoBrand {
+    height: 35px;
+    min-height: 35px;
+    margin-bottom: 1px;
+  }
+  #nav-links p {
+    font-size: 12px;
+    padding-right: 20px;
+    margin-bottom: -10px;
+  }
+  .navbar.navbar-fixed-bottom,
+  .footer_button_div {
+    position: fixed;
+    bottom: 10px;
+    padding-bottom: -10px;
+  }
+  .header {
+    min-width: 100vw;
+    min-height: 100vh;
   }
   #footer_button {
-    bottom: 71px;
+    position: fixed;
+    bottom: 35px;
+    padding-bottom: -35px;
+    left: 50%;
   }
-  .records-wrapper {
-    left: 0;
-    width: 90%;
+  #footer_higher #footer_content {
+    height: 170px;
+    font-size: 8px;
   }
-  .spotlight-wrapper {
-    left: 0;
-    width: 90%;
+  hr.small {
+    margin: 10px 0;
   }
-  .slide-toggle-close {
-    font-size: 15px;
+  h1 {
+    font-size: 3em;
   }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+  .footer_buffer {
+    padding-top: 50px;
+  }
+  .footer-bottom,
+  .fa-3x {
+    font-size: 10px;
+  }
+  .fa-5x {
+    font-size: 32px;
+  }
+  .footer-bottom {
+    padding-top: 0;
+  }
+  #about-landing {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #e6e6e6;
+    top: 90px;
+    left: 25px;
+    font-size: 10px;
+    overflow: hidden;
+  }
+  .angle-text.ac_collapse {
+    transform: skewY(-170deg) rotate(-10deg);
+    -webkit-transform: skewY(-170deg) rotate(-10deg);
+    -moz-transform: skewY(-170deg) rotate(-10deg);
+    -ms-transform: skewY(-170deg) rotate(-10deg);
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    left: 35%;
+  }
+  .slide-toggle-close,
   .slide-toggle-open {
-    font-size: 15px;
+    font-size: 17px;
   }
   .angle1 {
     transform: skewY(170deg);
@@ -2012,11 +2114,11 @@ figure.effect-move:hover h3 i {
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-    bottom: 20px;
-    margin-right: -500px;
+    bottom: -20px;
+    margin-right: -530px;
   }
   .angle1:not(.ac_collapse) {
-    height: 75%;
+    height: 85%;
   }
   .angle2 {
     transform: skewY(170deg);
@@ -2027,11 +2129,11 @@ figure.effect-move:hover h3 i {
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-    bottom: -20px;
-    margin-right: -550px;
+    bottom: -60px;
+    margin-right: -580px;
   }
   .angle2:not(.ac_collapse) {
-    height: 75%;
+    height: 85%;
   }
   .angle3 {
     transform: skewY(170deg);
@@ -2042,11 +2144,11 @@ figure.effect-move:hover h3 i {
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-    bottom: -55px;
-    margin-right: -600px;
+    bottom: -100px;
+    margin-right: -630px;
   }
   .angle3:not(.ac_collapse) {
-    height: 75%;
+    height: 85%;
   }
   .angle4 {
     transform: skewY(170deg);
@@ -2057,37 +2159,169 @@ figure.effect-move:hover h3 i {
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-    bottom: -500px;
+    bottom: -240px;
+    margin-right: -700px;
+  }
+  .spotlight-wrapper,
+  .records-wrapper,
+  #membersDiv,
+  #membersDiv2 {
+    top: 55px;
+  }
+  #membersDiv,
+  #membersDiv2 {
+    height: 620px;
+  }
+  .records-textBox {
+    bottom: 0;
+  }
+  .left_Div {
+    top: 60px;
+  }
+  #execDiv,
+  #advisDiv {
+    top: 49px;
+  }
+}
+/* Landscape small mobile device */
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: landscape) {
+  .navbar #navWrapper,
+  .navbar-header,
+  #logoBrand {
+    height: 35px;
+    min-height: 35px;
+    margin-bottom: 1px;
+  }
+  #nav-links p {
+    font-size: 8px;
+    padding-right: 20px;
+    margin-bottom: -10px;
+  }
+  .navbar.navbar-fixed-bottom,
+  .footer_button_div {
+    position: fixed;
+    bottom: 10px;
+    padding-bottom: -10px;
+  }
+  .header {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  #footer_button {
+    position: fixed;
+    bottom: 35px;
+    padding-bottom: -35px;
+    left: 50%;
+  }
+  #footer_higher #footer_content {
+    height: 150px;
+    font-size: 8px;
+  }
+  hr.small {
+    margin: 10px 0;
+  }
+  .footer_buffer {
+    padding-top: 50px;
+  }
+  .footer-bottom,
+  .fa-3x {
+    font-size: 8px;
+  }
+  .fa-5x {
+    font-size: 22px;
+  }
+  .footer-bottom {
+    padding-top: 0;
   }
   #about-landing {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #e6e6e6;
-    top: 100px;
-    left: 80px;
+    top: 90px;
+    left: 25px;
     overflow: hidden;
   }
-  #membersDiv {
-    top: 65px;
+  .angle-text.ac_collapse {
+    left: 42.5%;
   }
-  .membersDiv_open ul li h3 {
-    font-size: 15px;
+  .slide-toggle-close,
+  .slide-toggle-open {
+    font-size: 17px;
   }
-  .membersDiv_open ul li p {
-    font-size: 10px;
+  .angle1 {
+    transform: skewY(130deg);
+    -webkit-transform: skewY(130deg);
+    -moz-transform: skewY(130deg);
+    -ms-transform: skewY(130deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: 120px;
+    margin-right: -530px;
   }
+  .angle1:not(.ac_collapse) {
+    height: 60%;
+  }
+  .angle2 {
+    transform: skewY(130deg);
+    -webkit-transform: skewY(130deg);
+    -moz-transform: skewY(130deg);
+    -ms-transform: skewY(130deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: 120px;
+    margin-right: -580px;
+  }
+  .angle2:not(.ac_collapse) {
+    height: 60%;
+  }
+  .angle3 {
+    transform: skewY(130deg);
+    -webkit-transform: skewY(130deg);
+    -moz-transform: skewY(130deg);
+    -ms-transform: skewY(130deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: 120px;
+    margin-right: -630px;
+  }
+  .angle3:not(.ac_collapse) {
+    height: 60%;
+  }
+  .angle4 {
+    transform: skewY(130deg);
+    -webkit-transform: skewY(130deg);
+    -moz-transform: skewY(130deg);
+    -ms-transform: skewY(130deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    bottom: 100px;
+    margin-right: -700px;
+  }
+  .spotlight-wrapper,
+  .records-wrapper,
+  #membersDiv,
   #membersDiv2 {
-    top: 65px;
+    top: 55px;
   }
-  .membersDiv2_open ul li h3 {
-    font-size: 15px;
+  #membersDiv,
+  #membersDiv2 {
+    height: 150px;
   }
-  .membersDiv2_open ul li p {
-    font-size: 10px;
+  .records-textBox {
+    bottom: 0;
   }
-  #execDiv {
-    top: 65px;
+  .left_Div {
+    top: 60px;
   }
+  #execDiv,
   #advisDiv {
-    top: 65px;
+    top: 49px;
   }
 }

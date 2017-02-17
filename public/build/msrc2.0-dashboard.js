@@ -212,7 +212,7 @@ $(document).ready(function() {
                 percentPosition: true,
                 gutter: 1,
                 //stagger: 45,
-                containerStyle: null,
+                //containerStyle: null,
                 initLayout: false
             });
 
