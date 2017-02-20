@@ -680,6 +680,28 @@ figure {
     z-index: 10;
 }
 
+.comMenu {
+    padding-left: 5px;
+    overflow-y: auto;
+    //height: 100%;
+    //width: 100%;
+}
+
+.toggle-open,
+.toggle-close {
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    color: @logo-color;
+}
+
+.toggle-close:after {
+    content: "\f150";
+}
+
+.toggle-open:after {
+    content: "\f151";
+}
+
 .footer-bottom {
     background-color: @footer-color;
     font-size: 14px;

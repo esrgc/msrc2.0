@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 $(window).load(function() {
+
     // helper function for masonry and imagesLoaded
     $.fn.masonryImagesReveal = function($items) {
         var msnry = this.data('masonry');
@@ -49,7 +50,7 @@ $(document).ready(function() {
     // add click toggle to all but last child merely for decoration
     // setup function to toggle on click
     */
-    $(".angle_wrapper > div:not(:last-child) h1").click(function() {
+    $(".angle_wrapper > div:not(:last-child) h1").on("click", function() {
         /*e.preventDefault();*/
         /*
         // the magic
@@ -94,13 +95,13 @@ $(document).ready(function() {
             return this;
         };
 
-        if (attrID == 'btn1') {
-            
+        if (attrID == 'members') {
+
             $("#membersDiv").toggle('slide');
             $("#membersDiv2").toggle('slide');
 
-        } else if (attrID == 'btn2') {
-            
+        } else if (attrID == 'spotlight') {
+
             $('.spotlight-wrapper').css({ "z-index": "1000" });
             // init masonry js with imagesLoaded for spotlight
             var $spotlightMasonry = $('#masonry-container-spotlight').masonry({
@@ -125,8 +126,8 @@ $(document).ready(function() {
                 console.log('complete');
             });
 
-        } else if (attrID == 'btn3') {
-           
+        } else if (attrID == 'records') {
+
             $('.records-wrapper').css({ "z-index": "1000" });
             // init masonry container for records
             var $recordsMasonry = $('#masonry-container-records').masonry({
@@ -149,7 +150,14 @@ $(document).ready(function() {
             //$recordsMasonry.masonry("layoutItems", '.records-gridItem', true );
             $recordsMasonry.masonry();
         } else {
-
+            // $('.spotlight-wrapper').css({
+            //     "z-index": "0",
+            //     "display": "none"
+            // });
+            // $('.records-wrapper').css({
+            //     "z-index": "0",
+            //     "display": "none"
+            // });
         }
 
 
@@ -162,17 +170,6 @@ $(document).ready(function() {
         /* the bar*/
         return false;
     });
-
-
-
-
-    // footer slide toggle nav pane
-    $("#footer_button").click(function(e) {
-        e.preventDefault();
-        $('.footer').slideToggle();
-        return;
-    });
-
 
     var $clickSpotlight = $('#masonry-container-spotlight').masonry();
     // make masonry images clickable 

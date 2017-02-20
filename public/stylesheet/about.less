@@ -183,7 +183,7 @@
     position: relative;
     left: 33%;
     .antiSkew;
-    z-index: 1;
+    z-index: 10;
     h1 {
         //overflow-y: auto;
     }
@@ -248,10 +248,11 @@
 .angle1:not(.ac_collapse) {
     .angle;
     .skew;
+    //position: absolute;
     width: 100%;
     height: 85%;
     opacity: 0.88;
-    margin-right: 0;
+    margin: 0;
     bottom: 60px;
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
@@ -629,17 +630,18 @@
 // Records pop out
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-#records.ac_collapse {
-    display: none;
-    overflow: hidden;
-}
 
-#records:not(.ac_collapse) {
-    display: block;
-    position: relative;
-    opacity: 1;
-    z-index: auto;
-}
+// #records.ac_collapse {
+//     display: none;
+//     overflow: hidden;
+// }
+
+// #records:not(.ac_collapse) {
+//     display: block;
+//     position: relative;
+//     opacity: 1;
+//     z-index: auto;
+// }
 
 .records-wrapper {
     display: block;
@@ -742,9 +744,10 @@
     display: block;
     position: absolute;
     .font-blocky-lt;
+    margin: 0 auto;
     top: 220px;
-    width: 35%;
-    left: 25%;
+    width: 50%;
+    left: 27%;
     z-index: 200;
 }
 
@@ -817,9 +820,13 @@
 
 .years,
 .advisCommittees,
-#execButton,
-#advisButton {
+#execGroup,
+#advisGroup {
     cursor: pointer;
+}
+
+.advisCommittees {
+    text-align: left;
 }
 
 .archive_months,
@@ -828,8 +835,14 @@
     margin-top: 0;
     margin-bottom: 1em;
     cursor: pointer;
+    //text-align: left;
     z-index: 1000;
 }
+
+.just-left {
+    text-align: left;
+}
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////

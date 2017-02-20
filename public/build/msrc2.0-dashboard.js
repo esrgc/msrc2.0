@@ -3,6 +3,7 @@ $(window).load(function() {
     // for my first trick now you see them...no you dont
     // hide alot of things that can open later
     $(".footer").hide();
+    $('.comMenu').hide();
     $("#execDiv").hide();
     $("#advisDiv").hide();
     $('#membersDiv').hide();
@@ -84,6 +85,7 @@ $(document).ready(function() {
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 $(window).load(function() {
+
     // helper function for masonry and imagesLoaded
     $.fn.masonryImagesReveal = function($items) {
         var msnry = this.data('masonry');
@@ -126,7 +128,7 @@ $(document).ready(function() {
     // add click toggle to all but last child merely for decoration
     // setup function to toggle on click
     */
-    $(".angle_wrapper > div:not(:last-child) h1").click(function() {
+    $(".angle_wrapper > div:not(:last-child) h1").on("click", function() {
         /*e.preventDefault();*/
         /*
         // the magic
@@ -171,13 +173,13 @@ $(document).ready(function() {
             return this;
         };
 
-        if (attrID == 'btn1') {
-            
+        if (attrID == 'members') {
+
             $("#membersDiv").toggle('slide');
             $("#membersDiv2").toggle('slide');
 
-        } else if (attrID == 'btn2') {
-            
+        } else if (attrID == 'spotlight') {
+
             $('.spotlight-wrapper').css({ "z-index": "1000" });
             // init masonry js with imagesLoaded for spotlight
             var $spotlightMasonry = $('#masonry-container-spotlight').masonry({
@@ -202,8 +204,8 @@ $(document).ready(function() {
                 console.log('complete');
             });
 
-        } else if (attrID == 'btn3') {
-           
+        } else if (attrID == 'records') {
+
             $('.records-wrapper').css({ "z-index": "1000" });
             // init masonry container for records
             var $recordsMasonry = $('#masonry-container-records').masonry({
@@ -226,7 +228,14 @@ $(document).ready(function() {
             //$recordsMasonry.masonry("layoutItems", '.records-gridItem', true );
             $recordsMasonry.masonry();
         } else {
-
+            // $('.spotlight-wrapper').css({
+            //     "z-index": "0",
+            //     "display": "none"
+            // });
+            // $('.records-wrapper').css({
+            //     "z-index": "0",
+            //     "display": "none"
+            // });
         }
 
 
@@ -239,17 +248,6 @@ $(document).ready(function() {
         /* the bar*/
         return false;
     });
-
-
-
-
-    // footer slide toggle nav pane
-    $("#footer_button").click(function(e) {
-        e.preventDefault();
-        $('.footer').slideToggle();
-        return;
-    });
-
 
     var $clickSpotlight = $('#masonry-container-spotlight').masonry();
     // make masonry images clickable 
@@ -391,6 +389,52 @@ $(document).ready(function() {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// experimental code for triggering click event based on point of entry with hash detection. 
+///// on footer link activation make click events happen after new page loads
+$(window).on('hashchange', function(e) {
+    //alert(location.hash);
+    if (location.hash == "#comCEDS" || location.hash == "#comEM" || location.hash == "#comGIS" || location.hash == "#comIT" || location.hash == "#comMUST") {
+        $('#advisGroup').trigger('click');
+        $(location.hash).trigger('click');
+    } else {
+        $(location.hash).trigger('click');
+    }
+});
+
+$(window).load(function() {
+    if (window.location.hash) {
+        $(window).trigger('hashchange');
+    }
+});
+//////////////////////////////////////////////////////////////////////////////////////////////
+// footer show/hide toggle
+$(document).ready(function() {
+    // footer slide toggle nav pane
+    $("#footer_button").click(function(e) {
+        e.preventDefault();
+        $('.footer').slideToggle();
+        return;
+    });
+
+});
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// footer dropdown menu for advisory committees
+$(document).ready(function() {
+    $("#dropdownMenuButton").click(function(e) {
+            e.preventDefault();
+            $(this).find('.toggle-close').toggleClass('toggle-open');
+            $(".comMenu").toggle("slide");
+
+
+            if ($(this).hasClass("toggle-open")) {
+                $(this).removeClass("toggle-open").slideUp(500);
+                return;
+            }
+            return false;
+    });
+});
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
 * Author: Carl Flint
@@ -474,7 +518,7 @@ $(document).ready(function() {
 
     //hide execDiv untill  activated by button
     //$("#execDiv").hide();
-    $("#execButton").click(function(e) {
+    $("#execGroup").click(function(e) {
         e.preventDefault();
         e.stopPropagation();
         if ($("#advisDiv").is(":visible")) {
@@ -482,6 +526,8 @@ $(document).ready(function() {
         }
         $("#rightDiv").find('#execDiv').toggle("slide");
     });
+
+
     //hide expanding months layout in executive committee pop out
     $(".archive_months").hide();
     $(".years").click(function() {
@@ -490,7 +536,7 @@ $(document).ready(function() {
 
     //hide advisDiv untill  activated by button
     //$("#advisDiv").hide();
-    $("#advisButton").click(function(e) {
+    $("#advisGroup").click(function(e) {
         e.preventDefault();
         if ($("#execDiv").is(":visible")) {
             $("#rightDiv").find('#execDiv').toggle("slide");
@@ -507,6 +553,7 @@ $(document).ready(function() {
     var $comOpen = $(".advisCommittees").click(function() {
 
         var $header = $(this);
+        $header.find(".toggle-close").toggleClass("toggle-open");
         //get next element
         //alert($header.attr('id'));
         var $content = $header.find('ul');
@@ -560,6 +607,13 @@ $(document).ready(function() {
         $membersUL.not($content).stop(true, true).slideUp();
 
 
+        /* the foo*/
+        if ($(this).siblings().find('span').hasClass('toggle-open')) {
+            $(this).siblings().find('span').removeClass('toggle-open');
+            return;
+        }
+        /* the bar*/
+        return false;
     });
 
 });

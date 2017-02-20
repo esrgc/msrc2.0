@@ -5,7 +5,7 @@
         <!-- Responsive footer button -->
         <div class="footer_button_div text-center">
             <div id="footer_button">
-                <a href="#">
+                <a>
                     <i class="fa fa-bars fa-fw fa-3x"></i>
                 </a>
             </div>
@@ -42,44 +42,98 @@
                 <div class="row transition-all">
                     <div id="footAbout" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 list-inline pull-left transition-all">
                         <ul class="list-unstyled">
-                            <li><a href="./about"><p>About</p></a></li>
+                            <li>
+                                <a href="./about">
+                                    <p>About</p>
+                                </a>
+                            </li>
                             <li>
                                 <hr align="left" class="small">
                             </li>
-                            <li><a href="./about"><p>The MSRC</p></a></li>
+                            <li>
+                                <a href="./about">
+                                    <p>The MSRC</p>
+                                </a>
+                            </li>
                             <br>
-                            <li><a href="./about"><p>MSRC Members</p></a></li>
+                            <li>
+                                <a href="./about#members">
+                                    <p>MSRC Members</p>
+                                </a>
+                            </li>
                             <br>
-                            <li><a href="./about"><p>MSRC's purpose</p></a></li>
+                            <li>
+                                <a href="./about#spotlight">
+                                    <p>MSRC's spotlight</p>
+                                </a>
+                            </li>
                             <br>
-                            <li><a href="./about"><p>MSRC minutes</p></a></li>
+                            <li>
+                                <a href="./about#records">
+                                    <p>MSRC records</p>
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <div id="footCommittee" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 list-inline pull-left transition-all">
+                    <div id="footCommittee" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 list-inline pull-left transition-all">
                         <ul class="list-unstyled">
-                            <li><a href="./committees"><p>Committees</p></a></li>
+                            <li>
+                                <a href="./committees">
+                                    <p>Committees</p>
+                                </a>
+                            </li>
                             <li>
                                 <hr align="left" class="small">
                             </li>
-                            <li><a href="./committees"><p>Executive Group</p></a></li>
+                            <li>
+                                <a href="./committees#execGroup">
+                                    <p>Executive Group</p>
+                                </a>
+                            </li>
                             <br>
-                            <li><a href="./committees"><p>Advisory Group</p></a></li>
+                            <!-- <li><a href="./committees#advisGroup"><p>Advisory Group</p></a></li> -->
+                            <li><a id="dropdownMenuButton" href="./committees#advisGroup">Advisory Group&nbsp;&nbsp;
+                            <span data-target=".comMenu" class="toggle-close transition-all"></span></a>
+                                <ul class="comMenu list-unstyled">
+                                    <li class="comMenu_child"><a href="./committees#comCEDS">CEDS</a></li>
+                                    <li class="comMenu_child"><a href="./committees#comEM">Emergency Management</a></li>
+                                    <li class="comMenu_child"><a href="./committees#comGIS">Geographic Information Science (GIS)</a></li>
+                                    <li class="comMenu_child"><a href="./committees#comIT">Information Technology</a></li>
+                                    <li class="comMenu_child"><a href="./committees#comMUST">Maryland Upper Shore Transit (MUST)</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <div id="footPartnerships" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 list-inline pull-left transition-all">
                         <ul class="list-unstyled">
-                            <li><a href="./partners"><p>Partnerships</p></a></li>
+                            <li>
+                                <a href="./partners">
+                                    <p>Partnerships</p>
+                                </a>
+                            </li>
                             <li>
                                 <hr align="left" class="small">
                             </li>
-                            <li><a href="./partners"><p>MSRC Associates</p></a></li>
+                            <li>
+                                <a href="./partners">
+                                    <p>MSRC Associates</p>
+                                </a>
+                            </li>
                             <br>
-                            <li><a href="./partners"><p>Team progress</p></a></li>
+                            <li>
+                                <a href="./partners">
+                                    <p>Team progress</p>
+                                </a>
+                            </li>
                             <br>
-                            <li><a href="./partners"><p>Partner with us</p></a></li>
+                            <li>
+                                <a href="./partners">
+                                    <p>Partner with us</p>
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <div id="footContact" class="col-lg-4 col-md-2 col-sm-4 col-xs-3 list-inline pull-right transition-all">
+                    <div id="footContact" class="col-lg-2 col-md-2 col-sm-2 col-xs-3 list-inline pull-right transition-all">
                         <ul class="list-unstyled">
                             <li>
                                 <p>Contact</p>

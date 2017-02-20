@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     //hide execDiv untill  activated by button
     //$("#execDiv").hide();
-    $("#execButton").click(function(e) {
+    $("#execGroup").click(function(e) {
         e.preventDefault();
         e.stopPropagation();
         if ($("#advisDiv").is(":visible")) {
@@ -16,6 +16,8 @@ $(document).ready(function() {
         }
         $("#rightDiv").find('#execDiv').toggle("slide");
     });
+
+
     //hide expanding months layout in executive committee pop out
     $(".archive_months").hide();
     $(".years").click(function() {
@@ -24,7 +26,7 @@ $(document).ready(function() {
 
     //hide advisDiv untill  activated by button
     //$("#advisDiv").hide();
-    $("#advisButton").click(function(e) {
+    $("#advisGroup").click(function(e) {
         e.preventDefault();
         if ($("#execDiv").is(":visible")) {
             $("#rightDiv").find('#execDiv').toggle("slide");
@@ -41,6 +43,7 @@ $(document).ready(function() {
     var $comOpen = $(".advisCommittees").click(function() {
 
         var $header = $(this);
+        $header.find(".toggle-close").toggleClass("toggle-open");
         //get next element
         //alert($header.attr('id'));
         var $content = $header.find('ul');
@@ -94,6 +97,13 @@ $(document).ready(function() {
         $membersUL.not($content).stop(true, true).slideUp();
 
 
+        /* the foo*/
+        if ($(this).siblings().find('span').hasClass('toggle-open')) {
+            $(this).siblings().find('span').removeClass('toggle-open');
+            return;
+        }
+        /* the bar*/
+        return false;
     });
 
 });

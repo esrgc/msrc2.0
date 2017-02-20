@@ -667,6 +667,22 @@ figure {
 #footer_content {
   z-index: 10;
 }
+.comMenu {
+  padding-left: 5px;
+  overflow-y: auto;
+}
+.toggle-open,
+.toggle-close {
+  font-family: 'FontAwesome';
+  font-size: 16px;
+  color: #e6e6e6;
+}
+.toggle-close:after {
+  content: "\f150";
+}
+.toggle-open:after {
+  content: "\f151";
+}
 .footer-bottom {
   background-color: #071e35;
   font-size: 14px;
@@ -877,7 +893,7 @@ figure.effect-move:hover h3 i {
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-  z-index: 1;
+  z-index: 10;
 }
 .angle-text:not(.ac_collapse) {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1018,7 +1034,7 @@ figure.effect-move:hover h3 i {
   width: 100%;
   height: 85%;
   opacity: 0.88;
-  margin-right: 0;
+  margin: 0;
   bottom: 60px;
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
@@ -1360,16 +1376,6 @@ figure.effect-move:hover h3 i {
   height: 50%;
   color: white;
 }
-#records.ac_collapse {
-  display: none;
-  overflow: hidden;
-}
-#records:not(.ac_collapse) {
-  display: block;
-  position: relative;
-  opacity: 1;
-  z-index: auto;
-}
 .records-wrapper {
   display: block;
   flex-wrap: wrap;
@@ -1462,9 +1468,10 @@ figure.effect-move:hover h3 i {
   position: absolute;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #e6e6e6;
+  margin: 0 auto;
   top: 220px;
-  width: 35%;
-  left: 25%;
+  width: 50%;
+  left: 27%;
   z-index: 200;
 }
 .left_Div ul li img {
@@ -1538,9 +1545,12 @@ figure.effect-move:hover h3 i {
 }
 .years,
 .advisCommittees,
-#execButton,
-#advisButton {
+#execGroup,
+#advisGroup {
   cursor: pointer;
+}
+.advisCommittees {
+  text-align: left;
 }
 .archive_months,
 .members {
@@ -1549,6 +1559,9 @@ figure.effect-move:hover h3 i {
   margin-bottom: 1em;
   cursor: pointer;
   z-index: 1000;
+}
+.just-left {
+  text-align: left;
 }
 .partners_bgc {
   position: fixed;
@@ -2072,8 +2085,8 @@ figure.effect-move:hover h3 i {
   hr {
     margin: 10px 0;
   }
-  #advisButton li h2,
-  #execButton li h2 {
+  #advisGroup li h2,
+  #execGroup li h2 {
     font-size: 12px;
   }
   .archive_months,
@@ -2252,8 +2265,8 @@ figure.effect-move:hover h3 i {
     width: 65%;
     top: 49px;
   }
-  #advisButton,
-  #execButton {
+  #advisGroup,
+  #execGroup {
     padding-top: 80px;
   }
   .archive_months,
@@ -2593,8 +2606,8 @@ figure.effect-move:hover h3 i {
     height: 80%;
     width: 65%;
   }
-  #execButton,
-  #advisButton {
+  #execGroup,
+  #advisGroup {
     padding-top: 80px;
   }
   #execDiv,
