@@ -449,15 +449,15 @@ $(document).ready(function() {
 $(window).on('hashchange', function(e) {
     //alert(location.hash);
     e.preventDefault();
-    e.stopPropagation();
+    //e.stopPropagation();
 
     if (location.hash == "#comCEDS" || location.hash == "#comEM" || location.hash == "#comGIS" || location.hash == "#comIT" || location.hash == "#comMUST") {
-        //$('#footer_button').trigger('click');
+        $('#footer_button').trigger('click');
         $('#advisGroup').trigger('click');
         $(location.hash).delay(300).trigger('click');
 
     } else if (location.hash == "#members" || location.hash == "#spotlight" || location.hash == "#records") {
-        //$('#footer_button').delay(0).trigger('click');
+        $('#footer_button').trigger('click');
 
         /// cross browser functionality issues with firefox and msie
         // relative position elements become thrown to the left when open and closed
@@ -477,14 +477,14 @@ $(window).on('hashchange', function(e) {
     } else {
 
         $(location.hash).delay(300).trigger('click');
-        //$('#footer_button').trigger('click');
+        $('#footer_button').trigger('click');
     }
 
 });
 
 $(window).load(function() {
     if (window.location.hash) {
-        $("#footer_button").trigger('click');
+        //$("#footer_button").trigger('click');
         $(window).delay(300).trigger('hashchange');
     }
 });
