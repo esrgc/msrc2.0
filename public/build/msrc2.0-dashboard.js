@@ -26,8 +26,13 @@ $(window).load(function() {
     $("#theMSRC").hide();
     $(".advisMins").hide();
     $(".members").hide();
+
+
+
+    // $(".spotlight-wrapper, .records-wrapper").hide();
 });
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /* 
  * Author: Carl Flint, ESRGC
@@ -114,6 +119,8 @@ $(window).load(function() {
     var $msryRecords = $('#masonry-container-records').masonry();
     //$msryRecords.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
     $msryRecords.masonry('layout');
+
+
 });
 
 $(document).ready(function() {
@@ -173,6 +180,10 @@ $(document).ready(function() {
             return this;
         };
 
+
+
+
+
         if (attrID == 'members') {
 
             $("#membersDiv").toggle('slide');
@@ -180,6 +191,8 @@ $(document).ready(function() {
 
         } else if (attrID == 'spotlight') {
 
+
+            // $('.spotlight-wrapper').show();
             $('.spotlight-wrapper').css({ "z-index": "1000" });
             // init masonry js with imagesLoaded for spotlight
             var $spotlightMasonry = $('#masonry-container-spotlight').masonry({
@@ -194,7 +207,7 @@ $(document).ready(function() {
 
             $spotlightMasonry.masonryImagesReveal($('#images').find('.gridItem'));
             $("#masonry-container-spotlight").toggle('slow');
-            $spotlightMasonry.masonry();
+            $spotlightMasonry.masonry('layout');
 
             if ($('.textBox').is(":visible")) {
                 $('.textBox').hide("slow");
@@ -206,6 +219,7 @@ $(document).ready(function() {
 
         } else if (attrID == 'records') {
 
+            // $('.records-wrapper').toggle('slide');
             $('.records-wrapper').css({ "z-index": "1000" });
             // init masonry container for records
             var $recordsMasonry = $('#masonry-container-records').masonry({
@@ -226,16 +240,9 @@ $(document).ready(function() {
                 $('.textBox').hide("slow");
             }
             //$recordsMasonry.masonry("layoutItems", '.records-gridItem', true );
-            $recordsMasonry.masonry();
+            $recordsMasonry.masonry('layout');
         } else {
-            // $('.spotlight-wrapper').css({
-            //     "z-index": "0",
-            //     "display": "none"
-            // });
-            // $('.records-wrapper').css({
-            //     "z-index": "0",
-            //     "display": "none"
-            // });
+
         }
 
 
@@ -389,28 +396,11 @@ $(document).ready(function() {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// experimental code for triggering click event based on point of entry with hash detection. 
-///// on footer link activation make click events happen after new page loads
-$(window).on('hashchange', function(e) {
-    //alert(location.hash);
-    if (location.hash == "#comCEDS" || location.hash == "#comEM" || location.hash == "#comGIS" || location.hash == "#comIT" || location.hash == "#comMUST") {
-        $('#advisGroup').trigger('click');
-        $(location.hash).trigger('click');
-    } else {
-        $(location.hash).trigger('click');
-    }
-});
-
-$(window).load(function() {
-    if (window.location.hash) {
-        $(window).trigger('hashchange');
-    }
-});
 //////////////////////////////////////////////////////////////////////////////////////////////
 // footer show/hide toggle
 $(document).ready(function() {
     // footer slide toggle nav pane
-    $("#footer_button").click(function(e) {
+    $("#footer_button").on('click', function(e) {
         e.preventDefault();
         $('.footer').slideToggle();
         return;
@@ -422,17 +412,81 @@ $(document).ready(function() {
 // footer dropdown menu for advisory committees
 $(document).ready(function() {
     $("#dropdownMenuButton").click(function(e) {
-            e.preventDefault();
-            $(this).find('.toggle-close').toggleClass('toggle-open');
-            $(".comMenu").toggle("slide");
+        e.preventDefault();
+        $(this).find('.toggle-close').toggleClass('toggle-open');
+        $(".comMenu").toggle("slide");
 
-
-            if ($(this).hasClass("toggle-open")) {
-                $(this).removeClass("toggle-open").slideUp(500);
-                return;
-            }
-            return false;
+        if ($(this).hasClass("toggle-open")) {
+            $(this).removeClass("toggle-open").slideUp(500);
+            return;
+        }
+        return false;
     });
+});
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// experimental code for triggering click event based on point of entry with hash detection. 
+///// on footer link activation make click events happen after new page loads
+
+// if ("onhashchange" in window) {  
+//   //alert("The browser supports the hashchange event!");  
+// }  
+
+// function locationHashChanged() {  
+//   if (location.hash === "#somecoolfeature") {  
+//     location.hash.trigger('click');
+//   }  else {
+//     document.getElementById(location.hash).click();
+//   }
+// }  
+
+// window.onhashchange = locationHashChanged;
+
+
+$(window).on('hashchange', function(e) {
+    //alert(location.hash);
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (location.hash == "#comCEDS" || location.hash == "#comEM" || location.hash == "#comGIS" || location.hash == "#comIT" || location.hash == "#comMUST") {
+        //$('#footer_button').trigger('click');
+        $('#advisGroup').trigger('click');
+        $(location.hash).delay(300).trigger('click');
+
+    } else if (location.hash == "#members" || location.hash == "#spotlight" || location.hash == "#records") {
+        //$('#footer_button').delay(0).trigger('click');
+
+        /// cross browser functionality issues with firefox and msie
+        // relative position elements become thrown to the left when open and closed
+
+        var x = location.hash;
+        //alert($x);
+        $(x).delay(300).trigger('click');
+
+        // $(document).ready(function() {
+
+        //     var x = location.hash;
+        //     //alert($x);
+        //     $(x).delay(300).trigger('click');
+
+        // });
+
+    } else {
+
+        $(location.hash).delay(300).trigger('click');
+        //$('#footer_button').trigger('click');
+    }
+
+});
+
+$(window).load(function() {
+    if (window.location.hash) {
+        $("#footer_button").trigger('click');
+        $(window).delay(300).trigger('hashchange');
+    }
 });
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////

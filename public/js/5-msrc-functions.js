@@ -36,6 +36,8 @@ $(window).load(function() {
     var $msryRecords = $('#masonry-container-records').masonry();
     //$msryRecords.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
     $msryRecords.masonry('layout');
+
+
 });
 
 $(document).ready(function() {
@@ -95,6 +97,10 @@ $(document).ready(function() {
             return this;
         };
 
+
+
+
+
         if (attrID == 'members') {
 
             $("#membersDiv").toggle('slide');
@@ -102,6 +108,8 @@ $(document).ready(function() {
 
         } else if (attrID == 'spotlight') {
 
+
+            // $('.spotlight-wrapper').show();
             $('.spotlight-wrapper').css({ "z-index": "1000" });
             // init masonry js with imagesLoaded for spotlight
             var $spotlightMasonry = $('#masonry-container-spotlight').masonry({
@@ -116,7 +124,7 @@ $(document).ready(function() {
 
             $spotlightMasonry.masonryImagesReveal($('#images').find('.gridItem'));
             $("#masonry-container-spotlight").toggle('slow');
-            $spotlightMasonry.masonry();
+            $spotlightMasonry.masonry('layout');
 
             if ($('.textBox').is(":visible")) {
                 $('.textBox').hide("slow");
@@ -128,6 +136,7 @@ $(document).ready(function() {
 
         } else if (attrID == 'records') {
 
+            // $('.records-wrapper').toggle('slide');
             $('.records-wrapper').css({ "z-index": "1000" });
             // init masonry container for records
             var $recordsMasonry = $('#masonry-container-records').masonry({
@@ -148,16 +157,9 @@ $(document).ready(function() {
                 $('.textBox').hide("slow");
             }
             //$recordsMasonry.masonry("layoutItems", '.records-gridItem', true );
-            $recordsMasonry.masonry();
+            $recordsMasonry.masonry('layout');
         } else {
-            // $('.spotlight-wrapper').css({
-            //     "z-index": "0",
-            //     "display": "none"
-            // });
-            // $('.records-wrapper').css({
-            //     "z-index": "0",
-            //     "display": "none"
-            // });
+
         }
 
 

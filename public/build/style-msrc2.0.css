@@ -127,6 +127,7 @@ blockquote {
 @font-face {
   font-family: "Alex Brush script=latin rev=2";
   font-style: normal;
+  font-weight: 200;
   src: url("https://fonts.gstatic.com/s/alexbrush/v6/IdwaSrUcr-IskDo5YUNTVfk_vArhqVIZ0nv9q090hN8.woff2") format("woff2");
   unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
@@ -139,6 +140,7 @@ blockquote {
 @font-face {
   font-family: "Alex Brush script=latin rev=2";
   font-style: normal;
+  font-weight: 200;
   src: url("https://fonts.gstatic.com/s/alexbrush/v6/IdwaSrUcr-IskDo5YUNTVfk_vArhqVIZ0nv9q090hN8.woff2") format("woff2");
   unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
@@ -256,13 +258,6 @@ p {
 .navbar-header {
   position: relative;
   height: 60px;
-}
-.grayscale {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-#logoLarge {
-  height: 58px;
 }
 .navbar-brand {
   padding: 0 0;
@@ -456,6 +451,7 @@ hr.small {
 @font-face {
   font-family: "Alex Brush script=latin rev=2";
   font-style: normal;
+  font-weight: 200;
   src: url("https://fonts.gstatic.com/s/alexbrush/v6/IdwaSrUcr-IskDo5YUNTVfk_vArhqVIZ0nv9q090hN8.woff2") format("woff2");
   unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
@@ -473,6 +469,7 @@ hr.small {
 @font-face {
   font-family: "Alex Brush script=latin rev=2";
   font-style: normal;
+  font-weight: 200;
   src: url("https://fonts.gstatic.com/s/alexbrush/v6/IdwaSrUcr-IskDo5YUNTVfk_vArhqVIZ0nv9q090hN8.woff2") format("woff2");
   unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
@@ -822,9 +819,8 @@ figure.effect-move:hover h3 i {
   position: relative;
 }
 .skew {
-  transform: skewY(130deg);
+  transform: matrix(1, -1.19175, 0, 1, 0, 0);
   -webkit-transform: skewY(130deg);
-  -moz-transform: skewY(130deg);
   -ms-transform: skewY(130deg);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -913,9 +909,8 @@ figure.effect-move:hover h3 i {
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
-  transform: skewY(130deg);
+  transform: matrix(1, -1.19175, 0, 1, 0, 0);
   -webkit-transform: skewY(130deg);
-  -moz-transform: skewY(130deg);
   -ms-transform: skewY(130deg);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -940,9 +935,8 @@ figure.effect-move:hover h3 i {
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
-  transform: skewY(130deg);
+  transform: matrix(1, -1.19175, 0, 1, 0, 0);
   -webkit-transform: skewY(130deg);
-  -moz-transform: skewY(130deg);
   -ms-transform: skewY(130deg);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -967,9 +961,8 @@ figure.effect-move:hover h3 i {
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
-  transform: skewY(130deg);
+  transform: matrix(1, -1.19175, 0, 1, 0, 0);
   -webkit-transform: skewY(130deg);
-  -moz-transform: skewY(130deg);
   -ms-transform: skewY(130deg);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -994,9 +987,8 @@ figure.effect-move:hover h3 i {
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
-  transform: skewY(130deg);
+  transform: matrix(1, -1.19175, 0, 1, 0, 0);
   -webkit-transform: skewY(130deg);
-  -moz-transform: skewY(130deg);
   -ms-transform: skewY(130deg);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -1012,7 +1004,6 @@ figure.effect-move:hover h3 i {
   z-index: 3;
 }
 .angle1:not(.ac_collapse) {
-  right: 0;
   opacity: 1;
   background: #cccccc;
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
@@ -1023,19 +1014,23 @@ figure.effect-move:hover h3 i {
   overflow: hidden;
   height: 40%;
   width: 75%;
-  transform: skewY(130deg);
+  transform: matrix(1, -1.19175, 0, 1, 0, 0);
   -webkit-transform: skewY(130deg);
-  -moz-transform: skewY(130deg);
   -ms-transform: skewY(130deg);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  position: relative;
+  top: 110px;
+  left: 1px;
+  right: 0;
   width: 100%;
-  height: 85%;
+  height: 85vh;
   opacity: 0.88;
   margin: 0;
-  bottom: 60px;
+  bottom: 110px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -1044,7 +1039,6 @@ figure.effect-move:hover h3 i {
   z-index: 100 !important;
 }
 .angle2:not(.ac_collapse) {
-  right: 0;
   opacity: 1;
   background: #cccccc;
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
@@ -1055,16 +1049,19 @@ figure.effect-move:hover h3 i {
   overflow: hidden;
   height: 40%;
   width: 75%;
-  transform: skewY(130deg);
+  transform: matrix(1, -1.19175, 0, 1, 0, 0);
   -webkit-transform: skewY(130deg);
-  -moz-transform: skewY(130deg);
   -ms-transform: skewY(130deg);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  position: relative;
+  top: 110px;
+  left: 0;
+  right: 0;
   width: 100%;
-  height: 85%;
+  height: 85vh;
   opacity: 0.88;
   margin-right: 0;
   bottom: 60px;
@@ -1076,7 +1073,6 @@ figure.effect-move:hover h3 i {
   z-index: 100 !important;
 }
 .angle3:not(.ac_collapse) {
-  right: 0;
   opacity: 1;
   background: #cccccc;
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
@@ -1087,16 +1083,19 @@ figure.effect-move:hover h3 i {
   overflow: hidden;
   height: 40%;
   width: 75%;
-  transform: skewY(130deg);
+  transform: matrix(1, -1.19175, 0, 1, 0, 0);
   -webkit-transform: skewY(130deg);
-  -moz-transform: skewY(130deg);
   -ms-transform: skewY(130deg);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  position: relative;
+  top: 110px;
+  left: 0;
+  right: 0;
   width: 100%;
-  height: 85%;
+  height: 85vh;
   opacity: 0.88;
   margin-right: 0;
   bottom: 60px;
@@ -1274,6 +1273,19 @@ figure.effect-move:hover h3 i {
   -o-transition-property: height;
   transition-property: height;
 }
+.transitions-enabled.grid .gridItem,
+.transitions-enabled.grid .records-gridItem {
+  -webkit-animation: moveFromBottom 300ms ease;
+  -moz-animation: moveFromBottom 300ms ease;
+  -ms-animation: moveFromBottom 300ms ease;
+  -o-animation: moveFromBottom 300ms ease;
+  animation: moveFromBottom 300ms ease;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: transform, opacity;
+}
 .transitions-enabled.grid,
 .transitions-enabled.grid .gridItem,
 .transitions-enabled.grid .records-gridItem {
@@ -1311,16 +1323,18 @@ figure.effect-move:hover h3 i {
 .spotlight-wrapper {
   display: block;
   flex-wrap: wrap;
-  position: fixed;
+  position: relative;
   float: left;
   text-align: center;
+  height: 80vh;
   width: 100%;
-  top: 140px;
+  top: 60px !important;
   padding: 0;
   margin: 0;
   right: 0;
   bottom: 0;
   overflow-y: auto;
+  z-index: -1;
 }
 .textBox.hidden {
   display: none;
@@ -1379,15 +1393,16 @@ figure.effect-move:hover h3 i {
 .records-wrapper {
   display: block;
   flex-wrap: wrap;
-  position: fixed;
+  position: relative;
   float: left;
   text-align: center;
-  width: 90%;
-  top: 160px;
-  left: 35px;
+  height: 80vh;
+  width: 100%;
+  top: 60px !important;
   right: 0;
   bottom: 0;
   overflow-y: auto;
+  z-index: -1;
 }
 #recordsImages {
   width: 100%;
@@ -1997,9 +2012,8 @@ figure.effect-move:hover h3 i {
     font-size: 17px;
   }
   .angle1 {
-    transform: skewY(130deg);
+    transform: matrix(1, -1.19175, 0, 1, 0, 0);
     -webkit-transform: skewY(130deg);
-    -moz-transform: skewY(130deg);
     -ms-transform: skewY(130deg);
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -2012,9 +2026,8 @@ figure.effect-move:hover h3 i {
     height: 70%;
   }
   .angle2 {
-    transform: skewY(130deg);
+    transform: matrix(1, -1.19175, 0, 1, 0, 0);
     -webkit-transform: skewY(130deg);
-    -moz-transform: skewY(130deg);
     -ms-transform: skewY(130deg);
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -2027,9 +2040,8 @@ figure.effect-move:hover h3 i {
     height: 70%;
   }
   .angle3 {
-    transform: skewY(130deg);
+    transform: matrix(1, -1.19175, 0, 1, 0, 0);
     -webkit-transform: skewY(130deg);
-    -moz-transform: skewY(130deg);
     -ms-transform: skewY(130deg);
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -2042,9 +2054,8 @@ figure.effect-move:hover h3 i {
     height: 70%;
   }
   .angle4 {
-    transform: skewY(130deg);
+    transform: matrix(1, -1.19175, 0, 1, 0, 0);
     -webkit-transform: skewY(130deg);
-    -moz-transform: skewY(130deg);
     -ms-transform: skewY(130deg);
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -2352,9 +2363,8 @@ figure.effect-move:hover h3 i {
     font-size: 17px;
   }
   .angle1 {
-    transform: skewY(130deg);
+    transform: matrix(1, -1.19175, 0, 1, 0, 0);
     -webkit-transform: skewY(130deg);
-    -moz-transform: skewY(130deg);
     -ms-transform: skewY(130deg);
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -2367,9 +2377,8 @@ figure.effect-move:hover h3 i {
     height: 60%;
   }
   .angle2 {
-    transform: skewY(130deg);
+    transform: matrix(1, -1.19175, 0, 1, 0, 0);
     -webkit-transform: skewY(130deg);
-    -moz-transform: skewY(130deg);
     -ms-transform: skewY(130deg);
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -2382,9 +2391,8 @@ figure.effect-move:hover h3 i {
     height: 60%;
   }
   .angle3 {
-    transform: skewY(130deg);
+    transform: matrix(1, -1.19175, 0, 1, 0, 0);
     -webkit-transform: skewY(130deg);
-    -moz-transform: skewY(130deg);
     -ms-transform: skewY(130deg);
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -2397,9 +2405,8 @@ figure.effect-move:hover h3 i {
     height: 60%;
   }
   .angle4 {
-    transform: skewY(130deg);
+    transform: matrix(1, -1.19175, 0, 1, 0, 0);
     -webkit-transform: skewY(130deg);
-    -moz-transform: skewY(130deg);
     -ms-transform: skewY(130deg);
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;

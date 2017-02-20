@@ -26,5 +26,9 @@ $(window).load(function() {
     $("#theMSRC").hide();
     $(".advisMins").hide();
     $(".members").hide();
+
+
+
+    // $(".spotlight-wrapper, .records-wrapper").hide();
 });
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////

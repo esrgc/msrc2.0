@@ -119,9 +119,10 @@
 }
 
 .skew {
-    transform: skewY(130deg);
+    transform: matrix(1, -1.19175, 0, 1, 0, 0);
+    //transform: skewY(130deg);
     -webkit-transform: skewY(130deg);
-    -moz-transform: skewY(130deg);
+    //-moz-transform: skewY(130deg);
     -ms-transform: skewY(130deg);
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -248,12 +249,18 @@
 .angle1:not(.ac_collapse) {
     .angle;
     .skew;
-    //position: absolute;
+    position: relative;
+    top: 110px;
+    left: 1px;
+    right: 0;
     width: 100%;
-    height: 85%;
+    //height: 85%;
+    height: 85vh;
     opacity: 0.88;
     margin: 0;
-    bottom: 60px;
+    //bottom: 60px;
+    bottom: 110px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -265,8 +272,14 @@
 .angle2:not(.ac_collapse) {
     .angle;
     .skew;
+    position: relative;
+    top: 110px;
+    // bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    height: 85%;
+    // height: 85%;
+    height: 85vh;
     opacity: 0.88;
     margin-right: 0;
     bottom: 60px;
@@ -281,8 +294,14 @@
 .angle3:not(.ac_collapse) {
     .angle;
     .skew;
+    position: relative;
+    top: 110px;
+    // bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    height: 85%;
+    // height: 85%;
+    height: 85vh;
     opacity: 0.88;
     margin-right: 0;
     bottom: 60px;
@@ -488,16 +507,16 @@
 
 .transitions-enabled.grid .gridItem,
 .transitions-enabled.grid .records-gridItem {
-    //-webkit-animation: moveFromBottom 300ms ease;
-    //-moz-animation: moveFromBottom 300ms ease;
-    //-ms-animation: moveFromBottom 300ms ease;
-    //-o-animation: moveFromBottom 300ms ease;
-    //animation: moveFromBottom 300ms ease;
-    // -webkit-transition-property: -webkit-transform, opacity;
-    // -moz-transition-property: -moz-transform, opacity;
-    // -ms-transition-property: -ms-transform, opacity;
-    // -o-transition-property: top, left, opacity;
-    // transition-property: transform, opacity
+    -webkit-animation: moveFromBottom 300ms ease;
+    -moz-animation: moveFromBottom 300ms ease;
+    -ms-animation: moveFromBottom 300ms ease;
+    -o-animation: moveFromBottom 300ms ease;
+    animation: moveFromBottom 300ms ease;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: top, left, opacity;
+    transition-property: transform, opacity
 }
 
 .transitions-enabled.grid,
@@ -551,18 +570,19 @@
 .spotlight-wrapper {
     display: block;
     flex-wrap: wrap;
-    position: fixed;
+    position: relative;
     float: left;
     text-align: center;
-    //height: 75%;
+    height: 80vh;
     width: 100%;
-    top: 140px;
+    top: 60px !important;
     //left: 35px;
     padding: 0;
     margin: 0;
     right: 0;
     bottom: 0;
     overflow-y: auto;
+    z-index: -1;
 }
 
 .textBox.hidden {
@@ -643,18 +663,21 @@
 //     z-index: auto;
 // }
 
+
 .records-wrapper {
     display: block;
     flex-wrap: wrap;
-    position: fixed;
+    position: relative;
     float: left;
     text-align: center;
-    width: 90%;
-    top: 160px;
-    left: 35px;
+    height: 80vh;
+    width: 100%;
+    top: 60px !important;
+    //left: 35px;
     right: 0;
     bottom: 0;
     overflow-y: auto;
+    z-index: -1;
 }
 
 #recordsImages {
