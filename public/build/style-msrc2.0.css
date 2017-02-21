@@ -2164,6 +2164,9 @@ figure.effect-move:hover h3 i {
   #membersDiv2 {
     width: 50%;
   }
+  .textBox:not(.hidden) {
+    height: 65%;
+  }
   .records-textBox {
     bottom: 0;
   }
@@ -2224,8 +2227,7 @@ figure.effect-move:hover h3 i {
   .navbar.navbar-fixed-bottom,
   .footer_button_div {
     position: fixed;
-    bottom: 10px;
-    padding-bottom: -10px;
+    bottom: 0px;
   }
   .header {
     min-width: 100vw;
@@ -2249,7 +2251,7 @@ figure.effect-move:hover h3 i {
   }
   .footer-bottom,
   .fa-3x {
-    font-size: 10px;
+    font-size: 8px;
   }
   .fa-5x {
     font-size: 32px;
