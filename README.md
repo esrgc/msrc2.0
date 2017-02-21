@@ -5,13 +5,14 @@
 ###### [Mockup](https://app.moqups.com/ESRGC/5Trmy1qbvA/view/page/ac64d30cc?ui=0)
 ---
 ### File structure tree
-*excluding prebuilt libs, node_modules, .git, old-code
+*excluding prebuilt libs, node_modules, .git, old-code, etc.
+
+```bash
+python osWalk.py -r D:/flint/msrc/msrc2.0 -xf [EXCLUDE_FOLDER [ .git ][ lib ][ node_modules ][ font-awesome ][ bin ][ old-code ]] -o msrc2.0-route.md
+```
+---
 ```
 [root]
-┣━ [bin]
-┃  ┣━ [config]
-┃  ┃  ┗━ index.js
-┃  ┗━ www
 ┣━ [public]
 ┃  ┣━ [build]
 ┃  ┃  ┣━ msrc2.0-dashboard.js
@@ -28,7 +29,7 @@
 ┃  ┃  ┃  ┃  ┣━ MSRCwriteup_2016March23.pdf
 ┃  ┃  ┃  ┃  ┗━ MSRCwriteup_2016Sept22.pdf
 ┃  ┃  ┃  ┣━ [2017]
-┃  ┃  ┃  ┃  ┗━ filler.pdf
+┃  ┃  ┃  ┃  ┗━ MSRCwriteup_2017 Not Happened Yet.pdf
 ┃  ┃  ┃  ┗━ [Archive]
 ┃  ┃  ┃      ┗━ GISmins_200408.pdf
 ┃  ┃  ┣━ [exec_min]
@@ -40,7 +41,7 @@
 ┃  ┃  ┃  ┣━ [2016]
 ┃  ┃  ┃  ┃  ┗━ Minutes MSRC Executive Board mtg 5-27-16.pdf
 ┃  ┃  ┃  ┣━ [2017]
-┃  ┃  ┃  ┃  ┗━ filler.docx
+┃  ┃  ┃  ┃  ┗━ Minutes MSRC Executive Board mtg Didn't happen Yet.docx.docx
 ┃  ┃  ┃  ┗━ [Archive]
 ┃  ┃  ┃      ┗━ Minutes MSRC Executive Board Mtg_200905.pdf
 ┃  ┃  ┣━ [msrc]
@@ -63,6 +64,7 @@
 ┃  ┃  ┃  ┣━ mdbc.gif
 ┃  ┃  ┃  ┣━ MDdllr2.gif
 ┃  ┃  ┃  ┣━ midshr2ndhd.jpg
+┃  ┃  ┃  ┣━ msrcLargeFormatTEST.png
 ┃  ┃  ┃  ┣━ must.jpg
 ┃  ┃  ┃  ┗━ talbotseal2.png
 ┃  ┃  ┣━ about.jpg
@@ -86,6 +88,7 @@
 ┃  ┃  ┣━ 2-mobileNav.js
 ┃  ┃  ┣━ 3-toTop.js
 ┃  ┃  ┣━ 5-msrc-functions.js
+┃  ┃  ┣━ 6-footer-hash_Router.js
 ┃  ┃  ┣━ 7-voting_nonVoting.js
 ┃  ┃  ┣━ 8-committeesPage.js
 ┃  ┃  ┗━ 9-flowType_baseline.js
