@@ -135,37 +135,6 @@
     }*/
 }
 
-
-/* Small devices */
-
-@media screen and (min-width:545px) and (max-width:768px) {
-    .fa-3x {
-        font-size: 30px;
-    }
-}
-
-
-/* Extra small devices */
-
-@media screen and (min-width:431px) and (max-width:544px) {
-    .fa-3x {
-        font-size: 20px;
-    }
-    #cpyRight {
-        font-size: 8px;
-    }
-    #footContact {
-        padding: 0 0;
-        right: 4px;
-    }
-}
-
-@media screen and (max-width:677px) {
-    .fa-3x {
-        font-size: 12px;
-    }
-}
-
 @media only screen and (max-width: 700px) {
     .grid {
         left: 0;
@@ -190,6 +159,37 @@
     }
     .grid-box-spotlight {
         width: 98%;
+    }
+}
+
+@media screen and (max-width:677px) {
+    .fa-3x {
+        font-size: 12px;
+    }
+}
+
+
+/* Small devices */
+
+@media screen and (min-width:545px) and (max-width:768px) {
+    .fa-3x {
+        font-size: 30px;
+    }
+}
+
+
+/* Extra small devices */
+
+@media screen and (min-width:431px) and (max-width:544px) {
+    .fa-3x {
+        font-size: 20px;
+    }
+    #cpyRight {
+        font-size: 8px;
+    }
+    #footContact {
+        padding: 0 0;
+        right: 4px;
     }
 }
 
@@ -299,10 +299,10 @@
     .grid {
         left: 1px;
     }
-    .spotlight-wrapper,
-    .records-wrapper {
+    .spotlight-wrapper {
         top: 50px !important;
     }
+    .records-wrapper,
     #membersDiv,
     #membersDiv2 {
         top: 0px !important;
@@ -451,18 +451,14 @@
     .toggle-open {
         font-size: 10px !important;
     }
-    .spotlight-wrapper,
-    .records-wrapper,
-    #membersDiv {
-        top: 55px;
+    .spotlight-wrapper {
+        top: 50px !important;
     }
+    .records-wrapper,
+    #membersDiv,
     #membersDiv2 {
         top: 0px !important;
     }
-    // #membersDiv,
-    // #membersDiv2 {
-    //     height: 600px;
-    // }
     .records-textBox {
         bottom: 0;
     }
@@ -497,277 +493,279 @@
 
 /* Landscape small mobile device */
 
-// @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: landscape) {
-//     #logoBrand {
-//         padding-top: 10px;
-//         ul li h2 {
-//             font-size: 20px;
-//         }
-//         ul li h3 {
-//             font-size: 16px;
-//         }
-//         ul li p {
-//             padding-top: 5px;
-//             font-size: 10px;
-//         }
-//     }
-//     .navbar #navWrapper,
-//     .navbar-header,
-//     #logoBrand {
-//         height: 35px;
-//         min-height: 35px;
-//         margin-bottom: 1px;
-//     }
-//     #nav-links p {
-//         font-size: 10px;
-//         padding-right: 20px;
-//         margin-bottom: -10px;
-//     }
-//     .navbar.navbar-fixed-bottom,
-//     .footer_button_div {
-//         position: fixed;
-//         bottom: 10px;
-//         padding-bottom: -10px;
-//     }
-//     .header {
-//         min-width: 100vw;
-//         min-height: 100vh;
-//     }
-//     #footer_button {
-//         position: fixed;
-//         bottom: 35px;
-//         padding-bottom: -35px;
-//         left: 50%;
-//     }
-//     #footer_higher #footer_content {
-//         height: 150px;
-//         font-size: 8px;
-//     }
-//     hr.small {
-//         margin: 10px 0;
-//     }
-//     .footer_buffer {
-//         padding-top: 50px;
-//     }
-//     .footer-bottom,
-//     .fa-3x {
-//         font-size: 8px;
-//     }
-//     .fa-5x {
-//         font-size: 22px;
-//     }
-//     .footer-bottom {
-//         padding-top: 0;
-//     }
-//     #about-landing {
-//         .font-blocky-lt;
-//         top: 90px;
-//         left: 25px;
-//         overflow: hidden;
-//     }
-//     // .angle-text.ac_collapse {
-//     //     left: 42.5%;
-//     // }
-//     .slide-toggle-close,
-//     .slide-toggle-open {
-//         font-size: 17px;
-//     }
-//     .toggle1,
-//     .toggle2,
-//     .toggle3,
-//     .toggle4 {
-//         .skew-matrix;
-//     }
-//     .toggle1 {
-//         bottom: -300px;
-//     }
-//     .toggle2 {
-//         bottom: -350px;
-//     }
-//     .toggle3 {
-//         bottom: -400px;
-//     }
-//     .toggle4 {
-//         bottom: -450px;
-//     }
-//     .toggle-text.ac_collapse {
-//         .antiSkew-matrix;
-//         left: 60%;
-//     }
-//     .toggle-close,
-//     .toggle-open {
-//         font-size: 10px !important;
-//     }
-//     .grid {
-//         left: 1px;
-//     }
-//     .spotlight-wrapper,
-//     .records-wrapper {
-//         top: 50px !important;
-//     }
-//     #membersDiv,
-//     #membersDiv2 {
-//         top: 0px !important;
-//     }
-//     .records-textBox {
-//         bottom: 0;
-//     }
-//     .left_Div {
-//         top: 60px;
-//     }
-//     #execDiv,
-//     #advisDiv {
-//         top: 49px;
-//     }
-//     .archive_months,
-//     .members {
-//         margin-left: 5px;
-//     }
-// }
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: landscape) {
+    #logoBrand {
+        padding-top: 10px;
+        ul li h2 {
+            font-size: 20px;
+        }
+        ul li h3 {
+            font-size: 16px;
+        }
+        ul li p {
+            padding-top: 5px;
+            font-size: 10px;
+        }
+    }
+    .navbar #navWrapper,
+    .navbar-header,
+    #logoBrand {
+        height: 35px;
+        min-height: 35px;
+        margin-bottom: 1px;
+    }
+    #nav-links p {
+        font-size: 10px;
+        padding-right: 20px;
+        margin-bottom: -10px;
+    }
+    .navbar.navbar-fixed-bottom,
+    .footer_button_div {
+        position: fixed;
+        bottom: 10px;
+        padding-bottom: -10px;
+    }
+    .header {
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+    #footer_button {
+        position: fixed;
+        bottom: 35px;
+        padding-bottom: -35px;
+        left: 50%;
+    }
+    #footer_higher #footer_content {
+        height: 150px;
+        font-size: 8px;
+    }
+    hr.small {
+        margin: 10px 0;
+    }
+    .footer_buffer {
+        padding-top: 50px;
+    }
+    .footer-bottom,
+    .fa-3x {
+        font-size: 8px;
+    }
+    .fa-5x {
+        font-size: 22px;
+    }
+    .footer-bottom {
+        padding-top: 0;
+    }
+    #about-landing {
+        .font-blocky-lt;
+        top: 90px;
+        left: 25px;
+        overflow: hidden;
+    }
+    .slide-toggle-close,
+    .slide-toggle-open {
+        font-size: 17px;
+    }
+    .toggle1,
+    .toggle2,
+    .toggle3,
+    .toggle4 {
+        .skew-matrix;
+    }
+    .toggle1 {
+        bottom: -300px;
+    }
+    .toggle2 {
+        bottom: -350px;
+    }
+    .toggle3 {
+        bottom: -400px;
+    }
+    .toggle4 {
+        bottom: -450px;
+    }
+    .toggle-text.ac_collapse {
+        .antiSkew-matrix;
+        left: 60%;
+    }
+    .toggle-close,
+    .toggle-open {
+        font-size: 10px !important;
+    }
+    .grid {
+        left: 1px;
+    }
+    .spotlight-wrapper {
+        top: 50px !important;
+    }
+    .records-wrapper,
+    #membersDiv,
+    #membersDiv2 {
+        top: 0px !important;
+    }
+    .textBox:not(.hidden) {
+        height: 65%;
+    }
+    .records-textBox {
+        bottom: 0;
+    }
+    .left_Div {
+        top: 60px;
+    }
+    #execDiv,
+    #advisDiv {
+        top: 49px;
+    }
+    .archive_months,
+    .members {
+        margin-left: 5px;
+    }
+}
 
-// @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: portrait) {
-//     #logoBrand {
-//         padding-top: 10px;
-//         ul li h2 {
-//             font-size: 16px;
-//         }
-//         ul li h3 {
-//             font-size: 14px;
-//         }
-//         ul li p {
-//             padding-top: 5px;
-//             font-size: 8px;
-//         }
-//     }
-//     .navbar #navWrapper,
-//     .navbar-header,
-//     #logoBrand {
-//         height: 35px;
-//         min-height: 35px;
-//         margin-bottom: 1px;
-//     }
-//     #nav-links p {
-//         font-size: 8px;
-//         padding-right: 20px;
-//         margin-bottom: -10px;
-//     }
-//     .navbar.navbar-fixed-bottom,
-//     .footer_button_div {
-//         position: fixed;
-//         bottom: 10px;
-//         padding-bottom: -10px;
-//     }
-//     .header {
-//         min-width: 100vw;
-//         min-height: 100vh;
-//     }
-//     #footer_button {
-//         position: fixed;
-//         bottom: 35px;
-//         padding-bottom: -35px;
-//         left: 50%;
-//     }
-//     #footer_higher #footer_content {
-//         height: 150px;
-//         font-size: 6px;
-//     }
-//     hr.small {
-//         margin: 10px 0;
-//     }
-//     .footer_buffer {
-//         padding-top: 50px;
-//     }
-//     .footer-bottom {
-//         font-size: 6px;
-//     }
-//     .fa-3x {
-//         font-size: 8px;
-//     }
-//     .fa-5x {
-//         font-size: 22px;
-//     }
-//     .footer-bottom {
-//         padding-top: 0;
-//     }
-//     #about-landing {
-//         .font-blocky-lt;
-//         font-size: 8px;
-//         width: 65%;
-//         top: 90px;
-//         left: 25px;
-//         overflow: hidden;
-//     }
-//     .slide-toggle-close,
-//     .slide-toggle-open {
-//         font-size: 17px;
-//     }
-//     .toggle1 {
-//         right: 0px;
-//         left: 0px;
-//         bottom: -300px;
-//     }
-//     .toggle2 {
-//         right: 0px;
-//         left: 0px;
-//         bottom: -350px;
-//     }
-//     .toggle3 {
-//         right: 0px;
-//         left: 0px;
-//         bottom: -400px;
-//     }
-//     .toggle4 {
-//         right: 0px;
-//         left: 0px;
-//         bottom: -450px;
-//     }
-//     .toggle-text.ac_collapse {
-//         .antiSkew2-matrix;
-//         left: 55%;
-//     }
-//     .toggle-close,
-//     .toggle-open {
-//         font-size: 8px !important;
-//     }
-//     .spotlight-wrapper,
-//     .records-wrapper {
-//         top: 55px;
-//     }
-//     #membersDiv,
-//     #membersDiv2 {
-//         top: 0px !important;
-//     }
-//     .spotlight-wrapper,
-//     .records-wrapper,
-//     #membersDiv,
-//     #membersDiv2 {
-//         top: 55px;
-//     }
-//     .records-textBox {
-//         bottom: 0;
-//     }
-//     #leftDiv {
-//         width: 35%;
-//     }
-//     .left_Div {
-//         top: 60px;
-//     }
-//     #rightDiv,
-//     #execDiv,
-//     #advisDiv {
-//         height: 80%;
-//         width: 65%;
-//     }
-//     #execGroup,
-//     #advisGroup {
-//         padding-top: 80px;
-//     }
-//     #execDiv,
-//     #advisDiv {
-//         top: 49px;
-//     }
-//     .archive_months,
-//     .members {
-//         margin-left: 5px;
-//     }
-// }
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: portrait) {
+    #logoBrand {
+        padding-top: 10px;
+        ul li h2 {
+            font-size: 16px;
+        }
+        ul li h3 {
+            font-size: 14px;
+        }
+        ul li p {
+            padding-top: 5px;
+            font-size: 8px;
+        }
+    }
+    .navbar #navWrapper,
+    .navbar-header,
+    #logoBrand {
+        height: 35px;
+        min-height: 35px;
+        margin-bottom: 1px;
+    }
+    #nav-links p {
+        font-size: 8px;
+        padding-right: 20px;
+        margin-bottom: -10px;
+    }
+    .navbar.navbar-fixed-bottom,
+    .footer_button_div {
+        position: fixed;
+        bottom: 10px;
+        padding-bottom: -10px;
+    }
+    .header {
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+    #footer_button {
+        position: fixed;
+        bottom: 35px;
+        padding-bottom: -35px;
+        left: 50%;
+    }
+    #footer_higher #footer_content {
+        height: 150px;
+        font-size: 6px;
+    }
+    hr.small {
+        margin: 10px 0;
+    }
+    .footer_buffer {
+        padding-top: 50px;
+    }
+    .footer-bottom {
+        font-size: 6px;
+    }
+    .fa-3x {
+        font-size: 8px;
+    }
+    .fa-5x {
+        font-size: 22px;
+    }
+    .footer-bottom {
+        padding-top: 0;
+    }
+    #about-landing {
+        .font-blocky-lt;
+        font-size: 8px;
+        width: 65%;
+        top: 90px;
+        left: 25px;
+        overflow: hidden;
+    }
+    .slide-toggle-close,
+    .slide-toggle-open {
+        font-size: 17px;
+    }
+    .toggle1 {
+        right: 0px;
+        left: 0px;
+        bottom: -300px;
+    }
+    .toggle2 {
+        right: 0px;
+        left: 0px;
+        bottom: -350px;
+    }
+    .toggle3 {
+        right: 0px;
+        left: 0px;
+        bottom: -400px;
+    }
+    .toggle4 {
+        right: 0px;
+        left: 0px;
+        bottom: -450px;
+    }
+    .toggle-text.ac_collapse {
+        .antiSkew2-matrix;
+        left: 55%;
+    }
+    .toggle-close,
+    .toggle-open {
+        font-size: 8px !important;
+    }
+    .spotlight-wrapper,
+    .records-wrapper {
+        top: 55px;
+    }
+    #membersDiv,
+    #membersDiv2 {
+        top: 0px !important;
+    }
+    .spotlight-wrapper {
+        top: 50px !important;
+    }
+    .records-wrapper,
+    #membersDiv,
+    #membersDiv2 {
+        top: 0px !important;
+    }
+    .records-textBox {
+        bottom: 0;
+    }
+    #leftDiv {
+        width: 35%;
+    }
+    .left_Div {
+        top: 60px;
+    }
+    #rightDiv,
+    #execDiv,
+    #advisDiv {
+        height: 80%;
+        width: 65%;
+    }
+    #execGroup,
+    #advisGroup {
+        padding-top: 80px;
+    }
+    #execDiv,
+    #advisDiv {
+        top: 49px;
+    }
+    .archive_months,
+    .members {
+        margin-left: 5px;
+    }
+}
