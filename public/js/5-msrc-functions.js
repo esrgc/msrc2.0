@@ -38,8 +38,6 @@ $(window).load(function() {
         //containerStyle: null,
         initLayout: false
     });
-    //$msrySpotlight.masonryImagesReveal($('#images').find('.gridItem'));
-    //$msrySpotlight.masonry();
 
     var $msryRecords = $('#masonry-container-records').masonry({
         columnWidth: '.grid-box-records',
@@ -50,10 +48,6 @@ $(window).load(function() {
         //containerStyle: null,
         initLayout: false
     });
-    //$msryRecords.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
-    //$msryRecords.masonry();
-
-
 });
 
 $(document).ready(function() {
@@ -69,10 +63,7 @@ $(document).ready(function() {
     // setup function to toggle on click
     */
     $(".angle_wrapper > div:not(:last-child) h1").on("click", function() {
-        /*e.preventDefault();*/
-        /*
-        // the magic
-        */
+        /* the magic */
         $(this).find(".slide-toggle-close").toggleClass("slide-toggle-open");
         $(this).parent('div').toggleClass("ac_collapse");
         $(this).toggleClass("ac_collapse");
@@ -84,13 +75,13 @@ $(document).ready(function() {
         //reveal accordion divs hidden text
         //test to get jquery traverse tree
         */
-        var attrID = $(this).attr('id');
+        var $attrID = $(this).attr('id');
         var $spotlight = $('#masonry-container-spotlight').masonry();
         var $records = $('#masonry-container-records').masonry();
         var $textBox = $('.textBox');
 
-        //alert(attrID);
-        //console.log(attrID);
+        /*($attrID);*/
+        /*console.log($attrID);*/
 
         // helper function for masonry and imagesLoaded
         $.fn.masonryImagesReveal = function($items) {
@@ -117,12 +108,12 @@ $(document).ready(function() {
 
 
 
-        if (attrID == 'members') {
+        if ($attrID == 'members') {
 
             $("#membersDiv").toggle('slide');
             $("#membersDiv2").toggle('slide');
 
-        } else if (attrID == 'spotlight') {
+        } else if ($attrID == 'spotlight') {
 
             $('.spotlight-wrapper').css({ "z-index": "1000" });
             // init masonry js with imagesLoaded for spotlight
@@ -144,11 +135,11 @@ $(document).ready(function() {
                 $('.textBox').hide("slow");
             }
 
-            $spotlightMasonry.on('layoutComplete', function() {
+           /* $spotlightMasonry.on('layoutComplete', function() {
                 console.log('complete');
-            });
+            });*/
 
-        } else if (attrID == 'records') {
+        } else if ($attrID == 'records') {
 
             // $('.records-wrapper').toggle('slide');
             $('.records-wrapper').css({ "z-index": "1000" });
@@ -191,10 +182,10 @@ $(document).ready(function() {
     $clickSpotlight.on('click', '.gridItem', function(e) {
         e.preventDefault();
         // on click pull up div
-        var attrID = $(this).attr('id');
-        var sliceID = attrID.substr(10);
-        //alert(attrID);
-        //alert(sliceID);
+        var $attrID = $(this).attr('id');
+        var sliceID = $attrID.substr(10);
+        /*($attrID);*/
+        /*(sliceID);*/
         if (sliceID == 'broadband') {
             if ($("#broadband").is(":hidden")) {
                 $('.textBox').hide("slow");
@@ -272,10 +263,10 @@ $(document).ready(function() {
         //e.stopPropagation();
         e.preventDefault();
 
-        var attrID = $(this).attr('id');
-        var sliceID = attrID.substr(10);
-        //alert(attrID);
-        //alert(sliceID);
+        var $attrID = $(this).attr('id');
+        var sliceID = $attrID.substr(10);
+        /*($attrID);*/
+        /*(sliceID);*/
         if (sliceID == 'workPlan') {
             if ($("#workPlan").is(":hidden")) {
                 $('.records-textBox').hide("slow");
@@ -313,7 +304,7 @@ $(document).ready(function() {
 
     // setup textBox to close on click
     $(".textBox, .records-textBox").click(function() {
-        var attrID = $(this).attr('id');
+        var $attrID = $(this).attr('id');
         if ($(this).is(':visible')) {
             $(this).toggle('slide');
         }

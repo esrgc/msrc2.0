@@ -47,74 +47,56 @@ $(document).ready(function() {
 
 // window.onhashchange = locationHashChanged;
 
-
 $(window).on('hashchange', function(e) {
-    //alert(location.hash);
     e.preventDefault();
     //e.stopPropagation();
 
     if (location.hash == "#comCEDS" || location.hash == "#comEM" || location.hash == "#comGIS" || location.hash == "#comIT" || location.hash == "#comMUST") {
-        //$('#footer_button').trigger('click');
         $('#advisGroup').trigger('click');
         $(location.hash).delay(300).trigger('click');
 
     } else if (location.hash == "#members" || location.hash == "#spotlight" || location.hash == "#records") {
-        //$('#footer_button').trigger('click');
-
         /// cross browser functionality issues with firefox and msie
         // relative position elements become thrown to the left when open and closed
-
         var x = location.hash;
-        //alert($x);
         $(x).delay(300).trigger('click');
-
-        // $(document).ready(function() {
-
-        //     var x = location.hash;
-        //alert($x);
-        //     $(x).delay(300).trigger('click');
-
-        // });
-
     } else {
-
         $(location.hash).delay(300).trigger('click');
-        //$('#footer_button').trigger('click');
     }
 
 });
 
 $(window).load(function() {
     if (window.location.hash) {
-        //$("#footer_button").trigger('click');
         $(window).delay(300).trigger('hashchange');
     }
 });
 
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// Testing 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-    $("#button1").on('click', function() {
-        var x = $(this).attr('id');
-        //alert(x);
-        $(this).parent("#toggle1").toggleClass('rotate-matrix');
+//     $("#button1").on('click', function() {
+//         var x = $(this).attr('id');
+//         //alert(x);
+//         $(this).parent("#toggle1").toggleClass('rotate-matrix');
 
-    });
+//     });
 
-    $("#button2").on('click', function() {
-        var x = $(this).attr('id');
-        //alert(x);
-        $(this).parent("#toggle2").toggleClass('rotate-matrix');
+//     $("#button2").on('click', function() {
+//         var x = $(this).attr('id');
+//         //alert(x);
+//         $(this).parent("#toggle2").toggleClass('rotate-matrix');
 
-    });
+//     });
 
 
-    $("#button3").on('click', function() {
-        var x = $(this).attr('id');
-        //alert(x);
-        $(this).parent("#toggle3").toggleClass('rotate-matrix');
-    });
-});
+//     $("#button3").on('click', function() {
+//         var x = $(this).attr('id');
+//         //alert(x);
+//         $(this).parent("#toggle3").toggleClass('rotate-matrix');
+//     });
+// });
+*/

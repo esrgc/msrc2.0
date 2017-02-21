@@ -26,9 +26,6 @@ $(window).load(function() {
     $("#theMSRC").hide();
     $(".advisMins").hide();
     $(".members").hide();
-
-
-
     // $(".spotlight-wrapper, .records-wrapper").hide();
 });
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -121,8 +118,6 @@ $(window).load(function() {
         //containerStyle: null,
         initLayout: false
     });
-    //$msrySpotlight.masonryImagesReveal($('#images').find('.gridItem'));
-    //$msrySpotlight.masonry();
 
     var $msryRecords = $('#masonry-container-records').masonry({
         columnWidth: '.grid-box-records',
@@ -133,10 +128,6 @@ $(window).load(function() {
         //containerStyle: null,
         initLayout: false
     });
-    //$msryRecords.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
-    //$msryRecords.masonry();
-
-
 });
 
 $(document).ready(function() {
@@ -152,10 +143,7 @@ $(document).ready(function() {
     // setup function to toggle on click
     */
     $(".angle_wrapper > div:not(:last-child) h1").on("click", function() {
-        /*e.preventDefault();*/
-        /*
-        // the magic
-        */
+        /* the magic */
         $(this).find(".slide-toggle-close").toggleClass("slide-toggle-open");
         $(this).parent('div').toggleClass("ac_collapse");
         $(this).toggleClass("ac_collapse");
@@ -167,13 +155,13 @@ $(document).ready(function() {
         //reveal accordion divs hidden text
         //test to get jquery traverse tree
         */
-        var attrID = $(this).attr('id');
+        var $attrID = $(this).attr('id');
         var $spotlight = $('#masonry-container-spotlight').masonry();
         var $records = $('#masonry-container-records').masonry();
         var $textBox = $('.textBox');
 
-        //alert(attrID);
-        //console.log(attrID);
+        /*($attrID);*/
+        /*console.log($attrID);*/
 
         // helper function for masonry and imagesLoaded
         $.fn.masonryImagesReveal = function($items) {
@@ -200,12 +188,12 @@ $(document).ready(function() {
 
 
 
-        if (attrID == 'members') {
+        if ($attrID == 'members') {
 
             $("#membersDiv").toggle('slide');
             $("#membersDiv2").toggle('slide');
 
-        } else if (attrID == 'spotlight') {
+        } else if ($attrID == 'spotlight') {
 
             $('.spotlight-wrapper').css({ "z-index": "1000" });
             // init masonry js with imagesLoaded for spotlight
@@ -227,11 +215,11 @@ $(document).ready(function() {
                 $('.textBox').hide("slow");
             }
 
-            $spotlightMasonry.on('layoutComplete', function() {
+           /* $spotlightMasonry.on('layoutComplete', function() {
                 console.log('complete');
-            });
+            });*/
 
-        } else if (attrID == 'records') {
+        } else if ($attrID == 'records') {
 
             // $('.records-wrapper').toggle('slide');
             $('.records-wrapper').css({ "z-index": "1000" });
@@ -274,10 +262,10 @@ $(document).ready(function() {
     $clickSpotlight.on('click', '.gridItem', function(e) {
         e.preventDefault();
         // on click pull up div
-        var attrID = $(this).attr('id');
-        var sliceID = attrID.substr(10);
-        //alert(attrID);
-        //alert(sliceID);
+        var $attrID = $(this).attr('id');
+        var sliceID = $attrID.substr(10);
+        /*($attrID);*/
+        /*(sliceID);*/
         if (sliceID == 'broadband') {
             if ($("#broadband").is(":hidden")) {
                 $('.textBox').hide("slow");
@@ -355,10 +343,10 @@ $(document).ready(function() {
         //e.stopPropagation();
         e.preventDefault();
 
-        var attrID = $(this).attr('id');
-        var sliceID = attrID.substr(10);
-        //alert(attrID);
-        //alert(sliceID);
+        var $attrID = $(this).attr('id');
+        var sliceID = $attrID.substr(10);
+        /*($attrID);*/
+        /*(sliceID);*/
         if (sliceID == 'workPlan') {
             if ($("#workPlan").is(":hidden")) {
                 $('.records-textBox').hide("slow");
@@ -396,7 +384,7 @@ $(document).ready(function() {
 
     // setup textBox to close on click
     $(".textBox, .records-textBox").click(function() {
-        var attrID = $(this).attr('id');
+        var $attrID = $(this).attr('id');
         if ($(this).is(':visible')) {
             $(this).toggle('slide');
         }
@@ -458,78 +446,59 @@ $(document).ready(function() {
 
 // window.onhashchange = locationHashChanged;
 
-
 $(window).on('hashchange', function(e) {
-    //alert(location.hash);
     e.preventDefault();
     //e.stopPropagation();
 
     if (location.hash == "#comCEDS" || location.hash == "#comEM" || location.hash == "#comGIS" || location.hash == "#comIT" || location.hash == "#comMUST") {
-        //$('#footer_button').trigger('click');
         $('#advisGroup').trigger('click');
         $(location.hash).delay(300).trigger('click');
 
     } else if (location.hash == "#members" || location.hash == "#spotlight" || location.hash == "#records") {
-        //$('#footer_button').trigger('click');
-
         /// cross browser functionality issues with firefox and msie
         // relative position elements become thrown to the left when open and closed
-
         var x = location.hash;
-        //alert($x);
         $(x).delay(300).trigger('click');
-
-        // $(document).ready(function() {
-
-        //     var x = location.hash;
-        //alert($x);
-        //     $(x).delay(300).trigger('click');
-
-        // });
-
     } else {
-
         $(location.hash).delay(300).trigger('click');
-        //$('#footer_button').trigger('click');
     }
 
 });
 
 $(window).load(function() {
     if (window.location.hash) {
-        //$("#footer_button").trigger('click');
         $(window).delay(300).trigger('hashchange');
     }
 });
 
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// Testing 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-    $("#button1").on('click', function() {
-        var x = $(this).attr('id');
-        //alert(x);
-        $(this).parent("#toggle1").toggleClass('rotate-matrix');
+//     $("#button1").on('click', function() {
+//         var x = $(this).attr('id');
+//         //alert(x);
+//         $(this).parent("#toggle1").toggleClass('rotate-matrix');
 
-    });
+//     });
 
-    $("#button2").on('click', function() {
-        var x = $(this).attr('id');
-        //alert(x);
-        $(this).parent("#toggle2").toggleClass('rotate-matrix');
+//     $("#button2").on('click', function() {
+//         var x = $(this).attr('id');
+//         //alert(x);
+//         $(this).parent("#toggle2").toggleClass('rotate-matrix');
 
-    });
+//     });
 
 
-    $("#button3").on('click', function() {
-        var x = $(this).attr('id');
-        //alert(x);
-        $(this).parent("#toggle3").toggleClass('rotate-matrix');
-    });
-});
-
+//     $("#button3").on('click', function() {
+//         var x = $(this).attr('id');
+//         //alert(x);
+//         $(this).parent("#toggle3").toggleClass('rotate-matrix');
+//     });
+// });
+*/
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
 * Author: Carl Flint
