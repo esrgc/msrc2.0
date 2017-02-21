@@ -1174,6 +1174,7 @@ figure.effect-move:hover h3 i {
   opacity: 1;
   top: 0;
   bottom: 0;
+  width: 98%;
   overflow-y: auto;
   z-index: 2000;
 }
