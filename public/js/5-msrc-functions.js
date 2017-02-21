@@ -29,13 +29,29 @@ $(window).load(function() {
         return this;
     };
 
-    var $msrySpotlight = $('#masonry-container-spotlight').masonry();
+    var $msrySpotlight = $('#masonry-container-spotlight').masonry({
+        columnWidth: '.grid-box-spotlight',
+        itemSelector: '.gridItem',
+        percentPosition: true,
+        gutter: 1,
+        //stagger: 45,
+        //containerStyle: null,
+        initLayout: false
+    });
     //$msrySpotlight.masonryImagesReveal($('#images').find('.gridItem'));
-    $msrySpotlight.masonry('layout');
+    //$msrySpotlight.masonry();
 
-    var $msryRecords = $('#masonry-container-records').masonry();
+    var $msryRecords = $('#masonry-container-records').masonry({
+        columnWidth: '.grid-box-records',
+        itemSelector: '.records-gridItem',
+        percentPosition: true,
+        gutter: 1,
+        //stagger: 45,
+        //containerStyle: null,
+        initLayout: false
+    });
     //$msryRecords.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
-    $msryRecords.masonry('layout');
+    //$msryRecords.masonry();
 
 
 });
@@ -43,9 +59,9 @@ $(window).load(function() {
 $(document).ready(function() {
 
     // carousel rotation speed
-    $('.carousel').carousel({
-        interval: 5000 //set speed in ms
-    });
+    // $('.carousel').carousel({
+    //     interval: 5000 //set speed in ms
+    // });
 
     /*
     // zAccordion About pop out
@@ -108,17 +124,15 @@ $(document).ready(function() {
 
         } else if (attrID == 'spotlight') {
 
-
-            // $('.spotlight-wrapper').show();
             $('.spotlight-wrapper').css({ "z-index": "1000" });
             // init masonry js with imagesLoaded for spotlight
             var $spotlightMasonry = $('#masonry-container-spotlight').masonry({
-                columnWidth: '.grid-box-spotlight',
-                itemSelector: '.gridItem',
-                percentPosition: true,
-                gutter: 1,
+                // columnWidth: '.grid-box-spotlight',
+                // itemSelector: '.gridItem',
+                // percentPosition: true,
+                // gutter: 1,
                 //stagger: 45,
-                //containerStyle: null,
+                containerStyle: null,
                 initLayout: false
             });
 
@@ -140,23 +154,22 @@ $(document).ready(function() {
             $('.records-wrapper').css({ "z-index": "1000" });
             // init masonry container for records
             var $recordsMasonry = $('#masonry-container-records').masonry({
-                columnWidth: '.grid-box-records',
-                itemSelector: '.records-gridItem',
-                percentPosition: true,
-                gutter: 1,
+                // columnWidth: '.grid-box-records',
+                // itemSelector: '.records-gridItem',
+                // percentPosition: true,
+                // gutter: 1,
                 //stagger: 45,
-                //containerStyle: null,
+                containerStyle: null,
                 initLayout: false
             });
 
             $recordsMasonry.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
-
             $("#masonry-container-records").toggle('slow');
 
             if ($('.textBox').is(":visible")) {
                 $('.textBox').hide("slow");
             }
-            //$recordsMasonry.masonry("layoutItems", '.records-gridItem', true );
+            
             $recordsMasonry.masonry('layout');
         } else {
 

@@ -7,26 +7,67 @@
 // Media queries
 ////////////////////////////////////////////
 //////////////////////////////////////////////////////
-@media screen and (max-width:1550px) {
-    .angle1 {
-        margin-right: -170px;
+@media screen and (max-width:1655px) {
+    .toggle1,
+    .toggle2,
+    .toggle3,
+    .toggle4 {
+        right: -740px;
     }
-    .angle2 {
-        margin-right: -300px;
+    .toggle-text.ac_collapse {
+        left: 20%;
     }
-    .angle3 {
-        margin-right: -450px;
+}
+
+@media screen and (max-width:1510px) {
+    .toggle1,
+    .toggle2,
+    .toggle3,
+    .toggle4 {
+        right: -650px;
     }
-    .angle4 {
-        margin-right: -650px;
+    .toggle-text.ac_collapse {
+        left: 15%;
+    }
+}
+
+@media screen and (max-width:1260px) {
+    .toggle1,
+    .toggle2,
+    .toggle3,
+    .toggle4 {
+        .skew2-matrix;
+        right: 0px;
+    }
+    .toggle1 {
+        bottom: -500px;
+    }
+    .toggle2 {
+        bottom: -600px;
+    }
+    .toggle3 {
+        bottom: -700px;
+    }
+    .toggle4 {
+        bottom: -800px;
+    }
+    .toggle-text.ac_collapse {
+        .antiSkew2-matrix;
+        left: 55%;
+    }
+    #about-landing {
+        .font-blocky-lt;
+        top: 90px;
+        left: 25px;
+        overflow: hidden;
     }
 }
 
 @media screen and (max-width:1200px) {
     #membersDiv2 {
         width: 50%;
-        left: 50%;
-        right: 5%;
+        //left: 50%;
+        //right: 5%;
     }
     #membersDiv {
         width: 50%;
@@ -120,28 +161,6 @@
 }
 
 @media screen and (max-width:677px) {
-    .angle1 {
-        .skew2;
-        bottom: -80px;
-        margin-right: -260px;
-    }
-    .angle2 {
-        .skew2;
-        bottom: -140px;
-        margin-right: -370px
-    }
-    .angle3 {
-        .skew2;
-        bottom: -190px;
-        margin-right: -500px;
-    }
-    .angle4 {
-        .skew2;
-        bottom: -500px;
-    }
-    .angle-text.ac_collapse {
-        .antiSkew2;
-    }
     .fa-3x {
         font-size: 12px;
     }
@@ -174,115 +193,6 @@
     }
 }
 
-// @media screen and (max-width: 659px) {
-//     .footer_buffer {
-//         padding-top: 90px;
-//     }
-//     // #footer_button {
-//     //     bottom: 92px;
-//     // }
-// }
-// @media screen and (max-width: 544px) {
-//     .footer_buffer {
-//         padding-top: 73px;
-//     }
-//     #footer_button {
-//         bottom: 75px;
-//     }
-// }
-// @media screen and (max-width:430px) {
-//     // footer text, icons and parts
-//     #cpyRight {
-//         font-size: 6px;
-//     }
-//     .fa-3x {
-//         font-size: 15px;
-//     }
-//     .footer-bottom {
-//         padding-top: 20px;
-//     }
-//     #footer_button {
-//         bottom: 71px;
-//     }
-//     // masonry wrappers and slidy div icons
-//     .records-wrapper {
-//         left: 0;
-//         width: 90%;
-//     }
-//     .spotlight-wrapper {
-//         left: 0;
-//         width: 90%;
-//     }
-//     .slide-toggle-close {
-//         font-size: 15px;
-//     }
-//     .slide-toggle-open {
-//         font-size: 15px;
-//     }
-//     // slidy divs and internal parts
-//     .angle1 {
-//         .skew2;
-//         bottom: 20px;
-//         margin-right: -500px;
-//     }
-//     .angle1:not(.ac_collapse) {
-//         height: 75%;
-//     }
-//     .angle2 {
-//         .skew2;
-//         bottom: -20px;
-//         margin-right: -550px
-//     }
-//     .angle2:not(.ac_collapse) {
-//         height: 75%;
-//     }
-//     .angle3 {
-//         .skew2;
-//         bottom: -55px;
-//         margin-right: -600px;
-//     }
-//     .angle3:not(.ac_collapse) {
-//         height: 75%;
-//     }
-//     .angle4 {
-//         .skew2;
-//         bottom: -500px;
-//     }
-//     #about-landing {
-//         .font-blocky-lt;
-//         top: 100px;
-//         left: 80px;
-//         overflow: hidden;
-//     }
-//     #membersDiv {
-//         top: 65px;
-//     }
-//     .membersDiv_open ul li {
-//         h3 {
-//             font-size: 15px;
-//         }
-//         p {
-//             font-size: 10px;
-//         }
-//     }
-//     #membersDiv2 {
-//         top: 65px;
-//     }
-//     .membersDiv2_open ul li {
-//         h3 {
-//             font-size: 15px;
-//         }
-//         p {
-//             font-size: 10px;
-//         }
-//     }
-//     #execDiv {
-//         top: 65px;
-//     }
-//     #advisDiv {
-//         top: 65px;
-//     }
-// }
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////
 
@@ -356,51 +266,52 @@
         left: 25px;
         overflow: hidden;
     }
-    .angle-text.ac_collapse {
-        left: 25%;
-    }
     .slide-toggle-close,
     .slide-toggle-open {
         font-size: 17px;
     }
-    .angle1 {
-        .skew;
-        bottom: 120px;
-        margin-right: -530px;
+    .toggle1,
+    .toggle2,
+    .toggle3,
+    .toggle4 {
+        .skew-matrix;
     }
-    .angle1:not(.ac_collapse) {
-        height: 70%;
+    .toggle1 {
+        bottom: -400px;
     }
-    .angle2 {
-        .skew;
-        bottom: 120px;
-        margin-right: -580px;
+    .toggle2 {
+        bottom: -475px;
     }
-    .angle2:not(.ac_collapse) {
-        height: 70%;
+    .toggle3 {
+        bottom: -550px;
     }
-    .angle3 {
-        .skew;
-        bottom: 120px;
-        margin-right: -630px;
+    .toggle4 {
+        bottom: -625px;
     }
-    .angle3:not(.ac_collapse) {
-        height: 70%;
+    .toggle-text.ac_collapse {
+        .antiSkew-matrix;
+        left: 60%;
     }
-    .angle4 {
-        .skew;
-        bottom: 100px;
-        margin-right: -700px;
+    .toggle-close,
+    .toggle-open {
+        font-size: 10px !important;
+    }
+    .grid {
+        left: 1px;
     }
     .spotlight-wrapper,
-    .records-wrapper,
-    #membersDiv,
-    #membersDiv2 {
-        top: 55px;
+    .records-wrapper {
+        top: 50px !important;
     }
     #membersDiv,
     #membersDiv2 {
-        height: 250px;
+        top: 0px !important;
+    }
+    #membersDiv {
+        width: 50%;
+    }
+    #membersDiv2 {
+        width: 50%;
     }
     .records-textBox {
         bottom: 0;
@@ -505,53 +416,50 @@
         font-size: 10px;
         overflow: hidden;
     }
-    .angle-text.ac_collapse {
-        .antiSkew2;
-        left: 35%;
-    }
     .slide-toggle-close,
     .slide-toggle-open {
         font-size: 17px;
     }
-    .angle1 {
-        .skew2;
-        bottom: -20px;
-        margin-right: -530px;
+    .toggle1 {
+        right: 0px;
+        left: 0px;
+        bottom: -450px;
     }
-    .angle1:not(.ac_collapse) {
-        height: 85%;
+    .toggle2 {
+        right: 0px;
+        left: 0px;
+        bottom: -500px;
     }
-    .angle2 {
-        .skew2;
-        bottom: -60px;
-        margin-right: -580px;
+    .toggle3 {
+        right: 0px;
+        left: 0px;
+        bottom: -550px;
     }
-    .angle2:not(.ac_collapse) {
-        height: 85%;
+    .toggle4 {
+        right: 0px;
+        left: 0px;
+        bottom: -600px;
     }
-    .angle3 {
-        .skew2;
-        bottom: -100px;
-        margin-right: -630px;
+    .toggle-text.ac_collapse {
+        .antiSkew2-matrix;
+        left: 55%;
     }
-    .angle3:not(.ac_collapse) {
-        height: 85%;
-    }
-    .angle4 {
-        .skew2;
-        bottom: -240px;
-        margin-right: -700px;
+    .toggle-close,
+    .toggle-open {
+        font-size: 10px !important;
     }
     .spotlight-wrapper,
     .records-wrapper,
-    #membersDiv,
-    #membersDiv2 {
+    #membersDiv {
         top: 55px;
     }
-    #membersDiv,
     #membersDiv2 {
-        height: 600px;
+        top: 0px !important;
     }
+    // #membersDiv,
+    // #membersDiv2 {
+    //     height: 600px;
+    // }
     .records-textBox {
         bottom: 0;
     }
@@ -654,54 +562,49 @@
         left: 25px;
         overflow: hidden;
     }
-    .angle-text.ac_collapse {
-        left: 42.5%;
-    }
+    // .angle-text.ac_collapse {
+    //     left: 42.5%;
+    // }
     .slide-toggle-close,
     .slide-toggle-open {
         font-size: 17px;
     }
-    .angle1 {
-        .skew;
-        bottom: 120px;
-        margin-right: -530px;
+    .toggle1,
+    .toggle2,
+    .toggle3,
+    .toggle4 {
+        .skew-matrix;
     }
-    .angle1:not(.ac_collapse) {
-        height: 60%;
+    .toggle1 {
+        bottom: -300px;
     }
-    .angle2 {
-        .skew;
-        bottom: 120px;
-        margin-right: -580px;
+    .toggle2 {
+        bottom: -350px;
     }
-    .angle2:not(.ac_collapse) {
-        height: 60%;
+    .toggle3 {
+        bottom: -400px;
     }
-    .angle3 {
-        .skew;
-        bottom: 120px;
-        margin-right: -630px;
+    .toggle4 {
+        bottom: -450px;
     }
-    .angle3:not(.ac_collapse) {
-        height: 60%;
+    .toggle-text.ac_collapse {
+        .antiSkew-matrix;
+        left: 60%;
     }
-    .angle4 {
-        .skew;
-        bottom: 100px;
-        margin-right: -700px;
+    .toggle-close,
+    .toggle-open {
+        font-size: 10px !important;
+    }
+    .grid {
+        left: 1px;
     }
     .spotlight-wrapper,
-    .records-wrapper,
-    #membersDiv,
-    #membersDiv2 {
-        top: 55px;
-    }
-    hr {
-        margin: 10px 0;
+    .records-wrapper {
+        top: 50px !important;
     }
     #membersDiv,
     #membersDiv2 {
-        height: 150px;
+        top: 0px !important;
     }
     .records-textBox {
         bottom: 0;
@@ -791,52 +694,51 @@
         left: 25px;
         overflow: hidden;
     }
-    .angle-text.ac_collapse {
-        .antiSkew2;
-        left: 42.5%;
-    }
     .slide-toggle-close,
     .slide-toggle-open {
         font-size: 17px;
     }
-    .angle1 {
-        .skew2;
-        bottom: -15px;
-        margin-right: -530px;
-    }
-    .angle1:not(.ac_collapse) {
-        height: 75%;
-    }
-    .angle2 {
-        .skew2;
-        bottom: -60px;
-        margin-right: -580px;
-    }
-    .angle2:not(.ac_collapse) {
-        height: 75%;
-    }
-    .angle3 {
-        .skew2;
-        bottom: -100px;
-        margin-right: -630px;
-    }
-    .angle3:not(.ac_collapse) {
-        height: 75%;
-    }
-    .angle4 {
-        .skew2;
+    .toggle1 {
+        right: 0px;
+        left: 0px;
         bottom: -300px;
-        margin-right: -700px;
+    }
+    .toggle2 {
+        right: 0px;
+        left: 0px;
+        bottom: -350px;
+    }
+    .toggle3 {
+        right: 0px;
+        left: 0px;
+        bottom: -400px;
+    }
+    .toggle4 {
+        right: 0px;
+        left: 0px;
+        bottom: -450px;
+    }
+    .toggle-text.ac_collapse {
+        .antiSkew2-matrix;
+        left: 55%;
+    }
+    .toggle-close,
+    .toggle-open {
+        font-size: 8px !important;
+    }
+    .spotlight-wrapper,
+    .records-wrapper {
+        top: 55px;
+    }
+    #membersDiv,
+    #membersDiv2 {
+        top: 0px !important;
     }
     .spotlight-wrapper,
     .records-wrapper,
     #membersDiv,
     #membersDiv2 {
         top: 55px;
-    }
-    #membersDiv,
-    #membersDiv2 {
-        height: 375px;
     }
     .records-textBox {
         bottom: 0;

@@ -787,6 +787,7 @@ figure.effect-move:hover h3 i {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  overflow-x: hidden;
 }
 .committees_bg {
   position: fixed;
@@ -817,9 +818,12 @@ figure.effect-move:hover h3 i {
 }
 .angle_wrapper {
   position: relative;
+  right: 0;
+  bottom: 0;
+  height: 80vh;
 }
+/* transformation skew method */
 .skew {
-  transform: matrix(1, -1.19175, 0, 1, 0, 0);
   -webkit-transform: skewY(130deg);
   -ms-transform: skewY(130deg);
   -webkit-transition: all 0.5s ease-in-out;
@@ -909,7 +913,6 @@ figure.effect-move:hover h3 i {
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
-  transform: matrix(1, -1.19175, 0, 1, 0, 0);
   -webkit-transform: skewY(130deg);
   -ms-transform: skewY(130deg);
   -webkit-transition: all 0.5s ease-in-out;
@@ -935,7 +938,6 @@ figure.effect-move:hover h3 i {
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
-  transform: matrix(1, -1.19175, 0, 1, 0, 0);
   -webkit-transform: skewY(130deg);
   -ms-transform: skewY(130deg);
   -webkit-transition: all 0.5s ease-in-out;
@@ -961,7 +963,6 @@ figure.effect-move:hover h3 i {
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
-  transform: matrix(1, -1.19175, 0, 1, 0, 0);
   -webkit-transform: skewY(130deg);
   -ms-transform: skewY(130deg);
   -webkit-transition: all 0.5s ease-in-out;
@@ -987,7 +988,6 @@ figure.effect-move:hover h3 i {
   border: #ffffff 5px;
   height: 40%;
   width: 75%;
-  transform: matrix(1, -1.19175, 0, 1, 0, 0);
   -webkit-transform: skewY(130deg);
   -ms-transform: skewY(130deg);
   -webkit-transition: all 0.5s ease-in-out;
@@ -1011,16 +1011,6 @@ figure.effect-move:hover h3 i {
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
   background: linear-gradient(to left, #f2f2f2, #cccccc);
   border: #ffffff 5px;
-  overflow: hidden;
-  height: 40%;
-  width: 75%;
-  transform: matrix(1, -1.19175, 0, 1, 0, 0);
-  -webkit-transform: skewY(130deg);
-  -ms-transform: skewY(130deg);
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   position: relative;
   top: 110px;
   left: 1px;
@@ -1030,7 +1020,6 @@ figure.effect-move:hover h3 i {
   opacity: 0.88;
   margin: 0;
   bottom: 110px;
-  transform: matrix(1, 0, 0, 1, 0, 0);
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -1046,16 +1035,6 @@ figure.effect-move:hover h3 i {
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
   background: linear-gradient(to left, #f2f2f2, #cccccc);
   border: #ffffff 5px;
-  overflow: hidden;
-  height: 40%;
-  width: 75%;
-  transform: matrix(1, -1.19175, 0, 1, 0, 0);
-  -webkit-transform: skewY(130deg);
-  -ms-transform: skewY(130deg);
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   position: relative;
   top: 110px;
   left: 0;
@@ -1080,16 +1059,6 @@ figure.effect-move:hover h3 i {
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
   background: linear-gradient(to left, #f2f2f2, #cccccc);
   border: #ffffff 5px;
-  overflow: hidden;
-  height: 40%;
-  width: 75%;
-  transform: matrix(1, -1.19175, 0, 1, 0, 0);
-  -webkit-transform: skewY(130deg);
-  -ms-transform: skewY(130deg);
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   position: relative;
   top: 110px;
   left: 0;
@@ -1142,11 +1111,10 @@ figure.effect-move:hover h3 i {
 }
 #membersDiv {
   display: block;
-  position: fixed;
-  top: 160px;
+  position: relative;
+  top: 80px !important;
   left: 0;
-  bottom: 60px;
-  max-height: 100vh;
+  height: 80vh;
   width: 35%;
   z-index: 1000;
   overflow: hidden;
@@ -1191,11 +1159,9 @@ figure.effect-move:hover h3 i {
 }
 #membersDiv2 {
   display: block;
-  position: fixed;
-  top: 160px;
-  left: 35%;
-  bottom: 60px;
-  max-height: 100vh;
+  position: relative;
+  top: 80px !important;
+  height: 75vh;
   width: 65%;
   overflow: hidden;
   text-align: center;
@@ -1206,7 +1172,6 @@ figure.effect-move:hover h3 i {
   opacity: 1;
   top: 0;
   bottom: 0;
-  width: 98%;
   overflow-y: auto;
   z-index: 2000;
 }
@@ -1321,14 +1286,11 @@ figure.effect-move:hover h3 i {
   height: auto;
 }
 .spotlight-wrapper {
-  display: block;
-  flex-wrap: wrap;
-  position: relative;
-  float: left;
+  position: absolute;
   text-align: center;
   height: 80vh;
   width: 100%;
-  top: 60px !important;
+  top: 80px !important;
   padding: 0;
   margin: 0;
   right: 0;
@@ -1399,6 +1361,8 @@ figure.effect-move:hover h3 i {
   height: 80vh;
   width: 100%;
   top: 60px !important;
+  padding: 0;
+  margin: 0;
   right: 0;
   bottom: 0;
   overflow-y: auto;
@@ -1747,25 +1711,216 @@ figure.effect-move:hover h3 i {
   bottom: 0;
   padding-bottom: -60px;
 }
-@media screen and (max-width: 1550px) {
-  .angle1 {
-    margin-right: -170px;
+/* testing transformation matrix method for cross browser compatibility */
+.skew-matrix {
+  /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+  -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+  /* use px for translate x,y for -moz-  */
+  -moz-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+  -o-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+  transform: matrix(1, -1.19175, 0, 1, 0, 0);
+}
+.skew2-matrix {
+  /*matrix(0.984808, -5.39878e-9, 0.173648, 1.01543, 0, 0)*/
+  -webkit-transform: matrix(1, -0.176327, 0, 1, 0, 0);
+  /* use px for translate x,y for -moz-  */
+  -moz-transform: matrix(1, -0.176327, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -0.176327, 0, 1, 0, 0);
+  -o-transform: matrix(1, -0.176327, 0, 1, 0, 0);
+  transform: matrix(1, -0.176327, 0, 1, 0, 0);
+}
+.antiSkew-matrix {
+  /* text parameter for rotating unslanted text*/
+  /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+  -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+  /* use px for translate x,y for -moz-  */
+  -moz-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+  -ms-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+  -o-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+  transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+}
+.antiSkew2-matrix {
+  -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+  /* use px for translate x,y for -moz-  */
+  -moz-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+  -ms-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+  -o-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+  transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+}
+.rotate-matrix {
+  /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+  /* use px for translate x,y for -moz-  */
+  -moz-transform: matrix(1, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1, 0, 0, 1, 0, 0);
+  -o-transform: matrix(1, 0, 0, 1, 0, 0);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.toggle1,
+.toggle2,
+.toggle3,
+.toggle4 {
+  /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+  -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+  /* use px for translate x,y for -moz-  */
+  -moz-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+  -o-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+  transform: matrix(1, -1.19175, 0, 1, 0, 0);
+  opacity: 1;
+  background: #cccccc;
+  background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
+  background: -o-linear-gradient(left, #f2f2f2, #cccccc);
+  background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
+  background: linear-gradient(to left, #f2f2f2, #cccccc);
+  border: #ffffff 5px;
+  position: fixed;
+  right: -800px;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+.toggle-text.ac_collapse {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  position: relative;
+  top: 0;
+  left: 22%;
+  /* text parameter for rotating unslanted text*/
+  /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+  -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+  /* use px for translate x,y for -moz-  */
+  -moz-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+  -ms-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+  -o-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+  transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+}
+.toggle-text:not(.ac_collapse) {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  position: relative;
+  left: 43%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.toggle1 {
+  opacity: .25;
+  bottom: -150px;
+  margin-right: 0;
+  z-index: 1;
+}
+.toggle2 {
+  opacity: .5;
+  bottom: -350px;
+  margin-right: 0;
+  z-index: 2;
+}
+.toggle3 {
+  opacity: .75;
+  bottom: -550px;
+  margin-right: 0;
+  z-index: 3;
+}
+.toggle4 {
+  opacity: 0.99;
+  bottom: -750px;
+  margin-right: 0;
+  z-index: 4;
+}
+.toggle1:not(.ac_collapse),
+.toggle2:not(.ac_collapse),
+.toggle3:not(.ac_collapse) {
+  /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+  /* use px for translate x,y for -moz-  */
+  -moz-transform: matrix(1, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1, 0, 0, 1, 0, 0);
+  -o-transform: matrix(1, 0, 0, 1, 0, 0);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  position: absolute;
+  top: 80px !important;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.99;
+  z-index: 10;
+}
+@media screen and (max-width: 1655px) {
+  .toggle1,
+  .toggle2,
+  .toggle3,
+  .toggle4 {
+    right: -740px;
   }
-  .angle2 {
-    margin-right: -300px;
+  .toggle-text.ac_collapse {
+    left: 20%;
   }
-  .angle3 {
-    margin-right: -450px;
+}
+@media screen and (max-width: 1510px) {
+  .toggle1,
+  .toggle2,
+  .toggle3,
+  .toggle4 {
+    right: -650px;
   }
-  .angle4 {
-    margin-right: -650px;
+  .toggle-text.ac_collapse {
+    left: 15%;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .toggle1,
+  .toggle2,
+  .toggle3,
+  .toggle4 {
+    /*matrix(0.984808, -5.39878e-9, 0.173648, 1.01543, 0, 0)*/
+    -webkit-transform: matrix(1, -0.176327, 0, 1, 0, 0);
+    /* use px for translate x,y for -moz-  */
+    -moz-transform: matrix(1, -0.176327, 0, 1, 0, 0);
+    -ms-transform: matrix(1, -0.176327, 0, 1, 0, 0);
+    -o-transform: matrix(1, -0.176327, 0, 1, 0, 0);
+    transform: matrix(1, -0.176327, 0, 1, 0, 0);
+    right: 0px;
+  }
+  .toggle1 {
+    bottom: -500px;
+  }
+  .toggle2 {
+    bottom: -600px;
+  }
+  .toggle3 {
+    bottom: -700px;
+  }
+  .toggle4 {
+    bottom: -800px;
+  }
+  .toggle-text.ac_collapse {
+    -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    /* use px for translate x,y for -moz-  */
+    -moz-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    -ms-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    -o-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    left: 55%;
+  }
+  #about-landing {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #e6e6e6;
+    top: 90px;
+    left: 25px;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 1200px) {
   #membersDiv2 {
     width: 50%;
-    left: 50%;
-    right: 5%;
   }
   #membersDiv {
     width: 50%;
@@ -1847,63 +2002,6 @@ figure.effect-move:hover h3 i {
   }
 }
 @media screen and (max-width: 677px) {
-  .angle1 {
-    transform: skewY(170deg);
-    -webkit-transform: skewY(170deg);
-    -moz-transform: skewY(170deg);
-    -ms-transform: skewY(170deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: -80px;
-    margin-right: -260px;
-  }
-  .angle2 {
-    transform: skewY(170deg);
-    -webkit-transform: skewY(170deg);
-    -moz-transform: skewY(170deg);
-    -ms-transform: skewY(170deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: -140px;
-    margin-right: -370px;
-  }
-  .angle3 {
-    transform: skewY(170deg);
-    -webkit-transform: skewY(170deg);
-    -moz-transform: skewY(170deg);
-    -ms-transform: skewY(170deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: -190px;
-    margin-right: -500px;
-  }
-  .angle4 {
-    transform: skewY(170deg);
-    -webkit-transform: skewY(170deg);
-    -moz-transform: skewY(170deg);
-    -ms-transform: skewY(170deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: -500px;
-  }
-  .angle-text.ac_collapse {
-    transform: skewY(-170deg) rotate(-10deg);
-    -webkit-transform: skewY(-170deg) rotate(-10deg);
-    -moz-transform: skewY(-170deg) rotate(-10deg);
-    -ms-transform: skewY(-170deg) rotate(-10deg);
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-  }
   .fa-3x {
     font-size: 12px;
   }
@@ -2004,75 +2102,65 @@ figure.effect-move:hover h3 i {
     left: 25px;
     overflow: hidden;
   }
-  .angle-text.ac_collapse {
-    left: 25%;
-  }
   .slide-toggle-close,
   .slide-toggle-open {
     font-size: 17px;
   }
-  .angle1 {
+  .toggle1,
+  .toggle2,
+  .toggle3,
+  .toggle4 {
+    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+    /* use px for translate x,y for -moz-  */
+    -moz-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+    -ms-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+    -o-transform: matrix(1, -1.19175, 0, 1, 0, 0);
     transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    -webkit-transform: skewY(130deg);
-    -ms-transform: skewY(130deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: 120px;
-    margin-right: -530px;
   }
-  .angle1:not(.ac_collapse) {
-    height: 70%;
+  .toggle1 {
+    bottom: -400px;
   }
-  .angle2 {
-    transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    -webkit-transform: skewY(130deg);
-    -ms-transform: skewY(130deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: 120px;
-    margin-right: -580px;
+  .toggle2 {
+    bottom: -475px;
   }
-  .angle2:not(.ac_collapse) {
-    height: 70%;
+  .toggle3 {
+    bottom: -550px;
   }
-  .angle3 {
-    transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    -webkit-transform: skewY(130deg);
-    -ms-transform: skewY(130deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: 120px;
-    margin-right: -630px;
+  .toggle4 {
+    bottom: -625px;
   }
-  .angle3:not(.ac_collapse) {
-    height: 70%;
+  .toggle-text.ac_collapse {
+    /* text parameter for rotating unslanted text*/
+    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+    /* use px for translate x,y for -moz-  */
+    -moz-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+    -ms-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+    -o-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+    transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+    left: 60%;
   }
-  .angle4 {
-    transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    -webkit-transform: skewY(130deg);
-    -ms-transform: skewY(130deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: 100px;
-    margin-right: -700px;
+  .toggle-close,
+  .toggle-open {
+    font-size: 10px !important;
+  }
+  .grid {
+    left: 1px;
   }
   .spotlight-wrapper,
-  .records-wrapper,
-  #membersDiv,
-  #membersDiv2 {
-    top: 55px;
+  .records-wrapper {
+    top: 50px !important;
   }
   #membersDiv,
   #membersDiv2 {
-    height: 250px;
+    top: 0px !important;
+  }
+  #membersDiv {
+    width: 50%;
+  }
+  #membersDiv2 {
+    width: 50%;
   }
   .records-textBox {
     bottom: 0;
@@ -2175,87 +2263,50 @@ figure.effect-move:hover h3 i {
     font-size: 10px;
     overflow: hidden;
   }
-  .angle-text.ac_collapse {
-    transform: skewY(-170deg) rotate(-10deg);
-    -webkit-transform: skewY(-170deg) rotate(-10deg);
-    -moz-transform: skewY(-170deg) rotate(-10deg);
-    -ms-transform: skewY(-170deg) rotate(-10deg);
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-    left: 35%;
-  }
   .slide-toggle-close,
   .slide-toggle-open {
     font-size: 17px;
   }
-  .angle1 {
-    transform: skewY(170deg);
-    -webkit-transform: skewY(170deg);
-    -moz-transform: skewY(170deg);
-    -ms-transform: skewY(170deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: -20px;
-    margin-right: -530px;
+  .toggle1 {
+    right: 0px;
+    left: 0px;
+    bottom: -450px;
   }
-  .angle1:not(.ac_collapse) {
-    height: 85%;
+  .toggle2 {
+    right: 0px;
+    left: 0px;
+    bottom: -500px;
   }
-  .angle2 {
-    transform: skewY(170deg);
-    -webkit-transform: skewY(170deg);
-    -moz-transform: skewY(170deg);
-    -ms-transform: skewY(170deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: -60px;
-    margin-right: -580px;
+  .toggle3 {
+    right: 0px;
+    left: 0px;
+    bottom: -550px;
   }
-  .angle2:not(.ac_collapse) {
-    height: 85%;
+  .toggle4 {
+    right: 0px;
+    left: 0px;
+    bottom: -600px;
   }
-  .angle3 {
-    transform: skewY(170deg);
-    -webkit-transform: skewY(170deg);
-    -moz-transform: skewY(170deg);
-    -ms-transform: skewY(170deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: -100px;
-    margin-right: -630px;
+  .toggle-text.ac_collapse {
+    -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    /* use px for translate x,y for -moz-  */
+    -moz-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    -ms-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    -o-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    left: 55%;
   }
-  .angle3:not(.ac_collapse) {
-    height: 85%;
-  }
-  .angle4 {
-    transform: skewY(170deg);
-    -webkit-transform: skewY(170deg);
-    -moz-transform: skewY(170deg);
-    -ms-transform: skewY(170deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: -240px;
-    margin-right: -700px;
+  .toggle-close,
+  .toggle-open {
+    font-size: 10px !important;
   }
   .spotlight-wrapper,
   .records-wrapper,
-  #membersDiv,
-  #membersDiv2 {
+  #membersDiv {
     top: 55px;
   }
-  #membersDiv,
   #membersDiv2 {
-    height: 600px;
+    top: 0px !important;
   }
   .records-textBox {
     bottom: 0;
@@ -2355,78 +2406,59 @@ figure.effect-move:hover h3 i {
     left: 25px;
     overflow: hidden;
   }
-  .angle-text.ac_collapse {
-    left: 42.5%;
-  }
   .slide-toggle-close,
   .slide-toggle-open {
     font-size: 17px;
   }
-  .angle1 {
+  .toggle1,
+  .toggle2,
+  .toggle3,
+  .toggle4 {
+    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+    /* use px for translate x,y for -moz-  */
+    -moz-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+    -ms-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+    -o-transform: matrix(1, -1.19175, 0, 1, 0, 0);
     transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    -webkit-transform: skewY(130deg);
-    -ms-transform: skewY(130deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: 120px;
-    margin-right: -530px;
   }
-  .angle1:not(.ac_collapse) {
-    height: 60%;
+  .toggle1 {
+    bottom: -300px;
   }
-  .angle2 {
-    transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    -webkit-transform: skewY(130deg);
-    -ms-transform: skewY(130deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: 120px;
-    margin-right: -580px;
+  .toggle2 {
+    bottom: -350px;
   }
-  .angle2:not(.ac_collapse) {
-    height: 60%;
+  .toggle3 {
+    bottom: -400px;
   }
-  .angle3 {
-    transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    -webkit-transform: skewY(130deg);
-    -ms-transform: skewY(130deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: 120px;
-    margin-right: -630px;
+  .toggle4 {
+    bottom: -450px;
   }
-  .angle3:not(.ac_collapse) {
-    height: 60%;
+  .toggle-text.ac_collapse {
+    /* text parameter for rotating unslanted text*/
+    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+    /* use px for translate x,y for -moz-  */
+    -moz-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+    -ms-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+    -o-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+    transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+    left: 60%;
   }
-  .angle4 {
-    transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    -webkit-transform: skewY(130deg);
-    -ms-transform: skewY(130deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: 100px;
-    margin-right: -700px;
+  .toggle-close,
+  .toggle-open {
+    font-size: 10px !important;
+  }
+  .grid {
+    left: 1px;
   }
   .spotlight-wrapper,
-  .records-wrapper,
-  #membersDiv,
-  #membersDiv2 {
-    top: 55px;
-  }
-  hr {
-    margin: 10px 0;
+  .records-wrapper {
+    top: 50px !important;
   }
   #membersDiv,
   #membersDiv2 {
-    height: 150px;
+    top: 0px !important;
   }
   .records-textBox {
     bottom: 0;
@@ -2516,87 +2548,56 @@ figure.effect-move:hover h3 i {
     left: 25px;
     overflow: hidden;
   }
-  .angle-text.ac_collapse {
-    transform: skewY(-170deg) rotate(-10deg);
-    -webkit-transform: skewY(-170deg) rotate(-10deg);
-    -moz-transform: skewY(-170deg) rotate(-10deg);
-    -ms-transform: skewY(-170deg) rotate(-10deg);
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-    left: 42.5%;
-  }
   .slide-toggle-close,
   .slide-toggle-open {
     font-size: 17px;
   }
-  .angle1 {
-    transform: skewY(170deg);
-    -webkit-transform: skewY(170deg);
-    -moz-transform: skewY(170deg);
-    -ms-transform: skewY(170deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: -15px;
-    margin-right: -530px;
-  }
-  .angle1:not(.ac_collapse) {
-    height: 75%;
-  }
-  .angle2 {
-    transform: skewY(170deg);
-    -webkit-transform: skewY(170deg);
-    -moz-transform: skewY(170deg);
-    -ms-transform: skewY(170deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: -60px;
-    margin-right: -580px;
-  }
-  .angle2:not(.ac_collapse) {
-    height: 75%;
-  }
-  .angle3 {
-    transform: skewY(170deg);
-    -webkit-transform: skewY(170deg);
-    -moz-transform: skewY(170deg);
-    -ms-transform: skewY(170deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    bottom: -100px;
-    margin-right: -630px;
-  }
-  .angle3:not(.ac_collapse) {
-    height: 75%;
-  }
-  .angle4 {
-    transform: skewY(170deg);
-    -webkit-transform: skewY(170deg);
-    -moz-transform: skewY(170deg);
-    -ms-transform: skewY(170deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+  .toggle1 {
+    right: 0px;
+    left: 0px;
     bottom: -300px;
-    margin-right: -700px;
+  }
+  .toggle2 {
+    right: 0px;
+    left: 0px;
+    bottom: -350px;
+  }
+  .toggle3 {
+    right: 0px;
+    left: 0px;
+    bottom: -400px;
+  }
+  .toggle4 {
+    right: 0px;
+    left: 0px;
+    bottom: -450px;
+  }
+  .toggle-text.ac_collapse {
+    -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    /* use px for translate x,y for -moz-  */
+    -moz-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    -ms-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    -o-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    left: 55%;
+  }
+  .toggle-close,
+  .toggle-open {
+    font-size: 8px !important;
+  }
+  .spotlight-wrapper,
+  .records-wrapper {
+    top: 55px;
+  }
+  #membersDiv,
+  #membersDiv2 {
+    top: 0px !important;
   }
   .spotlight-wrapper,
   .records-wrapper,
   #membersDiv,
   #membersDiv2 {
     top: 55px;
-  }
-  #membersDiv,
-  #membersDiv2 {
-    height: 375px;
   }
   .records-textBox {
     bottom: 0;

@@ -71,7 +71,7 @@ $(window).on('hashchange', function(e) {
         // $(document).ready(function() {
 
         //     var x = location.hash;
-        //     //alert($x);
+        //alert($x);
         //     $(x).delay(300).trigger('click');
 
         // });
@@ -89,4 +89,32 @@ $(window).load(function() {
         //$("#footer_button").trigger('click');
         $(window).delay(300).trigger('hashchange');
     }
+});
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///// Testing 
+$(document).ready(function() {
+
+    $("#button1").on('click', function() {
+        var x = $(this).attr('id');
+        //alert(x);
+        $(this).parent("#toggle1").toggleClass('rotate-matrix');
+
+    });
+
+    $("#button2").on('click', function() {
+        var x = $(this).attr('id');
+        //alert(x);
+        $(this).parent("#toggle2").toggleClass('rotate-matrix');
+
+    });
+
+
+    $("#button3").on('click', function() {
+        var x = $(this).attr('id');
+        //alert(x);
+        $(this).parent("#toggle3").toggleClass('rotate-matrix');
+    });
 });
