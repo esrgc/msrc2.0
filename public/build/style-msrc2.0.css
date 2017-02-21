@@ -2272,22 +2272,22 @@ figure.effect-move:hover h3 i {
   .toggle1 {
     right: 0px;
     left: 0px;
-    bottom: -450px;
+    bottom: -650px;
   }
   .toggle2 {
     right: 0px;
     left: 0px;
-    bottom: -500px;
+    bottom: -700px;
   }
   .toggle3 {
     right: 0px;
     left: 0px;
-    bottom: -550px;
+    bottom: -750px;
   }
   .toggle4 {
     right: 0px;
     left: 0px;
-    bottom: -600px;
+    bottom: -800px;
   }
   .toggle-text.ac_collapse {
     -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
