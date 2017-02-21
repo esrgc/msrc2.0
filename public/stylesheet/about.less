@@ -125,203 +125,189 @@
 
 /* transformation skew method */
 
-.skew {
-    //transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    //transform: skewY(130deg);
-    -webkit-transform: skewY(130deg);
-    //-moz-transform: skewY(130deg);
-    -ms-transform: skewY(130deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+// .skew {
+//     //transform: matrix(1, -1.19175, 0, 1, 0, 0);
+//     //transform: skewY(130deg);
+//     -webkit-transform: skewY(130deg);
+//     //-moz-transform: skewY(130deg);
+//     -ms-transform: skewY(130deg);
+//     -webkit-transition: all 0.5s ease-in-out;
+//     -moz-transition: all 0.5s ease-in-out;
+//     -ms-transition: all 0.5s ease-in-out;
+//     transition: all 0.5s ease-in-out;
+// }
+// .antiSkew {
+//     transform: skewY(-130deg) rotate(-50deg);
+//     -webkit-transform: skewY(-130deg) rotate(-50deg);
+//     -moz-transform: skewY(-130deg) rotate(-50deg);
+//     -ms-transform: skewY(-130deg) rotate(-50deg);
+//     -webkit-transition: all 0.25s ease-in-out;
+//     -moz-transition: all 0.25s ease-in-out;
+//     -ms-transition: all 0.25s ease-in-out;
+//     transition: all 0.25s ease-in-out;
+// }
+// .antiSkew2 {
+//     transform: skewY(-170deg) rotate(-10deg);
+//     -webkit-transform: skewY(-170deg) rotate(-10deg);
+//     -moz-transform: skewY(-170deg) rotate(-10deg);
+//     -ms-transform: skewY(-170deg) rotate(-10deg);
+//     -webkit-transition: all 0.25s ease-in-out;
+//     -moz-transition: all 0.25s ease-in-out;
+//     -ms-transition: all 0.25s ease-in-out;
+//     transition: all 0.25s ease-in-out;
+// }
+// .skew2 {
+//     transform: skewY(170deg);
+//     -webkit-transform: skewY(170deg);
+//     -moz-transform: skewY(170deg);
+//     -ms-transform: skewY(170deg);
+//     -webkit-transition: all 0.5s ease-in-out;
+//     -moz-transition: all 0.5s ease-in-out;
+//     -ms-transition: all 0.5s ease-in-out;
+//     transition: all 0.5s ease-in-out;
+// }
+
+/* testing transformation matrix method for cross browser compatibility */
+
+.skew-matrix {
+    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+    /* use px for translate x,y for -moz-  */
+    -moz-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+    -ms-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+    -o-transform: matrix(1, -1.19175, 0, 1, 0, 0);
+    transform: matrix(1, -1.19175, 0, 1, 0, 0);
 }
 
-.antiSkew {
-    transform: skewY(-130deg) rotate(-50deg);
-    -webkit-transform: skewY(-130deg) rotate(-50deg);
-    -moz-transform: skewY(-130deg) rotate(-50deg);
-    -ms-transform: skewY(-130deg) rotate(-50deg);
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
+.skew2-matrix {
+    /*matrix(0.984808, -5.39878e-9, 0.173648, 1.01543, 0, 0)*/
+    -webkit-transform: matrix(1, -0.176327, 0, 1, 0, 0);
+    /* use px for translate x,y for -moz-  */
+    -moz-transform: matrix(1, -0.176327, 0, 1, 0, 0);
+    -ms-transform: matrix(1, -0.176327, 0, 1, 0, 0);
+    -o-transform: matrix(1, -0.176327, 0, 1, 0, 0);
+    transform: matrix(1, -0.176327, 0, 1, 0, 0);
 }
 
-.antiSkew2 {
-    transform: skewY(-170deg) rotate(-10deg);
-    -webkit-transform: skewY(-170deg) rotate(-10deg);
-    -moz-transform: skewY(-170deg) rotate(-10deg);
-    -ms-transform: skewY(-170deg) rotate(-10deg);
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
+.antiSkew-matrix {
+    /* text parameter for rotating unslanted text*/
+    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+    /* use px for translate x,y for -moz-  */
+    -moz-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+    -ms-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+    -o-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+    transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
 }
 
-.skew2 {
-    transform: skewY(170deg);
-    -webkit-transform: skewY(170deg);
-    -moz-transform: skewY(170deg);
-    -ms-transform: skewY(170deg);
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+.antiSkew2-matrix {
+    -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    /* use px for translate x,y for -moz-  */
+    -moz-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    -ms-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    -o-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
+    transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
 }
 
-.angle {
-    //position: fixed;
-    right: 0;
+.rotate-matrix {
+    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+    /* use px for translate x,y for -moz-  */
+    -moz-transform: matrix(1, 0, 0, 1, 0, 0);
+    -ms-transform: matrix(1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(1, 0, 0, 1, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    //top: 160px !important;
+}
+
+.transition-toggle() {
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    transition: All 0.5s ease;
+}
+
+.toggle1,
+.toggle2,
+.toggle3,
+.toggle4 {
+    .skew-matrix;
     .shaded_bg-lt;
-    overflow: hidden;
-    height: 40%;
-    width: 75%;
-}
-
-.text-angle-center {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    bottom: 27px;
-}
-
-.angle-text.ac_collapse {
-    .font-blocky-drk;
-    position: relative;
-    left: 33%;
-    .antiSkew;
-    z-index: 10;
-    h1 {
-        //overflow-y: auto;
-    }
-}
-
-.angle-text:not(.ac_collapse) {
-    .font-blocky-drk;
-    position: relative;
-    left: 42%;
-    overflow-y: auto;
-}
-
-.angle1 {
-    .angle;
-    .skew;
     position: fixed;
-    overflow: hidden;
-    width: 1320px;
-    margin-right: -70px;
-    opacity: 0.25;
-    bottom: -70px;
+    right: -800px;
+    height: 100vh;
+    width: 100vw;
+    .transition-toggle;
+}
+
+.toggle-text.ac_collapse {
+    .font-blocky-drk;
+    position: relative;
+    top: 0;
+    left: 22%;
+    .antiSkew-matrix;
+}
+
+.toggle-text:not(.ac_collapse) {
+    .font-blocky-drk;
+    position: relative;
+    left: 43%;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.toggle1 {
+    opacity: .25;
+    bottom: -150px;
+    margin-right: 0;
     z-index: 1;
 }
 
-.angle2 {
-    .angle;
-    .skew;
-    position: fixed;
-    overflow: hidden;
-    width: 1320px;
-    opacity: 0.5;
-    margin-right: -200px;
-    bottom: -70px;
+.toggle2 {
+    opacity: .5;
+    bottom: -350px;
+    margin-right: 0;
     z-index: 2;
 }
 
-.angle3 {
-    .angle;
-    .skew;
-    position: fixed;
-    overflow: hidden;
-    width: 1320px;
-    opacity: 0.75;
-    margin-right: -350px;
-    bottom: -70px;
+.toggle3 {
+    opacity: .75;
+    bottom: -550px;
+    margin-right: 0;
     z-index: 3;
 }
 
-.angle4 {
-    .angle;
-    .skew;
-    position: fixed;
-    overflow: hidden;
-    width: 1320px;
+.toggle4 {
     opacity: 0.99;
-    height: 50%;
-    margin-right: -550px;
-    bottom: -100px;
-    z-index: 3;
-}
-
-.angle1:not(.ac_collapse) {
-    // .angle;
-    .shaded_bg-lt;
-    // .skew;
-    position: relative;
-    top: 110px;
-    left: 1px;
-    right: 0;
-    width: 100%;
-    //height: 85%;
-    height: 85vh;
-    opacity: 0.88;
-    margin: 0;
-    //bottom: 60px;
-    bottom: 110px;
-    // transform: matrix(1, 0, 0, 1, 0, 0);
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    overflow-y: auto;
-    z-index: 100 !important;
-}
-
-.angle2:not(.ac_collapse) {
-    // .angle;
-    .shaded_bg-lt;
-    // .skew;
-    position: relative;
-    top: 110px;
-    // bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    // height: 85%;
-    height: 85vh;
-    opacity: 0.88;
+    bottom: -750px;
     margin-right: 0;
-    bottom: 60px;
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    overflow-y: auto;
-    z-index: 100 !important;
+    z-index: 4;
 }
 
-.angle3:not(.ac_collapse) {
-    // .angle;
-    .shaded_bg-lt;
-    // .skew;
-    position: relative;
-    top: 110px;
-    // bottom: 0;
-    left: 0;
+.toggle1:not(.ac_collapse),
+.toggle2:not(.ac_collapse),
+.toggle3:not(.ac_collapse) {
+    .rotate-matrix;
+    position: absolute;
+    top: 80px !important;
     right: 0;
-    width: 100%;
-    // height: 85%;
-    height: 85vh;
-    opacity: 0.88;
-    margin-right: 0;
-    bottom: 60px;
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    overflow-y: auto;
-    z-index: 100 !important;
+    //bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.99;
+    z-index: 10;
 }
+
+// .text-angle-center {
+//     display: table-cell;
+//     text-align: center;
+//     vertical-align: middle;
+//     bottom: 27px;
+// }
 
 .float-left {
     position: absolute;
@@ -361,12 +347,9 @@
 #membersDiv {
     display: block;
     position: relative;
-    //top: 130px;
-    top: 80px !important;
+    top: 0px;
     left: 0;
-    //bottom: 60px;
     height: 80vh;
-    //max-height: 100vh;
     width: 35%;
     z-index: 1000;
     overflow: hidden;
@@ -403,7 +386,6 @@
     top: 0;
     left: 0;
     bottom: 0;
-    //height: 100%;
     width: 100%;
     padding: 20px 20px;
     opacity: 0.6;
@@ -417,13 +399,8 @@
 #membersDiv2 {
     display: block;
     position: relative;
-    //top: 130px;
-    top: 80px !important;
-    //left: 35%;
-    //right: 15%;
-    //bottom: 60px;
+    top: 0px;
     height: 75vh;
-    //max-height: 100vh;
     width: 65%;
     overflow: hidden;
     text-align: center;
@@ -574,16 +551,11 @@
 }
 
 .spotlight-wrapper {
-    //display: block;
-    //flex-wrap: wrap;
-    //position: relative;
     position: absolute;
-    //float: left;
     text-align: center;
     height: 80vh;
     width: 100%;
-    top: 80px !important;
-    //left: 35px;
+    top: 85px !important;
     padding: 0;
     margin: 0;
     right: 0;
@@ -629,7 +601,6 @@
 
 .imgHeader h2 {
     height: 50%;
-    //font-size: 60px;
     color: white;
 }
 
@@ -646,9 +617,7 @@
 }
 
 .imgHeader-sm h2 {
-    //position: absolute;
     height: 50%;
-    //font-size: 37px;
     color: white;
 }
 
@@ -665,8 +634,7 @@
     text-align: center;
     height: 80vh;
     width: 100%;
-    top: 60px !important;
-    //left: 35px;
+    top: 0px !important;
     padding: 0;
     margin: 0;
     right: 0;
@@ -1049,137 +1017,4 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/* testing transformation matrix method for cross browser compatibility */
 
-.skew-matrix {
-    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
-    -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    /* use px for translate x,y for -moz-  */
-    -moz-transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    -ms-transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    -o-transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    transform: matrix(1, -1.19175, 0, 1, 0, 0);
-}
-
-.skew2-matrix {
-    /*matrix(0.984808, -5.39878e-9, 0.173648, 1.01543, 0, 0)*/
-    -webkit-transform: matrix(1, -0.176327, 0, 1, 0, 0);
-    /* use px for translate x,y for -moz-  */
-    -moz-transform: matrix(1, -0.176327, 0, 1, 0, 0);
-    -ms-transform: matrix(1, -0.176327, 0, 1, 0, 0);
-    -o-transform: matrix(1, -0.176327, 0, 1, 0, 0);
-    transform: matrix(1, -0.176327, 0, 1, 0, 0);
-}
-
-.antiSkew-matrix {
-    /* text parameter for rotating unslanted text*/
-    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
-    -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-    /* use px for translate x,y for -moz-  */
-    -moz-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-    -ms-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-    -o-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-    transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-}
-
-.antiSkew2-matrix {
-        -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-    /* use px for translate x,y for -moz-  */
-    -moz-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-    -ms-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-    -o-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-    transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-}
-
-.rotate-matrix {
-    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
-    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
-    /* use px for translate x,y for -moz-  */
-    -moz-transform: matrix(1, 0, 0, 1, 0, 0);
-    -ms-transform: matrix(1, 0, 0, 1, 0, 0);
-    -o-transform: matrix(1, 0, 0, 1, 0, 0);
-    transform: matrix(1, 0, 0, 1, 0, 0);
-    //top: 160px !important;
-}
-
-.transition-toggle() {
-    -webkit-transition: All 0.5s ease;
-    -moz-transition: All 0.5s ease;
-    -ms-transition: All 0.5s ease;
-    -o-transition: All 0.5s ease;
-    transition: All 0.5s ease;
-}
-
-.toggle1,
-.toggle2,
-.toggle3,
-.toggle4 {
-    .skew-matrix;
-    .shaded_bg-lt;
-    position: fixed;
-    right: -800px;
-    height: 100vh;
-    width: 100vw;
-    .transition-toggle;
-}
-
-.toggle-text.ac_collapse {
-    .font-blocky-drk;
-    position: relative;
-    top: 0;
-    left: 22%;
-    .antiSkew-matrix;
-}
-
-.toggle-text:not(.ac_collapse) {
-    .font-blocky-drk;
-    position: relative;
-    left: 43%;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-}
-
-.toggle1 {
-    opacity: .25;
-    bottom: -150px;
-    margin-right: 0;
-    z-index: 1;
-}
-
-.toggle2 {
-    opacity: .5;
-    bottom: -350px;
-    margin-right: 0;
-    z-index: 2;
-}
-
-.toggle3 {
-    opacity: .75;
-    bottom: -550px;
-    margin-right: 0;
-    z-index: 3;
-}
-
-.toggle4 {
-    opacity: 0.99;
-    bottom: -750px;
-    margin-right: 0;
-    z-index: 4;
-}
-
-.toggle1:not(.ac_collapse),
-.toggle2:not(.ac_collapse),
-.toggle3:not(.ac_collapse) {
-    .rotate-matrix;
-    position: absolute;
-    top: 80px !important;
-    right: 0;
-    //bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0.99;
-    z-index: 10;
-}
