@@ -123,54 +123,10 @@
 }
 
 
-/* transformation skew method */
-
-// .skew {
-//     //transform: matrix(1, -1.19175, 0, 1, 0, 0);
-//     //transform: skewY(130deg);
-//     -webkit-transform: skewY(130deg);
-//     //-moz-transform: skewY(130deg);
-//     -ms-transform: skewY(130deg);
-//     -webkit-transition: all 0.5s ease-in-out;
-//     -moz-transition: all 0.5s ease-in-out;
-//     -ms-transition: all 0.5s ease-in-out;
-//     transition: all 0.5s ease-in-out;
-// }
-// .antiSkew {
-//     transform: skewY(-130deg) rotate(-50deg);
-//     -webkit-transform: skewY(-130deg) rotate(-50deg);
-//     -moz-transform: skewY(-130deg) rotate(-50deg);
-//     -ms-transform: skewY(-130deg) rotate(-50deg);
-//     -webkit-transition: all 0.25s ease-in-out;
-//     -moz-transition: all 0.25s ease-in-out;
-//     -ms-transition: all 0.25s ease-in-out;
-//     transition: all 0.25s ease-in-out;
-// }
-// .antiSkew2 {
-//     transform: skewY(-170deg) rotate(-10deg);
-//     -webkit-transform: skewY(-170deg) rotate(-10deg);
-//     -moz-transform: skewY(-170deg) rotate(-10deg);
-//     -ms-transform: skewY(-170deg) rotate(-10deg);
-//     -webkit-transition: all 0.25s ease-in-out;
-//     -moz-transition: all 0.25s ease-in-out;
-//     -ms-transition: all 0.25s ease-in-out;
-//     transition: all 0.25s ease-in-out;
-// }
-// .skew2 {
-//     transform: skewY(170deg);
-//     -webkit-transform: skewY(170deg);
-//     -moz-transform: skewY(170deg);
-//     -ms-transform: skewY(170deg);
-//     -webkit-transition: all 0.5s ease-in-out;
-//     -moz-transition: all 0.5s ease-in-out;
-//     -ms-transition: all 0.5s ease-in-out;
-//     transition: all 0.5s ease-in-out;
-// }
-
 /* testing transformation matrix method for cross browser compatibility */
+/* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
 
 .skew-matrix {
-    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
     -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
     /* use px for translate x,y for -moz-  */
     -moz-transform: matrix(1, -1.19175, 0, 1, 0, 0);
@@ -180,7 +136,6 @@
 }
 
 .skew2-matrix {
-    /*matrix(0.984808, -5.39878e-9, 0.173648, 1.01543, 0, 0)*/
     -webkit-transform: matrix(1, -0.176327, 0, 1, 0, 0);
     /* use px for translate x,y for -moz-  */
     -moz-transform: matrix(1, -0.176327, 0, 1, 0, 0);
@@ -191,7 +146,6 @@
 
 .antiSkew-matrix {
     /* text parameter for rotating unslanted text*/
-    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
     -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
     /* use px for translate x,y for -moz-  */
     -moz-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
@@ -210,7 +164,6 @@
 }
 
 .rotate-matrix {
-    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
     -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
     /* use px for translate x,y for -moz-  */
     -moz-transform: matrix(1, 0, 0, 1, 0, 0);
@@ -308,7 +261,6 @@
 //     vertical-align: middle;
 //     bottom: 27px;
 // }
-
 .float-left {
     position: absolute;
     left: 0;
@@ -628,15 +580,16 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 .records-wrapper {
     display: block;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     position: relative;
-    float: left;
+    //float: left;
     text-align: center;
     height: 80vh;
     width: 100%;
     top: 0px !important;
     padding: 0;
     margin: 0;
+    left: 1%;
     right: 0;
     bottom: 0;
     overflow-y: auto;
@@ -1010,11 +963,3 @@
     bottom: 0;
     padding-bottom: -60px;
 }
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-// experimental
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-

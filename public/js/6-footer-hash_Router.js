@@ -9,7 +9,6 @@ $(document).ready(function() {
     });
 
 });
-
 //////////////////////////////////////////////////////////////////////////////////////////////
 // footer dropdown menu for advisory committees
 $(document).ready(function() {
@@ -25,11 +24,7 @@ $(document).ready(function() {
         return false;
     });
 });
-
-
 /////////////////////////////////////////////////////////////////////////////////////////////
-
-
 // experimental code for triggering click event based on point of entry with hash detection. 
 ///// on footer link activation make click events happen after new page loads
 
@@ -53,50 +48,22 @@ $(window).on('hashchange', function(e) {
 
     if (location.hash == "#comCEDS" || location.hash == "#comEM" || location.hash == "#comGIS" || location.hash == "#comIT" || location.hash == "#comMUST") {
         $('#advisGroup').trigger('click');
-        $(location.hash).delay(300).trigger('click');
+        $(location.hash).trigger('click');
 
     } else if (location.hash == "#members" || location.hash == "#spotlight" || location.hash == "#records") {
         /// cross browser functionality issues with firefox and msie
         // relative position elements become thrown to the left when open and closed
-        var x = location.hash;
-        $(x).delay(300).trigger('click');
+        //var x = location.hash;
+        $(location.hash).trigger('click');
     } else {
-        $(location.hash).delay(300).trigger('click');
+        $(location.hash).trigger('click');
     }
 
 });
 
 $(window).load(function() {
     if (window.location.hash) {
-        $(window).delay(300).trigger('hashchange');
+        $(window).trigger('hashchange');
     }
 });
-
-
-
-/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///// Testing 
-// $(document).ready(function() {
-
-//     $("#button1").on('click', function() {
-//         var x = $(this).attr('id');
-//         //alert(x);
-//         $(this).parent("#toggle1").toggleClass('rotate-matrix');
-
-//     });
-
-//     $("#button2").on('click', function() {
-//         var x = $(this).attr('id');
-//         //alert(x);
-//         $(this).parent("#toggle2").toggleClass('rotate-matrix');
-
-//     });
-
-
-//     $("#button3").on('click', function() {
-//         var x = $(this).attr('id');
-//         //alert(x);
-//         $(this).parent("#toggle3").toggleClass('rotate-matrix');
-//     });
-// });
-*/
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -824,10 +824,9 @@ figure.effect-move:hover h3 i {
   bottom: 0;
   height: 80vh;
 }
-/* transformation skew method */
 /* testing transformation matrix method for cross browser compatibility */
+/* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
 .skew-matrix {
-  /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
   -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
   /* use px for translate x,y for -moz-  */
   -moz-transform: matrix(1, -1.19175, 0, 1, 0, 0);
@@ -836,7 +835,6 @@ figure.effect-move:hover h3 i {
   transform: matrix(1, -1.19175, 0, 1, 0, 0);
 }
 .skew2-matrix {
-  /*matrix(0.984808, -5.39878e-9, 0.173648, 1.01543, 0, 0)*/
   -webkit-transform: matrix(1, -0.176327, 0, 1, 0, 0);
   /* use px for translate x,y for -moz-  */
   -moz-transform: matrix(1, -0.176327, 0, 1, 0, 0);
@@ -846,7 +844,6 @@ figure.effect-move:hover h3 i {
 }
 .antiSkew-matrix {
   /* text parameter for rotating unslanted text*/
-  /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
   -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
   /* use px for translate x,y for -moz-  */
   -moz-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
@@ -863,7 +860,6 @@ figure.effect-move:hover h3 i {
   transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
 }
 .rotate-matrix {
-  /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
   -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
   /* use px for translate x,y for -moz-  */
   -moz-transform: matrix(1, 0, 0, 1, 0, 0);
@@ -875,7 +871,6 @@ figure.effect-move:hover h3 i {
 .toggle2,
 .toggle3,
 .toggle4 {
-  /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
   -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
   /* use px for translate x,y for -moz-  */
   -moz-transform: matrix(1, -1.19175, 0, 1, 0, 0);
@@ -906,7 +901,6 @@ figure.effect-move:hover h3 i {
   top: 0;
   left: 22%;
   /* text parameter for rotating unslanted text*/
-  /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
   -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
   /* use px for translate x,y for -moz-  */
   -moz-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
@@ -952,7 +946,6 @@ figure.effect-move:hover h3 i {
 .toggle1:not(.ac_collapse),
 .toggle2:not(.ac_collapse),
 .toggle3:not(.ac_collapse) {
-  /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
   -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
   /* use px for translate x,y for -moz-  */
   -moz-transform: matrix(1, 0, 0, 1, 0, 0);
@@ -1247,15 +1240,14 @@ figure.effect-move:hover h3 i {
 }
 .records-wrapper {
   display: block;
-  flex-wrap: wrap;
   position: relative;
-  float: left;
   text-align: center;
   height: 80vh;
   width: 100%;
   top: 0px !important;
   padding: 0;
   margin: 0;
+  left: 1%;
   right: 0;
   bottom: 0;
   overflow-y: auto;
@@ -1631,7 +1623,6 @@ figure.effect-move:hover h3 i {
   .toggle2,
   .toggle3,
   .toggle4 {
-    /*matrix(0.984808, -5.39878e-9, 0.173648, 1.01543, 0, 0)*/
     -webkit-transform: matrix(1, -0.176327, 0, 1, 0, 0);
     /* use px for translate x,y for -moz-  */
     -moz-transform: matrix(1, -0.176327, 0, 1, 0, 0);
@@ -1861,7 +1852,6 @@ figure.effect-move:hover h3 i {
   .toggle2,
   .toggle3,
   .toggle4 {
-    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
     -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
     /* use px for translate x,y for -moz-  */
     -moz-transform: matrix(1, -1.19175, 0, 1, 0, 0);
@@ -1883,7 +1873,6 @@ figure.effect-move:hover h3 i {
   }
   .toggle-text.ac_collapse {
     /* text parameter for rotating unslanted text*/
-    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
     -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
     /* use px for translate x,y for -moz-  */
     -moz-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
@@ -2167,7 +2156,6 @@ figure.effect-move:hover h3 i {
   .toggle2,
   .toggle3,
   .toggle4 {
-    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
     -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
     /* use px for translate x,y for -moz-  */
     -moz-transform: matrix(1, -1.19175, 0, 1, 0, 0);
@@ -2189,7 +2177,6 @@ figure.effect-move:hover h3 i {
   }
   .toggle-text.ac_collapse {
     /* text parameter for rotating unslanted text*/
-    /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
     -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
     /* use px for translate x,y for -moz-  */
     -moz-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);

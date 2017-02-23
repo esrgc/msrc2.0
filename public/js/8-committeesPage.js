@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
-* Author: Carl Flint, ESRGC
-*/
+ * Author: Carl Flint, ESRGC
+ */
 
 
 $(document).ready(function() {
@@ -19,9 +19,17 @@ $(document).ready(function() {
 
 
     //hide expanding months layout in executive committee pop out
+    var $months = $('.archive_months');
+
     $(".archive_months").hide();
     $(".years").click(function() {
-        $(this).find('ul').slideToggle();
+        var $x = $(this).attr('id');
+        console.log($x);
+        if ($(this).siblings().find('.archive_months').is(':visible')) {
+            //console.log('i can see you!');
+            $(this).siblings().find('.archive_months').hide('slow');
+        }
+            $(this).find('ul').slideToggle(500);
     });
 
     //hide advisDiv untill  activated by button
@@ -56,6 +64,12 @@ $(document).ready(function() {
             });
         });
         // toggle minutes based on open members
+        if ($(this).siblings().find('.members').is(':visible')) {
+            //console.log('i can see you');
+            $(this).siblings().find('.members').hide('slow');
+        }
+        $content.find('ul').slideToggle(500);
+
         if ($content.attr('id') == 'comGIS') {
             $('#advisMin-GIS').slideToggle(500);
             $('#advisMin-CEDS').hide();
@@ -94,6 +108,7 @@ $(document).ready(function() {
             $('#advisMin-MUST').hide();
         }
         //$comOpen.not($header);
+        
         $membersUL.not($content).stop(true, true).slideUp();
 
 

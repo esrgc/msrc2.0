@@ -132,10 +132,10 @@ $(window).load(function() {
 
 $(document).ready(function() {
 
-    // carousel rotation speed
-    // $('.carousel').carousel({
-    //     interval: 5000 //set speed in ms
-    // });
+    // carousel rotation speed ... such a small bit of code i didnt break into its own module
+    $('.carousel').carousel({
+        interval: 5000 //set speed in ms
+    });
 
     /*
     // zAccordion About pop out
@@ -160,7 +160,6 @@ $(document).ready(function() {
         var $records = $('#masonry-container-records').masonry();
         var $textBox = $('.textBox');
 
-        /*($attrID);*/
         /*console.log($attrID);*/
 
         // helper function for masonry and imagesLoaded
@@ -183,10 +182,6 @@ $(document).ready(function() {
 
             return this;
         };
-
-
-
-
 
         if ($attrID == 'members') {
 
@@ -215,10 +210,6 @@ $(document).ready(function() {
                 $('.textBox').hide("slow");
             }
 
-           /* $spotlightMasonry.on('layoutComplete', function() {
-                console.log('complete');
-            });*/
-
         } else if ($attrID == 'records') {
 
             // $('.records-wrapper').toggle('slide');
@@ -246,8 +237,6 @@ $(document).ready(function() {
 
         }
 
-
-
         /* the foo*/
         if ($(this).hasClass("slide-toggle-open")) {
             $(this).removeClass("slide-toggle-open").nextAll(".angle_wrapper > div:not(:last-child) h1").slideUp(500).removeClass("slide-toggle-open");
@@ -264,8 +253,7 @@ $(document).ready(function() {
         // on click pull up div
         var $attrID = $(this).attr('id');
         var sliceID = $attrID.substr(10);
-        /*($attrID);*/
-        /*(sliceID);*/
+
         if (sliceID == 'broadband') {
             if ($("#broadband").is(":hidden")) {
                 $('.textBox').hide("slow");
@@ -334,8 +322,6 @@ $(document).ready(function() {
         }
     });
 
-
-
     var $clickRecords = $('#masonry-container-records').masonry();
     // change size of item on click with toggle class
     $clickRecords.on('click', '.records-gridItem', function(e) {
@@ -379,7 +365,6 @@ $(document).ready(function() {
 
         }
 
-
     });
 
     // setup textBox to close on click
@@ -389,8 +374,6 @@ $(document).ready(function() {
             $(this).toggle('slide');
         }
     });
-
-
 
     //.end doc ready function
 });
@@ -408,7 +391,6 @@ $(document).ready(function() {
     });
 
 });
-
 //////////////////////////////////////////////////////////////////////////////////////////////
 // footer dropdown menu for advisory committees
 $(document).ready(function() {
@@ -424,11 +406,7 @@ $(document).ready(function() {
         return false;
     });
 });
-
-
 /////////////////////////////////////////////////////////////////////////////////////////////
-
-
 // experimental code for triggering click event based on point of entry with hash detection. 
 ///// on footer link activation make click events happen after new page loads
 
@@ -452,53 +430,25 @@ $(window).on('hashchange', function(e) {
 
     if (location.hash == "#comCEDS" || location.hash == "#comEM" || location.hash == "#comGIS" || location.hash == "#comIT" || location.hash == "#comMUST") {
         $('#advisGroup').trigger('click');
-        $(location.hash).delay(300).trigger('click');
+        $(location.hash).trigger('click');
 
     } else if (location.hash == "#members" || location.hash == "#spotlight" || location.hash == "#records") {
         /// cross browser functionality issues with firefox and msie
         // relative position elements become thrown to the left when open and closed
-        var x = location.hash;
-        $(x).delay(300).trigger('click');
+        //var x = location.hash;
+        $(location.hash).trigger('click');
     } else {
-        $(location.hash).delay(300).trigger('click');
+        $(location.hash).trigger('click');
     }
 
 });
 
 $(window).load(function() {
     if (window.location.hash) {
-        $(window).delay(300).trigger('hashchange');
+        $(window).trigger('hashchange');
     }
 });
-
-
-
-/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///// Testing 
-// $(document).ready(function() {
-
-//     $("#button1").on('click', function() {
-//         var x = $(this).attr('id');
-//         //alert(x);
-//         $(this).parent("#toggle1").toggleClass('rotate-matrix');
-
-//     });
-
-//     $("#button2").on('click', function() {
-//         var x = $(this).attr('id');
-//         //alert(x);
-//         $(this).parent("#toggle2").toggleClass('rotate-matrix');
-
-//     });
-
-
-//     $("#button3").on('click', function() {
-//         var x = $(this).attr('id');
-//         //alert(x);
-//         $(this).parent("#toggle3").toggleClass('rotate-matrix');
-//     });
-// });
-*/
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
 * Author: Carl Flint
@@ -574,8 +524,8 @@ $(document).ready(function() {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
-* Author: Carl Flint, ESRGC
-*/
+ * Author: Carl Flint, ESRGC
+ */
 
 
 $(document).ready(function() {
@@ -593,9 +543,17 @@ $(document).ready(function() {
 
 
     //hide expanding months layout in executive committee pop out
+    var $months = $('.archive_months');
+
     $(".archive_months").hide();
     $(".years").click(function() {
-        $(this).find('ul').slideToggle();
+        var $x = $(this).attr('id');
+        console.log($x);
+        if ($(this).siblings().find('.archive_months').is(':visible')) {
+            //console.log('i can see you!');
+            $(this).siblings().find('.archive_months').hide('slow');
+        }
+            $(this).find('ul').slideToggle(500);
     });
 
     //hide advisDiv untill  activated by button
@@ -630,6 +588,12 @@ $(document).ready(function() {
             });
         });
         // toggle minutes based on open members
+        if ($(this).siblings().find('.members').is(':visible')) {
+            //console.log('i can see you');
+            $(this).siblings().find('.members').hide('slow');
+        }
+        $content.find('ul').slideToggle(500);
+
         if ($content.attr('id') == 'comGIS') {
             $('#advisMin-GIS').slideToggle(500);
             $('#advisMin-CEDS').hide();
@@ -668,6 +632,7 @@ $(document).ready(function() {
             $('#advisMin-MUST').hide();
         }
         //$comOpen.not($header);
+        
         $membersUL.not($content).stop(true, true).slideUp();
 
 
@@ -682,6 +647,7 @@ $(document).ready(function() {
 
 });
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

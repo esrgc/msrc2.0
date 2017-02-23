@@ -52,10 +52,10 @@ $(window).load(function() {
 
 $(document).ready(function() {
 
-    // carousel rotation speed
-    // $('.carousel').carousel({
-    //     interval: 5000 //set speed in ms
-    // });
+    // carousel rotation speed ... such a small bit of code i didnt break into its own module
+    $('.carousel').carousel({
+        interval: 5000 //set speed in ms
+    });
 
     /*
     // zAccordion About pop out
@@ -80,7 +80,6 @@ $(document).ready(function() {
         var $records = $('#masonry-container-records').masonry();
         var $textBox = $('.textBox');
 
-        /*($attrID);*/
         /*console.log($attrID);*/
 
         // helper function for masonry and imagesLoaded
@@ -103,10 +102,6 @@ $(document).ready(function() {
 
             return this;
         };
-
-
-
-
 
         if ($attrID == 'members') {
 
@@ -135,10 +130,6 @@ $(document).ready(function() {
                 $('.textBox').hide("slow");
             }
 
-           /* $spotlightMasonry.on('layoutComplete', function() {
-                console.log('complete');
-            });*/
-
         } else if ($attrID == 'records') {
 
             // $('.records-wrapper').toggle('slide');
@@ -166,8 +157,6 @@ $(document).ready(function() {
 
         }
 
-
-
         /* the foo*/
         if ($(this).hasClass("slide-toggle-open")) {
             $(this).removeClass("slide-toggle-open").nextAll(".angle_wrapper > div:not(:last-child) h1").slideUp(500).removeClass("slide-toggle-open");
@@ -184,8 +173,7 @@ $(document).ready(function() {
         // on click pull up div
         var $attrID = $(this).attr('id');
         var sliceID = $attrID.substr(10);
-        /*($attrID);*/
-        /*(sliceID);*/
+
         if (sliceID == 'broadband') {
             if ($("#broadband").is(":hidden")) {
                 $('.textBox').hide("slow");
@@ -254,8 +242,6 @@ $(document).ready(function() {
         }
     });
 
-
-
     var $clickRecords = $('#masonry-container-records').masonry();
     // change size of item on click with toggle class
     $clickRecords.on('click', '.records-gridItem', function(e) {
@@ -299,7 +285,6 @@ $(document).ready(function() {
 
         }
 
-
     });
 
     // setup textBox to close on click
@@ -309,8 +294,6 @@ $(document).ready(function() {
             $(this).toggle('slide');
         }
     });
-
-
 
     //.end doc ready function
 });
