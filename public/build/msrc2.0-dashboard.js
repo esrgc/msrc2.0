@@ -602,11 +602,11 @@ $(document).ready(function() {
             });
         });
 
-        if ($(this).find('.members').is(':visible')) {
-            var attrID = $(this).find('.members').attr('id');
-            // $advisMins.hide();
-            console.log('i am supposed to be visible  ' + attrID);
-        } 
+        // if ($(this).find('.members').is(':visible')) {
+        //     var attrID = $(this).find('.members').attr('id');
+        //     // $advisMins.hide();
+        //     console.log('i am supposed to be visible  ' + attrID);
+        // } 
 
         $advisMins.not($openMin).stop(true, true).slideUp();
         $membersUL.not($content).stop(true, true).slideUp();
