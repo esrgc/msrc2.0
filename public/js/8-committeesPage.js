@@ -47,9 +47,9 @@ $(document).ready(function() {
     /*move to top when done*/
 
     var $membersUL = $(".members");
-    var $advisMins = $(".advisMins");
+    
     var $comOpen = $(".advisCommittees").click(function() {
-
+        var $advisMins = $(".advisMins");
         var $header = $(this);
         $header.find(".toggle-close").toggleClass("toggle-open");
         //get next element
@@ -63,52 +63,28 @@ $(document).ready(function() {
                 return $content.is(":visible");
             });
         });
-        // toggle minutes based on open members
-        if ($(this).siblings().find('.members').is(':visible')) {
-            //console.log('i can see you');
-            $(this).siblings().find('.members').hide('slow');
-        }
+
         $content.find('ul').slideToggle(500);
 
-        if ($content.attr('id') == 'comGIS') {
-            $('#advisMin-GIS').slideToggle(500);
-            $('#advisMin-CEDS').hide();
-            $('#advisMin-EM').hide();
-            $('#advisMin-IT').hide();
-            $('#advisMin-MUST').hide();
-        } else if ($content.attr('id') == 'comCEDS') {
-            $('#advisMin-CEDS').slideToggle(500);
-            $('#advisMin-GIS').hide();
-            $('#advisMin-EM').hide();
-            $('#advisMin-IT').hide();
-            $('#advisMin-MUST').hide();
-        } else if ($content.attr('id') == 'comEM') {
-            $('#advisMin-EM').slideToggle(500);
-            $('#advisMin-GIS').hide();
-            $('#advisMin-CEDS').hide();
-            $('#advisMin-IT').hide();
-            $('#advisMin-MUST').hide();
-        } else if ($content.attr('id') == 'comIT') {
-            $('#advisMin-IT').slideToggle(500);
-            $('#advisMin-GIS').hide();
-            $('#advisMin-CEDS').hide();
-            $('#advisMin-EM').hide();
-            $('#advisMin-MUST').hide();
-        } else if ($content.attr('id') == 'comMUST') {
-            $('#advisMin-MUST').slideToggle(500);
-            $('#advisMin-GIS').hide();
-            $('#advisMin-CEDS').hide();
-            $('#advisMin-EM').hide();
-            $('#advisMin-IT').hide();
-        } else {
-            $('#advisMin-GIS').hide();
-            $('#advisMin-CEDS').hide();
-            $('#advisMin-EM').hide();
-            $('#advisMin-IT').hide();
-            $('#advisMin-MUST').hide();
-        }
-        //$comOpen.not($header);
-        
+        var $sliceMin = $content.attr('id').substr(3);
+        //console.log($slideMin);
+        var $openMin = '#advisMin-' + $sliceMin;
+        //console.log($openMin);
+        //console.log($openMin.slideToggle(500));
+
+        $($openMin).stop(true, true).slideToggle(500, function(){
+            $header.addClass(function() {
+                return $($openMin).is(':visible');
+            });
+        });
+
+        if ($(this).find('.members').is(':visible')) {
+            var attrID = $(this).find('.members').attr('id');
+            // $advisMins.hide();
+            console.log('i am supposed to be visible  ' + attrID);
+        } 
+
+        $advisMins.not($openMin).stop(true, true).slideUp();
         $membersUL.not($content).stop(true, true).slideUp();
 
 
