@@ -1490,6 +1490,8 @@ figure.effect-move:hover h3 i {
   transition: opacity 0.35s, transform 0.35s;
 }
 #gilligan .image {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
   position: relative;
   display: inline-block;
   padding: 0.111em;
@@ -1681,6 +1683,17 @@ figure.effect-move:hover h3 i {
   }
   .grid-box-spotlight {
     width: 32.33%;
+  }
+  #gilligan .image,
+  #gilligan2 .image {
+    left: 10%;
+    margin: 0 auto;
+    width: 25%;
+  }
+  #gilligan .image img,
+  #gilligan2 .image img {
+    width: 25%;
+    height: 25%;
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 1040px) {
