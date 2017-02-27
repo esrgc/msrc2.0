@@ -627,11 +627,11 @@ $(document).ready(function() {
 // This is to tone it down a thousand notches
 
 
-$(document).ready(function() {
+$(window).load(function() {
     if (navigator.userAgent.match(/Firefox\/51.0/i)) {
-        $("body").css({ "font-size": "18px" });
-        $("#logo_lrg").css("font-size", '1.65em');
-        $("#logo_med").css("font-size", '1.32em');
+        //$("body").css( "font-size", "18px" );
+        $("#logo_lrg").css("font-size", '1.625em');
+        $("#logo_med").css("font-size", '1.375em');
         $("body").flowtype({
             minFont: 6,
             maxFont: 18,
