@@ -444,7 +444,7 @@ hr.small {
   position: relative;
   left: 0;
   top: 0;
-  margin: 0;
+  margin: 0 ;
   font-family: 'Alex Brush', cursive;
   text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
   color: #e6e6e6;
@@ -478,8 +478,8 @@ hr.small {
 #logo_sm {
   display: inline-block;
   position: relative;
-  left: 0;
-  bottom: 0;
+  left: 0px;
+  bottom: 0px;
   margin: -1em 0 0 0;
   font-family: 'Padauk', sans-serif;
   color: #e6e6e6;
@@ -947,7 +947,7 @@ figure.effect-move:hover h3 i {
 #membersDiv {
   display: block;
   position: relative;
-  top: 0px;
+  top: 0px !important;
   left: 0;
   height: 80vh;
   width: 35%;
@@ -999,8 +999,8 @@ figure.effect-move:hover h3 i {
 #membersDiv2 {
   display: block;
   position: relative;
-  top: 0px;
-  height: 75vh;
+  top: 0px !important;
+  height: 80vh;
   width: 65%;
   overflow: hidden;
   text-align: center;
@@ -1641,14 +1641,12 @@ figure.effect-move:hover h3 i {
   .grid-box-spotlight {
     width: 32.33%;
   }
-  #gilligan .image,
-  #gilligan2 .image {
+  #gilligan .image {
     left: 10%;
     margin: 0 auto;
     width: 25%;
   }
-  #gilligan .image img,
-  #gilligan2 .image img {
+  #gilligan .image img {
     width: 40%;
     height: 40%;
   }
