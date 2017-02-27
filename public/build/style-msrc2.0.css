@@ -551,13 +551,13 @@ div.effect-shade p {
   padding: 2em;
   width: 100%;
   opacity: 0;
-  -webkit-transform: translate3d(0, 10px, 0);
-  transform: translate3d(0, 10px, 0);
+  -webkit-transform: translate3d(0, 0.556em, 0);
+  transform: translate3d(0, 0.556em, 0);
 }
 div.effect-shade:hover h4 {
   color: #fff;
-  -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -80px, 0);
-  transform: translate3d(0, -100%, 0) translate3d(0, -80px, 0);
+  -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -4.445em, 0);
+  transform: translate3d(0, -100%, 0) translate3d(0, -4.445em, 0);
 }
 div.effect-shade:hover h1::before,
 div.effect-shade:hover p {
@@ -622,7 +622,7 @@ figure {
   max-height: 20.8332em;
   width: 100%;
   padding: 1.112em 0;
-  line-height: 80%;
+  line-height: 70%;
   z-index: 0;
   -webkit-transition: All 1s ease;
   -moz-transition: All 1s ease;
@@ -633,12 +633,13 @@ figure {
 .footer_button_div {
   background-color: transparent;
   opacity: 1;
+  margin: 0 auto;
 }
 #footer_button {
   margin: 0 auto;
   text-align: center;
   position: fixed;
-  left: 48.5%;
+  left: 49%;
   bottom: 75px;
   color: white;
   cursor: pointer;
@@ -719,7 +720,8 @@ figure.effect-move img {
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
-figure.effect-move:hover img {
+figure.effect-move:hover img,
+figure.effect-move:focus img {
   opacity: 0.5;
 }
 figure.effect-move .floater::before {
@@ -758,7 +760,10 @@ figure.effect-move h3 {
 }
 figure.effect-move:hover .floater::before,
 figure.effect-move:hover h3,
-figure.effect-move:hover h3 i {
+figure.effect-move:hover h3 i,
+figure.effect-move:focus .floater::before,
+figure.effect-move:focus h3,
+figure.effect-move:focus h3 i {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -1581,6 +1586,9 @@ figure.effect-move:hover h3 i {
   .toggle-text.ac_collapse {
     left: 18%;
   }
+  #footer_button {
+    left: 48.5%;
+  }
 }
 @media screen and (max-width: 1260px) {
   .toggle1,
@@ -1650,6 +1658,9 @@ figure.effect-move:hover h3 i {
     width: 40%;
     height: 40%;
   }
+  #footer_higher #footer_content {
+    height: 19.443em;
+  }
 }
 @media only screen and (min-width: 701px) and (max-width: 1040px) {
   .records-gridItem {
@@ -1703,12 +1714,15 @@ figure.effect-move:hover h3 i {
 }
 @media screen and (min-width: 800px) {
   .fa-3x {
-    font-size: 42px;
+    font-size: 2.33em;
   }
 }
 @media screen and (max-width: 769px) {
   .footer_buffer {
     padding-top: 60px;
+  }
+  #footer_higher #footer_content {
+    height: 20.833em;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1736,31 +1750,12 @@ figure.effect-move:hover h3 i {
   .grid-box-spotlight {
     width: 98%;
   }
-}
-@media screen and (max-width: 677px) {
-  .fa-3x {
-    font-size: 12px;
+  #footer_button {
+    left: 48%;
   }
 }
 /* Small devices */
-@media screen and (min-width: 545px) and (max-width: 768px) {
-  .fa-3x {
-    font-size: 30px;
-  }
-}
 /* Extra small devices */
-@media screen and (min-width: 431px) and (max-width: 544px) {
-  .fa-3x {
-    font-size: 20px;
-  }
-  #cpyRight {
-    font-size: 8px;
-  }
-  #footContact {
-    padding: 0 0;
-    right: 4px;
-  }
-}
 /* Landscape medium-large device */
 @media only screen and (min-device-width: 410px) and (max-device-width: 740px) and (orientation: landscape) {
   #logoBrand {
@@ -1802,7 +1797,7 @@ figure.effect-move:hover h3 i {
     position: fixed;
     bottom: 30px;
     padding-bottom: -30px;
-    left: 50%;
+    left: 49%;
   }
   #footer_higher #footer_content {
     height: 170px;
@@ -1962,7 +1957,7 @@ figure.effect-move:hover h3 i {
     position: fixed;
     bottom: 51px;
     padding-bottom: -51px;
-    left: 50%;
+    left: 49%;
   }
   #footer_higher #footer_content {
     height: 170px;
@@ -2106,7 +2101,7 @@ figure.effect-move:hover h3 i {
     position: fixed;
     bottom: 35px;
     padding-bottom: -35px;
-    left: 50%;
+    left: 49%;
   }
   #footer_higher #footer_content {
     height: 150px;
@@ -2245,7 +2240,7 @@ figure.effect-move:hover h3 i {
     position: fixed;
     bottom: 35px;
     padding-bottom: -35px;
-    left: 50%;
+    left: 49%;
   }
   #footer_higher #footer_content {
     height: 150px;

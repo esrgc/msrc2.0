@@ -511,14 +511,14 @@ div.effect-shade p {
     padding: 2em;
     width: 100%;
     opacity: 0;
-    -webkit-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0);
+    -webkit-transform: translate3d(0, 0.556em, 0);
+    transform: translate3d(0, 0.556em, 0);
 }
 
 div.effect-shade:hover h4 {
     color: #fff;
-    -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -80px, 0);
-    transform: translate3d(0, -100%, 0) translate3d(0, -80px, 0);
+    -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -4.445em, 0);
+    transform: translate3d(0, -100%, 0) translate3d(0, -4.445em, 0);
 }
 
 div.effect-shade:hover h1::before,
@@ -602,7 +602,7 @@ figure {
     max-height: 20.8332em;
     width: 100%;
     padding: 1.112em 0;
-    line-height: 80%;
+    line-height: 70%;
     z-index: 0;
     .transition-all;
 }
@@ -610,13 +610,15 @@ figure {
 .footer_button_div {
     background-color: transparent;
     opacity: 1;
+    margin: 0 auto;
 }
 
 #footer_button {
     margin: 0 auto;
     text-align: center;
     position: fixed;
-    left: 48.5%;
+    //left: 48.5%;
+    left: 49%;
     bottom: 75px;
     color: white;
     cursor: pointer;
@@ -728,7 +730,8 @@ figure.effect-move img {
     transition: opacity 0.35s;
 }
 
-figure.effect-move:hover img {
+figure.effect-move:hover img,
+figure.effect-move:focus img {
     opacity: 0.5;
 }
 
@@ -772,7 +775,10 @@ figure.effect-move h3 {
 
 figure.effect-move:hover .floater::before,
 figure.effect-move:hover h3,
-figure.effect-move:hover h3 i {
+figure.effect-move:hover h3 i,
+figure.effect-move:focus .floater::before,
+figure.effect-move:focus h3,
+figure.effect-move:focus h3 i {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
