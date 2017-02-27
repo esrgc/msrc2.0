@@ -7,35 +7,48 @@
 // Media queries
 ////////////////////////////////////////////
 //////////////////////////////////////////////////////
-@media screen and (min-width:1921px) { 
+@media screen and (min-width:1921px) {
     #about-landing {
         font-size: 1.22em;
     }
 }
 
-@media screen and (max-width:1655px) {
+@media screen and (max-width:1730px) {
     .toggle1,
     .toggle2,
     .toggle3,
     .toggle4 {
         //right: -740px;
-        right: -46.25em;
+        right: -45em; // -720 px
     }
     .toggle-text.ac_collapse {
         left: 20%;
     }
 }
 
-@media screen and (max-width:1510px) {
+@media screen and (max-width:1680px) {
     .toggle1,
     .toggle2,
     .toggle3,
     .toggle4 {
         //right: -650px;
-        right: -40.625em;
+        right: -37.5em; // -600 px
     }
     .toggle-text.ac_collapse {
-        left: 15%;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width:1460px) {
+    .toggle1,
+    .toggle2,
+    .toggle3,
+    .toggle4 {
+        //right: -650px;
+        right: -31.25em; // -500 px
+    }
+    .toggle-text.ac_collapse {
+        left: 18%;
     }
 }
 
@@ -110,11 +123,41 @@
     }
 }
 
+@media screen and (max-width:940px) {
+    .toggle1 {
+        bottom: -37.5em; // -600 px
+    }
+    .toggle2 {
+        bottom: -43.75em; // -700 px
+    }
+    .toggle3 {
+        bottom: -50em; // -800 px
+    }
+    .toggle4 {
+        bottom: -56.25em; // -900 px
+    }
+    .toggle-text.ac_collapse {
+        .antiSkew2-matrix;
+        left: 55%;
+    }
+}
+
 @media screen and (max-width:830px) {
+    .toggle1 {
+        bottom: -43.75em; // -700 px
+    }
+    .toggle2 {
+        bottom: -50em; // -800 px
+    }
+    .toggle3 {
+        bottom: -56.25em; // -900 px
+    }
+    .toggle4 {
+        bottom: -62.5em; // -1000 px
+    }
     .membersDiv2 {
         left: 75%;
     }
-
 }
 
 @media screen and (min-width:800px) {
@@ -124,10 +167,21 @@
 }
 
 @media screen and (max-width: 769px) {
+    .toggle1 {
+        bottom: -56.25em; // -900 px
+    }
+    .toggle2 {
+        bottom: -62.5em; // -1000 px
+    }
+    .toggle3 {
+        bottom: -68.75em; // -1100 px
+    }
+    .toggle4 {
+        bottom: -75em; // -1200 px
+    }
     .footer_buffer {
         padding-top: 60px;
     }
-
 }
 
 @media only screen and (max-width: 700px) {
@@ -379,7 +433,6 @@
     .footer_button_div {
         position: fixed;
         bottom: 0px;
-        //padding-bottom: -10px;
     }
     .header {
         min-width: 100vw;
@@ -425,26 +478,22 @@
     .toggle1 {
         right: 0px;
         left: 0px;
-        // bottom: -450px;
-        bottom: -50em; // -800 px
+        bottom: -59.375em; // -950 px
     }
     .toggle2 {
         right: 0px;
         left: 0px;
-        // bottom: -500px;
-        bottom: -59.375em; // -950 px
+        bottom: -68.75em; // -1100 px
     }
     .toggle3 {
         right: 0px;
         left: 0px;
-        // bottom: -550px;
-        bottom: -68.75em; // -1100 px
+        bottom: -78.125em; // -1250 px
     }
     .toggle4 {
         right: 0px;
         left: 0px;
-        // bottom: -600px;
-        bottom: -78.125em; // -1250 px
+        bottom: -87.5em; // -1400 px
     }
     .toggle-text.ac_collapse {
         .antiSkew2-matrix;
