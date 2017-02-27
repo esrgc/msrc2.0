@@ -1844,16 +1844,16 @@ figure.effect-move:hover h3 i {
     transform: matrix(1, -1.19175, 0, 1, 0, 0);
   }
   .toggle1 {
-    bottom: -21.875em;
+    bottom: -35.9375em;
   }
   .toggle2 {
-    bottom: -26.5625em;
+    bottom: -40.625em;
   }
   .toggle3 {
-    bottom: -31.25em;
+    bottom: -45.3125em;
   }
   .toggle4 {
-    bottom: -35.9375em;
+    bottom: -50em;
   }
   .toggle-text.ac_collapse {
     /* text parameter for rotating unslanted text*/
@@ -1996,22 +1996,22 @@ figure.effect-move:hover h3 i {
   .toggle1 {
     right: 0px;
     left: 0px;
-    bottom: -450px;
+    bottom: -50em;
   }
   .toggle2 {
     right: 0px;
     left: 0px;
-    bottom: -500px;
+    bottom: -59.375em;
   }
   .toggle3 {
     right: 0px;
     left: 0px;
-    bottom: -550px;
+    bottom: -68.75em;
   }
   .toggle4 {
     right: 0px;
     left: 0px;
-    bottom: -600px;
+    bottom: -78.125em;
   }
   .toggle-text.ac_collapse {
     -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
