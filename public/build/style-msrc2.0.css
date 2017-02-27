@@ -571,6 +571,7 @@ div.effect-shade:hover p {
   display: block;
   position: relative;
   z-index: 0;
+  margin: 0 !important;
 }
 .aside-float {
   display: inline-block;
@@ -1793,6 +1794,9 @@ figure.effect-move:focus h3 i {
     min-width: 100vw;
     min-height: 100vh;
   }
+  #myCarousel {
+    height: 85vh;
+  }
   #footer_button {
     position: fixed;
     bottom: 30px;
@@ -1884,6 +1888,9 @@ figure.effect-move:focus h3 i {
   #membersDiv2 {
     width: 50%;
   }
+  #to-top {
+    bottom: 3.51em;
+  }
   .textBox:not(.hidden) {
     height: 65%;
   }
@@ -1952,6 +1959,12 @@ figure.effect-move:focus h3 i {
   .header {
     min-width: 100vw;
     min-height: 100vh;
+  }
+  #myCarousel {
+    height: 93vh;
+  }
+  #to-top {
+    bottom: 4.111em;
   }
   #footer_button {
     position: fixed;
@@ -2059,6 +2072,15 @@ figure.effect-move:focus h3 i {
   .members {
     margin-left: 5px;
   }
+  div.floater a h3 {
+    font-size: 2em;
+  }
+  div.effect-shade a h1 {
+    font-size: 4em;
+  }
+  div.effect-shade a h4 {
+    font-size: 1.5em;
+  }
 }
 /* Landscape small mobile device */
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: landscape) {
@@ -2095,7 +2117,13 @@ figure.effect-move:focus h3 i {
   }
   .header {
     min-width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
+  }
+  #myCarousel {
+    height: 85vh;
+  }
+  #to-top {
+    bottom: 3.611em;
   }
   #footer_button {
     position: fixed;
@@ -2236,6 +2264,12 @@ figure.effect-move:focus h3 i {
     min-width: 100vw;
     min-height: 100vh;
   }
+  #myCarousel {
+    height: 91vh;
+  }
+  #to-top {
+    bottom: 4.111em;
+  }
   #footer_button {
     position: fixed;
     bottom: 35px;
@@ -2352,5 +2386,14 @@ figure.effect-move:focus h3 i {
   .archive_months,
   .members {
     margin-left: 5px;
+  }
+  div.floater a h3 {
+    font-size: 2em;
+  }
+  div.effect-shade a h1 {
+    font-size: 4em;
+  }
+  div.effect-shade a h4 {
+    font-size: 1.5em;
   }
 }
