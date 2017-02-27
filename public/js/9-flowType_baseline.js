@@ -9,14 +9,11 @@ $(document).ready(function() {
         $("body").css({ "font-size": "18px" });
         $("#logo_lrg").css("font-size", '1.65em');
         $("#logo_med").css("font-size", '1.32em');
-
         $("body").flowtype({
             minFont: 6,
             maxFont: 18,
             fontRatio: 65
         });
-
-
         //console.log('this is firefox!');
     } else {
         $("body").flowtype({

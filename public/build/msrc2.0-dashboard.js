@@ -605,12 +605,6 @@ $(document).ready(function() {
             });
         });
 
-        // if ($(this).find('.members').is(':visible')) {
-        //     var attrID = $(this).find('.members').attr('id');
-        //     // $advisMins.hide();
-        //     console.log('i am supposed to be visible  ' + attrID);
-        // } 
-
         $advisMins.not($openMin).stop(true, true).slideUp();
         $membersUL.not($content).stop(true, true).slideUp();
 
@@ -638,14 +632,11 @@ $(document).ready(function() {
         $("body").css({ "font-size": "18px" });
         $("#logo_lrg").css("font-size", '1.65em');
         $("#logo_med").css("font-size", '1.32em');
-
         $("body").flowtype({
             minFont: 6,
             maxFont: 18,
             fontRatio: 65
         });
-
-
         //console.log('this is firefox!');
     } else {
         $("body").flowtype({
