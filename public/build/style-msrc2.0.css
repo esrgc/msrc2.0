@@ -1844,16 +1844,16 @@ figure.effect-move:hover h3 i {
     transform: matrix(1, -1.19175, 0, 1, 0, 0);
   }
   .toggle1 {
-    bottom: -35.9375em;
-  }
-  .toggle2 {
     bottom: -40.625em;
   }
+  .toggle2 {
+    bottom: -46.875em;
+  }
   .toggle3 {
-    bottom: -45.3125em;
+    bottom: -53.125em;
   }
   .toggle4 {
-    bottom: -50em;
+    bottom: -59.375em;
   }
   .toggle-text.ac_collapse {
     /* text parameter for rotating unslanted text*/
