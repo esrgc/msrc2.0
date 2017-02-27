@@ -921,25 +921,25 @@ figure.effect-move:hover h3 i {
 }
 .toggle1 {
   opacity: .25;
-  bottom: -150px;
+  bottom: -8.334em;
   margin-right: 0;
   z-index: 1;
 }
 .toggle2 {
   opacity: .5;
-  bottom: -350px;
+  bottom: -19.443em;
   margin-right: 0;
   z-index: 2;
 }
 .toggle3 {
   opacity: .75;
-  bottom: -550px;
+  bottom: -30.557em;
   margin-right: 0;
   z-index: 3;
 }
 .toggle4 {
   opacity: 0.99;
-  bottom: -750px;
+  bottom: -41.664em;
   margin-right: 0;
   z-index: 4;
 }
@@ -953,7 +953,7 @@ figure.effect-move:hover h3 i {
   -o-transform: matrix(1, 0, 0, 1, 0, 0);
   transform: matrix(1, 0, 0, 1, 0, 0);
   position: absolute;
-  top: 80px !important;
+  top: 4.45em !important;
   right: 0;
   width: 100vw;
   height: 100vh;
@@ -971,7 +971,7 @@ figure.effect-move:hover h3 i {
   margin-right: 0;
   margin-left: 0;
   font-family: 'FontAwesome';
-  font-size: 35px;
+  font-size: 1.244em;
   color: #333333;
 }
 .slide-toggle-close > .col,
@@ -990,8 +990,8 @@ figure.effect-move:hover h3 i {
 #about-landing {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #e6e6e6;
-  top: 200px;
-  left: 80px;
+  top: 11.11em;
+  left: 4.45em;
   overflow: hidden;
 }
 #membersDiv {
@@ -1081,18 +1081,18 @@ figure.effect-move:hover h3 i {
   background: linear-gradient(to left, #333333, #8c8c8c);
   height: 100%;
   opacity: 0.6;
-  padding: 20px 20px;
+  padding: 1.112em 1.112em;
 }
 #votingMem {
   position: absolute;
-  padding: 10px 10px;
+  padding: 0.556em 0.556em;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #e6e6e6;
   z-index: 2000;
 }
 #nonVoting {
   position: absolute;
-  padding: 10px 10px;
+  padding: 0.556em 0.556em;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #e6e6e6;
   z-index: 2000;
@@ -1105,15 +1105,15 @@ figure.effect-move:hover h3 i {
   margin-bottom: 0.5em;
 }
 #nonVoting-button {
-  padding-top: 10px;
+  padding-top: 0.556em;
 }
 .grid {
   display: block;
   position: relative;
   margin-left: 0 auto;
-  left: 30px;
+  left: 1.667em;
   max-width: 100%;
-  max-height: 950px;
+  max-height: 52.778em;
   width: 100%;
   z-index: 1000;
 }
@@ -1176,7 +1176,7 @@ figure.effect-move:hover h3 i {
   text-align: center;
   height: 80vh;
   width: 100%;
-  top: 85px !important;
+  top: 4.722em !important;
   padding: 0;
   margin: 0;
   right: 0;
@@ -1204,7 +1204,7 @@ figure.effect-move:hover h3 i {
 .textBox a {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
-  font-size: 20px;
+  font-size: 1.112em;
 }
 .imgHeader {
   display: block;
@@ -1601,7 +1601,7 @@ figure.effect-move:hover h3 i {
   .toggle2,
   .toggle3,
   .toggle4 {
-    right: -740px;
+    right: -46.25em;
   }
   .toggle-text.ac_collapse {
     left: 20%;
@@ -1612,7 +1612,7 @@ figure.effect-move:hover h3 i {
   .toggle2,
   .toggle3,
   .toggle4 {
-    right: -650px;
+    right: -40.625em;
   }
   .toggle-text.ac_collapse {
     left: 15%;
@@ -1632,16 +1632,16 @@ figure.effect-move:hover h3 i {
     right: 0px;
   }
   .toggle1 {
-    bottom: -500px;
+    bottom: -31.25em;
   }
   .toggle2 {
-    bottom: -600px;
+    bottom: -37.5em;
   }
   .toggle3 {
-    bottom: -700px;
+    bottom: -43.75em;
   }
   .toggle4 {
-    bottom: -800px;
+    bottom: -50em;
   }
   .toggle-text.ac_collapse {
     -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
@@ -1655,8 +1655,8 @@ figure.effect-move:hover h3 i {
   #about-landing {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #e6e6e6;
-    top: 90px;
-    left: 25px;
+    top: 5.625em;
+    left: 1.5625em;
     overflow: hidden;
   }
 }
@@ -1691,22 +1691,6 @@ figure.effect-move:hover h3 i {
 @media screen and (max-width: 830px) {
   .membersDiv2 {
     left: 75%;
-  }
-  .angle1 {
-    margin-right: -220px;
-    bottom: -150px;
-  }
-  .angle2 {
-    margin-right: -350px;
-    bottom: -150px;
-  }
-  .angle3 {
-    margin-right: -500px;
-    bottom: -150px;
-  }
-  .angle4 {
-    margin-right: -700px;
-    bottom: -150px;
   }
 }
 @media screen and (min-width: 800px) {
@@ -1860,16 +1844,16 @@ figure.effect-move:hover h3 i {
     transform: matrix(1, -1.19175, 0, 1, 0, 0);
   }
   .toggle1 {
-    bottom: -350px;
+    bottom: -21.875em;
   }
   .toggle2 {
-    bottom: -425px;
+    bottom: -26.5625em;
   }
   .toggle3 {
-    bottom: -500px;
+    bottom: -31.25em;
   }
   .toggle4 {
-    bottom: -575px;
+    bottom: -35.9375em;
   }
   .toggle-text.ac_collapse {
     /* text parameter for rotating unslanted text*/
@@ -2079,296 +2063,3 @@ figure.effect-move:hover h3 i {
   }
 }
 /* Landscape small mobile device */
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: landscape) {
-  #logoBrand {
-    padding-top: 10px;
-  }
-  #logoBrand ul li h2 {
-    font-size: 20px;
-  }
-  #logoBrand ul li h3 {
-    font-size: 16px;
-  }
-  #logoBrand ul li p {
-    padding-top: 5px;
-    font-size: 10px;
-  }
-  .navbar #navWrapper,
-  .navbar-header,
-  #logoBrand {
-    height: 35px;
-    min-height: 35px;
-    margin-bottom: 1px;
-  }
-  #nav-links p {
-    font-size: 10px;
-    padding-right: 20px;
-    margin-bottom: -10px;
-  }
-  .navbar.navbar-fixed-bottom,
-  .footer_button_div {
-    position: fixed;
-    bottom: 10px;
-    padding-bottom: -10px;
-  }
-  .header {
-    min-width: 100vw;
-    min-height: 100vh;
-  }
-  #footer_button {
-    position: fixed;
-    bottom: 35px;
-    padding-bottom: -35px;
-    left: 50%;
-  }
-  #footer_higher #footer_content {
-    height: 150px;
-    font-size: 8px;
-  }
-  hr.small {
-    margin: 10px 0;
-  }
-  .footer_buffer {
-    padding-top: 50px;
-  }
-  .footer-bottom,
-  .fa-3x {
-    font-size: 8px;
-  }
-  .fa-5x {
-    font-size: 22px;
-  }
-  .footer-bottom {
-    padding-top: 0;
-  }
-  #about-landing {
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #e6e6e6;
-    top: 90px;
-    left: 25px;
-    overflow: hidden;
-  }
-  .slide-toggle-close,
-  .slide-toggle-open {
-    font-size: 17px;
-  }
-  .toggle1,
-  .toggle2,
-  .toggle3,
-  .toggle4 {
-    -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    /* use px for translate x,y for -moz-  */
-    -moz-transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    -ms-transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    -o-transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    transform: matrix(1, -1.19175, 0, 1, 0, 0);
-  }
-  .toggle1 {
-    bottom: -300px;
-  }
-  .toggle2 {
-    bottom: -350px;
-  }
-  .toggle3 {
-    bottom: -400px;
-  }
-  .toggle4 {
-    bottom: -450px;
-  }
-  .toggle-text.ac_collapse {
-    /* text parameter for rotating unslanted text*/
-    -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-    /* use px for translate x,y for -moz-  */
-    -moz-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-    -ms-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-    -o-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-    transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-    left: 60%;
-  }
-  .toggle-close,
-  .toggle-open {
-    font-size: 10px !important;
-  }
-  .grid {
-    left: 1px;
-  }
-  .spotlight-wrapper {
-    top: 50px !important;
-  }
-  .records-wrapper,
-  #membersDiv,
-  #membersDiv2 {
-    top: 0px !important;
-  }
-  .textBox:not(.hidden) {
-    height: 65%;
-  }
-  .records-textBox {
-    bottom: 0;
-  }
-  .left_Div {
-    top: 60px;
-  }
-  #execDiv,
-  #advisDiv {
-    top: 49px;
-  }
-  .archive_months,
-  .members {
-    margin-left: 5px;
-  }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: portrait) {
-  #logoBrand {
-    padding-top: 10px;
-  }
-  #logoBrand ul li h2 {
-    font-size: 16px;
-  }
-  #logoBrand ul li h3 {
-    font-size: 14px;
-  }
-  #logoBrand ul li p {
-    padding-top: 5px;
-    font-size: 8px;
-  }
-  .navbar #navWrapper,
-  .navbar-header,
-  #logoBrand {
-    height: 35px;
-    min-height: 35px;
-    margin-bottom: 1px;
-  }
-  #nav-links p {
-    font-size: 8px;
-    padding-right: 20px;
-    margin-bottom: -10px;
-  }
-  .navbar.navbar-fixed-bottom,
-  .footer_button_div {
-    position: fixed;
-    bottom: 10px;
-    padding-bottom: -10px;
-  }
-  .header {
-    min-width: 100vw;
-    min-height: 100vh;
-  }
-  #footer_button {
-    position: fixed;
-    bottom: 35px;
-    padding-bottom: -35px;
-    left: 50%;
-  }
-  #footer_higher #footer_content {
-    height: 150px;
-    font-size: 6px;
-  }
-  hr.small {
-    margin: 10px 0;
-  }
-  .footer_buffer {
-    padding-top: 50px;
-  }
-  .footer-bottom {
-    font-size: 6px;
-  }
-  .fa-3x {
-    font-size: 8px;
-  }
-  .fa-5x {
-    font-size: 22px;
-  }
-  .footer-bottom {
-    padding-top: 0;
-  }
-  #about-landing {
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #e6e6e6;
-    font-size: 8px;
-    width: 65%;
-    top: 90px;
-    left: 25px;
-    overflow: hidden;
-  }
-  .slide-toggle-close,
-  .slide-toggle-open {
-    font-size: 17px;
-  }
-  .toggle1 {
-    right: 0px;
-    left: 0px;
-    bottom: -300px;
-  }
-  .toggle2 {
-    right: 0px;
-    left: 0px;
-    bottom: -350px;
-  }
-  .toggle3 {
-    right: 0px;
-    left: 0px;
-    bottom: -400px;
-  }
-  .toggle4 {
-    right: 0px;
-    left: 0px;
-    bottom: -450px;
-  }
-  .toggle-text.ac_collapse {
-    -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-    /* use px for translate x,y for -moz-  */
-    -moz-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-    -ms-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-    -o-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-    transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-    left: 55%;
-  }
-  .toggle-close,
-  .toggle-open {
-    font-size: 8px !important;
-  }
-  .spotlight-wrapper,
-  .records-wrapper {
-    top: 55px;
-  }
-  #membersDiv,
-  #membersDiv2 {
-    top: 0px !important;
-  }
-  .spotlight-wrapper {
-    top: 50px !important;
-  }
-  .records-wrapper,
-  #membersDiv,
-  #membersDiv2 {
-    top: 0px !important;
-  }
-  .records-textBox {
-    bottom: 0;
-  }
-  #leftDiv {
-    width: 35%;
-  }
-  .left_Div {
-    top: 60px;
-  }
-  #rightDiv,
-  #execDiv,
-  #advisDiv {
-    height: 80%;
-    width: 65%;
-  }
-  #execGroup,
-  #advisGroup {
-    padding-top: 80px;
-  }
-  #execDiv,
-  #advisDiv {
-    top: 49px;
-  }
-  .archive_months,
-  .members {
-    margin-left: 5px;
-  }
-}
