@@ -21,61 +21,53 @@
 .shaded_bg() {
     opacity: 1;
     background: @to-color;
-    // For browsers that do not support gradients
+    /* For browsers that do not support gradients*/
     background: -webkit-linear-gradient(left top, @from-color, @to-color);
-    // For Safari 5.1 to 6.0
+    /* For Safari 5.1 to 6.0*/
     background: -o-linear-gradient(bottom right, @from-color, @to-color);
-    // For Opera 11.1 to 12.0
+    /* For Opera 11.1 to 12.0*/
     background: -moz-linear-gradient(bottom right, @from-color, @to-color);
-    // For Firefox 3.6 to 15
+    /* For Firefox 3.6 to 15*/
     background: linear-gradient(to bottom right, @from-color, @to-color);
-    // Standard syntax
-    //border: inset 5px;
 }
 
 .shaded_bg-drk() {
     opacity: 1;
     background: @drk-to-color;
-    // For browsers that do not support gradients
+    /* For browsers that do not support gradients*/
     background: -webkit-linear-gradient(left, @drk-from-color, @drk-to-color);
-    // For Safari 5.1 to 6.0
+    /* For Safari 5.1 to 6.0*/
     background: -o-linear-gradient(right, @drk-from-color, @drk-to-color);
-    // For Opera 11.1 to 12.0
+    /* For Opera 11.1 to 12.0*/
     background: -moz-linear-gradient(right, @drk-from-color, @drk-to-color);
-    // For Firefox 3.6 to 15
+    /* For Firefox 3.6 to 15*/
     background: linear-gradient(to right, @drk-from-color, @drk-to-color);
-    // Standard syntax
-    //border: inset 5px;
 }
 
 .shaded_bg-drk2() {
     opacity: 1;
     background: @drk-to-color;
-    // For browsers that do not support gradients
+    /* For browsers that do not support gradients*/
     background: -webkit-linear-gradient(right, @drk-from-color, @drk-to-color );
-    // For Safari 5.1 to 6.0
+    /* For Safari 5.1 to 6.0*/
     background: -o-linear-gradient(left, @drk-from-color, @drk-to-color );
-    // For Opera 11.1 to 12.0
+    /* For Opera 11.1 to 12.0*/
     background: -moz-linear-gradient(left, @drk-from-color, @drk-to-color );
-    // For Firefox 3.6 to 15
+    /* For Firefox 3.6 to 15*/
     background: linear-gradient(to left, @drk-from-color, @drk-to-color );
-    // Standard syntax
-    //border: inset 5px;
 }
 
 .shaded_bg-lt() {
     opacity: 1;
     background: @lt-to-color;
-    // For browsers that do not support gradients
+    /* For browsers that do not support gradients*/
     background: -webkit-linear-gradient(right, @lt-from-color, @lt-to-color );
-    // For Safari 5.1 to 6.0
+    /* For Safari 5.1 to 6.0*/
     background: -o-linear-gradient(left, @lt-from-color, @lt-to-color );
-    // For Opera 11.1 to 12.0
+    /* For Opera 11.1 to 12.0*/
     background: -moz-linear-gradient(left, @lt-from-color, @lt-to-color );
-    // For Firefox 3.6 to 15
+    /* For Firefox 3.6 to 15*/
     background: linear-gradient(to left, @lt-from-color, @lt-to-color );
-    // Standard syntax
-    border: #ffffff 5px;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -123,12 +115,9 @@
 }
 
 
-/* testing transformation matrix method for cross browser compatibility */
-
-
 /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
 
-.skew-matrix {
+.skew-matrix() {
     -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
     /* use px for translate x,y for -moz-  */
     -moz-transform: matrix(1, -1.19175, 0, 1, 0, 0);
@@ -137,7 +126,7 @@
     transform: matrix(1, -1.19175, 0, 1, 0, 0);
 }
 
-.skew2-matrix {
+.skew2-matrix() {
     -webkit-transform: matrix(1, -0.176327, 0, 1, 0, 0);
     /* use px for translate x,y for -moz-  */
     -moz-transform: matrix(1, -0.176327, 0, 1, 0, 0);
@@ -146,7 +135,7 @@
     transform: matrix(1, -0.176327, 0, 1, 0, 0);
 }
 
-.antiSkew-matrix {
+.antiSkew-matrix() {
     /* text parameter for rotating unslanted text*/
     -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
     /* use px for translate x,y for -moz-  */
@@ -156,7 +145,7 @@
     transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
 }
 
-.antiSkew2-matrix {
+.antiSkew2-matrix() {
     -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
     /* use px for translate x,y for -moz-  */
     -moz-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
@@ -165,7 +154,7 @@
     transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
 }
 
-.rotate-matrix {
+.rotate-matrix() {
     -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
     /* use px for translate x,y for -moz-  */
     -moz-transform: matrix(1, 0, 0, 1, 0, 0);
@@ -217,7 +206,6 @@
 
 .toggle1 {
     opacity: .25;
-    //bottom: -150px;
     bottom: -8.334em;
     margin-right: 0;
     z-index: 1;
@@ -225,7 +213,6 @@
 
 .toggle2 {
     opacity: .5;
-    //bottom: -350px;
     bottom: -19.443em;
     margin-right: 0;
     z-index: 2;
@@ -233,7 +220,6 @@
 
 .toggle3 {
     opacity: .75;
-    //bottom: -550px;
     bottom: -30.557em;
     margin-right: 0;
     z-index: 3;
@@ -241,7 +227,6 @@
 
 .toggle4 {
     opacity: 0.99;
-    //bottom: -750px;
     bottom: -41.664em;
     margin-right: 0;
     z-index: 4;
@@ -252,22 +237,14 @@
 .toggle3:not(.ac_collapse) {
     .rotate-matrix;
     position: absolute;
-    //top: 80px !important;
     top: 4.45em !important;
     right: 0;
-    //bottom: 0;
     width: 100vw;
     height: 100vh;
     opacity: 0.99;
     z-index: 10;
 }
 
-// .text-angle-center {
-//     display: table-cell;
-//     text-align: center;
-//     vertical-align: middle;
-//     bottom: 27px;
-// }
 .float-left {
     position: absolute;
     left: 0;
@@ -279,7 +256,6 @@
 .slide-toggle-open {
     .no-gutters;
     font-family: 'FontAwesome';
-    //font-size: 35px;
     font-size: 1em;
     color: @drk-from-color;
 }
@@ -294,8 +270,6 @@
 
 #about-landing {
     .font-blocky-lt;
-    // top: 200px;
-    // left: 80px;
     top: 11.11em;
     left: 4.45em;
     overflow: hidden;
@@ -395,13 +369,11 @@
     .shaded_bg-drk2;
     height: 100%;
     opacity: 0.6;
-    //padding: 20px 20px;
     padding: 1.112em 1.112em;
 }
 
 #votingMem {
     position: absolute;
-    //padding: 10px 10px;
     padding: 0.556em 0.556em;
     .font-blocky-lt;
     z-index: 2000;
@@ -409,7 +381,6 @@
 
 #nonVoting {
     position: absolute;
-    //padding: 10px 10px;
     padding: 0.556em 0.556em;
     .font-blocky-lt;
     z-index: 2000;
@@ -423,7 +394,6 @@
 }
 
 #nonVoting-button {
-    //padding-top: 10px;
     padding-top: 0.556em;
 }
 
@@ -441,7 +411,6 @@
     //left: 30px;
     left: 1.667em;
     max-width: 100%;
-    //max-height: 950px;
     max-height: 52.778em;
     width: 100%;
     z-index: 1000;
@@ -523,7 +492,6 @@
     text-align: center;
     height: 80vh;
     width: 100%;
-    //top: 85px !important;
     top: 4.722em !important;
     padding: 0;
     margin: 0;
@@ -553,7 +521,6 @@
 
 .textBox a {
     .font-blocky-drk;
-    //font-size: 20px;
     font-size: 1.112em;
 }
 
@@ -598,9 +565,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 .records-wrapper {
     display: block;
-    //flex-wrap: wrap;
     position: relative;
-    //float: left;
     text-align: center;
     height: 80vh;
     width: 100%;
@@ -633,15 +598,12 @@
 
 .records-gridItem a {
     .font-blocky-lt;
-    //font-size: 35px;
     font-size: 2.1875em;
     z-index: 1500;
     position: relative;
-    //bottom: 60px;
     bottom: 3.75em;
     height: 40%;
     width: 100%;
-    //padding-bottom: -60px;
     padding-bottom: -3.75em;
 }
 
@@ -667,11 +629,8 @@
     bottom: 60px;
     overflow-y: auto;
     z-index: 3000;
-    //padding-left: 40px;
     padding-left: 2.5em;
-    //padding-right: 40px;
     padding-right: 2.5em;
-    //padding-bottom: -60px;
     padding-bottom: -3.75em;
 }
 
@@ -707,7 +666,6 @@
     position: absolute;
     .font-blocky-lt;
     margin: 0 auto;
-    //top: 220px;
     top: 13.75em;
     width: 50%;
     left: 27%;
@@ -715,12 +673,9 @@
 }
 
 .left_Div ul li img {
-    //left: 100px;
     left: 6.25em;
-    //width: 200px;
     width: 12.5em;
     margin: 0 auto;
-    //padding: 25px 25px;
     padding: 1.5625em 1.5625em;
     text-align: center;
 }
@@ -729,8 +684,6 @@
     display: block;
     position: fixed;
     right: 0;
-    // bottom: 60px;
-    // padding-bottom: -60px;
     bottom: 3.75em;
     padding-bottom: -3.75em;
     overflow-y: auto;
@@ -752,7 +705,6 @@
     position: fixed;
     .shaded_bg-drk2;
     opacity: 0.75;
-    //top: 58px;
     top: 3.223em;
     height: 90%;
     width: 65%;
@@ -767,7 +719,6 @@
     position: fixed;
     .shaded_bg-drk2;
     opacity: 0.75;
-    //top: 58px;
     top: 3.223em;
     height: 90%;
     width: 65%;
@@ -780,12 +731,8 @@
 .advisMins {
     display: block;
     position: relative;
-    //top: 65px;
-    //right: 30px;
     right: 1.875em;
     height: auto;
-    //bottom: 0;
-    //padding-bottom: 30px;
     overflow-y: auto;
 }
 
@@ -802,12 +749,10 @@
 
 .archive_months,
 .members {
-    //margin-left: 10px;
     margin-left: 0.556em;
     margin-top: 0;
     margin-bottom: 1em;
     cursor: pointer;
-    //text-align: left;
     z-index: 1000;
 }
 
@@ -847,7 +792,6 @@
 #imgContainer {
     position: relative;
     box-sizing: border-box;
-    //top: 100px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -860,8 +804,6 @@
         box-sizing: inherit;
         margin: 0 auto;
         height: 55%;
-        //left: 20px;
-        //bottom: 110px;
         bottom: 6.11em;
         width: 100%;
     }
@@ -871,17 +813,14 @@
     .font-blocky-drk;
     position: relative;
     display: inline-block;
-    //padding: 2px;
     padding: 0.111em;
     width: 31.313%;
     height: 31.313%;
-    //height: 140px;
     img {
         margin: auto;
         width: 31.313%;
         height: 31.313%;
         text-align: center;
-        //vertical-align: top;
     }
     a h4 {
         position: relative;
@@ -898,42 +837,13 @@
     .font-blocky-drk;
     position: relative;
     display: inline-block;
-    //padding: 2px;
     padding: 0.111em;
     width: 18.18%;
-    //height: 70px;
     img {
         margin: auto;
         width: 31.313%;
         height: 31.313%;
         text-align: center;
-        //vertical-align: top;
-    }
-    a h4 {
-        position: relative;
-        margin: auto;
-        opacity: 0;
-        .font-blocky-drk;
-        line-height: 0;
-        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s;
-    }
-}
-
-#gilligan2 .image {
-    .font-blocky-drk;
-    position: relative;
-    display: inline-block;
-    //padding: 2px;
-    padding: 0.111em;
-    width: 18.18%;
-    //height: 70px;
-    img {
-        margin: auto;
-        width: 31.313%;
-        height: 31.313%;
-        text-align: center;
-        //vertical-align: top;
     }
     a h4 {
         position: relative;
@@ -978,7 +888,6 @@
 .partners-wrapper {
     display: inline-block;
     position: absolute;
-    //top: 110px;
     top: 6.111em;
     bottom: 0;
     left: 0;
@@ -1001,6 +910,5 @@
     .footer_wrapper_all;
     position: absolute;
     bottom: 0;
-    //padding-bottom: -60px;
     padding-bottom: -3.335em;
 }

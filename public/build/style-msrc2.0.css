@@ -813,49 +813,7 @@ figure.effect-move:hover h3 i {
   bottom: 0;
   height: 80vh;
 }
-/* testing transformation matrix method for cross browser compatibility */
 /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
-.skew-matrix {
-  -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
-  /* use px for translate x,y for -moz-  */
-  -moz-transform: matrix(1, -1.19175, 0, 1, 0, 0);
-  -ms-transform: matrix(1, -1.19175, 0, 1, 0, 0);
-  -o-transform: matrix(1, -1.19175, 0, 1, 0, 0);
-  transform: matrix(1, -1.19175, 0, 1, 0, 0);
-}
-.skew2-matrix {
-  -webkit-transform: matrix(1, -0.176327, 0, 1, 0, 0);
-  /* use px for translate x,y for -moz-  */
-  -moz-transform: matrix(1, -0.176327, 0, 1, 0, 0);
-  -ms-transform: matrix(1, -0.176327, 0, 1, 0, 0);
-  -o-transform: matrix(1, -0.176327, 0, 1, 0, 0);
-  transform: matrix(1, -0.176327, 0, 1, 0, 0);
-}
-.antiSkew-matrix {
-  /* text parameter for rotating unslanted text*/
-  -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-  /* use px for translate x,y for -moz-  */
-  -moz-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-  -ms-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-  -o-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-  transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
-}
-.antiSkew2-matrix {
-  -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-  /* use px for translate x,y for -moz-  */
-  -moz-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-  -ms-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-  -o-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-  transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
-}
-.rotate-matrix {
-  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
-  /* use px for translate x,y for -moz-  */
-  -moz-transform: matrix(1, 0, 0, 1, 0, 0);
-  -ms-transform: matrix(1, 0, 0, 1, 0, 0);
-  -o-transform: matrix(1, 0, 0, 1, 0, 0);
-  transform: matrix(1, 0, 0, 1, 0, 0);
-}
 .toggle1,
 .toggle2,
 .toggle3,
@@ -868,11 +826,14 @@ figure.effect-move:hover h3 i {
   transform: matrix(1, -1.19175, 0, 1, 0, 0);
   opacity: 1;
   background: #cccccc;
+  /* For browsers that do not support gradients*/
   background: -webkit-linear-gradient(right, #f2f2f2, #cccccc);
+  /* For Safari 5.1 to 6.0*/
   background: -o-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Opera 11.1 to 12.0*/
   background: -moz-linear-gradient(left, #f2f2f2, #cccccc);
+  /* For Firefox 3.6 to 15*/
   background: linear-gradient(to left, #f2f2f2, #cccccc);
-  border: #ffffff 5px;
   position: fixed;
   right: -800px;
   height: 100vh;
@@ -1020,9 +981,13 @@ figure.effect-move:hover h3 i {
   position: absolute;
   opacity: 1;
   background: #8c8c8c;
+  /* For browsers that do not support gradients*/
   background: -webkit-linear-gradient(left, #333333, #8c8c8c);
+  /* For Safari 5.1 to 6.0*/
   background: -o-linear-gradient(right, #333333, #8c8c8c);
+  /* For Opera 11.1 to 12.0*/
   background: -moz-linear-gradient(right, #333333, #8c8c8c);
+  /* For Firefox 3.6 to 15*/
   background: linear-gradient(to right, #333333, #8c8c8c);
   top: 0;
   left: 0;
@@ -1064,9 +1029,13 @@ figure.effect-move:hover h3 i {
   position: relative;
   opacity: 1;
   background: #8c8c8c;
+  /* For browsers that do not support gradients*/
   background: -webkit-linear-gradient(right, #333333, #8c8c8c);
+  /* For Safari 5.1 to 6.0*/
   background: -o-linear-gradient(left, #333333, #8c8c8c);
+  /* For Opera 11.1 to 12.0*/
   background: -moz-linear-gradient(left, #333333, #8c8c8c);
+  /* For Firefox 3.6 to 15*/
   background: linear-gradient(to left, #333333, #8c8c8c);
   height: 100%;
   opacity: 0.6;
@@ -1304,9 +1273,13 @@ figure.effect-move:hover h3 i {
   position: fixed;
   opacity: 1;
   background: #8c8c8c;
+  /* For browsers that do not support gradients*/
   background: -webkit-linear-gradient(left, #333333, #8c8c8c);
+  /* For Safari 5.1 to 6.0*/
   background: -o-linear-gradient(right, #333333, #8c8c8c);
+  /* For Opera 11.1 to 12.0*/
   background: -moz-linear-gradient(right, #333333, #8c8c8c);
+  /* For Firefox 3.6 to 15*/
   background: linear-gradient(to right, #333333, #8c8c8c);
   opacity: 0.6;
   left: 0;
@@ -1358,9 +1331,13 @@ figure.effect-move:hover h3 i {
   position: fixed;
   opacity: 1;
   background: #8c8c8c;
+  /* For browsers that do not support gradients*/
   background: -webkit-linear-gradient(right, #333333, #8c8c8c);
+  /* For Safari 5.1 to 6.0*/
   background: -o-linear-gradient(left, #333333, #8c8c8c);
+  /* For Opera 11.1 to 12.0*/
   background: -moz-linear-gradient(left, #333333, #8c8c8c);
+  /* For Firefox 3.6 to 15*/
   background: linear-gradient(to left, #333333, #8c8c8c);
   opacity: 0.75;
   top: 3.223em;
@@ -1376,9 +1353,13 @@ figure.effect-move:hover h3 i {
   position: fixed;
   opacity: 1;
   background: #8c8c8c;
+  /* For browsers that do not support gradients*/
   background: -webkit-linear-gradient(right, #333333, #8c8c8c);
+  /* For Safari 5.1 to 6.0*/
   background: -o-linear-gradient(left, #333333, #8c8c8c);
+  /* For Opera 11.1 to 12.0*/
   background: -moz-linear-gradient(left, #333333, #8c8c8c);
+  /* For Firefox 3.6 to 15*/
   background: linear-gradient(to left, #333333, #8c8c8c);
   opacity: 0.75;
   top: 3.223em;
@@ -1504,30 +1485,6 @@ figure.effect-move:hover h3 i {
   text-align: center;
 }
 #gilligan .image a h4 {
-  position: relative;
-  margin: auto;
-  opacity: 0;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333333;
-  line-height: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-}
-#gilligan2 .image {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333333;
-  position: relative;
-  display: inline-block;
-  padding: 0.111em;
-  width: 18.18%;
-}
-#gilligan2 .image img {
-  margin: auto;
-  width: 31.313%;
-  height: 31.313%;
-  text-align: center;
-}
-#gilligan2 .image a h4 {
   position: relative;
   margin: auto;
   opacity: 0;
@@ -1752,18 +1709,6 @@ figure.effect-move:hover h3 i {
   }
 }
 @media screen and (max-width: 769px) {
-  .toggle1 {
-    bottom: -56.25em;
-  }
-  .toggle2 {
-    bottom: -62.5em;
-  }
-  .toggle3 {
-    bottom: -68.75em;
-  }
-  .toggle4 {
-    bottom: -75em;
-  }
   .footer_buffer {
     padding-top: 60px;
   }
