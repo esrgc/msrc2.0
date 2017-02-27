@@ -462,7 +462,7 @@ hr.small {
   position: relative;
   left: 0;
   top: 0;
-  margin: 0 0 10px 10px;
+  margin: 0 0 0.556em 0.556em;
   font-family: 'Alex Brush', cursive;
   text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
   color: #e6e6e6;
@@ -480,7 +480,7 @@ hr.small {
   position: relative;
   left: 0;
   bottom: 0;
-  margin: -12px 0 0 0;
+  margin: -1em 0 0 0;
   font-family: 'Padauk', sans-serif;
   color: #e6e6e6;
   float: left;
@@ -960,7 +960,7 @@ figure.effect-move:hover h3 i {
   margin-right: 0;
   margin-left: 0;
   font-family: 'FontAwesome';
-  font-size: 1.244em;
+  font-size: 1em;
   color: #333333;
 }
 .slide-toggle-close > .col,
@@ -1967,7 +1967,7 @@ figure.effect-move:hover h3 i {
     margin-left: 5px;
   }
 }
-@media only screen and (min-device-width: 410px) and (max-device-width: 740px) and (orientation: portrait) {
+@media only screen and (min-device-width: 400px) and (max-device-width: 740px) and (orientation: portrait) {
   #logoBrand {
     padding-top: 10px;
   }
@@ -2329,22 +2329,22 @@ figure.effect-move:hover h3 i {
   .toggle1 {
     right: 0px;
     left: 0px;
-    bottom: -50em;
+    bottom: -59.375em;
   }
   .toggle2 {
     right: 0px;
     left: 0px;
-    bottom: -59.375em;
+    bottom: -68.75em;
   }
   .toggle3 {
     right: 0px;
     left: 0px;
-    bottom: -68.75em;
+    bottom: -78.125em;
   }
   .toggle4 {
     right: 0px;
     left: 0px;
-    bottom: -78.125em;
+    bottom: -87.5em;
   }
   .toggle-text.ac_collapse {
     -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
