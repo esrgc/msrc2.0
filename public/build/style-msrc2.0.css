@@ -1692,8 +1692,8 @@ figure.effect-move:hover h3 i {
   }
   #gilligan .image img,
   #gilligan2 .image img {
-    width: 25%;
-    height: 25%;
+    width: 40%;
+    height: 40%;
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 1040px) {
