@@ -26,7 +26,6 @@ $(window).load(function() {
     $("#theMSRC").hide();
     $(".advisMins").hide();
     $(".members").hide();
-    // $(".spotlight-wrapper, .records-wrapper").hide();
 });
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -436,9 +435,6 @@ $(window).on('hashchange', function(e) {
         $(location.hash).trigger('click');
 
     } else if (location.hash == "#members" || location.hash == "#spotlight" || location.hash == "#records") {
-        /// cross browser functionality issues with firefox and msie
-        // relative position elements become thrown to the left when open and closed
-        //var x = location.hash;
         $(location.hash).trigger('click');
     } else {
         $(location.hash).trigger('click');
@@ -622,6 +618,10 @@ $(document).ready(function() {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+ * Author: Carl Flint, ESRGC
+ */
+
 // browser compatibility solution for flowType.js
 // mozilla has HUGE!!!! H1-H6 with flow type 
 // This is to tone it down a thousand notches

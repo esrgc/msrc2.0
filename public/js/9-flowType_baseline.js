@@ -1,4 +1,8 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+ * Author: Carl Flint, ESRGC
+ */
+
 // browser compatibility solution for flowType.js
 // mozilla has HUGE!!!! H1-H6 with flow type 
 // This is to tone it down a thousand notches

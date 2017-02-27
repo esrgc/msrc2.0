@@ -54,9 +54,6 @@ $(window).on('hashchange', function(e) {
         $(location.hash).trigger('click');
 
     } else if (location.hash == "#members" || location.hash == "#spotlight" || location.hash == "#records") {
-        /// cross browser functionality issues with firefox and msie
-        // relative position elements become thrown to the left when open and closed
-        //var x = location.hash;
         $(location.hash).trigger('click');
     } else {
         $(location.hash).trigger('click');
