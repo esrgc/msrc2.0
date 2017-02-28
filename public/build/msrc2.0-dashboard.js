@@ -628,7 +628,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-    if (navigator.userAgent.match(/Firefox\/51.0/i)) {
+    if (navigator.userAgent.match(/Firefox/i)) {
         //$("body").css( "font-size", "18px" );
         $("#logo_lrg").css({
             "font-size": '1.625em'
@@ -641,7 +641,7 @@ $(document).ready(function() {
             maxFont: 18,
             fontRatio: 65
         });
-        //console.log('this is firefox!');
+        console.log('this is firefox!');
     } else {
         $("body").flowtype({
             minFont: 6,
