@@ -623,7 +623,7 @@ $(document).ready(function() {
  */
 
 // browser compatibility solution for flowType.js
-// mozilla has HUGE!!!! H1-H6 with flow type 
+// mozilla renders the google font HUGE!!!!  
 // This is to tone it down a thousand notches
 
 
