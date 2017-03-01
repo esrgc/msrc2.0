@@ -26,6 +26,7 @@ $(window).load(function() {
     $("#theMSRC").hide();
     $(".advisMins").hide();
     $(".members").hide();
+    $("#recordsWrapper, #recordsWrapper2, .records-textBox, .textBox").hide();
 });
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -118,15 +119,15 @@ $(window).load(function() {
         initLayout: false
     });
 
-    var $msryRecords = $('#masonry-container-records').masonry({
-        columnWidth: '.grid-box-records',
-        itemSelector: '.records-gridItem',
-        percentPosition: true,
-        gutter: 1,
-        //stagger: 45,
-        //containerStyle: null,
-        initLayout: false
-    });
+    //     var $msryRecords = $('#masonry-container-records').masonry({
+    //         columnWidth: '.grid-box-records',
+    //         itemSelector: '.records-gridItem',
+    //         percentPosition: true,
+    //         gutter: 1,
+    //         //stagger: 45,
+    //         //containerStyle: null,
+    //         initLayout: false
+    //     });
 });
 
 $(document).ready(function() {
@@ -156,7 +157,7 @@ $(document).ready(function() {
         */
         var $attrID = $(this).attr('id');
         var $spotlight = $('#masonry-container-spotlight').masonry();
-        var $records = $('#masonry-container-records').masonry();
+        // var $records = $('#masonry-container-records').masonry();
         var $textBox = $('.textBox');
 
         /*console.log($attrID);*/
@@ -211,27 +212,27 @@ $(document).ready(function() {
 
         } else if ($attrID == 'records') {
 
-            // $('.records-wrapper').toggle('slide');
+            $('#recordsWrapper, #recordsWrapper2').toggle('slide');
             $('.records-wrapper').css({ "z-index": "1000" });
-            // init masonry container for records
-            var $recordsMasonry = $('#masonry-container-records').masonry({
-                // columnWidth: '.grid-box-records',
-                // itemSelector: '.records-gridItem',
-                // percentPosition: true,
-                // gutter: 1,
-                //stagger: 45,
-                containerStyle: null,
-                initLayout: false
-            });
+            // // init masonry container for records
+            // var $recordsMasonry = $('#masonry-container-records').masonry({
+            //     // columnWidth: '.grid-box-records',
+            //     // itemSelector: '.records-gridItem',
+            //     // percentPosition: true,
+            //     // gutter: 1,
+            //     //stagger: 45,
+            //     containerStyle: null,
+            //     initLayout: false
+            // });
 
-            $recordsMasonry.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
-            $("#masonry-container-records").toggle('slow');
+            // $recordsMasonry.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
+            // $("#masonry-container-records").toggle('slow');
 
-            if ($('.textBox').is(":visible")) {
-                $('.textBox').hide("slow");
+            if ($('.records-textBox').is(":visible")) {
+                $('.records-textBox').hide("slow");
             }
-            
-            $recordsMasonry.masonry('layout');
+
+            // $recordsMasonry.masonry('layout');
         } else {
 
         }
@@ -295,24 +296,24 @@ $(document).ready(function() {
             } else {
 
             }
-        } else if (sliceID == 'f1') {
-            if ($("#f1").is(":hidden")) {
+        } else if (sliceID == 'must') {
+            if ($("#must").is(":hidden")) {
                 $('.textBox').hide("slow");
-                $('#f1').toggle('slide');
+                $('#must').toggle('slide');
             } else {
 
             }
-        } else if (sliceID == 'f2') {
-            if ($("#f2").is(":hidden")) {
+        } else if (sliceID == 'funding') {
+            if ($("#funding").is(":hidden")) {
                 $('.textBox').hide("slow");
-                $('#f2').toggle('slide');
+                $('#funding').toggle('slide');
             } else {
 
             }
-        } else if (sliceID == 'f3') {
-            if ($("#f3").is(":hidden")) {
+        } else if (sliceID == 'bizDev') {
+            if ($("#bizDev").is(":hidden")) {
                 $('.textBox').hide("slow");
-                $('#f3').toggle('slide');
+                $('#bizDev').toggle('slide');
             } else {
 
             }
@@ -321,24 +322,28 @@ $(document).ready(function() {
         }
     });
 
-    var $clickRecords = $('#masonry-container-records').masonry();
+    // var $clickRecords = $('#masonry-container-records').masonry();
+    var $clickRecords = $('.imgHeader2');
     // change size of item on click with toggle class
-    $clickRecords.on('click', '.records-gridItem', function(e) {
+    // $clickRecords.on('click', '.records-gridItem', function(e) {
+    $clickRecords.on('click', function(e) {
 
         //e.stopPropagation();
         e.preventDefault();
 
         var $attrID = $(this).attr('id');
         var sliceID = $attrID.substr(10);
-        /*($attrID);*/
-        /*(sliceID);*/
+        console.log($attrID);
+        console.log(sliceID);
         if (sliceID == 'workPlan') {
-            if ($("#workPlan").is(":hidden")) {
-                $('.records-textBox').hide("slow");
-                $('#workPlan').toggle('slide');
-            } else {
+            //window.location.href = "./documents/msrc/MSRC_FY17_Work_Plan.pdf";
+            // depreciated code
+            // if ($("#workPlan").is(":hidden")) {
+            //     $('.records-textBox').hide("slow");
+            //     $('#workPlan').toggle('slide');
+            // } else {
 
-            }
+            // }
         } else if (sliceID == 'theMSRC') {
             if ($("#theMSRC").is(":hidden")) {
                 $('.records-textBox').hide("slow");
@@ -347,12 +352,12 @@ $(document).ready(function() {
 
             }
         } else if (sliceID == 'byLaws') {
-            if ($("#byLaws").is(":hidden")) {
-                $('.records-textBox').hide("slow");
-                $('#byLaws').toggle('slide');
-            } else {
+            // if ($("#byLaws").is(":hidden")) {
+            //     $('.records-textBox').hide("slow");
+            //     $('#byLaws').toggle('slide');
+            // } else {
 
-            }
+            // }
         } else if (sliceID == 'meetMinutes') {
             if ($("#meetMinutes").is(":hidden")) {
                 $('.records-textBox').hide("slow");
@@ -374,9 +379,17 @@ $(document).ready(function() {
         }
     });
 
+
     //.end doc ready function
 });
-
+/////////////////////////////////////////////////////////////////
+// download document function for linking to a div
+// downloadable pdf will open in new windows
+// word.doc and .docx will download without window change
+function downloadLink(url) {
+    var i = window.open(url, '_blank');
+    i.focus();
+}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -629,23 +642,23 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     if (navigator.userAgent.match(/Firefox/i)) {
-        //$("body").css( "font-size", "18px" );
+        $("#logoBrand").css({"padding-top": "10px" });
         $("#logo_lrg").css({
-            "font-size": '1.625em'
+            "font-size": '1.425em'
         });
         $("#logo_med").css({
-            "font-size": '1.375em'    
+            "font-size": '1.175em'
         });
         $("body").flowtype({
-            minFont: 6,
-            maxFont: 18,
+            minFont: 10,
+            maxFont: 20,
             fontRatio: 65
         });
         console.log('this is firefox!');
     } else {
         $("body").flowtype({
-            minFont: 6,
-            maxFont: 18,
+            minFont: 10,
+            maxFont: 20,
             fontRatio: 65
         });
     }

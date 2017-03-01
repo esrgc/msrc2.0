@@ -1,86 +1,71 @@
 <!--Start Partners Page body-->
 <header class="header container-fluid no-padding">
     <div class="all_wrapper container-fluid no-padding">
-        <div class="partners_bg"></div>
-        <div class="partner-skew1"></div>
-        <div class="partner-skew2"></div>
-        <!-- one line'r-->
-        <!--div#imgContainer(div.imgContainer(div.image(img)*14))-->
-        <div id="imgContainer">
-            <div class="imgContainer">
-                <div id="counties">
-                    <div class="image transition-all">
-                        <!-- https://www.carolinebusiness.com -->
-                        <a target="_blank" href="http://www.carolinemd.org/business/carolineEconomicDevelopment.html">
-                            <img src='./img/logos/carolseal2.png' align="middle">
-                            <h4>Caroline County Economic Development</h4></a>
+        <div class="partners_bg">
+            <!-- one line'r-->
+            <!-- div.figure-nest.row-fluid#imgcontainer(div#counties(figure(img+h4)*3)+div#gilligan(figure(img+h4)*10)) -->
+            <div id="imgcontainer">
+                <div class="figure-nest row-fluid">
+                    <div id="counties">
+                        <figure onclick="downloadLink('https://www.carolinebusiness.com');">
+                            <img src="./img/logos/carolseal2.png" alt="" align="middle">
+                            <h4>Caroline County Economic Development</h4>
+                        </figure>
+                        <figure onclick="downloadLink('http://choosedorchester.org/');">
+                            <img src="./img/logos/dorcheseal2.png" alt="" align="middle">
+                            <h4>Dorchester County Economic Development</h4>
+                        </figure>
+                        <figure onclick="downloadLink('http://www.talbotcountymd.gov/index.php?page=Economic_Development');">
+                            <img src="./img/logos/talbotseal2.png" alt="" align="middle">
+                            <h4>Talbot County Economic Development</h4>
+                        </figure>
                     </div>
-                    <div class="image transition-all">
-                        <!-- http://choosedorchester.org/ -->
-                        <a target="_blank" href="http://www.dorchestereconomic.com/">
-                            <img src='./img/logos/dorcheseal2.png' align="middle">
-                            <h4>Dorchester County Economic Development</h4></a>
-                    </div>
-                    <div class="image transition-all">
-                        <!-- http://www.talbotcountymd.gov/index.php?page=Economic_Development -->
-                        <a target="_blank" href="http://www.talbgov.org/econdev/offecondev.html">
-                            <img src='./img/logos/talbotseal2.png' align="middle">
-                            <h4>Talbot County Economic Development</h4></a>
-                    </div>
-                </div>
-                <div id="gilligan">
-                    <div class="image transition-all">
-                        <a target="_blank" href="http://www.choosemaryland.org/">
-                            <img src='./img/logos/dbed2.png' align="middle">
-                            <h4>Maryland Department Business and Economic Development</h4></a>
-                    </div>
-                    <div class="image transition-all">
-                        <a target="_blank" href="http://beacon.salisbury.edu/">
-                            <img src='./img/logos/beaconlogo2.png' align="middle">
-                            <h4>BEACON - Business, Economic, and Community Outreach Network at Salisbury University</h4></a>
-                    </div>
-                    <div class="image transition-all">
-                        <a target="_blank" href="http://www.eda.gov/">
-                            <img src='./img/logos/edaseal2.png' align="middle">
-                            <h4>United States Economic Development Administration</h4></a>
-                    </div>
-                    <div class="image transition-all">
-                        <a target="_blank" href="http://www.ventureahead.org/">
-                            <img src='./img/logos/ESEC2.jpg' align="middle">
-                            <h4>Eastern Shore Entrepreneurship Center</h4></a>
-                    </div>
-                    <div class="image transition-all">
-                        <a target="_blank" href="http://www.esrgc.org/">
-                            <img src='./img/logos/esrgc_logo.jpg' align="middle">
-                            <h4>Eastern Shore Regional GIS Cooperative</h4></a>
-                    </div>
-                    <div class="image transition-all">
-                        <a target="_blank" href="http://www.marylandfarming.com/">
-                            <img src='./img/logos/marylandfarming.png' align="middle">
-                            <h4>Maryland Farming</h4></a>
-                    </div>
-                    <div class="image transition-all">
-                        <a target="_blank" href="http://www.mdarchives.state.md.us/msa/mdmanual/html/mmtoc.html">
-                            <img src='./img/logos/MD Manual on Line2.gif' align="middle">
-                            <h4>Maryland Manual On-Line</h4></a>
-                    </div>
-                    <div class="image transition-all">
-                        <a target="_blank" href="http://www.dllr.state.md.us/">
-                            <img src='./img/logos/MDdllr2.gif' align="middle">
-                            <h4>Maryland Department of Labor &amp; Licensing</h4></a>
-                    </div>
-                    <div class="image transition-all">
-                        <a target="_blank" href="http://www.mdbc.us/">
-                            <img src='./img/logos/mdbc.gif' align="middle">
-                            <h4>Maryland Broadband Cooperative</h4></a>
-                    </div>
-                    <div class="image transition-all">
-                        <a target="_blank" href="http://www.mustbus.org/">
-                            <img src='./img/logos/must.jpg' align="middle">
-                            <h4>MUST Bus or call 1-866-330-MUST (6878)</h4></a>
+                    <div id="gilligan">
+                        <figure onclick="downloadLink('http://www.choosemaryland.org/');">
+                            <img src="./img/logos/dbed2.png" alt="" align="middle">
+                            <h4>Maryland Department Business and Economic Development</h4>
+                        </figure>
+                        <figure onclick="downloadLink('http://beacon.salisbury.edu/');">
+                            <img src="./img/logos/beaconlogo2.png" alt="" align="middle">
+                            <h4>BEACON - Business, Economic, and Community Outreach Network at Salisbury University</h4>
+                        </figure>
+                        <figure onclick="downloadLink('http://www.eda.gov/');">
+                            <img src="./img/logos/edaseal2.png" alt="" align="middle">
+                            <h4>United States Economic Development Administration</h4>
+                        </figure>
+                        <figure onclick="downloadLink('http://www.ventureahead.org/');">
+                            <img src="./img/logos/ESEC2.jpg" alt="" align="middle">
+                            <h4>Eastern Shore Entrepreneurship Center</h4>
+                        </figure>
+                        <figure onclick="downloadLink('http://www.esrgc.org/');">
+                            <img src="./img/logos/esrgc_logo.jpg" alt="" align="middle">
+                            <h4>Eastern Shore Regional GIS Cooperative</h4>
+                        </figure>
+                        <figure onclick="downloadLink('http://www.marylandfarming.com/');">
+                            <img src="./img/logos/marylandfarming.png" alt="" align="middle">
+                            <h4>Maryland Farming</h4>
+                        </figure>
+                        <figure onclick="downloadLink('http://www.mdarchives.state.md.us/msa/mdmanual/html/mmtoc.html');">
+                            <img src="./img/logos/MD Manual on Line2.gif" alt="" align="middle">
+                            <h4>Maryland Manual On-Line</h4>
+                        </figure>
+                        <figure onclick="downloadLink('http://www.dllr.state.md.us/');">
+                            <img src="./img/logos/MDdllr2.gif" alt="" align="middle">
+                            <h4>Maryland Department of Labor &amp; Licensing</h4>
+                        </figure>
+                        <figure onclick="downloadLink('http://www.mdbc.us/');">
+                            <img src="./img/logos/mdbc.gif" alt="" align="middle">
+                            <h4>Maryland Broadband Cooperative</h4>
+                        </figure>
+                        <figure onclick="downloadLink('http://www.mustbus.org/');">
+                            <img src="./img/logos/must.jpg" alt="" align="middle">
+                            <h4>MUST Bus or call 1-866-330-MUST (6878)</h4>
+                        </figure>
                     </div>
                 </div>
             </div>
+            <!-- end #imgcontainer -->
         </div>
-    </div>
+        <div class="partner-skew1"></div>
+        <div class="partner-skew2"></div>
 </header>

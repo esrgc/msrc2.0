@@ -10,23 +10,23 @@
 
 $(document).ready(function() {
     if (navigator.userAgent.match(/Firefox/i)) {
-        //$("body").css( "font-size", "18px" );
+        $("#logoBrand").css({"padding-top": "10px" });
         $("#logo_lrg").css({
-            "font-size": '1.625em'
+            "font-size": '1.425em'
         });
         $("#logo_med").css({
-            "font-size": '1.375em'    
+            "font-size": '1.175em'
         });
         $("body").flowtype({
-            minFont: 6,
-            maxFont: 18,
+            minFont: 10,
+            maxFont: 20,
             fontRatio: 65
         });
         console.log('this is firefox!');
     } else {
         $("body").flowtype({
-            minFont: 6,
-            maxFont: 18,
+            minFont: 10,
+            maxFont: 20,
             fontRatio: 65
         });
     }
