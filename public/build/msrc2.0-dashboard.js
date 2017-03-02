@@ -346,8 +346,8 @@ $(document).ready(function() {
 
         var $attrID = $(this).attr('id');
         var sliceID = $attrID.substr(10);
-        console.log($attrID);
-        console.log(sliceID);
+        // console.log($attrID);
+        // console.log(sliceID);
         if (sliceID == 'workPlan') {
             //window.location.href = "./documents/msrc/MSRC_FY17_Work_Plan.pdf";
             // depreciated code

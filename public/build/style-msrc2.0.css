@@ -2067,22 +2067,22 @@ table#fedFunds td {
   .toggle1 {
     right: 0px;
     left: 0px;
-    bottom: -59.375em;
+    bottom: -47.222em;
   }
   .toggle2 {
     right: 0px;
     left: 0px;
-    bottom: -68.75em;
+    bottom: -52.778em;
   }
   .toggle3 {
     right: 0px;
     left: 0px;
-    bottom: -78.125em;
+    bottom: -58.336em;
   }
   .toggle4 {
     right: 0px;
     left: 0px;
-    bottom: -87.5em;
+    bottom: -63.886em;
   }
   .toggle-text.ac_collapse {
     -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
@@ -2234,16 +2234,16 @@ table#fedFunds td {
     transform: matrix(1, -1.19175, 0, 1, 0, 0);
   }
   .toggle1 {
-    bottom: -34.375em;
+    bottom: -29.166em;
   }
   .toggle2 {
-    bottom: -40.625em;
+    bottom: -34.722em;
   }
   .toggle3 {
-    bottom: -46.875em;
+    bottom: -40.2778em;
   }
   .toggle4 {
-    bottom: -53.125em;
+    bottom: -45.8336em;
   }
   .toggle-text.ac_collapse {
     /* text parameter for rotating unslanted text*/
@@ -2377,22 +2377,22 @@ table#fedFunds td {
   .toggle1 {
     right: 0px;
     left: 0px;
-    bottom: -59.375em;
+    bottom: -33.336em;
   }
   .toggle2 {
     right: 0px;
     left: 0px;
-    bottom: -68.75em;
+    bottom: -38.886em;
   }
   .toggle3 {
     right: 0px;
     left: 0px;
-    bottom: -78.125em;
+    bottom: -44.444em;
   }
   .toggle4 {
     right: 0px;
     left: 0px;
-    bottom: -87.5em;
+    bottom: -50em;
   }
   .toggle-text.ac_collapse {
     -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
