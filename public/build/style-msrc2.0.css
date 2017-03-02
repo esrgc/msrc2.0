@@ -594,7 +594,7 @@ div.effect-shade:hover p {
   height: 50%;
   text-align: center;
 }
-.aside-float a {
+.aside-float h3 {
   position: relative;
   top: 50%;
 }
@@ -747,6 +747,8 @@ figure.effect-move .floater::before {
 }
 figure.effect-move h3 {
   position: absolute;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #e6e6e6;
   bottom: 0;
   left: 0;
   padding: 1em 1.5em;
@@ -1178,10 +1180,19 @@ figure.effect-move:focus h3 i {
   left: 0;
   right: 0;
   bottom: 30px;
-  overflow-y: auto;
   z-index: 3000;
 }
-.textBox a,
+.textBox:not(.hidden) .textBox-body {
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 80px;
+  left: 0;
+  right: 0;
+}
+.textBox a {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+}
 .textBox p,
 .textBox ul li {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1277,11 +1288,17 @@ table#fedFunds td {
   left: 0;
   right: 0;
   bottom: 60px;
-  overflow-y: auto;
   z-index: 3000;
   padding-left: 2.5em;
   padding-right: 2.5em;
   padding-bottom: -3.75em;
+}
+.records-textBox .textBox-body {
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 80px;
+  left: 0;
+  right: 0;
 }
 .records-textBox figcaption ul li {
   overflow-y: auto;
@@ -1290,6 +1307,10 @@ table#fedFunds td {
 .records-textBox p {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
+}
+.minWrapper {
+  padding-left: 20px;
+  z-index: 100;
 }
 #leftDiv {
   display: block;
@@ -1423,8 +1444,24 @@ table#fedFunds td {
 }
 #imgcontainer {
   position: fixed;
+  top: 60px;
   bottom: 110px;
   z-index: 10;
+}
+#imgcontainer .figure-nested {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: relative;
+  overflow-y: auto;
+  z-index: 0;
+  bottom: 0;
+  bottom: 125px;
+  padding-bottom: 125px;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 !important;
 }
 #gilligan,
 #counties {
@@ -1530,6 +1567,9 @@ table#fedFunds td {
   #footer_button {
     left: 48.5%;
   }
+  #gilligan figure img {
+    width: 55%;
+  }
 }
 @media screen and (max-width: 1260px) {
   .toggle1,
@@ -1604,6 +1644,19 @@ table#fedFunds td {
     width: 75%;
   }
 }
+@media screen and (min-width: 941px) {
+  #counties figure {
+    display: block;
+    float: left;
+    width: 33.31313131%;
+  }
+  #gilligan figure {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0 10px;
+    width: 19.7%;
+  }
+}
 @media screen and (max-width: 940px) {
   .toggle1 {
     bottom: -37.5em;
@@ -1639,6 +1692,23 @@ table#fedFunds td {
     padding-top: 10px;
     font-size: 12px;
   }
+  #counties figure {
+    display: block;
+    float: left;
+    width: 33.333%;
+  }
+  #counties figure img {
+    width: 55%;
+  }
+  #gilligan figure {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0 10px;
+    width: 33%;
+  }
+  #gilligan figure img {
+    width: 45%;
+  }
 }
 @media screen and (max-width: 830px) {
   .toggle1 {
@@ -1656,13 +1726,17 @@ table#fedFunds td {
   .membersDiv2 {
     left: 75%;
   }
-  #gilligan figure img {
-    width: 55%;
+  #imgcontainer {
+    bottom: 65px;
   }
 }
 @media screen and (min-width: 800px) {
   .fa-3x {
     font-size: 2.33em;
+  }
+  .figure-nested {
+    height: 140vh;
+    bottom: 110px;
   }
 }
 @media screen and (max-width: 769px) {
@@ -1683,12 +1757,12 @@ table#fedFunds td {
     padding-top: 10px;
     font-size: 12px;
   }
-  .footer_buffer {
-    padding-top: 60px;
-  }
-  #footer_higher #footer_content {
-    height: 20.833em;
-  }
+}
+.footer_buffer {
+  padding-top: 60px;
+}
+#footer_higher #footer_content {
+  height: 20.833em;
 }
 @media only screen and (max-width: 700px) {
   .grid {
@@ -1718,28 +1792,14 @@ table#fedFunds td {
   #footer_button {
     left: 48%;
   }
-}
-@media (min-width: 576px) {
-  #counties figure {
-    display: block;
-    float: left;
-    width: 33.31313131%;
-  }
-  #gilligan figure {
-    margin: 0 auto;
-    display: inline-block;
-    padding: 0 10px;
-    width: 19.7%;
-  }
-}
-@media (max-width: 575px) {
-  #imgcontainer {
-    bottom: 65px;
+  .figure-nested {
+    height: 140vh;
+    bottom: 110px;
   }
   #counties figure {
     display: block;
     float: left;
-    width: 33.333%;
+    width: 100%;
   }
   #counties figure img {
     width: 55%;
@@ -1748,7 +1808,7 @@ table#fedFunds td {
     margin: 0 auto;
     display: inline-block;
     padding: 0 10px;
-    width: 33%;
+    width: 100%;
   }
   #gilligan figure img {
     width: 45%;
@@ -1920,6 +1980,9 @@ table#fedFunds td {
   .archive_months,
   .members {
     margin-left: 5px;
+  }
+  .figure-nested {
+    height: 200vh;
   }
 }
 @media only screen and (min-device-width: 400px) and (max-device-width: 740px) and (orientation: portrait) {
@@ -2223,6 +2286,9 @@ table#fedFunds td {
   .archive_months,
   .members {
     margin-left: 5px;
+  }
+  .figure-nested {
+    height: 200vh;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: portrait) {

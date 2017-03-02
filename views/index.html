@@ -55,48 +55,55 @@
     <br/>
     <div class="container-fluid text-center">
         <div class="row">
-            <!-- remove un-needed <a> tags only present if used to link to data pages 
-                    per conversation durring mockup meeting  -->
-            <a href="#">
-                <h1 class="impact-header">Maryland Mid-Shore Economic Impact</h1>
-            </a>
+            <h3 class="impact-header">Maryland Mid-Shore Economic Impact</h3>
         </div>
         <!-- hardcoded values for economic impact stats -->
         <div class="row">
             <div class="col-lg-3 col-sm-6">
-                <div class="effect-shade"><a href="#" ><h1 style="color: #1e9bd3">3,421</h1><h4 style="color: #333333;">Business Establishments</h4></a></div>
+                <div class="effect-shade">
+                    <h1 style="color: #1e9bd3">3,421</h1>
+                    <h4 style="color: #333333;">Business Establishments</h4>
+                </div>
             </div>
             <div class="col-lg-3 col-sm-6">
-                <div class="effect-shade"><a href="#"><h1 style="color: #72bb53">$48M</h1><h4 style="color: #333333;">Gross Domestic Product</h4></a></div>
+                <div class="effect-shade">
+                    <h1 style="color: #72bb53">$48M</h1>
+                    <h4 style="color: #333333;">Gross Domestic Product</h4>
+                </div>
             </div>
             <div class="col-lg-3 col-sm-6">
-                <div class="effect-shade"><a href="#"><h1 style="color: #d39c2f">124k+</h1><h4 style="color: #333333;">Workforce (2015)</h4></a></div>
+                <div class="effect-shade">
+                    <h1 style="color: #d39c2f">124k+</h1>
+                    <h4 style="color: #333333;">Workforce (2015)</h4>
+                </div>
             </div>
             <div class="col-lg-3  col-sm-6">
-                <div class="effect-shade"><a href="#"><h1 style="color: #b70f0a;">18min</h1><h4 style="color: #333333;">Average Travel to Work</h4></a></div>
+                <div class="effect-shade">
+                    <h1 style="color: #b70f0a;">18min</h1>
+                    <h4 style="color: #333333;">Average Travel to Work</h4>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <!--grid of images that Redirect to -->
-<section class="figure-nest row">
+<section class="figure-nest row" onclick="divRouter('./about');">
     <figure class="effect-move">
         <img src="./img/about.jpg">
         <div class="floater text-vertical-center">
-
-            <a href="./about"><h3>Meet the MSRC</h3></a>
+            <h3>Meet the MSRC</h3>
         </div>
     </figure>
-    <figure class="effect-move">
+    <figure class="effect-move" onclick="divRouter('./committees');">
         <img src="./img/committees.jpg">
         <div class="floater text-vertical-center">
-            <a href="./committees"><h3>View the Committees</h3></a>
+            <h3>View the Committees</h3>
         </div>
     </figure>
-    <figure class="effect-move">
+    <figure class="effect-move" onclick="divRouter('./partners');">
         <img src="./img/partners.jpg">
         <div class="floater text-vertical-center">
-            <a href="./partners"><h3>See our Partnerships</h3></a>
+            <h3>See our Partnerships</h3>
         </div>
     </figure>
 </section>

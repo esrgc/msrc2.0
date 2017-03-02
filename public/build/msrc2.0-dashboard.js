@@ -44,6 +44,19 @@ function mobileNav() {
         x.className = "nav navbar-nav navbar-right text-vertical-center";
     }
 }
+
+/////////////////////////////////////////////////////////////////
+// download document function for linking to a div
+// downloadable pdf will open in new windows
+// word.doc and .docx will download without window change
+function downloadLink(url) {
+    var i = window.open(url, '_blank');
+    i.focus();
+}
+// tiny routing function
+function divRouter(url) {
+    window.location.href = url;
+}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
@@ -372,24 +385,17 @@ $(document).ready(function() {
     });
 
     // setup textBox to close on click
-    $(".textBox, .records-textBox").click(function() {
+    $(".textBox .textBox-toggle, .records-textBox .textBox-toggle").click(function() {
         var $attrID = $(this).attr('id');
         if ($(this).is(':visible')) {
-            $(this).toggle('slide');
+            $(this).parent().toggle('slide');
         }
     });
 
 
     //.end doc ready function
 });
-/////////////////////////////////////////////////////////////////
-// download document function for linking to a div
-// downloadable pdf will open in new windows
-// word.doc and .docx will download without window change
-function downloadLink(url) {
-    var i = window.open(url, '_blank');
-    i.focus();
-}
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -654,7 +660,7 @@ $(document).ready(function() {
             maxFont: 20,
             fontRatio: 65
         });
-        console.log('this is firefox!');
+        //console.log('this is firefox!');
     } else {
         $("body").flowtype({
             minFont: 10,

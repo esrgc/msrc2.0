@@ -514,12 +514,22 @@
     left: 0;
     right: 0;
     bottom: 30px;
-    overflow-y: auto;
+    //overflow-y: auto;
     z-index: 3000;
+    .textBox-body {
+        height: 100%;
+        overflow-y: auto;
+        //bottom: 110px;
+        padding-bottom: 80px;
+        left: 0;
+        right: 0;
+    }
 }
 
 .textBox {
-    a,
+    a {
+        .font-blocky-drk;
+    }
     p,
     ul li {
         .font-blocky-drk;
@@ -634,11 +644,19 @@ table#fedFunds {
     left: 0;
     right: 0;
     bottom: 60px;
-    overflow-y: auto;
+    //overflow-y: auto;
     z-index: 3000;
     padding-left: 2.5em;
     padding-right: 2.5em;
     padding-bottom: -3.75em;
+    .textBox-body {
+        height: 100%;
+        overflow-y: auto;
+        //bottom: 110px;
+        padding-bottom: 80px;
+        left: 0;
+        right: 0;
+    }
 }
 
 .records-textBox figcaption ul li {
@@ -648,6 +666,11 @@ table#fedFunds {
 .records-textBox a,
 .records-textBox p {
     .font-blocky-drk;
+}
+
+.minWrapper {
+    padding-left: 20px;
+    z-index: 100;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -785,9 +808,28 @@ table#fedFunds {
 
 #imgcontainer {
     position: fixed;
+    top: 60px;
     bottom: 110px;
+    //bottom: 0;
     z-index: 10;
-    //overflow-y: auto;
+    .figure-nested {
+        width: 100vw;
+        // height: 90vh;
+        height: 100vh;
+        display: block;
+        //position: absolute;
+        position: relative;
+        overflow-y: auto;
+        z-index: 0;
+        bottom: 0;
+        bottom: 125px;
+        padding-bottom: 125px;
+        left: 0;
+        right: 0;
+        //top: 110px;
+        top: 0;
+        margin: 0 !important;
+    }
 }
 
 #gilligan,

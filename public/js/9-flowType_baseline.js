@@ -22,7 +22,7 @@ $(document).ready(function() {
             maxFont: 20,
             fontRatio: 65
         });
-        console.log('this is firefox!');
+        //console.log('this is firefox!');
     } else {
         $("body").flowtype({
             minFont: 10,

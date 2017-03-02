@@ -50,6 +50,11 @@
     #footer_button {
         left: 48.5%;
     }
+    #gilligan figure {
+        img {
+            width: 55%;
+        }
+    }
 }
 
 @media screen and (max-width:1260px) {
@@ -124,6 +129,20 @@
     }
 }
 
+@media screen and (min-width: 941px) {
+    #counties figure {
+        display: block;
+        float: left;
+        width: 33.31313131%;
+    }
+    #gilligan figure {
+        margin: 0 auto;
+        display: inline-block;
+        padding: 0 10px;
+        width: 19.7%;
+    }
+}
+
 @media screen and (max-width:940px) {
     .toggle1 {
         bottom: -37.5em; // -600 px
@@ -154,6 +173,23 @@
             font-size: 12px;
         }
     }
+    #counties figure {
+        display: block;
+        float: left;
+        width: 33.333%;
+        img {
+            width: 55%;
+        }
+    }
+    #gilligan figure {
+        margin: 0 auto;
+        display: inline-block;
+        padding: 0 10px;
+        width: 33%;
+        img {
+            width: 45%;
+        }
+    }
 }
 
 @media screen and (max-width:830px) {
@@ -172,16 +208,18 @@
     .membersDiv2 {
         left: 75%;
     }
-    #gilligan figure {
-        img {
-            width: 55%;
-        }
+    #imgcontainer {
+        bottom: 65px;
     }
 }
 
 @media screen and (min-width:800px) {
     .fa-3x {
         font-size: 2.33em;
+    }
+    .figure-nested {
+        height: 140vh;
+        bottom: 110px;
     }
 }
 
@@ -203,12 +241,14 @@
             font-size: 12px;
         }
     }
-    .footer_buffer {
-        padding-top: 60px;
-    }
-    #footer_higher #footer_content {
-        height: 20.833em;
-    }
+}
+
+.footer_buffer {
+    padding-top: 60px;
+}
+
+#footer_higher #footer_content {
+    height: 20.833em;
 }
 
 @media only screen and (max-width: 700px) {
@@ -239,30 +279,14 @@
     #footer_button {
         left: 48%;
     }
-}
-
-@media (min-width: 576px) {
-    #counties figure {
-        display: block;
-        float: left;
-        width: 33.31313131%;
-    }
-    #gilligan figure {
-        margin: 0 auto;
-        display: inline-block;
-        padding: 0 10px;
-        width: 19.7%;
-    }
-}
-
-@media (max-width: 575px) {
-    #imgcontainer {
-        bottom: 65px;
+    .figure-nested {
+        height: 140vh;
+        bottom: 110px;
     }
     #counties figure {
         display: block;
         float: left;
-        width: 33.333%;
+        width: 100%;
         img {
             width: 55%;
         }
@@ -271,7 +295,7 @@
         margin: 0 auto;
         display: inline-block;
         padding: 0 10px;
-        width: 33%;
+        width: 100%;
         img {
             width: 45%;
         }
@@ -438,6 +462,9 @@
     .archive_months,
     .members {
         margin-left: 5px;
+    }
+    .figure-nested {
+        height: 200vh;
     }
 }
 
@@ -731,6 +758,9 @@
     .archive_months,
     .members {
         margin-left: 5px;
+    }
+    .figure-nested {
+        height: 200vh;
     }
 }
 
