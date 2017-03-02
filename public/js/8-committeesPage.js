@@ -24,12 +24,12 @@ $(document).ready(function() {
     $(".archive_months").hide();
     $(".years").click(function() {
         var $x = $(this).attr('id');
-        console.log($x);
+        //console.log($x);
         if ($(this).siblings().find('.archive_months').is(':visible')) {
             //console.log('i can see you!');
             $(this).siblings().find('.archive_months').hide('slow');
         }
-            $(this).find('ul').slideToggle(500);
+        $(this).find('ul').slideToggle(500);
     });
 
     //hide advisDiv untill  activated by button
@@ -47,7 +47,7 @@ $(document).ready(function() {
     /*move to top when done*/
 
     var $membersUL = $(".members");
-    
+
     var $comOpen = $(".advisCommittees").click(function() {
         var $advisMins = $(".advisMins");
         var $header = $(this);
@@ -72,7 +72,7 @@ $(document).ready(function() {
         //console.log($openMin);
         //console.log($openMin.slideToggle(500));
 
-        $($openMin).stop(true, true).slideToggle(500, function(){
+        $($openMin).stop(true, true).slideToggle(500, function() {
             $header.addClass(function() {
                 return $($openMin).is(':visible');
             });

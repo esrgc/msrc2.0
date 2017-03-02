@@ -34,20 +34,16 @@ $(window).load(function() {
         itemSelector: '.gridItem',
         percentPosition: true,
         gutter: 1,
-        //stagger: 45,
-        //containerStyle: null,
+        stagger: 45,
+
         initLayout: false
     });
 
-    //     var $msryRecords = $('#masonry-container-records').masonry({
-    //         columnWidth: '.grid-box-records',
-    //         itemSelector: '.records-gridItem',
-    //         percentPosition: true,
-    //         gutter: 1,
-    //         //stagger: 45,
-    //         //containerStyle: null,
-    //         initLayout: false
-    //     });
+});
+
+$(window).resize(function() {
+    var $spotlightMasonry = $('#masonry-container-spotlight').masonry();
+    $spotlightMasonry.masonry('layout');
 });
 
 $(document).ready(function() {
@@ -113,11 +109,6 @@ $(document).ready(function() {
             $('.spotlight-wrapper').css({ "z-index": "1000" });
             // init masonry js with imagesLoaded for spotlight
             var $spotlightMasonry = $('#masonry-container-spotlight').masonry({
-                // columnWidth: '.grid-box-spotlight',
-                // itemSelector: '.gridItem',
-                // percentPosition: true,
-                // gutter: 1,
-                //stagger: 45,
                 containerStyle: null,
                 initLayout: false
             });
@@ -134,25 +125,13 @@ $(document).ready(function() {
 
             $('#recordsWrapper, #recordsWrapper2').toggle('slide');
             $('.records-wrapper').css({ "z-index": "1000" });
-            // // init masonry container for records
-            // var $recordsMasonry = $('#masonry-container-records').masonry({
-            //     // columnWidth: '.grid-box-records',
-            //     // itemSelector: '.records-gridItem',
-            //     // percentPosition: true,
-            //     // gutter: 1,
-            //     //stagger: 45,
-            //     containerStyle: null,
-            //     initLayout: false
-            // });
 
-            // $recordsMasonry.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
-            // $("#masonry-container-records").toggle('slow');
 
             if ($('.records-textBox').is(":visible")) {
                 $('.records-textBox').hide("slow");
             }
 
-            // $recordsMasonry.masonry('layout');
+
         } else {
 
         }
@@ -242,42 +221,25 @@ $(document).ready(function() {
         }
     });
 
-    // var $clickRecords = $('#masonry-container-records').masonry();
+
     var $clickRecords = $('.imgHeader2');
     // change size of item on click with toggle class
-    // $clickRecords.on('click', '.records-gridItem', function(e) {
+
     $clickRecords.on('click', function(e) {
 
-        //e.stopPropagation();
         e.preventDefault();
 
         var $attrID = $(this).attr('id');
         var sliceID = $attrID.substr(10);
         // console.log($attrID);
         // console.log(sliceID);
-        if (sliceID == 'workPlan') {
-            //window.location.href = "./documents/msrc/MSRC_FY17_Work_Plan.pdf";
-            // depreciated code
-            // if ($("#workPlan").is(":hidden")) {
-            //     $('.records-textBox').hide("slow");
-            //     $('#workPlan').toggle('slide');
-            // } else {
-
-            // }
-        } else if (sliceID == 'theMSRC') {
+        if (sliceID == 'theMSRC') {
             if ($("#theMSRC").is(":hidden")) {
                 $('.records-textBox').hide("slow");
                 $('#theMSRC').toggle('slide');
             } else {
 
             }
-        } else if (sliceID == 'byLaws') {
-            // if ($("#byLaws").is(":hidden")) {
-            //     $('.records-textBox').hide("slow");
-            //     $('#byLaws').toggle('slide');
-            // } else {
-
-            // }
         } else if (sliceID == 'meetMinutes') {
             if ($("#meetMinutes").is(":hidden")) {
                 $('.records-textBox').hide("slow");

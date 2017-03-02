@@ -470,11 +470,11 @@
 }
 
 .grid-box-spotlight {
-    width: 24%;
+    width: 32.3232%;
 }
 
 .gridItem {
-    width: 24%;
+    width: 32.3232%;
     float: left;
     transition: opacity 0.6s;
     z-index: 1001;
@@ -492,7 +492,7 @@
     height: 80vh;
     width: 100%;
     top: 4.722em !important;
-    padding: 0;
+    padding: 0 0 60px 0;
     margin: 0;
     right: 0;
     bottom: 0;
@@ -558,23 +558,77 @@ table#fedFunds {
 }
 
 // hovering text for spotlight masonry img's
-.imgHeader-sm {
+.imgHeader-sm() {
     display: block;
     position: absolute;
-    background: rgba(255, 255, 255, .15);
-    .font-blocky-lt;
+    //position: relative;
+    //background: rgba(255, 255, 255, .15);
     width: 100%;
-    padding-bottom: -60px;
-    bottom: 60px;
+    padding-bottom: -80px;
+    bottom: 80px;
+    //top: 0;
     height: 50%;
-    color: white;
+    //color: white;
 }
 
-.imgHeader-sm h2 {
-    height: 50%;
-    color: white;
+.imgHeader-sm-drk {
+    .imgHeader-sm;
+    h2 {
+        .font-blocky-drk;
+        height: 50%;
+    }
+    h4 {
+        .font-blocky-drk;
+    }
 }
 
+.imgHeader-sm-lt {
+    .imgHeader-sm;
+    h2 {
+        .font-blocky-lt;
+        height: 50%;
+    }
+    h4 {
+        .font-blocky-lt;
+    }
+}
+
+.padding-left {
+    padding: 0 0 0 50px;
+}
+
+.padding-top {
+    padding: 50px 0 0 0;
+}
+
+.padding-right {
+    padding: 0 50px 0 0;
+}
+
+.padding-bottom {
+    //text-align: top;
+    bottom: 50px;
+    padding: 0 0 50px 0;
+}
+
+// .imgHeader-ceds {
+//     .imgHeader-sm;
+//     h2 {
+//         .font-blocky-drk;
+//         height: 50%;
+//         .matrix;
+//     } h4 {
+//         .font-blocky-drk;
+//         .matrix
+//     }
+// }
+// .matrix() {
+//     -webkit-transform: matrix(-0.007, 1.000, -1.000, -0.007, 0, 0);
+//     -moz-transform: matrix(-0.007, 1.000, -1.000, -0.007, 0px, 0px);
+//     -ms-transform: matrix(-0.007, 1.000, -1.000, -0.007, 0, 0);
+//     -o-transform: matrix(-0.007, 1.000, -1.000, -0.007, 0, 0);
+//     transform: matrix(-0.007, 1.000, -1.000, -0.007, 0, 0);
+// }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Records pop out
@@ -828,7 +882,7 @@ table#fedFunds {
         bottom: 110px;
         align-self: flex-end;
         padding-bottom: 125px;
-       margin-top: auto;
+        margin-top: auto;
     }
 }
 

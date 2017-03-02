@@ -127,20 +127,16 @@ $(window).load(function() {
         itemSelector: '.gridItem',
         percentPosition: true,
         gutter: 1,
-        //stagger: 45,
-        //containerStyle: null,
+        stagger: 45,
+
         initLayout: false
     });
 
-    //     var $msryRecords = $('#masonry-container-records').masonry({
-    //         columnWidth: '.grid-box-records',
-    //         itemSelector: '.records-gridItem',
-    //         percentPosition: true,
-    //         gutter: 1,
-    //         //stagger: 45,
-    //         //containerStyle: null,
-    //         initLayout: false
-    //     });
+});
+
+$(window).resize(function() {
+    var $spotlightMasonry = $('#masonry-container-spotlight').masonry();
+    $spotlightMasonry.masonry('layout');
 });
 
 $(document).ready(function() {
@@ -206,11 +202,6 @@ $(document).ready(function() {
             $('.spotlight-wrapper').css({ "z-index": "1000" });
             // init masonry js with imagesLoaded for spotlight
             var $spotlightMasonry = $('#masonry-container-spotlight').masonry({
-                // columnWidth: '.grid-box-spotlight',
-                // itemSelector: '.gridItem',
-                // percentPosition: true,
-                // gutter: 1,
-                //stagger: 45,
                 containerStyle: null,
                 initLayout: false
             });
@@ -227,25 +218,13 @@ $(document).ready(function() {
 
             $('#recordsWrapper, #recordsWrapper2').toggle('slide');
             $('.records-wrapper').css({ "z-index": "1000" });
-            // // init masonry container for records
-            // var $recordsMasonry = $('#masonry-container-records').masonry({
-            //     // columnWidth: '.grid-box-records',
-            //     // itemSelector: '.records-gridItem',
-            //     // percentPosition: true,
-            //     // gutter: 1,
-            //     //stagger: 45,
-            //     containerStyle: null,
-            //     initLayout: false
-            // });
 
-            // $recordsMasonry.masonryImagesReveal($('#recordsImages').find('.records-gridItem'));
-            // $("#masonry-container-records").toggle('slow');
 
             if ($('.records-textBox').is(":visible")) {
                 $('.records-textBox').hide("slow");
             }
 
-            // $recordsMasonry.masonry('layout');
+
         } else {
 
         }
@@ -335,42 +314,25 @@ $(document).ready(function() {
         }
     });
 
-    // var $clickRecords = $('#masonry-container-records').masonry();
+
     var $clickRecords = $('.imgHeader2');
     // change size of item on click with toggle class
-    // $clickRecords.on('click', '.records-gridItem', function(e) {
+
     $clickRecords.on('click', function(e) {
 
-        //e.stopPropagation();
         e.preventDefault();
 
         var $attrID = $(this).attr('id');
         var sliceID = $attrID.substr(10);
         // console.log($attrID);
         // console.log(sliceID);
-        if (sliceID == 'workPlan') {
-            //window.location.href = "./documents/msrc/MSRC_FY17_Work_Plan.pdf";
-            // depreciated code
-            // if ($("#workPlan").is(":hidden")) {
-            //     $('.records-textBox').hide("slow");
-            //     $('#workPlan').toggle('slide');
-            // } else {
-
-            // }
-        } else if (sliceID == 'theMSRC') {
+        if (sliceID == 'theMSRC') {
             if ($("#theMSRC").is(":hidden")) {
                 $('.records-textBox').hide("slow");
                 $('#theMSRC').toggle('slide');
             } else {
 
             }
-        } else if (sliceID == 'byLaws') {
-            // if ($("#byLaws").is(":hidden")) {
-            //     $('.records-textBox').hide("slow");
-            //     $('#byLaws').toggle('slide');
-            // } else {
-
-            // }
         } else if (sliceID == 'meetMinutes') {
             if ($("#meetMinutes").is(":hidden")) {
                 $('.records-textBox').hide("slow");
@@ -566,12 +528,12 @@ $(document).ready(function() {
     $(".archive_months").hide();
     $(".years").click(function() {
         var $x = $(this).attr('id');
-        console.log($x);
+        //console.log($x);
         if ($(this).siblings().find('.archive_months').is(':visible')) {
             //console.log('i can see you!');
             $(this).siblings().find('.archive_months').hide('slow');
         }
-            $(this).find('ul').slideToggle(500);
+        $(this).find('ul').slideToggle(500);
     });
 
     //hide advisDiv untill  activated by button
@@ -589,7 +551,7 @@ $(document).ready(function() {
     /*move to top when done*/
 
     var $membersUL = $(".members");
-    
+
     var $comOpen = $(".advisCommittees").click(function() {
         var $advisMins = $(".advisMins");
         var $header = $(this);
@@ -614,7 +576,7 @@ $(document).ready(function() {
         //console.log($openMin);
         //console.log($openMin.slideToggle(500));
 
-        $($openMin).stop(true, true).slideToggle(500, function(){
+        $($openMin).stop(true, true).slideToggle(500, function() {
             $header.addClass(function() {
                 return $($openMin).is(':visible');
             });
@@ -641,33 +603,38 @@ $(document).ready(function() {
  * Author: Carl Flint, ESRGC
  */
 
-// browser compatibility solution for flowType.js
+// browser compatibility solution for flowType.js and fixed position elements not rendering the same
 // mozilla renders the google font HUGE!!!!  
 // This is to tone it down a thousand notches
 
 
 $(document).ready(function() {
     if (navigator.userAgent.match(/Firefox/i)) {
-        $("#logoBrand").css({"padding-top": "10px" });
+        $("#logoBrand").css({ "padding-top": "10px" });
+        $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "125px" });
+        $(".textBox").css({ "padding-bottom": "30px" });
         $("#logo_lrg").css({
             "font-size": '1.425em'
         });
         $("#logo_med").css({
             "font-size": '1.175em'
         });
-        $("body").flowtype({
-            minFont: 10,
-            maxFont: 20,
-            fontRatio: 65
-        });
+
         //console.log('this is firefox!');
+    } else if (navigator.userAgent.match(/Trident/i)) {
+        $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
+        $(".textBox").css({ "padding-bottom": "30px" });
+
+        //console.log('this is internetExplorer')
     } else {
-        $("body").flowtype({
-            minFont: 10,
-            maxFont: 20,
-            fontRatio: 65
-        });
+
     }
+
+    $("body").flowtype({
+        minFont: 10,
+        maxFont: 20,
+        fontRatio: 65
+    });
 });
 
 
