@@ -807,28 +807,28 @@ table#fedFunds {
 }
 
 #imgcontainer {
+    display: flex;
+    flex-direction: column;
     position: fixed;
+    //position: relative;
     top: 60px;
+    height: 100%;
     bottom: 110px;
     //bottom: 0;
     z-index: 10;
     .figure-nested {
         width: 100vw;
-        // height: 90vh;
-        height: 100vh;
-        display: block;
+        //height: 90vh;
+        height: 90%;
+        //display: block;
         //position: absolute;
-        position: relative;
+        //position: relative;
         overflow-y: auto;
         z-index: 0;
-        bottom: 0;
-        bottom: 125px;
+        bottom: 110px;
+        align-self: flex-end;
         padding-bottom: 125px;
-        left: 0;
-        right: 0;
-        //top: 110px;
-        top: 0;
-        margin: 0 !important;
+       margin-top: auto;
     }
 }
 

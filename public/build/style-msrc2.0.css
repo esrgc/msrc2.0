@@ -1443,25 +1443,23 @@ table#fedFunds td {
   -moz-transform: skew(0deg, 30deg);
 }
 #imgcontainer {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 60px;
+  height: 100%;
   bottom: 110px;
   z-index: 10;
 }
 #imgcontainer .figure-nested {
   width: 100vw;
-  height: 100vh;
-  display: block;
-  position: relative;
+  height: 90%;
   overflow-y: auto;
   z-index: 0;
-  bottom: 0;
-  bottom: 125px;
+  bottom: 110px;
+  align-self: flex-end;
   padding-bottom: 125px;
-  left: 0;
-  right: 0;
-  top: 0;
-  margin: 0 !important;
+  margin-top: auto;
 }
 #gilligan,
 #counties {
@@ -1537,10 +1535,10 @@ table#fedFunds td {
   .toggle2,
   .toggle3,
   .toggle4 {
-    right: -45em;
+    right: -40.45em;
   }
   .toggle-text.ac_collapse {
-    left: 20%;
+    left: 19%;
   }
 }
 @media screen and (max-width: 1680px) {
@@ -1548,7 +1546,7 @@ table#fedFunds td {
   .toggle2,
   .toggle3,
   .toggle4 {
-    right: -37.5em;
+    right: -33.5em;
   }
   .toggle-text.ac_collapse {
     left: 20%;
@@ -1559,7 +1557,7 @@ table#fedFunds td {
   .toggle2,
   .toggle3,
   .toggle4 {
-    right: -31.25em;
+    right: -27.4em;
   }
   .toggle-text.ac_collapse {
     left: 18%;
@@ -1585,16 +1583,16 @@ table#fedFunds td {
     right: 0px;
   }
   .toggle1 {
-    bottom: -31.25em;
+    bottom: -27.778em;
   }
   .toggle2 {
-    bottom: -37.5em;
+    bottom: -33.336em;
   }
   .toggle3 {
-    bottom: -43.75em;
+    bottom: -38.886em;
   }
   .toggle4 {
-    bottom: -50em;
+    bottom: -44.444em;
   }
   .toggle-text.ac_collapse {
     -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
@@ -1633,6 +1631,18 @@ table#fedFunds td {
   #footer_higher #footer_content {
     height: 19.443em;
   }
+  .toggle1 {
+    bottom: -37.5em;
+  }
+  .toggle2 {
+    bottom: -43.75em;
+  }
+  .toggle3 {
+    bottom: -50em;
+  }
+  .toggle4 {
+    bottom: -56.25em;
+  }
 }
 @media only screen and (min-width: 701px) and (max-width: 1040px) {
   .records-gridItem {
@@ -1658,18 +1668,6 @@ table#fedFunds td {
   }
 }
 @media screen and (max-width: 940px) {
-  .toggle1 {
-    bottom: -37.5em;
-  }
-  .toggle2 {
-    bottom: -43.75em;
-  }
-  .toggle3 {
-    bottom: -50em;
-  }
-  .toggle4 {
-    bottom: -56.25em;
-  }
   .toggle-text.ac_collapse {
     -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
     /* use px for translate x,y for -moz-  */
@@ -1764,7 +1762,7 @@ table#fedFunds td {
 #footer_higher #footer_content {
   height: 20.833em;
 }
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   .grid {
     left: 0;
   }
@@ -1788,6 +1786,24 @@ table#fedFunds td {
   }
   .grid-box-spotlight {
     width: 98%;
+  }
+  .toggle1.ac_collapse,
+  .toggle2.ac_collapse,
+  .toggle3.ac_collapse,
+  .toggle4 {
+    height: 100vh;
+  }
+  .toggle1 {
+    bottom: -55.556em;
+  }
+  .toggle2 {
+    bottom: -61.114em;
+  }
+  .toggle3 {
+    bottom: -66.667em;
+  }
+  .toggle4 {
+    bottom: -72.223em;
   }
   #footer_button {
     left: 48%;
@@ -2222,6 +2238,12 @@ table#fedFunds td {
   .slide-toggle-open {
     font-size: 17px;
   }
+  .toggle1.ac_collapse,
+  .toggle2.ac_collapse,
+  .toggle3.ac_collapse,
+  .toggle4 {
+    height: 100vh;
+  }
   .toggle1,
   .toggle2,
   .toggle3,
@@ -2373,6 +2395,12 @@ table#fedFunds td {
   .slide-toggle-close,
   .slide-toggle-open {
     font-size: 17px;
+  }
+  .toggle1.ac_collapse,
+  .toggle2.ac_collapse,
+  .toggle3.ac_collapse,
+  .toggle4 {
+    height: 100vh;
   }
   .toggle1 {
     right: 0px;
