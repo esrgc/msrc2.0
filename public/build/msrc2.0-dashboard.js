@@ -55,7 +55,8 @@ function downloadLink(url) {
 }
 // tiny routing function
 function divRouter(url) {
-    window.location.href = url;
+   var i = window.location.href = url;
+   i.focus();
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -614,27 +615,37 @@ $(document).ready(function() {
         $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "125px" });
         $(".textBox").css({ "padding-bottom": "30px" });
         $("#logo_lrg").css({
-            "font-size": '1.425em'
+            "line-height": '35px',
+            "font-size-adjust":"0.375"
         });
         $("#logo_med").css({
-            "font-size": '1.175em'
+            "line-height": '35px',
+            "font-size-adjust":"0.375"
         });
-
-        //console.log('this is firefox!');
-    } else if (navigator.userAgent.match(/Trident/i)) {
-        $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
-        $(".textBox").css({ "padding-bottom": "30px" });
-
-        //console.log('this is internetExplorer')
-    } else {
-
-    }
-
     $("body").flowtype({
         minFont: 10,
         maxFont: 20,
         fontRatio: 65
     });
+        //console.log('this is firefox!');
+    } else if (navigator.userAgent.match(/Trident/i)) {
+        $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
+        $(".textBox").css({ "padding-bottom": "30px" });
+    $("body").flowtype({
+        minFont: 10,
+        maxFont: 20,
+        fontRatio: 65
+    });
+        //console.log('this is internetExplorer')
+    } else {
+    $("body").flowtype({
+        minFont: 10,
+        maxFont: 20,
+        fontRatio: 65
+    });
+    }
+
+
 });
 
 

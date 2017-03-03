@@ -741,7 +741,7 @@ figure {
 // fancy css3 transition effects on hover
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-figure.effect-move {
+figure.effect-move a {
     background: #4a3753;
 }
 
@@ -795,12 +795,12 @@ figure.effect-move h3 {
     transition: transform 0.35s;
 }
 
-figure.effect-move:hover .floater::before,
-figure.effect-move:hover h3,
-figure.effect-move:hover h3 i,
-figure.effect-move:focus .floater::before,
-figure.effect-move:focus h3,
-figure.effect-move:focus h3 i {
+figure.effect-move:hover  .floater::before,
+figure.effect-move:hover  h3,
+/* figure.effect-move:hover a h3 i, */
+figure.effect-move:focus  .floater::before,
+figure.effect-move:focus  h3,
+/* figure.effect-move:focus a h3 i  */{
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);

@@ -23,6 +23,7 @@ function downloadLink(url) {
 }
 // tiny routing function
 function divRouter(url) {
-    window.location.href = url;
+   var i = window.location.href = url;
+   i.focus();
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
