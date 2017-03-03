@@ -160,6 +160,10 @@ blockquote {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #e6e6e6;
 }
+.font-blocky-med {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #8c8c8c;
+}
 * {
   padding: 0;
   margin: 0;
@@ -1146,6 +1150,8 @@ figure.effect-move:focus h3 i {
   width: 32.3232%;
   float: left;
   transition: opacity 0.6s;
+  margin-left: 1px;
+  margin-right: -20px;
   z-index: 1001;
 }
 .gridItem img {
@@ -1217,6 +1223,7 @@ table#fedFunds td {
 .imgHeader-sm-drk {
   display: block;
   position: absolute;
+  background: rgba(255, 255, 255, 0.15);
   width: 100%;
   padding-bottom: -80px;
   bottom: 80px;
@@ -1234,6 +1241,7 @@ table#fedFunds td {
 .imgHeader-sm-lt {
   display: block;
   position: absolute;
+  background: rgba(255, 255, 255, 0.15);
   width: 100%;
   padding-bottom: -80px;
   bottom: 80px;
@@ -1247,6 +1255,24 @@ table#fedFunds td {
 .imgHeader-sm-lt h4 {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #e6e6e6;
+}
+.imgHeader-sm-md {
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  width: 100%;
+  padding-bottom: -80px;
+  bottom: 80px;
+  height: 50%;
+}
+.imgHeader-sm-md h2 {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #8c8c8c;
+  height: 50%;
+}
+.imgHeader-sm-md h4 {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #8c8c8c;
 }
 .padding-left {
   padding: 0 0 0 50px;
@@ -1477,7 +1503,7 @@ table#fedFunds td {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 60px;
+  top: 55px;
   height: 100%;
   bottom: 110px;
   z-index: 10;
@@ -1494,11 +1520,14 @@ table#fedFunds td {
 }
 #gilligan,
 #counties {
-  margin: 5px 0;
-  padding: 10px 0;
+  margin: 0;
+  padding: 0;
   position: relative;
   display: inline-block;
+  opacity: 1;
   width: 100vw;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
 }
 #gilligan figure img,
 #counties figure img {
@@ -1507,9 +1536,12 @@ table#fedFunds td {
   padding: 15px;
 }
 #gilligan figure h4,
-#counties figure h4 {
+#counties figure h4,
+#gilligan figure p,
+#counties figure p {
   position: relative;
-  margin: auto;
+  margin-left: 25%;
+  margin-right: 25%;
   opacity: 0;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
@@ -1519,7 +1551,7 @@ table#fedFunds td {
 }
 #counties figure:hover {
   position: relative;
-  background: rgba(180, 180, 180, 0.5);
+  opacity: 0.75;
 }
 #counties figure:hover h4 {
   background: rgba(210, 210, 210, 0.5);
@@ -1532,13 +1564,13 @@ table#fedFunds td {
 }
 #gilligan figure:hover {
   position: relative;
-  background: rgba(180, 180, 180, 0.5);
+  opacity: 0.75;
 }
-#gilligan figure:hover h4 {
+#gilligan figure:hover p {
   background: rgba(210, 210, 210, 0.5);
   position: absolute;
   opacity: 1;
-  line-height: 100%;
+  line-height: 65%;
   -webkit-transform: translate3d(0, -85%, 0) translate3d(0, -1.667em, 0);
   transform: translate3d(0, -85%, 0) translate3d(0, -1.667em, 0);
   z-index: 10;
@@ -1851,6 +1883,13 @@ table#fedFunds td {
   #counties figure img {
     width: 55%;
   }
+  #counties figure h4 {
+    font-size: 18px;
+    margin-left: 30%;
+    margin-right: 30%;
+    -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -4.445em, 0);
+    transform: translate3d(0, -100%, 0) translate3d(0, -4.445em, 0);
+  }
   #gilligan figure {
     margin: 0 auto;
     display: inline-block;
@@ -1859,6 +1898,13 @@ table#fedFunds td {
   }
   #gilligan figure img {
     width: 45%;
+  }
+  #gilligan figure p {
+    font-size: 18px;
+    margin-left: 30%;
+    margin-right: 30%;
+    -webkit-transform: translate3d(0, -85%, 0) translate3d(0, -1.667em, 0);
+    transform: translate3d(0, -85%, 0) translate3d(0, -1.667em, 0);
   }
 }
 /* Landscape medium-large device */

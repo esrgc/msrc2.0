@@ -470,6 +470,7 @@
 }
 
 .grid-box-spotlight {
+    // adjust width to specify grid dimensions
     width: 32.3232%;
 }
 
@@ -477,6 +478,9 @@
     width: 32.3232%;
     float: left;
     transition: opacity 0.6s;
+    //adjust margin for slight overlap of imgs
+    margin-left: 1px;
+    margin-right: -20px;
     z-index: 1001;
 }
 
@@ -562,7 +566,7 @@ table#fedFunds {
     display: block;
     position: absolute;
     //position: relative;
-    //background: rgba(255, 255, 255, .15);
+    background: rgba(255, 255, 255, .15);
     width: 100%;
     padding-bottom: -80px;
     bottom: 80px;
@@ -590,6 +594,17 @@ table#fedFunds {
     }
     h4 {
         .font-blocky-lt;
+    }
+}
+
+.imgHeader-sm-md {
+    .imgHeader-sm;
+    h2 {
+        .font-blocky-med;
+        height: 50%;
+    }
+    h4 {
+        .font-blocky-med;
     }
 }
 
@@ -865,7 +880,7 @@ table#fedFunds {
     flex-direction: column;
     position: fixed;
     //position: relative;
-    top: 60px;
+    top: 55px;
     height: 100%;
     bottom: 110px;
     //bottom: 0;
@@ -886,22 +901,42 @@ table#fedFunds {
     }
 }
 
+// #msrc-logo {
+//     margin: 5px 0;
+//     padding: 10px 0;
+//     position: relative;
+//     top: -55px;
+//     display: inline-block;
+//     width: 100vw;
+//     figure {
+//         img {
+//             width: 35%;
+//             margin: 0 auto;
+//             padding: 15px;
+//         }
+//     }
+// }
 #gilligan,
 #counties {
-    margin: 5px 0;
-    padding: 10px 0;
+    margin: 0;
+    padding: 0;
     position: relative;
     display: inline-block;
+    opacity: 1;
     width: 100vw;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
     figure {
         img {
             width: 45%;
             margin: 0 auto;
             padding: 15px;
         }
-        h4 {
+        h4,
+        p {
             position: relative;
-            margin: auto;
+            margin-left: 25%;
+            margin-right: 25%;
             opacity: 0;
             .font-blocky-drk;
             line-height: 0;
@@ -913,7 +948,8 @@ table#fedFunds {
 
 #counties figure:hover {
     position: relative;
-    background: rgba(180, 180, 180, 0.5);
+    //background: rgba(180, 180, 180, 0.5);
+    opacity: 0.75;
     h4 {
         background: rgba(210, 210, 210, 0.5);
         position: absolute;
@@ -927,12 +963,13 @@ table#fedFunds {
 
 #gilligan figure:hover {
     position: relative;
-    background: rgba(180, 180, 180, 0.5);
-    h4 {
+    //background: rgba(180, 180, 180, 0.5);
+    opacity: 0.75;
+    p {
         background: rgba(210, 210, 210, 0.5);
         position: absolute;
         opacity: 1;
-        line-height: 100%;
+        line-height: 65%;
         -webkit-transform: translate3d(0, -85%, 0) translate3d(0, -1.667em, 0);
         transform: translate3d(0, -85%, 0) translate3d(0, -1.667em, 0);
         z-index: 10;
