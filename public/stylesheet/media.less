@@ -138,6 +138,20 @@
 }
 
 @media screen and (min-width: 941px) {
+    .navbar,
+    .navbar-header {
+        min-height: 66.6px;
+    }
+    #logo_lrg {
+        font-size: 55px;
+    }
+    #logo_med {
+        font-size: 40px;
+    }
+    #logo_sm {
+        top: 65px;
+        font-size: 18px;
+    }
     #counties figure {
         display: block;
         float: left;
@@ -156,18 +170,19 @@
         .antiSkew2-matrix;
         left: 55%;
     }
-    #logoBrand {
-        padding-top: 5px;
-        ul li h2 {
-            font-size: 30px;
-        }
-        ul li h3 {
-            font-size: 25px;
-        }
-        ul li p {
-            padding-top: 10px;
-            font-size: 12px;
-        }
+    .navbar,
+    .navbar-header {
+        min-height: 51px;
+    }
+    #logo_lrg {
+        font-size: 46px;
+    }
+    #logo_med {
+        font-size: 32px;
+    }
+    #logo_sm {
+        top: 48px;
+        font-size: 14px;
     }
     #counties figure {
         display: block;
@@ -224,18 +239,19 @@
     #advisDiv {
         top: 49px;
     }
-    #logoBrand {
-        padding-top: 5px;
-        ul li h2 {
-            font-size: 30px;
-        }
-        ul li h3 {
-            font-size: 25px;
-        }
-        ul li p {
-            padding-top: 10px;
-            font-size: 12px;
-        }
+    .navbar,
+    .navbar-header {
+        min-height: 51px;
+    }
+    #logo_lrg {
+        font-size: 46px;
+    }
+    #logo_med {
+        font-size: 32px;
+    }
+    #logo_sm {
+        top: 48px;
+        font-size: 14px;
     }
 }
 
@@ -332,29 +348,116 @@
 
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////
+@media only screen and (min-device-width: 760px) and (max-device-width: 1030px) and (orientation: landscape) {
+    .navbar-header {
+        height: 65px;
+    }
+    #logo_lrg {
+        font-size: 55px;
+        //padding-bottom: 10px;
+    }
+    #logo_med {
+        font-size: 45px;
+    }
+    #logo_sm {
+        top: 60px;
+    }
+    .slide-toggle-close,
+    .slide-toggle-open {
+        font-size: 20px;
+    }
+    .toggle1,
+    .toggle2,
+    .toggle3,
+    .toggle4 {
+        .skew-matrix;
+    }
+    .toggle1 {
+        bottom: -38.886em; // -575 px
+    }
+    .toggle2 {
+        bottom: -44.444em; // -675 px
+    }
+    .toggle3 {
+        bottom: -50em; // -775 px
+    }
+    .toggle4 {
+        bottom: -55.555em; // -875 px
+    }
+    .toggle-text.ac_collapse {
+        .antiSkew-matrix;
+        left: 60%;
+    }
+    #votingMem,
+    #nonVoting {
+        padding: 0.556em 0.556em 2em 0.556em;
+    }
+    #execDiv,
+    #advisDiv {
+        top: 65px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (min-device-width: 760px) and (max-device-width: 1030px) and (orientation: portrait) {
+    .navbar-header {
+        height: 62px;
+    }
+    #logo_lrg {
+        font-size: 50px !important;
+        //padding-bottom: 10px;
+    }
+    #logo_med {
+        font-size: 40px !important;
+    }
+    #logo_sm {
+        top: 50px !important;
+        font-size: 16px !important;
+    }
+    .slide-toggle-close,
+    .slide-toggle-open {
+        font-size: 17px;
+    }
+    .toggle1 {
+        right: 0px;
+        left: 0px;
+        bottom: -47.222em; // -850 px
+    }
+    .toggle2 {
+        right: 0px;
+        left: 0px;
+        bottom: -52.778em; // -950 px
+    }
+    .toggle3 {
+        right: 0px;
+        left: 0px;
+        bottom: -58.336em; // -1050 px
+    }
+    .toggle4 {
+        right: 0px;
+        left: 0px;
+        bottom: -63.886em; // -1150 px
+    }
+    .footer_buffer {
+        padding-top: 60px;
+    }
+    #footer_button {
+        position: fixed;
+        bottom: 65px;
+        padding-bottom: -65px;
+        left: 49%;
+    }
+}
+
 
 /* Landscape medium-large device */
 
 @media only screen and (min-device-width: 410px) and (max-device-width: 740px) and (orientation: landscape) {
-    #logoBrand {
-        padding-top: 5px;
-        ul li h2 {
-            font-size: 30px;
-        }
-        ul li h3 {
-            font-size: 25px;
-        }
-        ul li p {
-            padding-top: 5px;
-            font-size: 12px;
-        }
+    #logo_lrg {
+        font-size: 35px !important;
     }
-    .navbar #navWrapper,
-    .navbar-header,
-    #logoBrand {
-        height: 35px;
-        min-height: 35px;
-        margin-bottom: 1px;
+    #logo_med {
+        font-size: 27px !important;
     }
     #nav-links p {
         font-size: 12px;
@@ -365,7 +468,6 @@
     .footer_button_div {
         position: fixed;
         bottom: 0px;
-        //padding-bottom: -10px;
     }
     .header {
         min-width: 100vw;
@@ -530,25 +632,15 @@
 }
 
 @media only screen and (min-device-width: 400px) and (max-device-width: 740px) and (orientation: portrait) {
-    #logoBrand {
-        padding-top: 5px;
-        ul li h2 {
-            font-size: 27px;
-        }
-        ul li h3 {
-            font-size: 22px;
-        }
-        ul li p {
-            padding-top: 5px;
-            font-size: 12px;
-        }
+    #logo_lrg {
+        font-size: 30px !important;
     }
-    .navbar #navWrapper,
-    .navbar-header,
-    #logoBrand {
-        height: 35px;
-        min-height: 35px;
-        margin-bottom: 1px;
+    #logo_med {
+        font-size: 22px !important;
+    }
+    #logo_sm {
+        top: 37px;
+        font-size: 12px !important;
     }
     #nav-links p {
         font-size: 12px;
@@ -684,31 +776,18 @@
     }
 }
 
-////////////////////////////////////////////////////////////
-////////////////////////////////////
-
-/* Landscape small mobile device */
-
+// ////////////////////////////////////////////////////////////
+// ////////////////////////////////////
+// /* Landscape small mobile device */
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: landscape) {
-    #logoBrand {
-        padding-top: 5px;
-        ul li h2 {
-            font-size: 27px;
-        }
-        ul li h3 {
-            font-size: 20px;
-        }
-        ul li p {
-            padding-top: 5px;
-            font-size: 12px;
-        }
+    #logo_lrg {
+        font-size: 35px !important;
     }
-    .navbar #navWrapper,
-    .navbar-header,
-    #logoBrand {
-        height: 35px;
-        min-height: 35px;
-        margin-bottom: 1px;
+    #logo_med {
+        font-size: 27px !important;
+    }
+    #logo_sm {
+        top: 37px;
     }
     #nav-links p {
         font-size: 10px;
@@ -866,25 +945,19 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: portrait) {
-    #logoBrand {
-        padding-top: 5px;
-        ul li h2 {
-            font-size: 23px;
-        }
-        ul li h3 {
-            font-size: 18px;
-        }
-        ul li p {
-            padding-top: 10px;
-            font-size: 9px;
-        }
+    .navbar,
+    .navbar-header {
+        min-height: 35px !important;
     }
-    .navbar #navWrapper,
-    .navbar-header,
-    #logoBrand {
-        height: 35px;
-        min-height: 35px;
-        margin-bottom: 1px;
+    #logo_lrg {
+        font-size: 22px !important;
+    }
+    #logo_med {
+        font-size: 18px !important;
+    }
+    #logo_sm {
+        top: 22px;
+        font-size: 8px !important;
     }
     #nav-links p {
         font-size: 8px;
