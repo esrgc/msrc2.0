@@ -21,9 +21,4 @@ function downloadLink(url) {
     var i = window.open(url, '_blank');
     i.focus();
 }
-// tiny routing function
-function divRouter(url) {
-   var i = window.location.href = url;
-   i.focus();
-}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////

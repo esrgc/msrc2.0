@@ -399,7 +399,7 @@ hr.drk {
 }
 /* carousel slides */
 .slide-1 {
-  background: url("../img/bg.jpg") no-repeat center center scroll;
+  background: url("../img/easton-img1.jpg") no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -410,7 +410,7 @@ hr.drk {
   -o-background-size: cover;
 }
 .slide-2 {
-  background: url("../img/newyork.jpg") no-repeat center center scroll;
+  background: url("../img/talbot-cnty1.jpg") no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -421,7 +421,7 @@ hr.drk {
   -o-background-size: cover;
 }
 .slide-3 {
-  background: url("../img/paris.jpg") no-repeat center center scroll;
+  background: url("../img/Cambridge-cove-beach.jpg") no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -432,7 +432,18 @@ hr.drk {
   -o-background-size: cover;
 }
 .slide-4 {
-  background: url("../img/sanfran.jpg") no-repeat center center scroll;
+  background: url("../img/caroline-cnty-dock.png") no-repeat center center scroll;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.slide-5 {
+  background: url("../img/dorchester-marsh.jpg") no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -733,6 +744,7 @@ figure.effect-move img {
   opacity: 0.9;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
+  max-height: 425px;
 }
 figure.effect-move:hover img,
 figure.effect-move:focus img {
@@ -787,7 +799,7 @@ figure.effect-move:focus h3 {
   width: 100%;
 }
 .about_bg {
-  background: url("../img/about.jpg") no-repeat center center;
+  background: url("../img/dorchester-county-lighthouse.jpg") no-repeat center center;
   background-attachment: fixed;
   display: block;
   width: 100vw;
@@ -964,8 +976,8 @@ figure.effect-move:focus h3 {
 #about-landing {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #e6e6e6;
-  top: 11.11em;
-  left: 4.45em;
+  top: 5.11em;
+  left: 2.45em;
   overflow: hidden;
 }
 #membersDiv {
