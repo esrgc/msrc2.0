@@ -34,17 +34,19 @@ router.get('/partners', function(req, res){
 	res.render('partners', { title: 'Partners'});	
 });
 
-//resources
+/// remove from routes when complete
+router.get('/testing', function(req, res){
+	res.render('testing', { title: 'testing'});	
+});
+
+/// resources page
 router.get('/resources', function(req, res){
 	res.render('resources', { title: 'Resources'});	
 });
 
 
 
-/// remove from routes when complete
-router.get('/testing', function(req, res){
-	res.render('testing', { title: 'testing'});	
-});
+
 
 
 
