@@ -35,8 +35,8 @@ router.get('/partners', function(req, res){
 });
 
 //resources
-router.get('/resources', function(req, res){
-	res.render('resources', { title: 'Resources'});	
+router.get('/resource', function(req, res){
+	res.render('resource', { title: 'Resources'});	
 });
 
 
