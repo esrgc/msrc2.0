@@ -24,17 +24,20 @@ router.get('/about', function(req, res){
 	res.render('about', { title: 'About'});	
 });
 
-//Test
+//committees
 router.get('/committees', function(req, res){
 	res.render('committees', { title: 'Committees'});	
 });
 
-//contact
+//partners
 router.get('/partners', function(req, res){
 	res.render('partners', { title: 'Partners'});	
 });
 
-
+//resources
+router.get('/resources', function(req, res){
+	res.render('resources', { title: 'Resources'});	
+});
 
 
 
