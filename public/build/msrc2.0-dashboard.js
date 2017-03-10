@@ -2,7 +2,6 @@
 $(window).load(function() {
     // for my first trick now you see them...no you dont
     // hide alot of things that can open later
-    
     $(".footer").hide();
     $('.comMenu').hide();
     $("#execDiv").hide();
