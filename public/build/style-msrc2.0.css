@@ -1624,14 +1624,6 @@ li.img-150x300 img {
     overflow: hidden;
   }
 }
-@media screen and (max-width: 1200px) {
-  #membersDiv2 {
-    width: 50%;
-  }
-  #membersDiv {
-    width: 50%;
-  }
-}
 @media only screen and (max-width: 1040px) {
   .gridItem {
     width: 32.33%;
