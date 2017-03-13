@@ -11,8 +11,9 @@
 $(document).ready(function() {
     if (navigator.userAgent.match(/Firefox/i)) {
         $("#logoBrand").css({ "padding-top": "10px" });
-        $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "125px" });
+        $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "140px" });
         $(".textBox").css({ "padding-bottom": "30px" });
+/*        $(".textBox-body").css({'margin-bottom': '30px'});*/
         $("#logo_lrg").css({
             "line-height": '35px',
             "font-size-adjust":"0.375"
