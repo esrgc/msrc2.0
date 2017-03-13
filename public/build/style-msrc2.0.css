@@ -1245,6 +1245,24 @@ table#fedFunds td {
   margin-top: 0;
   margin-bottom: 1em;
 }
+li.img-150x300 img {
+  width: 10%;
+}
+.sowHighlight-img {
+  margin: 6em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.sowHighlight-img li {
+  padding: 0 0 35px 0 !important;
+}
+.sowHighlight-img li img {
+  width: 10%;
+}
+.sowHighlight-img li p {
+  padding-left: 190px;
+  margin-top: -45px;
+}
 .records-textBox {
   display: block;
   position: fixed;
