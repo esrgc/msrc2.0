@@ -960,6 +960,7 @@ figure.effect-move:focus h3 {
   font-family: 'FontAwesome';
   font-size: 1em;
   color: #0d0d0d;
+  cursor: pointer;
 }
 .slide-toggle-close > .col,
 .slide-toggle-open > .col,
@@ -975,11 +976,14 @@ figure.effect-move:focus h3 {
   content: "\f068";
 }
 #about-landing {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #e6e6e6;
-  top: 5.11em;
-  left: 2.45em;
+  background: rgba(255, 255, 255, 0.75);
+  top: 20em;
+  left: 2em;
   overflow: hidden;
+}
+#about-landing p {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
 }
 .grid {
   display: block;
@@ -1040,6 +1044,7 @@ figure.effect-move:focus h3 {
   transition: opacity 0.6s;
   margin-left: 1px;
   margin-right: -20px;
+  cursor: pointer;
   z-index: 1001;
 }
 .gridItem img {
@@ -1116,6 +1121,7 @@ table#fedFunds td {
   width: 100%;
   height: 16.668em;
   padding: 10px 10px;
+  cursor: pointer;
 }
 .imgHeaderLeft p {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1139,6 +1145,7 @@ table#fedFunds td {
   width: 100%;
   height: 16.668em;
   padding: 10px 10px;
+  cursor: pointer;
 }
 .imgHeaderRight p {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1152,12 +1159,12 @@ table#fedFunds td {
   bottom: 80px;
   height: 50%;
 }
-.imgHeader-sm-drk h2 {
+.imgHeader-sm-drk a h2 {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #0d0d0d;
   height: 50%;
 }
-.imgHeader-sm-drk h4 {
+.imgHeader-sm-drk a h4 {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #0d0d0d;
 }
@@ -1169,12 +1176,12 @@ table#fedFunds td {
   bottom: 80px;
   height: 50%;
 }
-.imgHeader-sm-lt h2 {
+.imgHeader-sm-lt a h2 {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f2f2f2;
   height: 50%;
 }
-.imgHeader-sm-lt h4 {
+.imgHeader-sm-lt a h4 {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f2f2f2;
 }
@@ -1403,18 +1410,38 @@ table#fedFunds td {
   -ms-transform: skew(0deg, 30deg);
   -moz-transform: skew(0deg, 30deg);
 }
+#partner-header {
+  width: 100%;
+}
+#partner-header .partners-landing {
+  position: relative;
+  display: block;
+  background: rgba(255, 255, 255, 0.5);
+  top: 80px;
+  text-align: center;
+  width: 60%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+#partner-header .partners-landing p {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+#nested-container {
+  position: relative;
+}
 #imgcontainer {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 55px;
+  top: 75px;
   height: 100%;
   bottom: 110px;
   z-index: 10;
 }
 #imgcontainer .figure-nested {
   width: 100vw;
-  height: 90%;
+  height: 85%;
   overflow-y: auto;
   z-index: 0;
   bottom: 110px;
@@ -1435,14 +1462,15 @@ table#fedFunds td {
 }
 #gilligan figure img,
 #counties figure img {
-  width: 45%;
+  width: 40%;
   margin: 10px auto;
-  padding: 15px;
+  padding: 10px;
+  cursor: pointer;
 }
-#gilligan figure h4,
-#counties figure h4,
-#gilligan figure p,
-#counties figure p {
+#gilligan figure a h4,
+#counties figure a h4,
+#gilligan figure a p,
+#counties figure a p {
   position: relative;
   margin-top: -10px;
   margin-left: 25%;
@@ -1456,11 +1484,11 @@ table#fedFunds td {
 }
 #counties figure:hover {
   position: relative;
-  opacity: 0.75;
+  opacity: 0.85;
 }
-#counties figure:hover h4,
-#counties figure:hover p {
-  background: rgba(210, 210, 210, 0.5);
+#counties figure:hover a h4,
+#counties figure:hover a p {
+  background: rgba(210, 210, 210, 0.9);
   position: absolute;
   opacity: 1;
   line-height: 100%;
@@ -1470,11 +1498,11 @@ table#fedFunds td {
 }
 #gilligan figure:hover {
   position: relative;
-  opacity: 0.75;
+  opacity: 0.85;
 }
-#gilligan figure:hover h4,
-#gilligan figure:hover p {
-  background: rgba(210, 210, 210, 0.5);
+#gilligan figure:hover a h4,
+#gilligan figure:hover a p {
+  background: rgba(210, 210, 210, 0.9);
   position: absolute;
   opacity: 1;
   line-height: 100%;
