@@ -13,6 +13,8 @@
 @drk-to-color: #8c8c8c;
 @lt-from-color: #f2f2f2;
 @lt-to-color: #cccccc;
+@font-drk: #0d0d0d;
+@font-lt: #f2f2f2;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // background transition mixin
@@ -163,7 +165,6 @@
     -ms-transform: matrix(1, 0, 0, 1, 0, 0);
     -o-transform: matrix(1, 0, 0, 1, 0, 0);
     transform: matrix(1, 0, 0, 1, 0, 0);
-    //top: 160px !important;
 }
 
 .transition-toggle() {
@@ -189,6 +190,7 @@
 
 .toggle-text.ac_collapse {
     .font-blocky-drk;
+    color: #0d0d0d;
     position: relative;
     top: 0;
     left: 22%;
@@ -208,14 +210,14 @@
 }
 
 .toggle1 {
-    opacity: .25;
+    opacity: .45;
     bottom: -8.334em; // 150 px;
     margin-right: 0;
     z-index: 1;
 }
 
 .toggle2 {
-    opacity: .5;
+    opacity: .6;
     bottom: -16.668em; // 300 px
     margin-right: 0;
     z-index: 2;
@@ -229,7 +231,7 @@
 }
 
 .toggle4 {
-    opacity: 0.99;
+    opacity: 1;
     bottom: -33.336em; // 600 px
     margin-right: 0;
     z-index: 4;
@@ -248,7 +250,7 @@
     margin-left: 0;
     width: 100vw;
     height: 90vh;
-    opacity: 0.99;
+    opacity: 1;
     z-index: 10;
 }
 
@@ -264,7 +266,7 @@
     .no-gutters;
     font-family: 'FontAwesome';
     font-size: 1em;
-    color: @drk-from-color;
+    color: #0d0d0d;
 }
 
 .slide-toggle-close::after {
@@ -466,46 +468,40 @@ table#fedFunds {
 .imgHeader-sm() {
     display: block;
     position: absolute;
-    //position: relative;
-    background: rgba(255, 255, 255, .15);
+    //background: rgba(255, 255, 255, .15);
     width: 100%;
     padding-bottom: -80px;
     bottom: 80px;
-    //top: 0;
     height: 50%;
-    //color: white;
 }
 
 .imgHeader-sm-drk {
     .imgHeader-sm;
     h2 {
-        .font-blocky-drk;
+        // .font-blocky-drk;
+        .font-helvetica;
+        color: @font-drk;
         height: 50%;
     }
     h4 {
-        .font-blocky-drk;
+        // .font-blocky-drk;
+        .font-helvetica;
+        color: @font-drk;
     }
 }
 
 .imgHeader-sm-lt {
     .imgHeader-sm;
     h2 {
-        .font-blocky-lt;
+        // .font-blocky-lt;
+        .font-helvetica;
+        color: @font-lt;
         height: 50%;
     }
     h4 {
-        .font-blocky-lt;
-    }
-}
-
-.imgHeader-sm-md {
-    .imgHeader-sm;
-    h2 {
-        .font-blocky-med;
-        height: 50%;
-    }
-    h4 {
-        .font-blocky-med;
+        // .font-blocky-lt;
+        .font-helvetica;
+        color: @font-lt;
     }
 }
 
@@ -527,33 +523,14 @@ table#fedFunds {
     padding: 0 0 50px 0;
 }
 
-#votingMem-button {
-    .shaded_bg-drk;
-    opacity: 0.85;
-}
-
-#nonVoting-button {
-    .shaded_bg-drk2;
-    opacity: 0.85;
-}
-
-// .imgHeader-ceds {
-//     .imgHeader-sm;
-//     h2 {
-//         .font-blocky-drk;
-//         height: 50%;
-//         .matrix;
-//     } h4 {
-//         .font-blocky-drk;
-//         .matrix
-//     }
+// #votingMem-button {
+//     .shaded_bg-drk;
+//     opacity: 0.85;
 // }
-// .matrix() {
-//     -webkit-transform: matrix(-0.007, 1.000, -1.000, -0.007, 0, 0);
-//     -moz-transform: matrix(-0.007, 1.000, -1.000, -0.007, 0px, 0px);
-//     -ms-transform: matrix(-0.007, 1.000, -1.000, -0.007, 0, 0);
-//     -o-transform: matrix(-0.007, 1.000, -1.000, -0.007, 0, 0);
-//     transform: matrix(-0.007, 1.000, -1.000, -0.007, 0, 0);
+
+// #nonVoting-button {
+//     .shaded_bg-drk2;
+//     opacity: 0.85;
 // }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -807,21 +784,7 @@ table#fedFunds {
     }
 }
 
-// #msrc-logo {
-//     margin: 5px 0;
-//     padding: 10px 0;
-//     position: relative;
-//     top: -55px;
-//     display: inline-block;
-//     width: 100vw;
-//     figure {
-//         img {
-//             width: 35%;
-//             margin: 0 auto;
-//             padding: 15px;
-//         }
-//     }
-// }
+
 #gilligan,
 #counties {
     margin: 0;
@@ -835,12 +798,13 @@ table#fedFunds {
     figure {
         img {
             width: 45%;
-            margin: 0 auto;
+            margin: 10px auto;
             padding: 15px;
         }
         h4,
         p {
             position: relative;
+            margin-top: -10px;
             margin-left: 25%;
             margin-right: 25%;
             opacity: 0;
@@ -856,7 +820,7 @@ table#fedFunds {
     position: relative;
     //background: rgba(180, 180, 180, 0.5);
     opacity: 0.75;
-    h4 {
+    h4,p {
         background: rgba(210, 210, 210, 0.5);
         position: absolute;
         opacity: 1;
@@ -871,13 +835,13 @@ table#fedFunds {
     position: relative;
     //background: rgba(180, 180, 180, 0.5);
     opacity: 0.75;
-    p {
+    h4,p {
         background: rgba(210, 210, 210, 0.5);
         position: absolute;
         opacity: 1;
-        line-height: 65%;
-        -webkit-transform: translate3d(0, -85%, 0) translate3d(0, -1.667em, 0);
-        transform: translate3d(0, -85%, 0) translate3d(0, -1.667em, 0);
+        line-height: 100%;
+        -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -1.667em, 0);
+        transform: translate3d(0, -100%, 0) translate3d(0, -1.667em, 0);
         z-index: 10;
     }
 }

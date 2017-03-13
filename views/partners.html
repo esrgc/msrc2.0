@@ -5,8 +5,8 @@
             <!-- one line'r-->
             <!-- div.figure-nest.row-fluid#imgcontainer(div#counties(figure(img+h4)*3)+div#gilligan(figure(img+h4)*10)) -->
             <div id="imgcontainer">
-                <div class="figure-nested row-fluid">
-                    <div id="counties">
+                <div class="figure-nested">
+                    <div id="counties" class="row-fluid">
                         <figure onclick="downloadLink('https://www.carolinebusiness.com');">
                             <img src="./img/logos/carolseal2.png" alt="" align="middle">
                             <h4>Caroline County Economic Development</h4>
@@ -20,29 +20,33 @@
                             <h4>Talbot County Economic Development</h4>
                         </figure>
                     </div>
-                    <div id="gilligan">
+                    <div id="gilligan" class="row-fluid">
                         <figure onclick="downloadLink('http://www.ventureahead.org/');">
                             <img src="./img/logos/ESEC2.jpg" alt="" align="middle">
-                            <p>Eastern Shore Entrepreneurship Center</p>
+                            <h4>Eastern Shore Entrepreneurship Center</h4>
                         </figure>
                         <figure onclick="downloadLink('http://www.esrgc.org/');">
                             <img src="./img/logos/esrgc_logo.jpg" alt="" align="middle">
-                            <p>Eastern Shore Regional GIS Cooperative</p>
+                            <h4>Eastern Shore Regional GIS Cooperative</h4>
                         </figure>
                         <figure onclick="downloadLink('http://www.mdbc.us/');">
                             <img src="./img/logos/mdbc.gif" alt="" align="middle">
-                            <p>Maryland Broadband Cooperative</p>
-                        </figure>
-                        <figure onclick="downloadLink('http://www.mustbus.org/');">
-                            <img src="./img/logos/must.jpg" alt="" align="middle">
-                            <p>MUST Bus or call 1-866-330-MUST (6878)</p>
+                            <h4>Maryland Broadband Cooperative</h4>
                         </figure>
                     </div>
+                    <div id="gilligan" class="row-fluid">
+                        <figure onclick="downloadLink('http://www.mustbus.org/');">
+                            <img src="./img/logos/must.jpg" alt="" align="middle">
+                            <h4>MUST Bus or call 1-866-330-MUST (6878)</h4>
+                        </figure>
+                    </div>
+                    <!-- <div id="gilligan">
+</div>
+ -->
                     <br>
                 </div>
                 <br>
             </div>
-            
             <!-- end #imgcontainer -->
         </div>
         <div class="partner-skew1"></div>
