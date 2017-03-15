@@ -800,7 +800,7 @@ figure.effect-move:focus h3 {
   width: 100%;
 }
 .about_bg {
-  background: url("../img/dorchester-county-lighthouse.jpg") no-repeat center center;
+  background: url("../img/choptank-river-lighthouse.jpg") no-repeat center center;
   background-attachment: fixed;
   display: block;
   width: 100vw;
@@ -814,7 +814,7 @@ figure.effect-move:focus h3 {
   overflow-y: hidden;
 }
 .committees_bg {
-  background: url("../img/committees.jpg") no-repeat center center fixed;
+  background: url("../img/great-river-landscape-scenics.jpg") no-repeat center center fixed;
   background-attachment: fixed;
   display: block;
   width: 100vw;
@@ -1310,7 +1310,7 @@ li.img-150x300 img {
   background: -moz-linear-gradient(right, #333333, #8c8c8c);
   /* For Firefox 3.6 to 15*/
   background: linear-gradient(to right, #333333, #8c8c8c);
-  opacity: 0.6;
+  opacity: 0.8;
   left: 0;
   bottom: 0;
   height: 100%;
@@ -1369,7 +1369,7 @@ li.img-150x300 img {
   background: -moz-linear-gradient(left, #333333, #8c8c8c);
   /* For Firefox 3.6 to 15*/
   background: linear-gradient(to left, #333333, #8c8c8c);
-  opacity: 0.75;
+  opacity: 0.8;
   top: 3.335em;
   height: 90%;
   width: 65%;
