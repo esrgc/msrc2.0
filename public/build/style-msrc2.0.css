@@ -976,14 +976,13 @@ figure.effect-move:focus h3 {
   content: "\f068";
 }
 #about-landing {
-  background: rgba(255, 255, 255, 0.75);
-  top: 20em;
+  top: 5.11em;
   left: 2em;
   overflow: hidden;
 }
 #about-landing p {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333333;
+  color: #e6e6e6;
 }
 .grid {
   display: block;
@@ -1406,21 +1405,6 @@ li.img-150x300 img {
 .just-left {
   text-align: left;
 }
-/* .partner-skew1 {
-    .partners_bgc;
-    transform: skew(0deg, -30deg);
-    -webkit-transform: skew(0deg, -30deg);
-    -ms-transform: skew(0deg, -30deg);
-    -moz-transform: skew(0deg, -30deg);
-}
-
-.partner-skew2 {
-    .partners_bgc;
-    transform: skew(0deg, 30deg);
-    -webkit-transform: skew(0deg, 30deg);
-    -ms-transform: skew(0deg, 30deg);
-    -moz-transform: skew(0deg, 30deg);
-} */
 #partner-header {
   width: 100%;
   height: auto;
@@ -1698,6 +1682,9 @@ li.img-150x300 img {
     top: 48px;
     font-size: 14px !important;
   }
+  #partner-header .partners-landing img {
+    width: 20%;
+  }
   #gilligan figure,
   #counties figure {
     display: block;
@@ -1814,15 +1801,18 @@ li.img-150x300 img {
     height: 140vh;
     bottom: 110px;
   }
+  #partner-header .partners-landing img {
+    width: 35%;
+  }
   #gilligan figure,
   #counties figure {
     display: block;
-    float: left;
+    margin: 0 auto;
     width: 100%;
   }
   #gilligan figure img,
   #counties figure img {
-    width: 55%;
+    width: 35%;
   }
   #gilligan figure h4,
   #counties figure h4 {
@@ -2100,6 +2090,9 @@ li.img-150x300 img {
   }
   .figure-nested {
     height: 200vh;
+  }
+  #partner-header .partners-landing img {
+    width: 33%;
   }
   #gilligan figure,
   #counties figure {
@@ -2414,6 +2407,9 @@ li.img-150x300 img {
   }
   .figure-nested {
     height: 200vh;
+  }
+  #partner-header .partners-landing img {
+    width: 33%;
   }
   #gilligan figure,
   #counties figure {
