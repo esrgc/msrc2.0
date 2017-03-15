@@ -83,7 +83,7 @@
 }
 
 .about_bg {
-    background: url("@{images}/Dorchester/CRL_Twilight_P1160656_JillJasuta.jpg") no-repeat center center;
+    background: url("@{images}/dorchester-county-lighthouse.jpg") no-repeat center center;
     background-attachment: fixed;
     .fill;
     overflow-x: hidden;
@@ -100,10 +100,11 @@
 
 .partners_bg {
     //position: relative;
-    background: url("@{images}/partners.jpg") no-repeat center center scroll;
-    background-attachment: fixed;
+    background: url("@{images}/Dorchester/Hoopers-Island_sunrise_DorchesterTourism.jpg") no-repeat center center scroll;
+    //background-attachment: fixed;
     overflow-y: auto;
     .fill;
+
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -786,7 +787,8 @@ li.img-150x300 {
     z-index: 1;
 }
 
-.partner-skew1 {
+
+/* .partner-skew1 {
     .partners_bgc;
     transform: skew(0deg, -30deg);
     -webkit-transform: skew(0deg, -30deg);
@@ -800,22 +802,29 @@ li.img-150x300 {
     -webkit-transform: skew(0deg, 30deg);
     -ms-transform: skew(0deg, 30deg);
     -moz-transform: skew(0deg, 30deg);
-}
+} */
 
 #partner-header {
     width: 100%;
+    height: auto;
     //top: 70px;
+    //margin-top: 70px;
     .partners-landing {
         position: relative;
         display: block;
-        background: rgba(255, 255, 255, 0.5);
-        top: 80px;
+        //background: rgba(255, 255, 255, 0.5);
+        //top: 65px;
         text-align: center;
-        width: 60%;
+        width: 100%;
         padding: 0 15px;
         margin: 0 auto;
         p {
             .font-blocky-drk;
+        }
+        img {
+            width: 7%;
+            margin: 0 auto;
+            //padding: 10px;
         }
     }
 }
@@ -828,19 +837,19 @@ li.img-150x300 {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 75px;
+    top: 69px;
     height: 100%;
-    bottom: 110px;
+    //bottom: 110px;
     z-index: 10;
     .figure-nested {
         width: 100vw;
-        height: 85%;
+        height: 100%;
         overflow-y: auto;
         z-index: 0;
-        bottom: 110px;
+        //bottom: 110px;
         align-self: flex-end;
         padding-bottom: 125px;
-        margin-top: auto;
+        //margin-top: auto;
     }
 }
 
@@ -856,7 +865,7 @@ li.img-150x300 {
     transition: opacity 0.35s, transform 0.35s;
     figure {
         img {
-            width: 40%;
+            width: 30%;
             margin: 10px auto;
             padding: 10px;
             cursor: pointer;

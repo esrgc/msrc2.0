@@ -623,7 +623,7 @@ figure {
   figure.effect-move {
     display: block;
     float: left;
-    width: 33.31313131%;
+    width: 33.33%;
   }
 }
 /* All page's Footer section*/
@@ -744,6 +744,7 @@ figure.effect-move img {
   opacity: 0.9;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
+  min-height: 310px;
   max-height: 425px;
 }
 figure.effect-move:hover img,
@@ -755,11 +756,11 @@ figure.effect-move .floater::before {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 0.556em;
+  height: 1.5em;
   background: #fff;
   content: '';
-  -webkit-transform: translate3d(0, 0.556em, 0);
-  transform: translate3d(0, 0.556em, 0);
+  -webkit-transform: translate3d(0, -1.25em, 0);
+  transform: translate3d(0, -1.25em, 0);
 }
 figure.effect-move h3 {
   position: absolute;
@@ -799,7 +800,7 @@ figure.effect-move:focus h3 {
   width: 100%;
 }
 .about_bg {
-  background: url("../img/Dorchester/CRL_Twilight_P1160656_JillJasuta.jpg") no-repeat center center;
+  background: url("../img/dorchester-county-lighthouse.jpg") no-repeat center center;
   background-attachment: fixed;
   display: block;
   width: 100vw;
@@ -826,8 +827,7 @@ figure.effect-move:focus h3 {
   overflow: hidden;
 }
 .partners_bg {
-  background: url("../img/partners.jpg") no-repeat center center scroll;
-  background-attachment: fixed;
+  background: url("../img/Dorchester/Hoopers-Island_sunrise_DorchesterTourism.jpg") no-repeat center center scroll;
   overflow-y: auto;
   display: block;
   width: 100vw;
@@ -1406,44 +1406,40 @@ li.img-150x300 img {
 .just-left {
   text-align: left;
 }
-.partner-skew1 {
-  position: fixed;
-  background-color: white;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  transform: skew(0deg, -30deg);
-  -webkit-transform: skew(0deg, -30deg);
-  -ms-transform: skew(0deg, -30deg);
-  -moz-transform: skew(0deg, -30deg);
+/* .partner-skew1 {
+    .partners_bgc;
+    transform: skew(0deg, -30deg);
+    -webkit-transform: skew(0deg, -30deg);
+    -ms-transform: skew(0deg, -30deg);
+    -moz-transform: skew(0deg, -30deg);
 }
+
 .partner-skew2 {
-  position: fixed;
-  background-color: white;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  transform: skew(0deg, 30deg);
-  -webkit-transform: skew(0deg, 30deg);
-  -ms-transform: skew(0deg, 30deg);
-  -moz-transform: skew(0deg, 30deg);
-}
+    .partners_bgc;
+    transform: skew(0deg, 30deg);
+    -webkit-transform: skew(0deg, 30deg);
+    -ms-transform: skew(0deg, 30deg);
+    -moz-transform: skew(0deg, 30deg);
+} */
 #partner-header {
   width: 100%;
+  height: auto;
 }
 #partner-header .partners-landing {
   position: relative;
   display: block;
-  background: rgba(255, 255, 255, 0.5);
-  top: 80px;
   text-align: center;
-  width: 60%;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 #partner-header .partners-landing p {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
+}
+#partner-header .partners-landing img {
+  width: 7%;
+  margin: 0 auto;
 }
 #nested-container {
   position: relative;
@@ -1452,20 +1448,17 @@ li.img-150x300 img {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 75px;
+  top: 69px;
   height: 100%;
-  bottom: 110px;
   z-index: 10;
 }
 #imgcontainer .figure-nested {
   width: 100vw;
-  height: 85%;
+  height: 100%;
   overflow-y: auto;
   z-index: 0;
-  bottom: 110px;
   align-self: flex-end;
   padding-bottom: 125px;
-  margin-top: auto;
 }
 #gilligan,
 #counties {
@@ -1480,7 +1473,7 @@ li.img-150x300 img {
 }
 #gilligan figure img,
 #counties figure img {
-  width: 40%;
+  width: 30%;
   margin: 10px auto;
   padding: 10px;
   cursor: pointer;
