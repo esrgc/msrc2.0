@@ -800,7 +800,7 @@ figure.effect-move:focus h3 {
   width: 100%;
 }
 .about_bg {
-  background: url("../img/choptank-river-lighthouse.jpg") no-repeat center center;
+  background: url("../img/choptank-river-lighthouse-day.jpg") no-repeat center center;
   background-attachment: fixed;
   display: block;
   width: 100vw;
@@ -976,13 +976,14 @@ figure.effect-move:focus h3 {
   content: "\f068";
 }
 #about-landing {
+  background: rgba(255, 255, 255, 0.75);
   top: 5.11em;
   left: 2em;
   overflow: hidden;
 }
 #about-landing p {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #e6e6e6;
+  color: #333333;
 }
 .grid {
   display: block;
