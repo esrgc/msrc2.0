@@ -1410,6 +1410,7 @@ li.img-150x300 img {
 #partner-header {
   width: 100%;
   height: auto;
+  background-color: transparent;
 }
 #partner-header .partners-landing {
   position: relative;
