@@ -399,7 +399,7 @@ hr.drk {
 }
 /* carousel slides */
 .slide-1 {
-  background: url("../img/easton-img1.jpg") no-repeat center center scroll;
+  background: url("../img/Lori-R-Bramble/Blue Heron.jpg") no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -410,7 +410,7 @@ hr.drk {
   -o-background-size: cover;
 }
 .slide-2 {
-  background: url("../img/talbot-cnty1.JPG") no-repeat center center scroll;
+  background: url("../img/Robin-Burton/Church_Robin_Burton.jpg") no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -421,7 +421,7 @@ hr.drk {
   -o-background-size: cover;
 }
 .slide-3 {
-  background: url("../img/Cambridge-cove-beach.jpg") no-repeat center center scroll;
+  background: url("../img/Dorchester/Vienna by Robin Burton.jpg") no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -432,7 +432,7 @@ hr.drk {
   -o-background-size: cover;
 }
 .slide-4 {
-  background: url("../img/caroline-cnty-dock.png") no-repeat center center scroll;
+  background: url("../img/Lori-R-Bramble/2015 LB lighthouse 3.jpg") no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -443,7 +443,7 @@ hr.drk {
   -o-background-size: cover;
 }
 .slide-5 {
-  background: url("../img/dorchester-marsh.jpg") no-repeat center center scroll;
+  background: url("../img/Robin-Burton/Crab Pots Robin Burton.jpg") no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -744,8 +744,8 @@ figure.effect-move img {
   opacity: 0.9;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
-  min-height: 310px;
-  max-height: 425px;
+  min-height: 400px;
+  max-height: 400px;
 }
 figure.effect-move:hover img,
 figure.effect-move:focus img {
@@ -800,7 +800,7 @@ figure.effect-move:focus h3 {
   width: 100%;
 }
 .about_bg {
-  background: url("../img/choptank-river-lighthouse-day.jpg") no-repeat center center;
+  background: url("../img/Dorchester/Lighthouse_2041_Bev_Middleton.jpg") no-repeat center center;
   background-attachment: fixed;
   display: block;
   width: 100vw;
@@ -814,7 +814,7 @@ figure.effect-move:focus h3 {
   overflow-y: hidden;
 }
 .committees_bg {
-  background: url("../img/great-river-landscape-scenics.jpg") no-repeat center center fixed;
+  background: url("../img/Robin-Burton/Sunrise Robin Burton.jpg") no-repeat center center fixed;
   background-attachment: fixed;
   display: block;
   width: 100vw;
@@ -903,19 +903,19 @@ figure.effect-move:focus h3 {
   transform: rotate(0deg);
 }
 .toggle1 {
-  opacity: .45;
+  opacity: .6;
   bottom: -8.334em;
   margin-right: 0;
   z-index: 1;
 }
 .toggle2 {
-  opacity: .6;
+  opacity: .75;
   bottom: -16.668em;
   margin-right: 0;
   z-index: 2;
 }
 .toggle3 {
-  opacity: .75;
+  opacity: .9;
   bottom: -25em;
   margin-right: 0;
   z-index: 3;
