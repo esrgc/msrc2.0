@@ -33,9 +33,8 @@ $(window).load(function() {
         columnWidth: '.grid-box-spotlight',
         itemSelector: '.gridItem',
         percentPosition: true,
-        gutter: 1,
-        stagger: 45,
-
+        /*gutter: 1,*/
+        /*stagger: 45,*/
         initLayout: false
     });
 
@@ -43,7 +42,7 @@ $(window).load(function() {
 
 $(window).resize(function() {
     var $spotlightMasonry = $('#masonry-container-spotlight').masonry();
-    $spotlightMasonry.masonry('layout');
+    $spotlightMasonry.masonry('bindResize');
 });
 
 $(document).ready(function() {

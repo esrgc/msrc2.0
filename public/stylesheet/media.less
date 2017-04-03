@@ -57,6 +57,7 @@
     // }
 }
 
+
 @media screen and (max-width:1260px) {
     .toggle1,
     .toggle2,
@@ -91,6 +92,14 @@
     }
 }
 
+@media screen and (max-width:1240px) {
+    #gilligan figure img,
+    #counties figure img{
+        width: 36%;
+    }
+}
+
+
 @media only screen and( max-width: 1040px) {
     .gridItem {
         width: 32.33%;
@@ -114,6 +123,10 @@
     }
     .toggle4 {
         bottom: -56.25em; // -900 px
+    }
+    #gilligan figure img,
+    #counties figure img{
+        width: 45%;
     }
 }
 
@@ -305,10 +318,12 @@
             }
         }
     }
+    #imgcontainer {
+        overflow-y: auto;
+    }
     #gilligan figure,
     #counties figure {
         display: block;
-        //float: left;
         margin: 0 auto;
         width: 100%;
         img {
@@ -322,22 +337,6 @@
             transform: translate3d(0, -100%, 0) translate3d(0, -4.445em, 0);
         }
     }
-    // #gilligan figure {
-    //     margin: 0 auto;
-    //     display: inline-block;
-    //     padding: 0 10px;
-    //     width: 100%;
-    //     img {
-    //         width: 45%;
-    //     }
-    //     p {
-    //         font-size: 18px !important;
-    //         margin-left: 30%;
-    //         margin-right: 30%;
-    //         -webkit-transform: translate3d(0, -85%, 0) translate3d(0, -1.667em, 0);
-    //         transform: translate3d(0, -85%, 0) translate3d(0, -1.667em, 0);
-    //     }
-    // }
 }
 
 ////////////////////////////////////////////////////////////

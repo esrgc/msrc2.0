@@ -367,8 +367,8 @@
     float: left;
     transition: opacity 0.6s;
     //adjust margin for slight overlap of imgs
-    margin-left: 1px;
-    margin-right: -20px;
+    //  margin-left: -20px;
+    // margin-right: -20px; 
     cursor: pointer;
     z-index: 1001;
 }
@@ -780,12 +780,12 @@ li.img-150x300 {
 }
 
 #partner-header {
-    width: 80%;
-    height: auto;
+    // width: 80%;
+    // height: auto;
     margin: 0 auto;
     // set background color for text on partners page
     //background-color: transparent;
-    background: rgba(255, 255, 255, 0.75);
+    // background: rgba(255, 255, 255, 0.95);
     .partners-landing {
         position: relative;
         display: block;
@@ -810,17 +810,19 @@ li.img-150x300 {
 #imgcontainer {
     display: flex;
     flex-direction: column;
+    background: rgba(255, 255, 255, 0.95);
     position: fixed;
-    top: 69px;
-    height: 100%;
+    top: 80px;
+    height: 80%;
+    width: 50%;
     z-index: 10;
     .figure-nested {
-        width: 100vw;
+        // width: 100vw;
         height: 100%;
-        overflow-y: auto;
+        // overflow-y: auto;
         z-index: 0;
-        align-self: flex-end;
-        padding-bottom: 125px;
+        // align-self: flex-end;
+        // padding-bottom: 125px;
     }
 }
 
@@ -831,8 +833,8 @@ li.img-150x300 {
     position: relative;
     display: inline-block;
     opacity: 1;
-    width: 80vw;
-    left: 10%;
+    // width: 80vw;
+    // left: 10%;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
     figure {
@@ -847,8 +849,8 @@ li.img-150x300 {
             p {
                 position: relative;
                 margin-top: -10px;
-                margin-left: 30%;
-                margin-right: 30%;
+                margin-left: 10%;
+                margin-right: 10%;
                 opacity: 0;
                 .font-blocky-drk;
                 line-height: 0;
@@ -869,9 +871,9 @@ li.img-150x300 {
             background: rgba(210, 210, 210, 0.9);
             position: absolute;
             opacity: 1;
-            line-height: 100%;
-            -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -4.445em, 0);
-            transform: translate3d(0, -100%, 0) translate3d(0, -4.445em, 0);
+            line-height: 80%;
+            -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -1.445em, 0);
+            transform: translate3d(0, -100%, 0) translate3d(0, -1.445em, 0);
             z-index: 10;
         }
     }
@@ -887,9 +889,9 @@ li.img-150x300 {
             background: rgba(210, 210, 210, 0.9);
             position: absolute;
             opacity: 1;
-            line-height: 100%;
-            -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -1.667em, 0);
-            transform: translate3d(0, -100%, 0) translate3d(0, -1.667em, 0);
+            line-height: 80%;
+            -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -1.267em, 0);
+            transform: translate3d(0, -100%, 0) translate3d(0, -1.267em, 0);
             z-index: 10;
         }
     }
