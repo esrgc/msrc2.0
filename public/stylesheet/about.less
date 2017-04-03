@@ -104,7 +104,6 @@
     //background-attachment: fixed;
     overflow-y: auto;
     .fill;
-
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -408,12 +407,10 @@
     left: 0;
     right: 0;
     bottom: 30px;
-
     z-index: 3000;
     .textBox-body {
         height: 100%;
         overflow-y: auto;
-
         padding-bottom: 80px;
         left: 0;
         right: 0;
@@ -492,13 +489,11 @@ table#fedFunds {
     .imgHeader-sm;
     a {
         h2 {
-   
             .font-helvetica;
             color: @font-drk;
             height: 50%;
         }
         h4 {
-      
             .font-helvetica;
             color: @font-drk;
         }
@@ -509,13 +504,11 @@ table#fedFunds {
     .imgHeader-sm;
     a {
         h2 {
-         
             .font-helvetica;
             color: @font-lt;
             height: 50%;
         }
         h4 {
-      
             .font-helvetica;
             color: @font-lt;
         }
@@ -777,16 +770,15 @@ li.img-150x300 {
 }
 
 #partner-header {
-    width: 100%;
+    width: 80%;
     height: auto;
-    background-color: transparent;
-    //top: 70px;
-    //margin-top: 70px;
+    margin: 0 auto;
+    // set background color for text on partners page
+    //background-color: transparent;
+    background: rgba(255, 255, 255, 0.75);
     .partners-landing {
         position: relative;
         display: block;
-        //background: rgba(255, 255, 255, 0.5);
-        //top: 65px;
         text-align: center;
         width: 100%;
         padding: 0 15px;
@@ -797,7 +789,6 @@ li.img-150x300 {
         img {
             width: 7%;
             margin: 0 auto;
-            //padding: 10px;
         }
     }
 }
@@ -812,28 +803,26 @@ li.img-150x300 {
     position: fixed;
     top: 69px;
     height: 100%;
-    //bottom: 110px;
     z-index: 10;
     .figure-nested {
         width: 100vw;
         height: 100%;
         overflow-y: auto;
         z-index: 0;
-        //bottom: 110px;
         align-self: flex-end;
         padding-bottom: 125px;
-        //margin-top: auto;
     }
 }
 
 #gilligan,
 #counties {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     position: relative;
     display: inline-block;
     opacity: 1;
-    width: 100vw;
+    width: 80vw;
+    left: 10%;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
     figure {
@@ -848,8 +837,8 @@ li.img-150x300 {
             p {
                 position: relative;
                 margin-top: -10px;
-                margin-left: 25%;
-                margin-right: 25%;
+                margin-left: 30%;
+                margin-right: 30%;
                 opacity: 0;
                 .font-blocky-drk;
                 line-height: 0;
