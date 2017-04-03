@@ -1089,6 +1089,12 @@ figure.effect-move:focus h3 {
   left: 0;
   right: 0;
 }
+.textBox:not(.hidden) .textBox-body a {
+  color: blue;
+}
+.textBox:not(.hidden) .textBox-body ul li a {
+  color: blue;
+}
 .textBox a {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
