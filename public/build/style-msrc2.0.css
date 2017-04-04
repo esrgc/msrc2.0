@@ -1789,9 +1789,13 @@ li.img-150x300 img {
     top: 48px;
     font-size: 14px !important;
   }
+  .imgHeaderLeft,
+  .imgHeaderRight {
+    height: 18.668em;
+  }
 }
 .footer_buffer {
-  padding-top: 60px;
+  padding-top: 67px;
 }
 #footer_higher #footer_content {
   height: 20.833em;
