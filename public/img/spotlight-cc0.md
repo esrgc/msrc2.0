@@ -25,3 +25,11 @@ direct links to images below
 [data tools image](https://pixabay.com/en/programming-responsive-html-css-1873854/)
 
 
+example attribution if needed
+```
+<span class="spotlight-attribs">
+    Published under a <a about="https://creativecommons.org/publicdomain/zero/1.0/" rel="license" href="https://pixabay.com/en/service/terms/#usage"><i class="fa fa-creative-commons" aria-hidden="true"></i>
+        0 1.0 by Author-Name
+    </a>
+</span>
+```
