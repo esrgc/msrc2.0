@@ -27,6 +27,7 @@ $(window).load(function() {
     $(".advisMins").hide();
     $(".members").hide();
     $("#recordsWrapper, #recordsWrapper2, .records-textBox, .textBox").hide();
+    $('#spotlight-container').hide();
 });
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -96,7 +97,7 @@ $(document).ready(function() {
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
-$(window).load(function() {
+/*$(window).load(function() {
 
     // helper function for masonry and imagesLoaded
     $.fn.masonryImagesReveal = function($items) {
@@ -125,7 +126,7 @@ $(window).load(function() {
         percentPosition: true,
         /*gutter: 1,*/
         /*stagger: 45,*/
-        initLayout: false
+       /* initLayout: false
     });
 
 });
@@ -133,7 +134,7 @@ $(window).load(function() {
 $(window).resize(function() {
     var $spotlightMasonry = $('#masonry-container-spotlight').masonry();
     $spotlightMasonry.masonry('bindResize');
-});
+});*/
 
 $(document).ready(function() {
 
@@ -161,14 +162,14 @@ $(document).ready(function() {
         //test to get jquery traverse tree
         */
         var $attrID = $(this).attr('id');
-        var $spotlight = $('#masonry-container-spotlight').masonry();
+        /*var $spotlight = $('#masonry-container-spotlight').masonry();*/
         // var $records = $('#masonry-container-records').masonry();
         var $textBox = $('.textBox');
 
         /*console.log($attrID);*/
 
         // helper function for masonry and imagesLoaded
-        $.fn.masonryImagesReveal = function($items) {
+/*        $.fn.masonryImagesReveal = function($items) {
             var msnry = this.data('masonry');
             var itemSelector = msnry.options.itemSelector;
             // hide by default
@@ -186,7 +187,7 @@ $(document).ready(function() {
             });
 
             return this;
-        };
+        };*/
 
         if ($attrID == 'members') {
 
@@ -196,15 +197,16 @@ $(document).ready(function() {
         } else if ($attrID == 'spotlight') {
 
             $('.spotlight-wrapper').css({ "z-index": "1000" });
+            $('#spotlight-container').toggle('slide');
             // init masonry js with imagesLoaded for spotlight
-            var $spotlightMasonry = $('#masonry-container-spotlight').masonry({
+            /*var $spotlightMasonry = $('#masonry-container-spotlight').masonry({
                 containerStyle: null,
                 initLayout: false
             });
 
             $spotlightMasonry.masonryImagesReveal($('#images').find('.gridItem'));
             $("#masonry-container-spotlight").toggle('slow');
-            $spotlightMasonry.masonry('layout');
+            $spotlightMasonry.masonry('layout');*/
 
             if ($('.textBox').is(":visible")) {
                 $('.textBox').hide("slow");
@@ -234,7 +236,10 @@ $(document).ready(function() {
         return false;
     });
 
-    var $clickSpotlight = $('#masonry-container-spotlight').masonry();
+    // use for masonry layout
+    // var $clickSpotlight = $('#masonry-container-spotlight').masonry();
+    // use for new layout without masonry
+    var $clickSpotlight = $('#spotlight-container');
     // make masonry images clickable 
     $clickSpotlight.on('click', '.gridItem', function(e) {
         e.preventDefault();

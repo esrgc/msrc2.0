@@ -321,7 +321,7 @@
 }
 
 .transitions-enabled.grid .gridItem,
-.transitions-enabled.grid .records-gridItem {
+.transitions-enabled.grid .gridItem img{
     -webkit-animation: moveFromBottom 300ms ease;
     -moz-animation: moveFromBottom 300ms ease;
     -ms-animation: moveFromBottom 300ms ease;
@@ -336,12 +336,12 @@
 
 .transitions-enabled.grid,
 .transitions-enabled.grid .gridItem,
-.transitions-enabled.grid .records-gridItem {
-    -webkit-transition-duration: 0s;
-    -moz-transition-duration: 0s;
-    -ms-transition-duration: 0s;
-    -o-transition-duration: 0s;
-    transition-duration: 0s;
+.transitions-enabled.grid .gridItem img {
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -ms-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
 }
 
 .transitions-enabled.grid {
@@ -362,6 +362,27 @@
     width: 32.3232%;
 }
 
+#spotlight-container {
+    width: 60%;
+}
+
+.spotlight-runner {
+    max-height: 340px;
+    .no-padding;
+    .no-gutters;
+}
+
+.spotlight-attribs {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 6px;
+}
+
+.spotlight-attribs::before {
+    content: '\f25e';
+}
+
 .gridItem {
     width: 32.3232%;
     float: left;
@@ -376,7 +397,9 @@
 .gridItem img {
     display: block;
     width: 100%;
-    height: auto;
+    // height: auto;
+    max-height: 240px;
+    min-height: 240px;
 }
 
 .spotlight-wrapper {
@@ -384,10 +407,11 @@
     text-align: center;
     height: 80vh;
     width: 100%;
-    top: 4.722em !important;
-    padding: 0 0 60px 0;
-    margin: 0;
-    right: 0;
+    // top: 4.722em !important;
+    // padding: 0 0 60px 0;
+    margin: 0 auto;
+    // right: 0;
+    // left: 12%;
     bottom: 0;
     overflow-y: auto;
     z-index: -1;
@@ -485,20 +509,20 @@ table#fedFunds {
 
 // hovering text for spotlight masonry img's
 .imgHeader-sm() {
-    display: block;
+    // display: block;
     position: absolute;
     //background: rgba(255, 255, 255, .15);
     width: 100%;
-    padding-bottom: -80px;
-    bottom: 80px;
-    height: 50%;
+    //padding-bottom: -80px;
+    bottom: 60px;
+    // height: 50%;
     // cursor: pointer;
 }
 
 .imgHeader-sm-drk {
     .imgHeader-sm;
     a {
-        h2 {
+        h3 {
             .font-helvetica;
             color: @font-drk;
             height: 50%;
@@ -513,7 +537,7 @@ table#fedFunds {
 .imgHeader-sm-lt {
     .imgHeader-sm;
     a {
-        h2 {
+        h3 {
             .font-helvetica;
             color: @font-lt;
             height: 50%;
@@ -538,8 +562,8 @@ table#fedFunds {
 }
 
 .padding-bottom {
-    bottom: 50px;
-    padding: 0 0 50px 0;
+    bottom: 10px;
+    padding: 0 0 10px 0;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////

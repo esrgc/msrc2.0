@@ -1004,7 +1004,7 @@ figure.effect-move:focus h3 {
   transition-property: height;
 }
 .transitions-enabled.grid .gridItem,
-.transitions-enabled.grid .records-gridItem {
+.transitions-enabled.grid .gridItem img {
   -webkit-animation: moveFromBottom 300ms ease;
   -moz-animation: moveFromBottom 300ms ease;
   -ms-animation: moveFromBottom 300ms ease;
@@ -1018,12 +1018,12 @@ figure.effect-move:focus h3 {
 }
 .transitions-enabled.grid,
 .transitions-enabled.grid .gridItem,
-.transitions-enabled.grid .records-gridItem {
-  -webkit-transition-duration: 0s;
-  -moz-transition-duration: 0s;
-  -ms-transition-duration: 0s;
-  -o-transition-duration: 0s;
-  transition-duration: 0s;
+.transitions-enabled.grid .gridItem img {
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -ms-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
 }
 .transitions-enabled.grid {
   -webkit-transition: all 300ms linear;
@@ -1039,6 +1039,30 @@ figure.effect-move:focus h3 {
 .grid-box-spotlight {
   width: 32.3232%;
 }
+#spotlight-container {
+  width: 60%;
+}
+.spotlight-runner {
+  max-height: 340px;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-right: 0;
+  margin-left: 0;
+}
+.spotlight-runner > .col,
+.spotlight-runner > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.spotlight-attribs {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 6px;
+}
+.spotlight-attribs::before {
+  content: '\f25e';
+}
 .gridItem {
   width: 32.3232%;
   float: left;
@@ -1049,17 +1073,15 @@ figure.effect-move:focus h3 {
 .gridItem img {
   display: block;
   width: 100%;
-  height: auto;
+  max-height: 240px;
+  min-height: 240px;
 }
 .spotlight-wrapper {
   position: absolute;
   text-align: center;
   height: 80vh;
   width: 100%;
-  top: 4.722em !important;
-  padding: 0 0 60px 0;
-  margin: 0;
-  right: 0;
+  margin: 0 auto;
   bottom: 0;
   overflow-y: auto;
   z-index: -1;
@@ -1157,14 +1179,11 @@ table#fedFunds td {
   color: #e6e6e6;
 }
 .imgHeader-sm-drk {
-  display: block;
   position: absolute;
   width: 100%;
-  padding-bottom: -80px;
-  bottom: 80px;
-  height: 50%;
+  bottom: 60px;
 }
-.imgHeader-sm-drk a h2 {
+.imgHeader-sm-drk a h3 {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #0d0d0d;
   height: 50%;
@@ -1174,14 +1193,11 @@ table#fedFunds td {
   color: #0d0d0d;
 }
 .imgHeader-sm-lt {
-  display: block;
   position: absolute;
   width: 100%;
-  padding-bottom: -80px;
-  bottom: 80px;
-  height: 50%;
+  bottom: 60px;
 }
-.imgHeader-sm-lt a h2 {
+.imgHeader-sm-lt a h3 {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f2f2f2;
   height: 50%;
@@ -1200,8 +1216,8 @@ table#fedFunds td {
   padding: 0 50px 0 0;
 }
 .padding-bottom {
-  bottom: 50px;
-  padding: 0 0 50px 0;
+  bottom: 10px;
+  padding: 0 0 10px 0;
 }
 .records-wrapper {
   display: block;
@@ -1602,6 +1618,13 @@ li.img-150x300 img {
     left: 1.5625em;
     overflow: hidden;
   }
+  #spotlight-container {
+    width: 65%;
+  }
+  .gridItem img {
+    max-height: 200px;
+    min-height: 200px;
+  }
 }
 @media screen and (max-width: 1240px) {
   #gilligan figure img,
@@ -1693,6 +1716,10 @@ li.img-150x300 img {
   #logo_sm {
     top: 48px;
     font-size: 14px !important;
+  }
+  .gridItem img {
+    max-height: 160px;
+    min-height: 160px;
   }
   #partner-header .partners-landing img {
     width: 20%;
@@ -1836,6 +1863,9 @@ li.img-150x300 img {
     margin-right: 30%;
     -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -4.445em, 0);
     transform: translate3d(0, -100%, 0) translate3d(0, -4.445em, 0);
+  }
+  .gridItem img {
+    max-height: 1000px;
   }
 }
 @media only screen and (min-device-width: 760px) and (max-device-width: 1030px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {

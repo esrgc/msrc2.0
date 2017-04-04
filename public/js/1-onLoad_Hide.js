@@ -27,5 +27,6 @@ $(window).load(function() {
     $(".advisMins").hide();
     $(".members").hide();
     $("#recordsWrapper, #recordsWrapper2, .records-textBox, .textBox").hide();
+    $('#spotlight-container').hide();
 });
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
