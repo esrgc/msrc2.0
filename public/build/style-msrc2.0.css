@@ -1319,6 +1319,11 @@ li.img-150x300 img {
   padding-left: 20px;
   z-index: 100;
 }
+#membersSlide {
+  height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 200px;
+}
 #leftDiv {
   display: block;
   position: fixed;
@@ -1461,6 +1466,7 @@ li.img-150x300 img {
 }
 #imgcontainer .figure-nested {
   height: 100%;
+  overflow-y: auto;
   z-index: 0;
 }
 #gilligan,
@@ -2090,9 +2096,6 @@ li.img-150x300 img {
   #membersDiv2 {
     top: 0px !important;
   }
-  #membersDiv {
-    width: 50%;
-  }
   #membersDiv2 {
     width: 50%;
   }
@@ -2134,7 +2137,9 @@ li.img-150x300 img {
     margin-left: 5px;
   }
   .figure-nested {
-    height: 200vh;
+    height: 100vh;
+    overflow-y: auto;
+    padding-bottom: 80px;
   }
   #partner-header .partners-landing img {
     width: 33%;
@@ -2451,7 +2456,9 @@ li.img-150x300 img {
     margin-left: 5px;
   }
   .figure-nested {
-    height: 200vh;
+    height: 100vh;
+    overflow-y: auto;
+    padding-bottom: 100px;
   }
   #partner-header .partners-landing img {
     width: 33%;
