@@ -286,6 +286,7 @@ ul#myTopnav {
   overflow: hidden;
 }
 ul#myTopnav li {
+  margin-top: 10px;
   float: left;
 }
 ul#myTopnav li a {
@@ -1076,8 +1077,8 @@ figure.effect-move:focus h3 {
 .gridItem img {
   display: block;
   width: 100%;
-  max-height: 240px;
-  min-height: 240px;
+  max-height: 200px;
+  min-height: 200px;
 }
 .spotlight-wrapper {
   position: absolute;
@@ -1458,12 +1459,11 @@ li.img-150x300 img {
   position: relative;
 }
 #imgcontainer {
-  display: flex;
-  flex-direction: column;
   background: rgba(255, 255, 255, 0.95);
   position: fixed;
   top: 80px;
-  height: 80%;
+  left: 25%;
+  height: 78%;
   width: 50%;
   z-index: 10;
 }
@@ -1472,6 +1472,7 @@ li.img-150x300 img {
   z-index: 0;
 }
 #gilligan,
+#gilligan2,
 #counties {
   margin: 0 auto;
   padding: 0;
@@ -1481,16 +1482,25 @@ li.img-150x300 img {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
 }
+#gilligan figure,
+#gilligan2 figure,
+#counties figure {
+  display: float;
+  float: left;
+}
 #gilligan figure img,
+#gilligan2 figure img,
 #counties figure img {
-  width: 30%;
+  width: 75%;
   margin: 10px auto;
   padding: 10px;
   cursor: pointer;
 }
 #gilligan figure a h4,
+#gilligan2 figure a h4,
 #counties figure a h4,
 #gilligan figure a p,
+#gilligan2 figure a p,
 #counties figure a p {
   position: relative;
   margin-top: -10px;
@@ -1503,33 +1513,14 @@ li.img-150x300 img {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
 }
-#counties figure:hover {
-  position: relative;
-  opacity: 0.85;
+#counties figure {
+  width: 20%;
 }
-#counties figure:hover a h4,
-#counties figure:hover a p {
-  background: rgba(210, 210, 210, 0.9);
-  position: absolute;
-  opacity: 1;
-  line-height: 80%;
-  -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -1.445em, 0);
-  transform: translate3d(0, -100%, 0) translate3d(0, -1.445em, 0);
-  z-index: 10;
+#gilligan figure {
+  width: 25%;
 }
-#gilligan figure:hover {
-  position: relative;
-  opacity: 0.85;
-}
-#gilligan figure:hover a h4,
-#gilligan figure:hover a p {
-  background: rgba(210, 210, 210, 0.9);
-  position: absolute;
-  opacity: 1;
-  line-height: 80%;
-  -webkit-transform: translate3d(0, -100%, 0) translate3d(0, -1.267em, 0);
-  transform: translate3d(0, -100%, 0) translate3d(0, -1.267em, 0);
-  z-index: 10;
+#gilligan2 figure {
+  width: 33.33%;
 }
 .footer_wrapper_all {
   display: block;
@@ -1635,10 +1626,6 @@ li.img-150x300 img {
   }
 }
 @media screen and (max-width: 1240px) {
-  #gilligan figure img,
-  #counties figure img {
-    width: 36%;
-  }
 }
 @media only screen and (max-width: 1040px) {
   .gridItem {
@@ -1694,12 +1681,6 @@ li.img-150x300 img {
     top: 65px;
     font-size: 18px !important;
   }
-  #gilligan figure,
-  #counties figure {
-    display: block;
-    float: left;
-    width: 33.31313131%;
-  }
 }
 @media screen and (max-width: 940px) {
   .toggle-text.ac_collapse {
@@ -1732,12 +1713,13 @@ li.img-150x300 img {
   #partner-header .partners-landing img {
     width: 20%;
   }
+  #gilligan2 figure,
   #gilligan figure,
   #counties figure {
     display: block;
     float: left;
-    width: 33.333%;
   }
+  #gilligan2 figure img,
   #gilligan figure img,
   #counties figure img {
     width: 55%;
@@ -1765,7 +1747,6 @@ li.img-150x300 img {
   .figure-nested {
     height: 140vh;
     bottom: 110px;
-    overflow-y: auto;
   }
 }
 @media screen and (min-width: 800px) {
@@ -1862,16 +1843,19 @@ li.img-150x300 img {
   #imgcontainer {
     overflow-y: auto;
   }
+  #gilligan2 figure,
   #gilligan figure,
   #counties figure {
     display: block;
     margin: 0 auto;
     width: 100%;
   }
+  #gilligan2 figure img,
   #gilligan figure img,
   #counties figure img {
     width: 35%;
   }
+  #gilligan2 figure h4,
   #gilligan figure h4,
   #counties figure h4 {
     font-size: 18px !important;
@@ -2154,17 +2138,19 @@ li.img-150x300 img {
   #partner-header .partners-landing img {
     width: 33%;
   }
+  #gilligan2 figure,
   #gilligan figure,
   #counties figure {
     display: block;
     float: left;
-    width: 33.33%;
   }
+  #gilligan2 figure img,
   #gilligan figure img,
   #counties figure img {
     padding: 0;
     width: 33%;
   }
+  #gilligan2 figure h4,
   #gilligan figure h4,
   #counties figure h4 {
     font-size: 12px !important;
@@ -2473,17 +2459,19 @@ li.img-150x300 img {
   #partner-header .partners-landing img {
     width: 33%;
   }
+  #gilligan2 figure,
   #gilligan figure,
   #counties figure {
     display: block;
     float: left;
-    width: 33.33%;
   }
+  #gilligan2 figure img,
   #gilligan figure img,
   #counties figure img {
     padding: 0;
     width: 33%;
   }
+  #gilligan2 figure h4,
   #gilligan figure h4,
   #counties figure h4 {
     font-size: 10px !important;
