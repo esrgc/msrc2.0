@@ -29,6 +29,13 @@ $(window).load(function() {
     $("#recordsWrapper, #recordsWrapper2, .records-textBox, .textBox").hide();
     $('#spotlight-container').hide();
 });
+
+window.addEventListener('load',function() {
+    setTimeout(function() {
+        // this should hide the address bar on mobile phones
+        window.scrollTo(0, 1);
+    }, 0);
+});
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
