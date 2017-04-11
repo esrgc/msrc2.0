@@ -1912,13 +1912,35 @@ li.img-150x300 img {
     font-size: 1.2em;
   }
   .toggle1 {
-    bottom: -45em;
+    bottom: -40em;
   }
   .toggle2 {
-    bottom: -50em;
+    bottom: -45em;
   }
   .toggle3 {
-    bottom: -55em;
+    bottom: -50em;
+  }
+  .toggle4 {
+    bottom: -80em;
+  }
+}
+@media screen and (max-width: 760px) and (max-height: 713px) {
+  #about-landing {
+    top: 6em;
+  }
+  #angle1 h1,
+  #angle2 h1,
+  #angle3 h1 {
+    font-size: 1.2em;
+  }
+  .toggle1 {
+    bottom: -35em;
+  }
+  .toggle2 {
+    bottom: -40em;
+  }
+  .toggle3 {
+    bottom: -45em;
   }
   .toggle4 {
     bottom: -80em;
