@@ -2029,6 +2029,11 @@ li.img-150x300 img {
     width: 45%;
   }
 }
+@media only screen and (max-height: 689px) {
+  #about-landing {
+    max-height: 60vh;
+  }
+}
 @media only screen and (min-width: 701px) and (max-width: 1040px) {
   .records-gridItem {
     width: 99%;
