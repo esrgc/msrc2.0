@@ -1,4 +1,8 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * Author: Carl Flint
+ * 
+ */
 $(window).load(function() {
     // for my first trick now you see them...no you dont
     // hide alot of things that can open later
@@ -29,14 +33,4 @@ $(window).load(function() {
     $("#recordsWrapper, #recordsWrapper2, .records-textBox, .textBox").hide();
     $('#spotlight-container').hide();
 });
-
-
-// window.addEventListener('load', function() {
-//     setTimeout(function() {
-//         // this should hide the address bar on mobile phones
-//         window.scrollTo(0, 1);
-//     }, 0);
-// });
-
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
