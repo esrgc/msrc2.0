@@ -2899,7 +2899,7 @@ li.img-150x300 img {
 }
 @media only screen and (min-device-width: 410px) and (max-device-width: 740px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   #logo_lrg {
-    font-size: 35px !important;
+    font-size: 37px !important;
   }
   #logo_sm {
     top: 48px;
