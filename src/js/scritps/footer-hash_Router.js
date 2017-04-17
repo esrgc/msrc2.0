@@ -2,7 +2,6 @@
 
 $(window).on('hashchange', function(e) {
     e.preventDefault();
-    //e.stopPropagation();
 
     if (location.hash == "#comCEDS" || location.hash == "#comEM" || location.hash == "#comGIS" || location.hash == "#comIT" || location.hash == "#comMUST") {
         $('#advisGroup').trigger('click');
@@ -16,7 +15,7 @@ $(window).on('hashchange', function(e) {
 
 });
 
-$(window).load(function() {
+$(window).on('load', function() {
     if (window.location.hash) {
         $(window).trigger('hashchange');
     }

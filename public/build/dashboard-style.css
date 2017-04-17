@@ -398,7 +398,7 @@ hr.drk {
 }
 /* carousel slides */
 .slide-1 {
-  background: url("../img/Lori-R-Bramble/Blue Heron-1920x2629.jpg") no-repeat center center scroll;
+  background: url(1b408580600f6b842435391d02ea5f9a.jpg) no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -409,7 +409,7 @@ hr.drk {
   -o-background-size: cover;
 }
 .slide-2 {
-  background: url("../img/Robin-Burton/Church_Robin_Burton-1920x2783.jpg") no-repeat center center scroll;
+  background: url(3822e3f076a3464e6cde9d7f9c5e68cf.jpg) no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -420,7 +420,7 @@ hr.drk {
   -o-background-size: cover;
 }
 .slide-3 {
-  background: url("../img/Robin-Burton/Vienna-by-Robin-Burton1920x1245.jpg") no-repeat center center scroll;
+  background: url(0fb0306caee51daa9b6bcc36aee4e46a.jpg) no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -431,7 +431,7 @@ hr.drk {
   -o-background-size: cover;
 }
 .slide-4 {
-  background: url("../img/Lori-R-Bramble/2015 LB lighthouse 3-1920x1387.jpg") no-repeat center center scroll;
+  background: url(d7371b9297ae2df09db401670187f33d.jpg) no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -442,7 +442,7 @@ hr.drk {
   -o-background-size: cover;
 }
 .slide-5 {
-  background: url("../img/Robin-Burton/Crab Pots Robin Burton-1920x1368.jpg") no-repeat center center scroll;
+  background: url(da0da272ed489e9c30bbe015631ca55a.jpg) no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -693,10 +693,10 @@ figure {
   color: #e6e6e6;
 }
 .toggle-close:after {
-  content: "\f150";
+  content: "\F150";
 }
 .toggle-open:after {
-  content: "\f151";
+  content: "\F151";
 }
 .footer-bottom {
   background-color: #071e35;
@@ -787,7 +787,7 @@ figure.effect-move:focus h3 {
   width: 100%;
 }
 .about_bg {
-  background: url("../img/Dorchester/Lighthouse_2041_Bev_Middleton.jpg") no-repeat center center;
+  background: url(41f7331a3167d9060ba283171b1a6fd1.jpg) no-repeat center center;
   background-attachment: fixed;
   display: block;
   width: 100vw;
@@ -801,7 +801,7 @@ figure.effect-move:focus h3 {
   overflow-y: hidden;
 }
 .committees_bg {
-  background: url("../img/Robin-Burton/Sunrise Robin Burton.jpg") no-repeat center center fixed;
+  background: url(3ee6e015184d0d558dec05d150d5e727.jpg) no-repeat center center fixed;
   background-attachment: fixed;
   display: block;
   width: 100vw;
@@ -814,7 +814,7 @@ figure.effect-move:focus h3 {
   overflow: hidden;
 }
 .partners_bg {
-  background: url("../img/Dorchester/Hoopers-Island_sunrise_DorchesterTourism.jpg") no-repeat center center scroll;
+  background: url(ec936444af4057ff1030692bd935edf9.jpg) no-repeat center center scroll;
   overflow-y: auto;
   display: block;
   width: 100vw;
@@ -957,10 +957,10 @@ figure.effect-move:focus h3 {
   padding-left: 0;
 }
 .slide-toggle-close::after {
-  content: "\f067";
+  content: "\F067";
 }
 .slide-toggle-open::after {
-  content: "\f068";
+  content: "\F068";
 }
 #about-landing {
   background: rgba(255, 255, 255, 0.75);
@@ -3423,3 +3423,5 @@ li.img-150x300 img {
     min-height: 200px;
   }
 }
+
+/*# sourceMappingURL=dashboard-style.css.map*/

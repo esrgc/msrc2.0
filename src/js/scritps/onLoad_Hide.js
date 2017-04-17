@@ -1,9 +1,9 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /**
  * Author: Carl Flint
- * 
+ *
  */
-$(window).load(function() {
+$(window).on('load', function() {
     // for my first trick now you see them...no you dont
     // hide alot of things that can open later
     $(".footer").hide();
