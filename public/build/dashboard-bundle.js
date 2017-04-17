@@ -10,6 +10,7 @@ webpackJsonp([0],[
 
 // populate a button to return to top of page when scrolling down
 $(document).ready(function () {
+
     //#to-top button appears after scrolling
     var fixed = false;
     $(document).scroll(function () {
@@ -383,7 +384,9 @@ $(document).ready(function () {
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {// functional hash location change function
+/* WEBPACK VAR INJECTION */(function($) {
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// functional hash location change function
 
 $(window).on('hashchange', function (e) {
     e.preventDefault();
@@ -403,7 +406,6 @@ $(window).on('load', function () {
         $(window).trigger('hashchange');
     }
 });
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
