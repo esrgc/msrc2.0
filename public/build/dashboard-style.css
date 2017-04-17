@@ -7361,6 +7361,7 @@ figure {
   width: 100%;
   background: #071e35;
   padding-top: 63px;
+  z-index: 67;
 }
 .footer {
   display: block;
@@ -7370,7 +7371,7 @@ figure {
   width: 100%;
   padding: 1.112em 0;
   line-height: 70%;
-  z-index: 0;
+  z-index: 80;
 }
 .footer_button_div {
   background-color: transparent;
@@ -8532,12 +8533,6 @@ li.img-150x300 img {
   .imgHeaderRight {
     height: 18.668em;
   }
-}
-.footer_buffer {
-  padding-top: 67px;
-}
-#footer_higher #footer_content {
-  height: 20.833em;
 }
 @media screen and (max-height: 760px) {
   .fa-5x {
