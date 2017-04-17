@@ -3,19 +3,26 @@
 *
 * Author: Carl Flint, ESRGC
 */
+
 // import bootstrap
 @import "~bootstrap/less/bootstrap.less";
+
 // import all custom less files
-@import "typography.less";
-@import "home.less";
-@import "about.less";
-@import "media.less";
-@import "min-media.less";
+@import "typography.less";  // define font sizes dynamically
+
+@import "home.less"; // styles for home page and global footer
+
+@import "about.less"; // styles for about, committees and partners pages
+
+@import "media.less"; // general media queries
+
+@import "min-media.less"; // minimum screen size media queries
+
 // mobile phone and tablet media queries
-@import "sm-mobile-media.less";
+@import "sm-mobile-media.less"; // min-device-width: 320px and max-device-width: 568px
 
-@import "md-mobile-media.less";
+@import "md-mobile-media.less"; // min-device-width: 375px and max-device-width: 667px
 
-@import "lg-mobile-media.less";
+@import "lg-mobile-media.less"; // min-device-width: 410px and max-device-width: 740px
 
-@import "tab-mobile-media.less";
+@import "tab-mobile-media.less"; // min-device-width: 760px and max-device-width: 1030px
