@@ -7313,7 +7313,7 @@ div.effect-shade:hover p {
 }
 /* Home page aside to About Committees and Partners*/
 .figure-nest {
-  width: 100vw;
+  width: 100%;
   display: block;
   position: relative;
   z-index: 0;
