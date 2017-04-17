@@ -13,10 +13,16 @@ chcp 65001 & python osWalk.py -r D:/flint/msrc/msrc2.0 -xf [EXCLUDE_FOLDER [ .gi
 ---
 ```
 [root]
+
+┣━ [config]
+┃  ┣━ dev.js
+┃  ┣━ index.js
+┃  ┗━ prod.js
 ┣━ [public]
 ┃  ┣━ [build]
-┃  ┃  ┣━ msrc2.0-dashboard.js
-┃  ┃  ┣━ msrc2.0-dashboard.min.js
+┃  ┃  ┣━ dashboard-bundle.js
+┃  ┃  ┣━ dashboard-style.css
+┃  ┃  ┣━ vendor-bundle.js
 ┃  ┣━ [documents]
 ┃  ┃  ┣━ [advis_min]
 ┃  ┃  ┃  ┣━ [CEDS]
@@ -42,57 +48,30 @@ chcp 65001 & python osWalk.py -r D:/flint/msrc/msrc2.0 -xf [EXCLUDE_FOLDER [ .gi
 ┃  ┃  ┃  ┃  ┣━ [2016]
 ┃  ┃  ┃  ┃  ┣━ [2017]
 ┃  ┃  ┃  ┃  ┗━ [Archive]
-┃  ┃  ┗━ [reports_pubs]
+┃  ┃  ┗━ [reports]
 ┃  ┣━ [img]
-┃  ┃  ┣━ [logos]
-┃  ┣━ [js]
-┃  ┃  ┣━ 1-onLoad_Hide.js
-┃  ┃  ┣━ 2-mobileNav.js
-┃  ┃  ┣━ 3-toTop.js
-┃  ┃  ┣━ 5-msrc-functions.js
-┃  ┃  ┣━ 6-footer-hash_Router.js
-┃  ┃  ┣━ 7-voting_nonVoting.js
-┃  ┃  ┣━ 8-committeesPage.js
-┃  ┃  ┗━ 9-flowType_baseline.js
-┃  ┗━ [stylesheet]
-┃      ┣━ about.less
-┃      ┣━ home.less
-┃      ┣━ media.less
-┃      ┣━ style.less
-┃      ┗━ typography.less
 ┣━ [routes]
 ┃  ┣━ index.js
 ┃  ┗━ users.js
+┣━ [src]
+┃  ┣━ [css]
+┃  ┃  ┣━ style.less
+┃  ┗━ [js]
+┃      ┣━ [scritps]
+┃      ┗━ index.js
 ┣━ [views]
 ┃  ┣━ [partials]
-┃  ┃  ┣━ advisDiv.html
-┃  ┃  ┣━ advis_min-CEDS.html
-┃  ┃  ┣━ advis_min-EM.html
-┃  ┃  ┣━ advis_min-GIS.html
-┃  ┃  ┣━ advis_min-IT.html
-┃  ┃  ┣━ advis_min-MUST.html
-┃  ┃  ┣━ carousel.html
-┃  ┃  ┣━ execDiv.html
-┃  ┃  ┣━ exec_min.html
-┃  ┃  ┣━ footer.html
-┃  ┃  ┣━ logo.html
-┃  ┃  ┣━ members.html
-┃  ┃  ┣━ nav.html
-┃  ┃  ┣━ quarterly-mins.html
-┃  ┃  ┣━ records.html
-┃  ┃  ┗━ spotlight.html
 ┃  ┣━ about.html
 ┃  ┣━ committees.html
 ┃  ┣━ error.html
 ┃  ┣━ index.html
 ┃  ┣━ layout.html
-┃  ┣━ partners.html
-┃  ┗━ testing.html
+┃  ┗━ partners.html
 ┣━ .gitattributes
 ┣━ .gitignore
 ┣━ app.js
-┣━ Gruntfile.js
 ┣━ package.json
 ┣━ README.md
-┗━ server.js
+┣━ server.js
+┗━ webpack.config.js
 ```
