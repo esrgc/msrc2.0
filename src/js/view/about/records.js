@@ -1,3 +1,5 @@
+import { downloadLink } from '../../scripts/downloadLink';
+
 var $clickRecords = $('.imgHeader2');
 /*change size of item on click with toggle class*/
 
@@ -22,13 +24,6 @@ $clickRecords.on('click', function(e) {
     } else {}
 
 });
-
-/*download document function for linking to a div*/
-/*downloadable pdf will open in new windows*/
-/*word.doc and .docx will download without window change*/
-function downloadLink(url) {
- window.open(url, '_blank');
-}
 
 $('div#workPlanLink').on('click', function() {
  downloadLink('./documents/msrc/MSRC_FY17_Work_Plan.pdf');

@@ -1,1 +1,150 @@
-webpackJsonp([2],[,function(o,n,t){(function(o){o(".footer").addClass("hidden"),o(".comMenu").addClass("hidden"),o("#footer_button").on("click",function(n){n.preventDefault(),o(".footer").toggleClass("hidden")}),o("#dropdownMenuButton").click(function(n){return n.preventDefault(),o(this).find(".toggle-close").toggleClass("toggle-open"),o(".comMenu").toggleClass("hidden"),!!o(this).hasClass("toggle-open")&&void o(this).removeClass("toggle-open").slideUp(500)})}).call(n,t(0))},function(o,n,t){(function(o){o(window).on("hashchange",function(n){n.preventDefault(),"#comCEDS"==location.hash||"#comEM"==location.hash||"#comGIS"==location.hash||"#comIT"==location.hash||"#comMUST"==location.hash?(o("#advisGroup").trigger("click"),o(location.hash).trigger("click")):("#members"==location.hash||"#spotlight"==location.hash||location.hash,o(location.hash).trigger("click"))}),o(window).on("load",function(){window.location.hash&&o(window).trigger("hashchange")})}).call(n,t(0))},function(o,n){},function(o,n){},,,,,,,,,,,,function(o,n,t){(function(o){o(".carousel").carousel({interval:5e3})}).call(n,t(0))},function(o,n,t){(function(o){o(window).scroll(function(){o(this).scrollTop()>250?o("#to-top").stop(!0,!0).fadeIn():o("#to-top").stop(!0,!0).fadeOut()})}).call(n,t(0))},,,,,function(o,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var c=t(1),e=(t.n(c),t(2)),i=(t.n(e),t(3)),l=(t.n(i),t(17)),a=(t.n(l),t(16)),s=(t.n(a),t(4));t.n(s)}],[22]);
+webpackJsonp([2],{
+
+/***/ 1:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {//
+// Author: Carl Flint
+// ESRGC
+//
+/* hide the nav footer on page load */
+$(".footer").addClass("hidden");
+/* hide the drop down advisory groups on page load */
+$(".comMenu").addClass("hidden");
+/* footer slide toggle nav pane */
+$("#footer_button").on('click', function (e) {
+    e.preventDefault();
+    $('.footer').toggleClass("hidden");
+    return;
+});
+
+/* footer dropdown menu for advisory committees*/
+$("#dropdownMenuButton").click(function (e) {
+    e.preventDefault();
+
+    $(this).find('.toggle-close').toggleClass('toggle-open');
+    $(".comMenu").toggleClass('hidden');
+
+    if ($(this).hasClass("toggle-open")) {
+        $(this).removeClass("toggle-open").slideUp(500);
+        return;
+    }
+    return false;
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+
+/***/ 2:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {
+
+/* functional hash location change function */
+
+$(window).on('hashchange', function (e) {
+    e.preventDefault();
+
+    if (location.hash == "#comCEDS" || location.hash == "#comEM" || location.hash == "#comGIS" || location.hash == "#comIT" || location.hash == "#comMUST") {
+        $('#advisGroup').trigger('click');
+        $(location.hash).trigger('click');
+    } else if (location.hash == "#members" || location.hash == "#spotlight" || location.hash == "#records") {
+        $(location.hash).trigger('click');
+    } else {
+        $(location.hash).trigger('click');
+    }
+});
+
+$(window).on('load', function () {
+    if (window.location.hash) {
+        $(window).trigger('hashchange');
+    }
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+
+/***/ 29:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {/*set home page carousel rotation speed*/
+$('.carousel').carousel({
+    interval: 5000 //set speed in ms
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+
+/***/ 3:
+/***/ (function(module, exports) {
+
+//
+// Author: Carl Flint, ESRGC
+//
+
+/* responsive nav function */
+function mobileNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav navbar-nav navbar-right text-vertical-center") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav navbar-nav navbar-right text-vertical-center";
+    }
+}
+
+/***/ }),
+
+/***/ 30:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {/*to top button appeasrs after scroll down*/
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 250) {
+    $('#to-top').stop(true, true).fadeIn();
+  } else {
+    $('#to-top').stop(true, true).fadeOut();
+  }
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+
+/***/ 35:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_footer_hash_Router__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_footer_hash_Router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scripts_footer_hash_Router__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toTop__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toTop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__toTop__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__carousel__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__carousel__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_style_less__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__css_style_less__);
+/*import global js functions*/
+
+
+
+/* home page specific functions */
+
+
+
+/*import css*/
+
+
+/***/ }),
+
+/***/ 4:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ })
+
+},[35]);
+//# sourceMappingURL=home-bundle.js.map

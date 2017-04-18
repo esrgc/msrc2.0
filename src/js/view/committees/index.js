@@ -16,3 +16,5 @@ import './advis-committees-menu';
 
 /*import css*/
 import '../../../css/style.less';
+
+import '../../scripts/fsReadDir';

@@ -1,1 +1,273 @@
-webpackJsonp([1],[,function(i,n,o){(function(i){i(".footer").addClass("hidden"),i(".comMenu").addClass("hidden"),i("#footer_button").on("click",function(n){n.preventDefault(),i(".footer").toggleClass("hidden")}),i("#dropdownMenuButton").click(function(n){return n.preventDefault(),i(this).find(".toggle-close").toggleClass("toggle-open"),i(".comMenu").toggleClass("hidden"),!!i(this).hasClass("toggle-open")&&void i(this).removeClass("toggle-open").slideUp(500)})}).call(n,o(0))},function(i,n,o){(function(i){i(window).on("hashchange",function(n){n.preventDefault(),"#comCEDS"==location.hash||"#comEM"==location.hash||"#comGIS"==location.hash||"#comIT"==location.hash||"#comMUST"==location.hash?(i("#advisGroup").trigger("click"),i(location.hash).trigger("click")):("#members"==location.hash||"#spotlight"==location.hash||location.hash,i(location.hash).trigger("click"))}),i(window).on("load",function(){window.location.hash&&i(window).trigger("hashchange")})}).call(n,o(0))},function(i,n){},function(i,n){},function(i,n,o){(function(i){i(".archive_months");i(".archive_months").hide(),i(".years").click(function(){i(this).attr("id");i(this).siblings().find(".archive_months").is(":visible")&&i(this).siblings().find(".archive_months").hide("slow"),i(this).find("ul").slideToggle(500)})}).call(n,o(0))},,,,,,,function(i,n,o){(function(i){var n=i(".members");i(".advisCommittees").click(function(){var o=i(".advisMins"),e=i(this);e.find(".toggle-close").toggleClass("toggle-open");var t=e.find("ul");t.stop(!0,!0).slideToggle(500,function(){e.addClass(function(){return t.is(":visible")})}),t.find("ul").slideToggle(500);var s=t.attr("id").substr(3),l="#advisMin-"+s;return i(l).stop(!0,!0).slideToggle(500,function(){e.addClass(function(){return i(l).is(":visible")})}),o.not(l).stop(!0,!0).slideUp(),n.not(t).stop(!0,!0).slideUp(),!!i(this).siblings().find("span").hasClass("toggle-open")&&void i(this).siblings().find("span").removeClass("toggle-open")})}).call(n,o(0))},function(i,n,o){(function(i){i("#advisGroup").click(function(n){n.preventDefault(),i("#execDiv").is(":visible")&&i("#rightDiv").find("#execDiv").toggle("slide"),i("#rightDiv").find("#advisDiv").toggle("slide")})}).call(n,o(0))},function(i,n,o){(function(i){i("#execGroup").click(function(n){n.preventDefault(),n.stopPropagation(),i("#advisDiv").is(":visible")&&i("#rightDiv").find("#advisDiv").toggle("slide"),i("#rightDiv").find("#execDiv").toggle("slide")})}).call(n,o(0))},function(i,n,o){(function(i){i("#execDiv").hide(),i("#advisDiv").hide(),i(".advisMins").hide(),i(".members").hide()}).call(n,o(0))},,,,,,function(i,n,o){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var e=o(1),t=(o.n(e),o(2)),s=(o.n(t),o(3)),l=(o.n(s),o(5)),c=(o.n(l),o(15)),a=(o.n(c),o(14)),d=(o.n(a),o(13)),h=(o.n(d),o(12)),g=(o.n(h),o(4));o.n(g)}],[21]);
+webpackJsonp([1],[
+/* 0 */,
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {//
+// Author: Carl Flint
+// ESRGC
+//
+/* hide the nav footer on page load */
+$(".footer").addClass("hidden");
+/* hide the drop down advisory groups on page load */
+$(".comMenu").addClass("hidden");
+/* footer slide toggle nav pane */
+$("#footer_button").on('click', function (e) {
+    e.preventDefault();
+    $('.footer').toggleClass("hidden");
+    return;
+});
+
+/* footer dropdown menu for advisory committees*/
+$("#dropdownMenuButton").click(function (e) {
+    e.preventDefault();
+
+    $(this).find('.toggle-close').toggleClass('toggle-open');
+    $(".comMenu").toggleClass('hidden');
+
+    if ($(this).hasClass("toggle-open")) {
+        $(this).removeClass("toggle-open").slideUp(500);
+        return;
+    }
+    return false;
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {
+
+/* functional hash location change function */
+
+$(window).on('hashchange', function (e) {
+    e.preventDefault();
+
+    if (location.hash == "#comCEDS" || location.hash == "#comEM" || location.hash == "#comGIS" || location.hash == "#comIT" || location.hash == "#comMUST") {
+        $('#advisGroup').trigger('click');
+        $(location.hash).trigger('click');
+    } else if (location.hash == "#members" || location.hash == "#spotlight" || location.hash == "#records") {
+        $(location.hash).trigger('click');
+    } else {
+        $(location.hash).trigger('click');
+    }
+});
+
+$(window).on('load', function () {
+    if (window.location.hash) {
+        $(window).trigger('hashchange');
+    }
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+//
+// Author: Carl Flint, ESRGC
+//
+
+/* responsive nav function */
+function mobileNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav navbar-nav navbar-right text-vertical-center") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav navbar-nav navbar-right text-vertical-center";
+    }
+}
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 5 */,
+/* 6 */,
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {var $months = $('.archive_months');
+
+$(".archive_months").hide();
+$(".years").click(function () {
+    var $x = $(this).attr('id');
+    /*console.log($x);*/
+    if ($(this).siblings().find('.archive_months').is(':visible')) {
+        /*console.log('i can see you!');*/
+        $(this).siblings().find('.archive_months').hide('slow');
+    }
+    $(this).find('ul').slideToggle(500);
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'D:\\flint\\msrc\\msrc2.0\\src\\js\\scripts\\fsReadDir.js'\n    at Error (native)");
+
+/***/ }),
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {var $membersUL = $(".members");
+
+var $comOpen = $(".advisCommittees").click(function () {
+    var $advisMins = $(".advisMins");
+    var $header = $(this);
+    $header.find(".toggle-close").toggleClass("toggle-open");
+    /*get next element*/
+    /*alert($header.attr('id'));*/
+    var $content = $header.find('ul');
+    /*open the content needed*/
+    $content.stop(true, true).slideToggle(500, function () {
+        /*execute this after toggle slide is done*/
+        /*alert($content.attr('id'));*/
+        $header.addClass(function () {
+            return $content.is(":visible");
+        });
+    });
+
+    $content.find('ul').slideToggle(500);
+
+    var $sliceMin = $content.attr('id').substr(3);
+    /*console.log($slideMin);*/
+    var $openMin = '#advisMin-' + $sliceMin;
+    /*console.log($openMin);*/
+    /*console.log($openMin.slideToggle(500));*/
+
+    $($openMin).stop(true, true).slideToggle(500, function () {
+        $header.addClass(function () {
+            return $($openMin).is(':visible');
+        });
+    });
+
+    $advisMins.not($openMin).stop(true, true).slideUp();
+    $membersUL.not($content).stop(true, true).slideUp();
+
+    /* the foo*/
+    if ($(this).siblings().find('span').hasClass('toggle-open')) {
+        $(this).siblings().find('span').removeClass('toggle-open');
+        return;
+    }
+    /* the bar*/
+    return false;
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {/*open advis tab and if exec tab open close it*/
+$("#advisGroup").click(function (e) {
+    e.preventDefault();
+    if ($("#execDiv").is(":visible")) {
+        $("#rightDiv").find('#execDiv').toggle("slide");
+    }
+
+    $("#rightDiv").find('#advisDiv').toggle("slide");
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {/* Open exec tab and if advis tab open close it */
+$("#execGroup").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    if ($("#advisDiv").is(":visible")) {
+        $("#rightDiv").find('#advisDiv').toggle("slide");
+    }
+    $("#rightDiv").find('#execDiv').toggle("slide");
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$("#execDiv").hide(); /*committees page*/
+$("#advisDiv").hide(); /*committees page*/
+$(".advisMins").hide(); /*committees page*/
+$(".members").hide(); /*committees page*/
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_footer_hash_Router__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_footer_hash_Router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scripts_footer_hash_Router__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_minutes_archive__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_minutes_archive___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__scripts_minutes_archive__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hide_divs__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hide_divs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__hide_divs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__executive_tab__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__executive_tab___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__executive_tab__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__advisory_tab__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__advisory_tab___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__advisory_tab__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__advis_committees_menu__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__advis_committees_menu___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__advis_committees_menu__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__css_style_less__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__css_style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__css_style_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__scripts_fsReadDir__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__scripts_fsReadDir___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__scripts_fsReadDir__);
+/*import global js functions*/
+
+
+
+
+
+/*js functions specific to committees page*/
+/*hide executive and advisory tabs*/
+
+/*add functionality to open popup from click of exec tab*/
+
+/*add functionality to open popup from click of advis tab*/
+
+/*add functionality to advisory subcommittees to expand and view members and meeting minutes*/
+
+
+/*import css*/
+
+
+
+
+/***/ })
+],[34]);
+//# sourceMappingURL=committees-bundle.js.map

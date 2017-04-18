@@ -3,6 +3,7 @@ import '../../scripts/footer-functions';
 import '../../scripts/footer-hash_Router';
 import '../../scripts/mobileNav';
 import '../../scripts/minutes-archive';
+import '../../scripts/downloadLink';
 
 /*js functions specific to about page*/
 /*hide the sliding tabs on about page*/
