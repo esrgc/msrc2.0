@@ -3,7 +3,7 @@
 //
 
 /* responsive nav function */
-function mobileNav() {
+export function mobileNav() {
     var x = document.getElementById("myTopnav");
     if (x.className === "nav navbar-nav navbar-right text-vertical-center") {
         x.className += " responsive";

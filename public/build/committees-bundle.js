@@ -63,8 +63,10 @@ $(window).on('load', function () {
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = mobileNav;
 //
 // Author: Carl Flint, ESRGC
 //
@@ -87,8 +89,7 @@ function mobileNav() {
 
 /***/ }),
 /* 5 */,
-/* 6 */,
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {var $months = $('.archive_months');
@@ -106,29 +107,13 @@ $(".years").click(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
+/* 7 */,
 /* 8 */,
 /* 9 */,
 /* 10 */,
 /* 11 */,
 /* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'D:\\flint\\msrc\\msrc2.0\\src\\js\\scripts\\fsReadDir.js'\n    at Error (native)");
-
-/***/ }),
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {var $membersUL = $(".members");
@@ -177,7 +162,7 @@ var $comOpen = $(".advisCommittees").click(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 26 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {/*open advis tab and if exec tab open close it*/
@@ -192,7 +177,7 @@ $("#advisGroup").click(function (e) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 27 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {/* Open exec tab and if advis tab open close it */
@@ -207,7 +192,7 @@ $("#execGroup").click(function (e) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 28 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$("#execDiv").hide(); /*committees page*/
@@ -217,41 +202,43 @@ $(".members").hide(); /*committees page*/
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* WEBPACK VAR INJECTION */(function($) {Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_footer_hash_Router__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_footer_hash_Router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scripts_footer_hash_Router__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_minutes_archive__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_minutes_archive___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__scripts_minutes_archive__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hide_divs__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_minutes_archive__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_minutes_archive___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__scripts_minutes_archive__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_mobileNav__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hide_divs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hide_divs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__hide_divs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__executive_tab__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__executive_tab__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__executive_tab___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__executive_tab__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__advisory_tab__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__advisory_tab__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__advisory_tab___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__advisory_tab__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__advis_committees_menu__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__advis_committees_menu__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__advis_committees_menu___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__advis_committees_menu__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__css_style_less__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__css_style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__css_style_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__scripts_fsReadDir__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__scripts_fsReadDir___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__scripts_fsReadDir__);
 /*import global js functions*/
 
 
 
 
+// for small screens
+$('i#mobileNav').on('click', function () {
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__scripts_mobileNav__["a" /* mobileNav */])();
+});
 
 /*js functions specific to committees page*/
 /*hide executive and advisory tabs*/
@@ -266,8 +253,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /*import css*/
 
 
-
+// import '../../scripts/fsReadDir';
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ })
-],[34]);
+],[23]);
 //# sourceMappingURL=committees-bundle.js.map
