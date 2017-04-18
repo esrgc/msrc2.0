@@ -8335,7 +8335,6 @@ li.img-150x300 img {
   #about-landing {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #e6e6e6;
-    width: 90%;
     top: 5.625em;
     left: 1.5625em;
   }
@@ -8920,7 +8919,6 @@ li.img-150x300 img {
     color: #e6e6e6;
     top: 60px;
     left: 15px;
-    width: 60%;
   }
   #about-landing p {
     font-size: 8px;
@@ -9118,7 +9116,6 @@ li.img-150x300 img {
   #about-landing {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #e6e6e6;
-    width: 85vw;
     top: 40px;
     left: 4px;
   }
@@ -9307,7 +9304,6 @@ li.img-150x300 img {
     color: #e6e6e6;
     top: 60px;
     left: 10px;
-    width: 40%;
   }
   #about-landing p {
     font-size: 9px;
@@ -9683,7 +9679,6 @@ li.img-150x300 img {
     color: #e6e6e6;
     top: 61px;
     left: 14px;
-    width: 50%;
   }
   #about-landing p {
     font-size: 11px;
@@ -10024,7 +10019,6 @@ li.img-150x300 img {
     top: 52px;
   }
   #about-landing {
-    width: 40%;
     max-height: 60vh;
   }
   .slide-toggle-close,
