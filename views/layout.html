@@ -12,14 +12,14 @@
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Padauk|Source+Sans+Pro" rel="stylesheet">
     <title>{{title}}</title>
     <!-- Output stylesheet from webpack config -->
-    <link href="./build/dashboard-style.css" rel="stylesheet" />
-</head>
+    {{{block 'customCSS' }}}
+    </head>
 
 <body>
     {{> nav}} {{{body}}} {{> footer}}
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="./build/vendor-bundle.js"></script>
-    <script type="text/javascript" src="./build/dashboard-bundle.js"></script>
+
+    {{{block 'scripts' }}}
 </body>
 
 </html>

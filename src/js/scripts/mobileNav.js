@@ -1,9 +1,8 @@
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*
- * Author: Carl Flint, ESRGC
- */
+//
+// Author: Carl Flint, ESRGC
+//
 
-// responsive nav function
+/* responsive nav function */
 function mobileNav() {
     var x = document.getElementById("myTopnav");
     if (x.className === "nav navbar-nav navbar-right text-vertical-center") {

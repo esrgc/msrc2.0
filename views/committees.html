@@ -1,3 +1,6 @@
+{{#contentFor 'customCSS'}}
+<link rel="stylesheet" type="text/css" href="build/committees-style.css">
+{{/contentFor}}
 <!--Start Committees Page body-->
 <header class="header container-fluid no-padding">
     <div class="all_wrapper container-fluid no-padding">
@@ -55,3 +58,7 @@
         </div>
     </div>
 </header>
+{{#contentFor 'scripts'}}
+<script type="text/javascript" src="build/vendor-bundle.js"></script>
+<script type="text/javascript" src="build/committees-bundle.js"></script>
+{{/contentFor}}

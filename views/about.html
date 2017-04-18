@@ -1,3 +1,6 @@
+{{#contentFor 'customCSS'}}
+<link rel="stylesheet" type="text/css" href="build/about-style.css">
+{{/contentFor}}
 <!--Start About Page body-->
 <header class="header container-fluid no-padding">
     <div class="all_wrapper container-fluid no-padding">
@@ -32,3 +35,7 @@
     </div>
 </header>
 <div class="about-bg footer_wrapper-about"></div>
+{{#contentFor 'scripts'}}
+<script type="text/javascript" src="build/vendor-bundle.js"></script>
+<script type="text/javascript" src="build/about-bundle.js"></script>
+{{/contentFor}}

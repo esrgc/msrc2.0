@@ -1,3 +1,6 @@
+{{#contentFor 'customCSS'}}
+<link rel="stylesheet" type="text/css" href="build/partners-style.css">
+{{/contentFor}}
 <!--Start Partners Page body-->
 <header class="header container-fluid no-padding">
     <div class="all_wrapper container-fluid no-padding">
@@ -54,7 +57,7 @@
                                 <img src="./img/logos/mdbc.gif" alt="" align="middle">
                                 <a href="#"><h4>Maryland Broadband Cooperative</h4></a>
                             </figure>
-        
+
                             <figure onclick="downloadLink('http://www.esrgc.org/');">
                                 <img src="./img/logos/esrgc_logo.jpg" alt="" align="middle">
                                 <a href="#"><h4>Eastern Shore Regional GIS Cooperative</h4></a>
@@ -92,3 +95,7 @@
         </div>
     </div>
 </header>
+{{#contentFor 'scripts'}}
+<script type="text/javascript" src="build/vendor-bundle.js"></script>
+<script type="text/javascript" src="build/partners-bundle.js"></script>
+{{/contentFor}}
