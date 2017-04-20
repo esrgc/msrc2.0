@@ -8413,16 +8413,32 @@ li.img-150x300 img {
   #angle1 h1,
   #angle2 h1,
   #angle3 h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .toggle1 {
-    bottom: -30em;
+    bottom: -25em;
   }
   .toggle2 {
-    bottom: -34em;
+    bottom: -29em;
   }
   .toggle3 {
-    bottom: -38em;
+    bottom: -33em;
+  }
+  .footer-bottom {
+    padding-top: 10px;
+    font-size: 8px;
+  }
+  .footer_buffer {
+    padding-top: 47px !important;
+  }
+  #footer_button {
+    bottom: 57px;
+  }
+  #committeeSpacerTop {
+    height: 10%;
+  }
+  #committeeSpacerMid {
+    height: 15%;
   }
 }
 @media only screen and (max-width: 1040px) {
@@ -8473,7 +8489,7 @@ li.img-150x300 img {
     font-size: 14px;
   }
   #myTopnav li a {
-    padding: 0 0.888em 0.2em 0.888em;
+    padding: 0 0.888em 0.2em;
   }
   #myTopnav li a p {
     font-size: 14px;
@@ -8527,6 +8543,9 @@ li.img-150x300 img {
   .navbar,
   .navbar-header {
     min-height: 51px;
+  }
+  #about-landing p {
+    font-size: 12px;
   }
   #logo_lrg {
     font-size: 30px !important;
@@ -8618,6 +8637,16 @@ li.img-150x300 img {
   }
 }
 @media screen and (max-width: 581px) {
+  #logo_lrg {
+    font-size: 26px !important;
+  }
+  #logo_sm {
+    top: 38px;
+    font-size: 10px !important;
+  }
+  #about-landing p {
+    font-size: 10px;
+  }
   .footer-bottom {
     padding-top: 10px;
     font-size: 8px;
@@ -8669,6 +8698,9 @@ li.img-150x300 img {
   .toggle4 {
     bottom: -46em;
   }
+  .footer_buffer {
+    padding-top: 56px;
+  }
 }
 @media screen and (min-width: 1261px) and (max-height: 720px) {
   body {
@@ -8692,6 +8724,9 @@ li.img-150x300 img {
   .toggle4 {
     bottom: -46em;
   }
+  .footer_buffer {
+    padding-top: 54px;
+  }
 }
 @media screen and (min-width: 1261px) and (max-height: 620px) {
   body {
@@ -8714,6 +8749,22 @@ li.img-150x300 img {
   }
   .toggle4 {
     bottom: -46em;
+  }
+  .footer-bottom {
+    padding-top: 10px;
+    font-size: 8px;
+  }
+  .footer_buffer {
+    padding-top: 47px !important;
+  }
+  #footer_button {
+    bottom: 57px;
+  }
+  #committeeSpacerTop {
+    height: 10%;
+  }
+  #committeeSpacerMid {
+    height: 15%;
   }
 }
 @media screen and (min-width: 1380px) and (max-height: 850px) {
