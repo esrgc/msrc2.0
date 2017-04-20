@@ -1,62 +1,74 @@
 {{#contentFor 'customCSS'}}
-<link rel="stylesheet" type="text/css" href="build/committees-style.css">
-{{/contentFor}}
+<link rel="stylesheet" type="text/css" href="build/committees-style.css"> {{/contentFor}}
 <!--Start Committees Page body-->
 <header class="header container-fluid no-padding">
-    <div class="all_wrapper container-fluid no-padding">
-        <div class="committees_bg" title="Photo courtesy of Robin Burton">
-            <div class="row container-fluid">
-                <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4 transition-all" id="leftDiv">
-                    <div class="left_Div">
-                        <ul class="list-unstyled text-center" id="execGroup">
-                            <li>
-                                <i class="fa fa-users fa-fw fa-5x"></i>
-                            </li>
-                            <li>
-                                <hr>
-                            </li>
-                            <li>
-                                <h3>Executive Committee</h3>
-                            </li>
-                        </ul>
-                        <div id='committeeSpacer' >
-                        </div>
-                        <ul class="list-unstyled text-center" id="advisGroup">
-                            <li>
-                                <i class="fa fa-comments fa-fw fa-5x"></i>
-                            </li>
-                            <li>
-                                <hr>
-                            </li>
-                            <li>
-                                <h3>Advisory Committees</h3>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 transition-all" id="rightDiv">
-                    <div class="row right_Div" id="execDiv">
-                      <br>
-                      <br>
-                      <br>
-                        <h3>MSRC's Executive Committee</h3>
-                        <br> {{> execDiv}}
-                    </div>
-                    <div class="row right_Div" id="advisDiv">
-                      <br>
-                      <br>
-                      <br>
-                        <h3>MSRC's Advisory Committees</h3>
-                        <br>
-                        <p>The Advisory Committees provide the Mid-Shore Regional Council
-                            <br> with oversite, recommendations, and/or policy guidance regarding
-                            <br>these specific areas of importance.</p>
-                        <br> {{> advisDiv}}
-                    </div>
-                </div>
-            </div>
+  <div class="all_wrapper container-fluid no-padding">
+    <div class="committees_bg" title="Photo courtesy of Robin Burton">
+      <div class="row container-fluid">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 transition-all" id="leftDiv">
+
+          <!-- <div class="left_Div"> -->
+          <div class="row-fluid" id=committeeSpacerTop>
+
+          </div>
+          <div class="row-fluid">
+
+
+            <ul class="list-unstyled text-center" id="execGroup">
+              <li>
+                <i class="fa fa-users fa-fw fa-5x"></i>
+              </li>
+              <li>
+                <hr>
+              </li>
+              <li>
+                <h3>Executive Committee</h3>
+              </li>
+            </ul>
+          </div>
+
+          <div class="row-fluid" id='committeeSpacerMid'>
+          </div>
+          <div class="row-fluid">
+            <ul class="list-unstyled text-center" id="advisGroup">
+              <li>
+                <i class="fa fa-comments fa-fw fa-5x"></i>
+              </li>
+              <li>
+                <hr>
+              </li>
+              <li>
+                <h3>Advisory Committees</h3>
+              </li>
+            </ul>
+          </div>
+          <div class="row-fluid" id='committeeSpacerBtm'>
+
+          </div>
         </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 pull-4 transition-all" id="rightDiv">
+          <div class="row right_Div" id="execDiv">
+            <br>
+            <br>
+            <br>
+            <h3>MSRC's Executive Committee</h3>
+            <br> {{> execDiv}}
+          </div>
+          <div class="row right_Div" id="advisDiv">
+            <br>
+            <br>
+            <br>
+            <h3>MSRC's Advisory Committees</h3>
+            <br>
+            <p>The Advisory Committees provide the Mid-Shore Regional Council
+              <br> with oversite, recommendations, and/or policy guidance regarding
+              <br>these specific areas of importance.</p>
+            <br> {{> advisDiv}}
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </header>
 {{#contentFor 'scripts'}}
 <script type="text/javascript" src="build/vendor-bundle.js"></script>

@@ -8044,6 +8044,8 @@ li.img-150x300 img {
   background: -moz-linear-gradient(right, #333333, #8c8c8c);
   /* For Firefox 3.6 to 15*/
   background: linear-gradient(to right, #333333, #8c8c8c);
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #e6e6e6;
   opacity: 0.95;
   left: 0;
   bottom: 0;
@@ -8055,8 +8057,6 @@ li.img-150x300 img {
 .left_Div {
   display: block;
   position: absolute;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #e6e6e6;
   margin: 0 auto;
   top: 22%;
   width: 50%;
@@ -8070,8 +8070,14 @@ li.img-150x300 img {
   padding: 1.5625em 1.5625em;
   text-align: center;
 }
-#committeeSpacer {
-  height: 14em;
+#committeeSpacerTop {
+  height: 20%;
+}
+#committeeSpacerMid {
+  height: 25%;
+}
+#committeeSpacerBtm {
+  height: 10%;
 }
 #rightDiv {
   display: block;
@@ -8109,7 +8115,7 @@ li.img-150x300 img {
   opacity: 0.95;
   top: 0em;
   height: 94%;
-  width: 65%;
+  width: 66.67%;
   margin-top: 0;
   margin-bottom: 2em;
   max-height: 100vh;
@@ -8127,6 +8133,11 @@ li.img-150x300 img {
 #execGroup,
 #advisGroup {
   cursor: pointer;
+}
+#execGroup,
+#advisGroup {
+  margin: 0 auto;
+  width: 50%;
 }
 .advisCommittees {
   text-align: left;
@@ -8617,6 +8628,12 @@ li.img-150x300 img {
   #footer_button {
     bottom: 57px;
   }
+  #committeeSpacerTop {
+    height: 10%;
+  }
+  #committeeSpacerMid {
+    height: 15%;
+  }
 }
 @media screen and (min-width: 1261px) {
   #logo_lrg {
@@ -8937,7 +8954,7 @@ li.img-150x300 img {
   #angle1 h1,
   #angle2 h1,
   #angle3 h1 {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .toggle1,
   .toggle2,
@@ -9007,8 +9024,11 @@ li.img-150x300 img {
   .left_Div {
     top: 60px;
   }
-  #committeeSpacer {
-    height: 3.1em;
+  #committeeSpacerTop {
+    height: 20%;
+  }
+  #committeeSpacerMid {
+    height: 15%;
   }
   .archive_months,
   .members {
@@ -9200,9 +9220,6 @@ li.img-150x300 img {
   .left_Div {
     top: 60px;
   }
-  #committeeSpacer {
-    height: 3em;
-  }
   #advisDiv,
   #execDiv,
   #rightDiv {
@@ -9210,7 +9227,7 @@ li.img-150x300 img {
   }
   #advisGroup,
   #execGroup {
-    padding-top: 80px;
+    padding-top: 60px;
   }
   .archive_months,
   .members {
@@ -9239,14 +9256,11 @@ li.img-150x300 img {
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   #logo_lrg {
-    font-size: 40px !important;
-  }
-  #logo_med {
-    font-size: 33px !important;
+    font-size: 35px !important;
   }
   #logo_sm {
     top: 48px;
-    font-size: 14px !important;
+    font-size: 13.5px !important;
   }
   body {
     font-size: 14px;
@@ -9305,6 +9319,7 @@ li.img-150x300 img {
     color: #e6e6e6;
     top: 60px;
     left: 10px;
+    width: 57%;
   }
   #about-landing p {
     font-size: 9px;
@@ -9316,7 +9331,7 @@ li.img-150x300 img {
   #angle1 h1,
   #angle2 h1,
   #angle3 h1 {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .toggle1,
   .toggle2,
@@ -9328,16 +9343,16 @@ li.img-150x300 img {
     -ms-transform: matrix(1, -1.19175, 0, 1, 0, 0);
     -o-transform: matrix(1, -1.19175, 0, 1, 0, 0);
     transform: matrix(1, -1.19175, 0, 1, 0, 0);
-    right: -75px;
+    right: -60px;
   }
   .toggle1 {
-    bottom: -23em;
+    bottom: -20em;
   }
   .toggle2 {
-    bottom: -28em;
+    bottom: -24em;
   }
   .toggle3 {
-    bottom: -33em;
+    bottom: -28em;
   }
   .toggle4 {
     bottom: -54.6875em;
@@ -9395,8 +9410,8 @@ li.img-150x300 img {
   .left_Div {
     top: 60px;
   }
-  #committeeSpacer {
-    height: 5em;
+  #committeeSpacerMid {
+    height: 10%;
   }
   #rightDiv {
     height: 70%;
@@ -9680,6 +9695,7 @@ li.img-150x300 img {
     color: #e6e6e6;
     top: 61px;
     left: 14px;
+    width: 65%;
   }
   #about-landing p {
     font-size: 11px;
@@ -9781,8 +9797,11 @@ li.img-150x300 img {
   .left_Div {
     top: 60px;
   }
-  #committeeSpacer {
-    height: 5em;
+  #committeeSpacerTop {
+    height: 18%;
+  }
+  #committeeSpacerMid {
+    height: 11%;
   }
   #rightDiv {
     height: 70%;
@@ -10020,7 +10039,7 @@ li.img-150x300 img {
     top: 52px;
   }
   #about-landing {
-    max-height: 60vh;
+    width: 65%;
   }
   .slide-toggle-close,
   .slide-toggle-open {
