@@ -5,23 +5,47 @@ April 2017
 router for MSRC 2.0.1
 */
 
-export default Backbone.Router.extend({
-  name: 'main',
+/* dual stage click event for nested advisGroup on committees page*/
+const advisGroup = () => {
+  $('#advisGroup').trigger('click');
+  $(location.hash).trigger('click');
+}
+
+let Router = Backbone.Router.extend({
+  routes: {
+    'comCEDS':'comCEDS',
+    'comEM':'comEM',
+    'comGIS':'comGIS',
+    'comIT':'comIT',
+    'comMUST':'comMUST',
+    '*event':'event' //catch all other hash change events and fire a click 
+  },
   initialize(options) {
     this.options = options;
     console.log('router is being initialized');
-    this.controllers = options.controllers;
   },
-  index() {
-    this.controllers.home.index();
+  comCEDS() {
+    // console.log('caught #comCEDS hashchange event!');
+    // $('#advisGroup').trigger('click');
+    // $(location.hash).trigger('click');
+    advisGroup();
   },
-  about() {
-    this.controllers.home.about();
+  comEM() {
+    advisGroup();
   },
-  committees() {
-    this.controllers.home.committees();
+  comGIS() {
+    advisGroup();
   },
-  partners() {
-    this.controllers.home.partners();
+  comIT() {
+    advisGroup();
+  },
+  comMUST() {
+    advisGroup();
+  },
+  event() {
+    // console.log('caught *event with backbone router');
+    $(location.hash).trigger('click');
   }
 });
+
+export { Router };

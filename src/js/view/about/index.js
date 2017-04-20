@@ -1,6 +1,5 @@
 /*import global js functions*/
 import '../../scripts/footer-functions';
-import '../../scripts/footer-hash_Router';
 import '../../scripts/minutes-archive';
 import '../../scripts/downloadLink';
 import '../../scripts/ifBrowser';
@@ -29,3 +28,7 @@ import './popup-tabs';
 
 /*import css*/
 import '../../../css/style.less';
+
+import { Router } from '../../router/main';
+let appRouter = new Router;
+Backbone.history.start();

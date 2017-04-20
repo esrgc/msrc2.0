@@ -34,34 +34,7 @@ $("#dropdownMenuButton").click(function (e) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {
-
-/* functional hash location change function */
-
-$(window).on('hashchange', function (e) {
-    e.preventDefault();
-
-    if (location.hash == "#comCEDS" || location.hash == "#comEM" || location.hash == "#comGIS" || location.hash == "#comIT" || location.hash == "#comMUST") {
-        $('#advisGroup').trigger('click');
-        $(location.hash).trigger('click');
-    } else if (location.hash == "#members" || location.hash == "#spotlight" || location.hash == "#records") {
-        $(location.hash).trigger('click');
-    } else {
-        $(location.hash).trigger('click');
-    }
-});
-
-$(window).on('load', function () {
-    if (window.location.hash) {
-        $(window).trigger('hashchange');
-    }
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
+/* 2 */,
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -404,32 +377,30 @@ $clickSpotlight.on('click', '.gridItem', function (e) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* WEBPACK VAR INJECTION */(function($, Backbone) {Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_footer_hash_Router__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_footer_hash_Router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scripts_footer_hash_Router__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_minutes_archive__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_minutes_archive___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__scripts_minutes_archive__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_downloadLink__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scripts_ifBrowser__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scripts_ifBrowser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__scripts_ifBrowser__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__scripts_mobileNav__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__hide_divs__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__hide_divs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__hide_divs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__about_tabs__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__about_tabs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__about_tabs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__spotlight__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__spotlight___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__spotlight__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__records__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__members__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__members___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__members__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__popup_tabs__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__popup_tabs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__popup_tabs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__css_style_less__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__css_style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__css_style_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_minutes_archive__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_minutes_archive___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scripts_minutes_archive__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_downloadLink__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_ifBrowser__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_ifBrowser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__scripts_ifBrowser__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scripts_mobileNav__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__hide_divs__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__hide_divs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__hide_divs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__about_tabs__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__about_tabs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__about_tabs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__spotlight__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__spotlight___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__spotlight__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__records__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__members__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__members___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__members__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__popup_tabs__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__popup_tabs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__popup_tabs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__css_style_less__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__css_style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__css_style_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__router_main__ = __webpack_require__(42);
 /*import global js functions*/
-
 
 
 
@@ -437,7 +408,7 @@ $clickSpotlight.on('click', '.gridItem', function (e) {
 
 // for small screens
 $('i#mobileNav').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__scripts_mobileNav__["a" /* mobileNav */])();
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__scripts_mobileNav__["a" /* mobileNav */])();
 });
 
 /*js functions specific to about page*/
@@ -456,7 +427,88 @@ $('i#mobileNav').on('click', function () {
 
 /*import css*/
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+
+
+let appRouter = new __WEBPACK_IMPORTED_MODULE_12__router_main__["a" /* Router */]();
+Backbone.history.start();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(21)))
+
+/***/ }),
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($, Backbone) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Router; });
+/*
+Carl Flint
+April 2017
+
+router for MSRC 2.0.1
+*/
+
+/* dual stage click event for nested advisGroup on committees page*/
+const advisGroup = () => {
+  $('#advisGroup').trigger('click');
+  $(location.hash).trigger('click');
+};
+
+let Router = Backbone.Router.extend({
+  routes: {
+    'comCEDS': 'comCEDS',
+    'comEM': 'comEM',
+    'comGIS': 'comGIS',
+    'comIT': 'comIT',
+    'comMUST': 'comMUST',
+    '*event': 'event' //catch all other hash change events and fire a click 
+  },
+  initialize(options) {
+    this.options = options;
+    console.log('router is being initialized');
+  },
+  comCEDS() {
+    // console.log('caught #comCEDS hashchange event!');
+    // $('#advisGroup').trigger('click');
+    // $(location.hash).trigger('click');
+    advisGroup();
+  },
+  comEM() {
+    advisGroup();
+  },
+  comGIS() {
+    advisGroup();
+  },
+  comIT() {
+    advisGroup();
+  },
+  comMUST() {
+    advisGroup();
+  },
+  event() {
+    // console.log('caught *event with backbone router');
+    $(location.hash).trigger('click');
+  }
+});
+
+
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(21)))
 
 /***/ })
 ],[23]);
