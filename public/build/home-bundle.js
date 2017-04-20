@@ -61,42 +61,7 @@ $(window).scroll(function () {
 
 /***/ }),
 
-/***/ 25:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toTop__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toTop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__toTop__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__carousel__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__carousel__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_style_less__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__css_style_less__);
-/*import global js functions*/
-
-
-
-// for small screens
-$('i#mobileNav').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__["a" /* mobileNav */])();
-});
-
-/* home page specific functions */
-
-
-
-/*import css*/
-
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
-
-/***/ }),
-
-/***/ 3:
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {/*browser compatibility solution for flowType.js and fixed position elements not rendering the same*/
@@ -121,7 +86,42 @@ if (navigator.userAgent.match(/Firefox/i)) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 25:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toTop__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toTop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__toTop__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__carousel__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__carousel__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_style_less__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__css_style_less__);
+/*import global js functions*/
+
+
+
+// for small screens
+$('i#mobileNav').on('click', function () {
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__["a" /* mobileNav */])();
+});
+
+/* home page specific functions */
+
+
+
+/*import css*/
+
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+
+/***/ }),
+
+/***/ 3:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -142,7 +142,7 @@ function mobileNav() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

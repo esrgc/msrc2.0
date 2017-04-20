@@ -34,8 +34,7 @@ $("#dropdownMenuButton").click(function (e) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 2 */,
-/* 3 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {/*browser compatibility solution for flowType.js and fixed position elements not rendering the same*/
@@ -59,7 +58,7 @@ if (navigator.userAgent.match(/Firefox/i)) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79,23 +78,70 @@ function mobileNav() {
 }
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
+/* 5 */,
 /* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = downloadLink;
-/*download document function for linking to a div*/
-/*downloadable pdf will open in new windows*/
-/*word.doc and .docx will download without window change*/
-function downloadLink(url) {
-  window.open(url, '_blank');
-}
+/* WEBPACK VAR INJECTION */(function($, Backbone) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Router; });
+/*
+Carl Flint
+April 2017
+
+router for MSRC 2.0.1
+*/
+
+/* dual stage click event for nested advisGroup on committees page*/
+const advisGroup = () => {
+  $('#advisGroup').trigger('click');
+  $(location.hash).trigger('click');
+};
+
+let Router = Backbone.Router.extend({
+  routes: {
+    'comCEDS': 'comCEDS',
+    'comEM': 'comEM',
+    'comGIS': 'comGIS',
+    'comIT': 'comIT',
+    'comMUST': 'comMUST',
+    '*event': 'event' //catch all other hash change events and fire a click
+  },
+  initialize(options) {
+    this.options = options;
+    console.log('router is being initialized');
+  },
+  comCEDS() {
+    // console.log('caught #comCEDS hashchange event!');
+    // $('#advisGroup').trigger('click');
+    // $(location.hash).trigger('click');
+    advisGroup();
+  },
+  comEM() {
+    advisGroup();
+  },
+  comGIS() {
+    advisGroup();
+  },
+  comIT() {
+    advisGroup();
+  },
+  comMUST() {
+    advisGroup();
+  },
+  event() {
+    // console.log('caught *event with backbone router');
+    $(location.hash).trigger('click');
+  }
+});
+
+
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(5)))
 
 /***/ }),
 /* 7 */
@@ -264,7 +310,7 @@ $(".textBox .textBox-toggle, .records-textBox .textBox-toggle").click(function (
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__ = __webpack_require__(6);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__ = __webpack_require__(21);
 
 
 var $clickRecords = $('.imgHeader2');
@@ -371,7 +417,19 @@ $clickSpotlight.on('click', '.gridItem', function (e) {
 /* 18 */,
 /* 19 */,
 /* 20 */,
-/* 21 */,
+/* 21 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = downloadLink;
+/*download document function for linking to a div*/
+/*downloadable pdf will open in new windows*/
+/*word.doc and .docx will download without window change*/
+function downloadLink(url) {
+  window.open(url, '_blank');
+}
+
+/***/ }),
 /* 22 */,
 /* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -382,10 +440,10 @@ $clickSpotlight.on('click', '.gridItem', function (e) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_minutes_archive__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_minutes_archive___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scripts_minutes_archive__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_downloadLink__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_ifBrowser__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_downloadLink__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_ifBrowser__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_ifBrowser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__scripts_ifBrowser__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scripts_mobileNav__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scripts_mobileNav__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__hide_divs__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__hide_divs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__hide_divs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__about_tabs__ = __webpack_require__(8);
@@ -397,9 +455,9 @@ $clickSpotlight.on('click', '.gridItem', function (e) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__members___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__members__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__popup_tabs__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__popup_tabs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__popup_tabs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__css_style_less__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__css_style_less__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__css_style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__css_style_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__router_main__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__router_main__ = __webpack_require__(6);
 /*import global js functions*/
 
 
@@ -431,84 +489,7 @@ $('i#mobileNav').on('click', function () {
 
 let appRouter = new __WEBPACK_IMPORTED_MODULE_12__router_main__["a" /* Router */]();
 Backbone.history.start();
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(21)))
-
-/***/ }),
-/* 24 */,
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($, Backbone) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Router; });
-/*
-Carl Flint
-April 2017
-
-router for MSRC 2.0.1
-*/
-
-/* dual stage click event for nested advisGroup on committees page*/
-const advisGroup = () => {
-  $('#advisGroup').trigger('click');
-  $(location.hash).trigger('click');
-};
-
-let Router = Backbone.Router.extend({
-  routes: {
-    'comCEDS': 'comCEDS',
-    'comEM': 'comEM',
-    'comGIS': 'comGIS',
-    'comIT': 'comIT',
-    'comMUST': 'comMUST',
-    '*event': 'event' //catch all other hash change events and fire a click 
-  },
-  initialize(options) {
-    this.options = options;
-    console.log('router is being initialized');
-  },
-  comCEDS() {
-    // console.log('caught #comCEDS hashchange event!');
-    // $('#advisGroup').trigger('click');
-    // $(location.hash).trigger('click');
-    advisGroup();
-  },
-  comEM() {
-    advisGroup();
-  },
-  comGIS() {
-    advisGroup();
-  },
-  comIT() {
-    advisGroup();
-  },
-  comMUST() {
-    advisGroup();
-  },
-  event() {
-    // console.log('caught *event with backbone router');
-    $(location.hash).trigger('click');
-  }
-});
-
-
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(21)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(5)))
 
 /***/ })
 ],[23]);

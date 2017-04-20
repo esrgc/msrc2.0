@@ -9,7 +9,7 @@ router for MSRC 2.0.1
 const advisGroup = () => {
   $('#advisGroup').trigger('click');
   $(location.hash).trigger('click');
-}
+};
 
 let Router = Backbone.Router.extend({
   routes: {
@@ -18,7 +18,7 @@ let Router = Backbone.Router.extend({
     'comGIS':'comGIS',
     'comIT':'comIT',
     'comMUST':'comMUST',
-    '*event':'event' //catch all other hash change events and fire a click 
+    '*event':'event' //catch all other hash change events and fire a click
   },
   initialize(options) {
     this.options = options;

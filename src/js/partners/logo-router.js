@@ -1,4 +1,4 @@
-import { downloadLink } from '../../scripts/downloadLink';
+import { downloadLink } from '../scripts/downloadLink';
 
 $('figure#DCED').on('click', function() {
  downloadLink('http://choosedorchester.org/');

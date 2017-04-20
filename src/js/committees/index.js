@@ -1,8 +1,8 @@
 /*import global js functions*/
-import '../../scripts/footer-functions';
-import '../../scripts/minutes-archive';
-import '../../scripts/ifBrowser';
-import {mobileNav} from '../../scripts/mobileNav';
+import '../scripts/footer-functions';
+import '../scripts/minutes-archive';
+import '../scripts/ifBrowser';
+import {mobileNav} from '../scripts/mobileNav';
 // for small screens
 $('i#mobileNav').on('click', function() {
   mobileNav();
@@ -20,9 +20,9 @@ import './advisory-tab';
 import './advis-committees-menu';
 
 /*import css*/
-import '../../../css/style.less';
+import '../../css/style.less';
 
 // import '../../scripts/fsReadDir';
-import { Router } from '../../router/main';
+import { Router } from '../router/main';
 let appRouter = new Router;
 Backbone.history.start();

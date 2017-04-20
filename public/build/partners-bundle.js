@@ -35,11 +35,36 @@ $("#dropdownMenuButton").click(function (e) {
 
 /***/ }),
 
+/***/ 2:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {/*browser compatibility solution for flowType.js and fixed position elements not rendering the same*/
+/*mozilla renders the google font HUGE!!!!*/
+/*This is to tone it down a thousand notches*/
+if (navigator.userAgent.match(/Firefox/i)) {
+    $("#logoBrand").css({ "padding-top": "10px" });
+    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "140px" });
+    $(".textBox").css({ "padding-bottom": "30px" });
+
+    $("#logo_lrg").css({ "line-height": '35px', "font-size-adjust": "0.375" });
+    $("#logo_med").css({ "line-height": '35px', "font-size-adjust": "0.375" });
+
+    // console.log('this is firefox!');
+} else if (navigator.userAgent.match(/Trident/i)) {
+    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
+    $(".textBox").css({ "padding-bottom": "30px" });
+
+    // console.log('this is internetExplorer');
+} else {}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+
 /***/ 20:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__ = __webpack_require__(6);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__ = __webpack_require__(21);
 
 
 $('figure#DCED').on('click', function () {
@@ -93,6 +118,20 @@ $('figure#MDDLLR').on('click', function () {
 
 /***/ }),
 
+/***/ 21:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = downloadLink;
+/*download document function for linking to a div*/
+/*downloadable pdf will open in new windows*/
+/*word.doc and .docx will download without window change*/
+function downloadLink(url) {
+  window.open(url, '_blank');
+}
+
+/***/ }),
+
 /***/ 26:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -100,11 +139,11 @@ $('figure#MDDLLR').on('click', function () {
 /* WEBPACK VAR INJECTION */(function($) {Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__logo_router__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__css_style_less__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__css_style_less__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__css_style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__css_style_less__);
 /* import global js functions*/
 
@@ -125,31 +164,6 @@ $('i#mobileNav').on('click', function () {
 /***/ }),
 
 /***/ 3:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {/*browser compatibility solution for flowType.js and fixed position elements not rendering the same*/
-/*mozilla renders the google font HUGE!!!!*/
-/*This is to tone it down a thousand notches*/
-if (navigator.userAgent.match(/Firefox/i)) {
-    $("#logoBrand").css({ "padding-top": "10px" });
-    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "140px" });
-    $(".textBox").css({ "padding-bottom": "30px" });
-
-    $("#logo_lrg").css({ "line-height": '35px', "font-size-adjust": "0.375" });
-    $("#logo_med").css({ "line-height": '35px', "font-size-adjust": "0.375" });
-
-    // console.log('this is firefox!');
-} else if (navigator.userAgent.match(/Trident/i)) {
-    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
-    $(".textBox").css({ "padding-bottom": "30px" });
-
-    // console.log('this is internetExplorer');
-} else {}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-
-/***/ 4:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -170,24 +184,10 @@ function mobileNav() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 6:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = downloadLink;
-/*download document function for linking to a div*/
-/*downloadable pdf will open in new windows*/
-/*word.doc and .docx will download without window change*/
-function downloadLink(url) {
-  window.open(url, '_blank');
-}
 
 /***/ })
 
