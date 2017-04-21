@@ -9977,7 +9977,7 @@ li.img-150x300 img {
     margin: 10px 0;
   }
   .footer_buffer {
-    padding-top: 40px;
+    padding-top: 40px !important;
   }
   .fa-3x,
   .footer-bottom {
