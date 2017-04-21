@@ -96,10 +96,10 @@ if (navigator.userAgent.match(/Firefox/i)) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toTop__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toTop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__toTop__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__carousel__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__carousel__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_toTop__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_toTop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__scripts_toTop__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scripts_carousel__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scripts_carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__scripts_carousel__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_style_less__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__css_style_less__);
 /*import global js functions*/

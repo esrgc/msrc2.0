@@ -12,17 +12,17 @@ $('i#mobileNav').on('click', function() {
 
 /*js functions specific to about page*/
 /*hide the sliding tabs on about page*/
-import './hide-divs';
+import './scripts/hide-divs';
 /*add the functionality to open the tabs by clicking the toggle*/
-import './about-tabs';
+import './scripts/about-tabs';
 /*add functionality to spotlight tab based on the clicked image open the corresponding popup*/
-import './spotlight';
+import './scripts/spotlight';
 /*add functionality to records tab based on clicked div*/
-import './records';
+import './scripts/records';
 /*add functionality to members tab based on clicked div*/
-import './members';
+import './scripts/members';
 /*based on the clicked div/image from members/spotlight/records reveal all children of the popup*/
-import './popup-tabs';
+import './scripts/popup-tabs';
 
 
 /*import css*/

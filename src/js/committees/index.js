@@ -11,13 +11,13 @@ $('i#mobileNav').on('click', function() {
 
 /*js functions specific to committees page*/
 /*hide executive and advisory tabs*/
-import './hide-divs';
+import './scripts/hide-divs';
 /*add functionality to open popup from click of exec tab*/
-import './executive-tab';
+import './scripts/executive-tab';
 /*add functionality to open popup from click of advis tab*/
-import './advisory-tab';
+import './scripts/advisory-tab';
 /*add functionality to advisory subcommittees to expand and view members and meeting minutes*/
-import './advis-committees-menu';
+import './scripts/advis-committees-menu';
 
 /*import css*/
 import '../../css/style.less';

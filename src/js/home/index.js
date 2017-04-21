@@ -8,8 +8,8 @@ $('i#mobileNav').on('click', function() {
 });
 
 /* home page specific functions */
-import './toTop';
-import './carousel';
+import './scripts/toTop';
+import './scripts/carousel';
 
 /*import css*/
 import '../../css/style.less';
