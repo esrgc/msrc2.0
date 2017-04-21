@@ -222,24 +222,16 @@ $(".angle_wrapper > div:not(:last-child) h1").on("click", function () {
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$('#membersDiv').hide(); /*about page*/
-$("#membersDiv2, #votingMem, #nonVoting, .membersDiv2_bg").hide(); /*about page*/
-$('#images, #recordsImages').hide(); /*about page*/
-$("#broadband").hide(); /*about page*/
-$("#tech").hide(); /*about page*/
-$("#health").hide(); /*about page*/
-$("#gis").hide(); /*about page*/
-$("#data").hide(); /*about page*/
-$("#ceds").hide(); /*about page*/
-$("#f1").hide(); /*about page*/
-$("#f2").hide(); /*about page*/
-$("#f3").hide(); /*about page*/
-$("#workPlan").hide(); /*about page*/
-$("#meetMinutes").hide(); /*about page*/
-$("#byLaws").hide(); /*about page*/
-$("#theMSRC").hide(); /*about page*/
-$("#recordsWrapper, #recordsWrapper2, .records-textBox, .textBox").hide(); /*about page*/
-$('#spotlight-container').hide(); /*about page*/
+/* WEBPACK VAR INJECTION */(function($) {/* About page angle tabs */
+
+/* Members tab*/
+$("#membersDiv, #membersDiv2, #votingMem, #nonVoting, .membersDiv2_bg").hide();
+/* Spotlight tab*/
+$('#spotlight-container, .textBox').hide();
+$("#broadband, #tech, #health, #gis, #data, #ceds, #f1, #f2, #f3").hide();
+/* Records tab */
+$("#recordsWrapper, #recordsWrapper2, .records-textBox").hide();
+$("#workPlan, #meetMinutes, #byLaws").hide();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -310,7 +302,7 @@ $(".textBox .textBox-toggle, .records-textBox .textBox-toggle").click(function (
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {throw new Error("Cannot find module \"../scripts/downloadLink\"");
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__ = __webpack_require__(21);
 
 
 var $clickRecords = $('.imgHeader2');
@@ -338,11 +330,11 @@ $clickRecords.on('click', function (e) {
 });
 
 $('div#workPlanLink').on('click', function () {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["downloadLink"])('./documents/msrc/MSRC_FY17_Work_Plan.pdf');
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('./documents/msrc/MSRC_FY17_Work_Plan.pdf');
 });
 
 $('div#byLawsLink').on('click', function () {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["downloadLink"])('./documents/msrc/MSRC_Bylaws.doc');
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('./documents/msrc/MSRC_Bylaws.doc');
 });
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
@@ -421,7 +413,7 @@ $clickSpotlight.on('click', '.gridItem', function (e) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export downloadLink */
+/* harmony export (immutable) */ __webpack_exports__["a"] = downloadLink;
 /*download document function for linking to a div*/
 /*downloadable pdf will open in new windows*/
 /*word.doc and .docx will download without window change*/

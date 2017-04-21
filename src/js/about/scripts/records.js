@@ -1,4 +1,4 @@
-import { downloadLink } from '../scripts/downloadLink';
+import { downloadLink } from '../../scripts/downloadLink';
 
 var $clickRecords = $('.imgHeader2');
 /*change size of item on click with toggle class*/

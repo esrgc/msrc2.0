@@ -64,57 +64,71 @@ if (navigator.userAgent.match(/Firefox/i)) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {throw new Error("Cannot find module \"../scripts/downloadLink\"");
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__ = __webpack_require__(21);
 
 
 $('figure#DCED').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["downloadLink"])('http://choosedorchester.org/');
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('http://choosedorchester.org/');
 });
 
 $('figure#CCED').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["downloadLink"])('https://www.carolinebusiness.com');
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('https://www.carolinebusiness.com');
 });
 
 $('figure#TCED').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["downloadLink"])('http://www.talbotcountymd.gov/index.php?page=Economic_Development');
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('http://www.talbotcountymd.gov/index.php?page=Economic_Development');
 });
 
 $('figure#USEDA').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["downloadLink"])('http://www.eda.gov/');
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('http://www.eda.gov/');
 });
 
 $('figure#MDBED').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["downloadLink"])('http://www.choosemaryland.org/');
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('http://www.choosemaryland.org/');
 });
 
 $('figure#MUSTBUS').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["downloadLink"])('http://www.mustbus.org/');
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('http://www.mustbus.org/');
 });
 
 $('figure#ESEC').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["downloadLink"])('http://www.ventureahead.org/');
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('http://www.ventureahead.org/');
 });
 
 $('figure#MDBC').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["downloadLink"])('http://www.mdbc.us/');
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('http://www.mdbc.us/');
 });
 
 $('figure#ESRGC').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["downloadLink"])('http://www.esrgc.org/');
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('http://www.esrgc.org/');
 });
 
 $('figure#MDFARM').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["downloadLink"])('http://www.marylandfarming.com/');
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('http://www.marylandfarming.com/');
 });
 
 $('figure#BEACON').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["downloadLink"])('http://beacon.salisbury.edu/');
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('http://beacon.salisbury.edu/');
 });
 
 $('figure#MDDLLR').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["downloadLink"])('http://www.dllr.state.md.us/');
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('http://www.dllr.state.md.us/');
 });
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+
+/***/ }),
+
+/***/ 21:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = downloadLink;
+/*download document function for linking to a div*/
+/*downloadable pdf will open in new windows*/
+/*word.doc and .docx will download without window change*/
+function downloadLink(url) {
+  window.open(url, '_blank');
+}
 
 /***/ }),
 
