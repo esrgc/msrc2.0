@@ -7065,8 +7065,12 @@ ul#myTopnav li.icon {
     display: block;
     text-align: left;
   }
+  .navbar-nav li a {
+    line-height: 5px;
+  }
   #nav-links p {
     position: relative;
+    left: 30px;
   }
 }
 /*Bootstrap carousel*/
