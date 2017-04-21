@@ -25,4 +25,5 @@ import '../../css/style.less';
 // import '../../scripts/fsReadDir';
 import { Router } from '../router/main';
 let appRouter = new Router;
+
 Backbone.history.start();

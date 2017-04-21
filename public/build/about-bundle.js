@@ -110,16 +110,13 @@ let Router = Backbone.Router.extend({
     'comGIS': 'comGIS',
     'comIT': 'comIT',
     'comMUST': 'comMUST',
-    '*event': 'event' //catch all other hash change events and fire a click
+    '*other': 'event' /*catch all other hash change events and fire a click*/
   },
-  initialize(options) {
-    this.options = options;
+  initialize() {
     console.log('router is being initialized');
   },
   comCEDS() {
-    // console.log('caught #comCEDS hashchange event!');
-    // $('#advisGroup').trigger('click');
-    // $(location.hash).trigger('click');
+    console.log('caught #comCEDS hashchange event!' + this.route);
     advisGroup();
   },
   comEM() {
@@ -135,7 +132,7 @@ let Router = Backbone.Router.extend({
     advisGroup();
   },
   event() {
-    // console.log('caught *event with backbone router');
+    /*console.log('caught *event with backbone router');*/
     $(location.hash).trigger('click');
   }
 });
@@ -163,60 +160,71 @@ $(".years").click(function () {
 
 /***/ }),
 /* 8 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {/*
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_curHash__ = __webpack_require__(45);
+
+/*
  // zAccordion About pop out
  // add click toggle to all but last child merely for decoration
  */
 $(".angle_wrapper > div:not(:last-child) h1").on("click", function () {
-    /* the magic */
-    $(this).find(".slide-toggle-close").toggleClass("slide-toggle-open");
-    $(this).parent('div').toggleClass("ac_collapse");
-    $(this).toggleClass("ac_collapse");
-    /*
+  let $attrID = $(this).attr('id');
+  // if ($(this).hasClass('ac_collapse')) {
+  //   curHash('#' + $attrID);
+  // } else {
+  //   window.location.hash = '';
+  // }
+  /* the magic */
+  $(this).find(".slide-toggle-close").toggleClass("slide-toggle-open");
+  $(this).parent('div').toggleClass("ac_collapse");
+  $(this).toggleClass("ac_collapse");
+  /*
      //hide about text when opening accordion div
      */
-    $('#about-landing').toggle('fast');
-    /*
+  $('#about-landing').toggle('fast');
+  /*
      //reveal accordion divs hidden text
      //test to get jquery traverse tree
      */
-    var $attrID = $(this).attr('id');
-    var $textBox = $('.textBox');
-    /*console.log($attrID);*/
 
-    if ($attrID == 'members') {
+  var $textBox = $('.textBox');
+  /*console.log($attrID);*/
 
-        $("#membersDiv").toggle('slide');
-        $("#membersDiv2").toggle('slide');
-    } else if ($attrID == 'spotlight') {
+  if ($attrID == 'members') {
 
-        $('.spotlight-wrapper').css({ "z-index": "1000" });
-        $('#spotlight-container').toggle('slide');
+    $("#membersDiv").toggle('slide');
+    $("#membersDiv2").toggle('slide');
+  } else if ($attrID == 'spotlight') {
 
-        if ($('.textBox').is(":visible")) {
-            $('.textBox').hide("slow");
-        }
-    } else if ($attrID == 'records') {
+    $('.spotlight-wrapper').css({ "z-index": "1000" });
+    $('#spotlight-container').toggle('slide');
 
-        $('#recordsWrapper, #recordsWrapper2').toggle('slide');
-        $('.records-wrapper').css({ "z-index": "1000" });
-
-        if ($('.records-textBox').is(":visible")) {
-            $('.records-textBox').hide("slow");
-        }
-    } else {}
-
-    /* the foo*/
-    if ($(this).hasClass("slide-toggle-open")) {
-        $(this).removeClass("slide-toggle-open").nextAll(".angle_wrapper > div:not(:last-child) h1").slideUp(500).removeClass("slide-toggle-open");
-        return;
+    if ($('.textBox').is(":visible")) {
+      $('.textBox').hide("slow");
     }
-    /* the bar*/
-    return false;
+  } else if ($attrID == 'records') {
+
+    $('#recordsWrapper, #recordsWrapper2').toggle('slide');
+    $('.records-wrapper').css({ "z-index": "1000" });
+
+    if ($('.records-textBox').is(":visible")) {
+      $('.records-textBox').hide("slow");
+    }
+  } else {}
+
+  /* the foo*/
+  if ($(this).hasClass("slide-toggle-open")) {
+    $(this).removeClass("slide-toggle-open").nextAll(".angle_wrapper > div:not(:last-child) h1").slideUp(500).removeClass("slide-toggle-open");
+    return;
+  }
+  /* the bar*/
+  return false;
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+$('h1#members, h1#spotlight, h1#records').on('click', function () {});
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
 /* 9 */
@@ -440,7 +448,6 @@ function downloadLink(url) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__scripts_hide_divs__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__scripts_hide_divs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__scripts_hide_divs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_about_tabs__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_about_tabs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__scripts_about_tabs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scripts_spotlight__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scripts_spotlight___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__scripts_spotlight__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__scripts_records__ = __webpack_require__(12);
@@ -483,6 +490,38 @@ $('i#mobileNav').on('click', function () {
 let appRouter = new __WEBPACK_IMPORTED_MODULE_12__router_main__["a" /* Router */]();
 Backbone.history.start();
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(5)))
+
+/***/ }),
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export curHash */
+
+function curHash(hash) {
+  window.open(hash, '_parent');
+}
 
 /***/ })
 ],[23]);
