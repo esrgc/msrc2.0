@@ -9144,18 +9144,18 @@ li.img-150x300 img {
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .navbar,
   .navbar-header {
-    min-height: 35px !important;
+    min-height: 27px !important;
   }
   body,
   h3 {
     font-size: 8px;
   }
   #logo_lrg {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
   #logo_sm {
-    top: 25px;
-    font-size: 8px !important;
+    top: 23px;
+    font-size: 7.3px !important;
   }
   #nav-links p {
     font-size: 8px !important;
@@ -9372,7 +9372,7 @@ li.img-150x300 img {
   }
   .fa-3x,
   .footer-bottom {
-    font-size: 12px !important;
+    font-size: 9px !important;
   }
   .fa-5x {
     font-size: 1.2em !important;
@@ -9537,17 +9537,14 @@ li.img-150x300 img {
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .navbar,
   .navbar-header {
-    min-height: 49px;
+    min-height: 40px;
   }
   #logo_lrg {
-    font-size: 22px !important;
-  }
-  #logo_med {
-    font-size: 22px !important;
+    font-size: 19px !important;
   }
   #logo_sm {
-    top: 32px;
-    font-size: 8px !important;
+    top: 25px;
+    font-size: 7.4px !important;
   }
   body {
     font-size: 8px;
@@ -9931,14 +9928,14 @@ li.img-150x300 img {
 @media only screen and (min-device-width: 400px) and (max-device-width: 740px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .navbar,
   .navbar-header {
-    min-height: 49px;
+    min-height: 40px;
   }
   #logo_lrg {
-    font-size: 27px !important;
+    font-size: 22px !important;
   }
   #logo_sm {
-    top: 35px;
-    font-size: 10px !important;
+    top: 31px;
+    font-size: 8.7px !important;
   }
   body {
     font-size: 10px;
@@ -10080,6 +10077,7 @@ li.img-150x300 img {
   }
   #advisGroup,
   #execGroup {
+    width: 60%;
     padding-top: 80px;
   }
   #imgcontainer {
