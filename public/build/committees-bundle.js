@@ -110,16 +110,13 @@ let Router = Backbone.Router.extend({
     'comGIS': 'comGIS',
     'comIT': 'comIT',
     'comMUST': 'comMUST',
-    '*event': 'event' //catch all other hash change events and fire a click
+    '*other': 'event' /*catch all other hash change events and fire a click*/
   },
-  initialize(options) {
-    this.options = options;
+  initialize() {
     console.log('router is being initialized');
   },
   comCEDS() {
-    // console.log('caught #comCEDS hashchange event!');
-    // $('#advisGroup').trigger('click');
-    // $(location.hash).trigger('click');
+    console.log('caught #comCEDS hashchange event!' + this.route);
     advisGroup();
   },
   comEM() {
@@ -135,7 +132,7 @@ let Router = Backbone.Router.extend({
     advisGroup();
   },
   event() {
-    // console.log('caught *event with backbone router');
+    /*console.log('caught *event with backbone router');*/
     $(location.hash).trigger('click');
   }
 });
@@ -312,6 +309,7 @@ $('i#mobileNav').on('click', function () {
 // import '../../scripts/fsReadDir';
 
 let appRouter = new __WEBPACK_IMPORTED_MODULE_9__router_main__["a" /* Router */]();
+
 Backbone.history.start();
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(5)))
 
