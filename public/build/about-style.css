@@ -6965,6 +6965,9 @@ p {
 .tiny-padding {
   padding: 5px !important;
 }
+.mid-padding {
+  padding: 30px !important;
+}
 /* Custom Button Styles */
 .btn-dark {
   border-radius: 0;
