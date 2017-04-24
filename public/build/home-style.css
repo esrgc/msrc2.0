@@ -8477,7 +8477,7 @@ li.img-150x300 img {
 @media screen and (min-width: 941px) {
   .navbar,
   .navbar-header {
-    min-height: 66.6px;
+    min-height: 48px;
   }
 }
 @media screen and (max-width: 940px) {
