@@ -8494,7 +8494,7 @@ li.img-150x300 img {
 @media screen and (min-width: 941px) {
   .navbar,
   .navbar-header {
-    min-height: 48px;
+    min-height: 65px;
   }
 }
 @media screen and (max-width: 940px) {
@@ -9002,13 +9002,20 @@ li.img-150x300 img {
     font-size: 23px !important;
   }
   #logo_sm {
-    top: 31px;
+    top: 1px;
     font-size: 9px !important;
   }
   #nav-links p {
     font-size: 10px !important;
     padding-right: 20px;
     margin-bottom: 0;
+  }
+  .navbar,
+  .navbar-header {
+    min-height: 31px;
+  }
+  .navbar-header {
+    height: 2.6em;
   }
   .footer_button_div,
   .navbar.navbar-fixed-bottom {
@@ -9204,18 +9211,21 @@ li.img-150x300 img {
 @media only screen and (min-device-width: 319px) and (max-device-width: 569px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .navbar,
   .navbar-header {
-    min-height: 27px !important;
+    min-height: 22px !important;
+  }
+  .navbar-header {
+    height: 20px;
   }
   body,
   h3 {
     font-size: 8px;
   }
   #logo_lrg {
-    font-size: 18px !important;
+    font-size: 15px !important;
   }
   #logo_sm {
-    top: 23px;
-    font-size: 7.3px !important;
+    top: 21px;
+    font-size: 6px !important;
   }
   #nav-links p {
     font-size: 8px !important;
@@ -9246,8 +9256,8 @@ li.img-150x300 img {
   }
   #footer_content,
   #footer_higher {
-    height: 27.43em !important;
-    font-size: 8px !important;
+    height: 33.43em !important;
+    font-size: 6px !important;
   }
   #footContact {
     right: 30px;
@@ -9314,6 +9324,11 @@ li.img-150x300 img {
     left: 0;
     bottom: -65em;
   }
+  .toggle1:not(.ac_collapse),
+  .toggle2:not(.ac_collapse),
+  .toggle3:not(.ac_collapse) {
+    top: 29px  !important;
+  }
   .toggle-text.ac_collapse {
     -webkit-transform: matrix(1, 0.176327, 0, 1, 0, 0) rotate(-10deg);
     /* use px for translate x,y for -moz-  */
@@ -9356,7 +9371,7 @@ li.img-150x300 img {
     height: 100%;
   }
   #leftDiv {
-    width: 35%;
+    width: 20%;
   }
   .left_Div {
     top: 60px;
@@ -9364,15 +9379,20 @@ li.img-150x300 img {
   #advisDiv,
   #execDiv,
   #rightDiv {
-    width: 65%;
+    width: 80%;
   }
   #advisGroup,
   #execGroup {
     padding-top: 60px;
+    width: 90%;
   }
   .archive_months,
   .members {
     margin-left: 5px;
+  }
+  .archive_months li,
+  .members li {
+    padding-bottom: 1.556em;
   }
   #imgcontainer {
     top: 44px;
@@ -9397,11 +9417,11 @@ li.img-150x300 img {
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   #logo_lrg {
-    font-size: 25px !important;
+    font-size: 23px !important;
   }
   #logo_sm {
-    top: 35px;
-    font-size: 9.6px !important;
+    top: 30px;
+    font-size: 9px !important;
   }
   body {
     font-size: 12px;
@@ -9419,6 +9439,9 @@ li.img-150x300 img {
   .navbar,
   .navbar-header {
     min-height: 31px;
+  }
+  .navbar-header {
+    height: 2.6em;
   }
   .header {
     min-width: 100vw;
@@ -9622,6 +9645,9 @@ li.img-150x300 img {
   .navbar-header {
     min-height: 30px;
   }
+  .navbar-header {
+    height: 8px;
+  }
   #logo_lrg {
     font-size: 19px !important;
   }
@@ -9802,14 +9828,17 @@ li.img-150x300 img {
 @media only screen and (min-device-width: 410px) and (max-device-width: 740px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .navbar,
   .navbar-header {
-    min-height: 30px;
+    min-height: 2.335em !important;
+  }
+  .navbar-header {
+    height: 2.335em;
   }
   #logo_lrg {
-    font-size: 27px !important;
+    font-size: 23px !important;
   }
   #logo_sm {
-    top: 37px;
-    font-size: 10px !important;
+    top: 32px;
+    font-size: 9px !important;
   }
   body {
     font-size: 14px;
@@ -9849,6 +9878,9 @@ li.img-150x300 img {
   }
   .footer_buffer {
     padding-top: 40px !important;
+  }
+  .fa-2x {
+    font-size: 1em;
   }
   .fa-3x,
   .footer-bottom {
@@ -10037,6 +10069,9 @@ li.img-150x300 img {
   .navbar,
   .navbar-header {
     min-height: 40px;
+  }
+  .navbar-header {
+    height: 32px;
   }
   #logo_lrg {
     font-size: 22px !important;

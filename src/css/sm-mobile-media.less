@@ -10,7 +10,7 @@
   }
 
   #logo_sm {
-    top: 31px;
+    top: 1px;
     font-size: 9px !important;
   }
 
@@ -18,6 +18,14 @@
     font-size: 10px !important;
     padding-right: 20px;
     margin-bottom: 0;
+  }
+
+  .navbar, .navbar-header {
+    min-height: 31px;
+  }
+
+  .navbar-header {
+    height: 2.6em;
   }
 
   .footer_button_div,
@@ -245,7 +253,11 @@
 @media only screen and (min-device-width: 319px) and (max-device-width: 569px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .navbar,
   .navbar-header {
-    min-height: 27px !important;
+    min-height: 22px !important;
+  }
+
+  .navbar-header {
+    height: 20px;
   }
 
   body,
@@ -254,12 +266,12 @@
   }
 
   #logo_lrg {
-    font-size: 18px !important;
+    font-size: 15px !important;
   }
 
   #logo_sm {
-    top: 23px;
-    font-size: 7.3px !important;
+    top: 21px;
+    font-size: 6px !important;
   }
 
   #nav-links p {
@@ -298,8 +310,8 @@
 
   #footer_content,
   #footer_higher {
-    height: 27.43em !important;
-    font-size: 8px !important;
+    height: 33.43em !important;
+    font-size: 6px !important;
   }
 
   #footContact {
@@ -384,6 +396,10 @@
     bottom: -65em; // -950 px
   }
 
+  .toggle1:not(.ac_collapse), .toggle2:not(.ac_collapse), .toggle3:not(.ac_collapse) {
+    top: 29px  !important;
+  }
+
   .toggle-text.ac_collapse {
     .antiSkew2-matrix;
     left: 55%;
@@ -430,7 +446,7 @@
   }
 
   #leftDiv {
-    width: 35%;
+    width: 20%;
   }
 
   .left_Div {
@@ -441,21 +457,22 @@
   #execDiv,
   #rightDiv {
     // height: 95%;
-    width: 65%;
+    width: 80%;
     // padding-bottom: 50px;
   }
 
   #advisGroup,
   #execGroup {
     padding-top: 60px;
+    width: 90%;
   }
-  // #advisDiv,
-  // #execDiv {
-  //     top: 49px;
-  // }
+
   .archive_months,
   .members {
     margin-left: 5px;
+    li {
+      padding-bottom: 1.556em;
+    }
   }
 
   #imgcontainer {
