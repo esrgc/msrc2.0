@@ -7302,17 +7302,6 @@ div.effect-shade p {
   -webkit-transform: translate3d(0, 0.556em, 0);
   transform: translate3d(0, 0.556em, 0);
 }
-div.effect-shade:hover h4 {
-  color: #fff;
-  -webkit-transform: translate3d(0, -70%, 0) translate3d(0, -3.445em, 0);
-  transform: translate3d(0, -70%, 0) translate3d(0, -3.445em, 0);
-}
-div.effect-shade:hover h1::before,
-div.effect-shade:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
 /* Home page aside to About Committees and Partners*/
 .figure-nest {
   width: 100%;
