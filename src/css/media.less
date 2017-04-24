@@ -127,7 +127,8 @@
   }
 
   .footer_buffer {
-    padding-top: 56px !important;
+    //padding-top: 56px !important;
+    padding-top: 48px !important;  // modified after hiding social media icons
   }
 
   .footer-bottom {
@@ -486,6 +487,9 @@
   }
 }
 @media screen and (max-width: 581px) {
+  .navbar, .navbar-header {
+
+  }
   #logo_lrg {
     font-size: 18px !important;
   }
@@ -513,12 +517,16 @@
     font-size: 1em;
   }
 
+  .records-wrapper {
+    height: 82vh;
+  }
+
   h1 {
     font-size: 1em;
   }
 
   #about-landing p {
-    font-size: 7px;
+    font-size: 10px;
   }
 
   .footer-bottom {
@@ -527,11 +535,20 @@
   }
 
   .footer_buffer {
-    padding-top: 47px !important;
+    //padding-top: 47px !important;
+    padding-top: 41px !important;  // modified after hiding social media icons
   }
 
   #footer_button {
     bottom: 57px;
+  }
+
+  #footAbout, #footPartnerships, #footContact {
+    width: 20%;
+  }
+
+  #footContact {
+    right: 15px;
   }
 
   #committeeSpacerTop {

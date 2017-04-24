@@ -7068,10 +7068,6 @@ ul#myTopnav li.icon {
   .navbar-nav li a {
     line-height: 5px;
   }
-  #nav-links p {
-    position: relative;
-    left: 30px;
-  }
 }
 /*Bootstrap carousel*/
 .carousel,
@@ -7355,6 +7351,9 @@ figure {
   }
 }
 /* All page's Footer section*/
+#socialMedia {
+  display: none;
+}
 .footer_wrapper_home {
   display: block;
   position: relative;
@@ -7366,7 +7365,7 @@ figure {
   bottom: 0;
   width: 100%;
   background: #071e35;
-  padding-top: 63px;
+  padding-top: 51px;
   z-index: 67;
 }
 .footer {
@@ -7388,7 +7387,7 @@ figure {
   text-align: center;
   position: fixed;
   left: 49%;
-  bottom: 75px;
+  bottom: 58px;
   color: white;
   cursor: pointer;
   z-index: 1000;
@@ -8373,7 +8372,7 @@ li.img-150x300 img {
     min-height: 200px;
   }
   .footer_buffer {
-    padding-top: 56px !important;
+    padding-top: 48px !important;
   }
   .footer-bottom {
     font-size: 12px;
@@ -8708,21 +8707,32 @@ li.img-150x300 img {
   #angle3 h1 {
     font-size: 1em;
   }
+  .records-wrapper {
+    height: 82vh;
+  }
   h1 {
     font-size: 1em;
   }
   #about-landing p {
-    font-size: 7px;
+    font-size: 10px;
   }
   .footer-bottom {
     padding-top: 10px;
     font-size: 7px;
   }
   .footer_buffer {
-    padding-top: 47px !important;
+    padding-top: 41px !important;
   }
   #footer_button {
     bottom: 57px;
+  }
+  #footAbout,
+  #footPartnerships,
+  #footContact {
+    width: 20%;
+  }
+  #footContact {
+    right: 15px;
   }
   #committeeSpacerTop {
     height: 10%;
@@ -9793,7 +9803,7 @@ li.img-150x300 img {
   }
   #logo_sm {
     top: 37px;
-    font-size: 10.5px !important;
+    font-size: 10px !important;
   }
   body {
     font-size: 14px;
