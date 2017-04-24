@@ -356,7 +356,7 @@ $('div#workPlanLink').on('click', function () {
 });
 
 $('div#byLawsLink').on('click', function () {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('./documents/msrc/MSRC_Bylaws.doc');
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('./documents/msrc/MSRC_Bylaws.pdf');
 });
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 

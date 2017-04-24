@@ -30,5 +30,5 @@ $('div#workPlanLink').on('click', function() {
 });
 
 $('div#byLawsLink').on('click', function() {
- downloadLink('./documents/msrc/MSRC_Bylaws.doc');
+ downloadLink('./documents/msrc/MSRC_Bylaws.pdf');
 });
