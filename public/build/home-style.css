@@ -7399,6 +7399,27 @@ figure {
 #footer_content {
   z-index: 10;
 }
+#phoneCall,
+#mailTo {
+  margin-right: 0;
+  margin-left: 0;
+  font-family: 'FontAwesome';
+  color: #e6e6e6;
+  cursor: pointer;
+}
+#phoneCall > .col,
+#mailTo > .col,
+#phoneCall > [class*="col-"],
+#mailTo > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+#phoneCall::before {
+  content: '\F095';
+}
+#mailTo::before {
+  content: "\F003";
+}
 .comMenu {
   padding: 0.556em 0 0.556em 0.2778em;
   overflow-y: auto;
@@ -7602,19 +7623,19 @@ figure.effect-move:focus h3 {
   transform: rotate(0deg);
 }
 .toggle1 {
-  opacity: .6;
+  opacity: 0.6;
   bottom: -8.334em;
   margin-right: 0;
   z-index: 1;
 }
 .toggle2 {
-  opacity: .75;
+  opacity: 0.75;
   bottom: -16.668em;
   margin-right: 0;
   z-index: 2;
 }
 .toggle3 {
-  opacity: .9;
+  opacity: 0.9;
   bottom: -25em;
   margin-right: 0;
   z-index: 3;
@@ -7828,8 +7849,8 @@ figure.effect-move:focus h3 {
   padding: 0 25px;
   margin: 0 auto;
 }
-table#fedFunds th,
-table#fedFunds td {
+table#fedFunds td,
+table#fedFunds th {
   padding: 10px;
 }
 .imgHeaderLeft {
@@ -7849,7 +7870,7 @@ table#fedFunds td {
   color: #e6e6e6;
   width: 100%;
   height: 16.668em;
-  padding: 10px 10px;
+  padding: 10px;
   cursor: pointer;
 }
 .imgHeaderLeft p {
@@ -7873,7 +7894,7 @@ table#fedFunds td {
   color: #e6e6e6;
   width: 100%;
   height: 16.668em;
-  padding: 10px 10px;
+  padding: 10px;
   cursor: pointer;
 }
 .imgHeaderRight p {
@@ -7911,14 +7932,14 @@ table#fedFunds td {
   padding: 0 0 0 50px;
 }
 .padding-top {
-  padding: 50px 0 0 0;
+  padding: 50px 0 0;
 }
 .padding-right {
   padding: 0 50px 0 0;
 }
 .padding-bottom {
   bottom: 10px;
-  padding: 0 0 10px 0;
+  padding: 0 0 10px;
 }
 .records-wrapper {
   display: block;
@@ -7926,7 +7947,7 @@ table#fedFunds td {
   text-align: center;
   height: 75vh;
   width: 100%;
-  top: 0px !important;
+  top: 0 !important;
   padding: 0;
   margin: 0;
   left: 1px;
@@ -7963,20 +7984,16 @@ table#fedFunds td {
   padding-bottom: -3.75em;
 }
 .sowHighlight {
-  margin: 6em;
-  margin-top: 0;
-  margin-bottom: 1em;
+  margin: 0 6em 1em;
 }
 li.img-150x300 img {
   width: 15%;
 }
 .sowHighlight-img {
-  margin: 6em;
-  margin-top: 0;
-  margin-bottom: 1em;
+  margin: 0 6em 1em;
 }
 .sowHighlight-img li {
-  padding: 0 0 35px 0 !important;
+  padding: 0 0 35px !important;
 }
 .sowHighlight-img li img {
   width: 10%;
@@ -8060,7 +8077,7 @@ li.img-150x300 img {
   left: 6.25em;
   width: 12.5em;
   margin: 0 auto;
-  padding: 1.5625em 1.5625em;
+  padding: 1.5625em;
   text-align: center;
 }
 #committeeSpacerTop {
@@ -8090,8 +8107,8 @@ li.img-150x300 img {
   color: #e6e6e6;
   width: 100%;
 }
-#execDiv,
-#advisDiv {
+#advisDiv,
+#execDiv {
   display: block;
   position: fixed;
   opacity: 1;
@@ -8105,7 +8122,7 @@ li.img-150x300 img {
   /* For Firefox 3.6 to 15*/
   background: linear-gradient(to left, #333333, #8c8c8c);
   opacity: 0.95;
-  top: 0em;
+  top: 0;
   height: 94%;
   width: 66.67%;
   margin-top: 0;
@@ -8120,14 +8137,14 @@ li.img-150x300 img {
   height: auto;
   overflow-y: auto;
 }
-.years,
-.advisCommittees,
+#advisGroup,
 #execGroup,
-#advisGroup {
+.advisCommittees,
+.years {
   cursor: pointer;
 }
-#execGroup,
-#advisGroup {
+#advisGroup,
+#execGroup {
   margin: 0 auto;
   width: 50%;
 }
@@ -8184,9 +8201,9 @@ li.img-150x300 img {
   height: 100%;
   z-index: 0;
 }
+#counties,
 #gilligan,
-#gilligan2,
-#counties {
+#gilligan2 {
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -8195,26 +8212,26 @@ li.img-150x300 img {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
 }
+#counties figure,
 #gilligan figure,
-#gilligan2 figure,
-#counties figure {
+#gilligan2 figure {
   display: float;
   float: left;
 }
+#counties figure img,
 #gilligan figure img,
-#gilligan2 figure img,
-#counties figure img {
+#gilligan2 figure img {
   width: 75%;
   margin: 10px auto;
   padding: 10px;
   cursor: pointer;
 }
+#counties figure a h4,
 #gilligan figure a h4,
 #gilligan2 figure a h4,
-#counties figure a h4,
+#counties figure a p,
 #gilligan figure a p,
-#gilligan2 figure a p,
-#counties figure a p {
+#gilligan2 figure a p {
   position: relative;
   margin-top: -10px;
   margin-left: 10%;
@@ -8455,16 +8472,16 @@ li.img-150x300 img {
   }
 }
 @media screen and (max-width: 991px) {
-  #execDiv,
-  #advisDiv {
+  #advisDiv,
+  #execDiv {
     width: 75%;
   }
-  #execGroup,
-  #advisGroup {
+  #advisGroup,
+  #execGroup {
     width: 75%;
   }
-  #execGroup li h3,
-  #advisGroup li h3 {
+  #advisGroup li h3,
+  #execGroup li h3 {
     font-size: 1em;
   }
   .fa-5x {
@@ -8529,8 +8546,8 @@ li.img-150x300 img {
   #gilligan2 figure img {
     width: 55%;
   }
-  #footer_higher,
-  #footer_content {
+  #footer_content,
+  #footer_higher {
     font-size: 10px;
     height: 30.443em;
   }
@@ -8581,17 +8598,17 @@ li.img-150x300 img {
   }
 }
 @media screen and (max-width: 767px) {
-  #execDiv,
-  #advisDiv {
+  #advisDiv,
+  #execDiv {
     width: 83.333%;
   }
-  #execGroup,
-  #advisGroup {
+  #advisGroup,
+  #execGroup {
     width: 85%;
   }
-  #execGroup li h3,
-  #advisGroup li h3 {
-    font-size: .8em;
+  #advisGroup li h3,
+  #execGroup li h3 {
+    font-size: 0.8em;
   }
   .fa-5x {
     font-size: 2.4em;
@@ -8716,8 +8733,8 @@ li.img-150x300 img {
     bottom: 57px;
   }
   #footAbout,
-  #footPartnerships,
-  #footContact {
+  #footContact,
+  #footPartnerships {
     width: 20%;
   }
   #footContact {
@@ -9015,8 +9032,8 @@ li.img-150x300 img {
     padding-bottom: -20px;
     left: 49%;
   }
-  #footer_higher,
-  #footer_content {
+  #footer_content,
+  #footer_higher {
     height: 24em;
     font-size: 8px !important;
   }
@@ -9227,17 +9244,17 @@ li.img-150x300 img {
     padding-bottom: -45px;
     left: 49%;
   }
-  #footer_higher,
-  #footer_content {
+  #footer_content,
+  #footer_higher {
     height: 27.43em !important;
     font-size: 8px !important;
   }
   #footContact {
     right: 30px;
   }
+  #footAbout,
   #footContact,
-  #footPartnerships,
-  #footAbout {
+  #footPartnerships {
     width: 20%;
   }
   hr.small {
@@ -9822,8 +9839,8 @@ li.img-150x300 img {
     bottom: 40px;
     left: 49%;
   }
-  #footer_higher,
-  #footer_content {
+  #footer_content,
+  #footer_higher {
     height: 200px;
     font-size: 8px !important;
   }
@@ -10060,17 +10077,17 @@ li.img-150x300 img {
     padding-bottom: -51px;
     left: 49%;
   }
-  #footer_higher,
-  #footer_content {
+  #footer_content,
+  #footer_higher {
     height: 240px;
     font-size: 8px !important;
   }
   #footerContact {
     right: 20px;
   }
+  #footAbout,
   #footContact,
-  #footPartnerships,
-  #footAbout {
+  #footPartnerships {
     width: 20%;
   }
   hr.small {

@@ -696,6 +696,23 @@ figure {
     z-index: 10;
 }
 
+#phoneCall,
+#mailTo {
+  .no-gutters;
+  font-family: 'FontAwesome';
+  // font-size: 1em;
+  color: @logo-color;
+  cursor: pointer;
+}
+
+#phoneCall::before {
+  content: '\f095';
+}
+
+#mailTo::before {
+  content: "\f003";
+}
+
 .comMenu {
     padding: 0.556em 0 0.556em 0.2778em;
     overflow-y: auto;
