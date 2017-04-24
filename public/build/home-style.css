@@ -7601,7 +7601,6 @@ figure.effect-move:focus h3 {
   color: #0d0d0d;
   position: relative;
   top: 0;
-  left: 22%;
   /* text parameter for rotating unslanted text*/
   -webkit-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
   /* use px for translate x,y for -moz-  */
@@ -7609,6 +7608,15 @@ figure.effect-move:focus h3 {
   -ms-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
   -o-transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
   transform: matrix(1, 1.19175, 0, 1, 0, 0) rotate(-50deg);
+}
+#angle1.ac_collapse h1 {
+  left: 23%;
+}
+#angle2.ac_collapse h1 {
+  left: 24%;
+}
+#angle3.ac_collapse h1 {
+  left: 21.5%;
 }
 .toggle-text:not(.ac_collapse) {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -8159,9 +8167,11 @@ li.img-150x300 img {
 }
 .archive_months li,
 .members li {
+  padding-bottom: 0.556em;
+}
+.members li {
   word-wrap: normal;
   width: 80%;
-  padding-bottom: 0.556em;
 }
 .just-left {
   text-align: left;

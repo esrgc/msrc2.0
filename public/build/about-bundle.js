@@ -209,7 +209,7 @@ $(".angle_wrapper > div:not(:last-child) h1").on("click", function () {
 
     $("#membersDiv").toggle('slide');
     $("#membersDiv2").toggle('slide');
-  } else if ($attrID == 'spotlight') {
+  } else if ($attrID == 'projects') {
 
     $('.spotlight-wrapper').css({ "z-index": "1000" });
     $('#spotlight-container').toggle('slide');
@@ -217,7 +217,7 @@ $(".angle_wrapper > div:not(:last-child) h1").on("click", function () {
     if ($('.textBox').is(":visible")) {
       $('.textBox').hide("slow");
     }
-  } else if ($attrID == 'records') {
+  } else if ($attrID == 'documents') {
 
     $('#recordsWrapper, #recordsWrapper2').toggle('slide');
     $('.records-wrapper').css({ "z-index": "1000" });
