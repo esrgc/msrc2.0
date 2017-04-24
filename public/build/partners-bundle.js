@@ -1,4 +1,4 @@
-webpackJsonp([3],{
+webpackJsonp([2],{
 
 /***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
@@ -60,11 +60,11 @@ if (navigator.userAgent.match(/Firefox/i)) {
 
 /***/ }),
 
-/***/ 20:
+/***/ 21:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__ = __webpack_require__(21);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__ = __webpack_require__(6);
 
 
 $('figure#DCED').on('click', function () {
@@ -118,20 +118,6 @@ $('figure#MDDLLR').on('click', function () {
 
 /***/ }),
 
-/***/ 21:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = downloadLink;
-/*download document function for linking to a div*/
-/*downloadable pdf will open in new windows*/
-/*word.doc and .docx will download without window change*/
-function downloadLink(url) {
-  window.open(url, '_blank');
-}
-
-/***/ }),
-
 /***/ 26:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -142,7 +128,7 @@ function downloadLink(url) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_logo_router__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_logo_router__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__css_style_less__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__css_style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__css_style_less__);
 /* import global js functions*/
@@ -188,6 +174,20 @@ function mobileNav() {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 6:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = downloadLink;
+/*download document function for linking to a div*/
+/*downloadable pdf will open in new windows*/
+/*word.doc and .docx will download without window change*/
+function downloadLink(url) {
+  window.open(url, '_blank');
+}
 
 /***/ })
 

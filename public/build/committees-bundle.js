@@ -85,7 +85,8 @@ function mobileNav() {
 
 /***/ }),
 /* 5 */,
-/* 6 */
+/* 6 */,
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -141,7 +142,7 @@ let Router = Backbone.Router.extend({
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(5)))
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {var $months = $('.archive_months');
@@ -159,13 +160,13 @@ $(".years").click(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 8 */,
 /* 9 */,
 /* 10 */,
 /* 11 */,
 /* 12 */,
 /* 13 */,
-/* 14 */
+/* 14 */,
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {var $membersUL = $(".members");
@@ -214,7 +215,7 @@ var $comOpen = $(".advisCommittees").click(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {/*open advis tab and if exec tab open close it*/
@@ -229,7 +230,7 @@ $("#advisGroup").click(function (e) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {/* Open exec tab and if advis tab open close it */
@@ -244,7 +245,7 @@ $("#execGroup").click(function (e) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$("#execDiv").hide(); /*committees page*/
@@ -254,7 +255,6 @@ $(".members").hide(); /*committees page*/
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 18 */,
 /* 19 */,
 /* 20 */,
 /* 21 */,
@@ -267,22 +267,22 @@ $(".members").hide(); /*committees page*/
 /* WEBPACK VAR INJECTION */(function($, Backbone) {Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_minutes_archive__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_minutes_archive__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_minutes_archive___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scripts_minutes_archive__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_ifBrowser__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_ifBrowser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__scripts_ifBrowser__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_mobileNav__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scripts_hide_divs__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scripts_hide_divs__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scripts_hide_divs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__scripts_hide_divs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__scripts_executive_tab__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__scripts_executive_tab__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__scripts_executive_tab___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__scripts_executive_tab__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_advisory_tab__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_advisory_tab__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_advisory_tab___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__scripts_advisory_tab__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scripts_advis_committees_menu__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scripts_advis_committees_menu__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scripts_advis_committees_menu___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__scripts_advis_committees_menu__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__css_style_less__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__css_style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__css_style_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__router_main__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__router_main__ = __webpack_require__(7);
 /*import global js functions*/
 
 

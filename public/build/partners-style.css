@@ -7375,7 +7375,6 @@ figure {
   background-color: #071e35;
   max-height: 20.8332em;
   width: 100%;
-  padding: 1.112em 0;
   line-height: 70%;
   z-index: 80;
 }
@@ -7413,8 +7412,11 @@ figure {
   z-index: 10;
 }
 .comMenu {
-  padding-left: 0.2778em;
+  padding: 0.556em 0 0.556em 0.2778em;
   overflow-y: auto;
+}
+.comMenu li {
+  padding-bottom: 0.556em;
 }
 .toggle-open,
 .toggle-close {
@@ -7804,7 +7806,7 @@ figure.effect-move:focus h3 {
 .textBox:not(.hidden) {
   display: block;
   position: fixed;
-  background: rgba(255, 255, 255, 0.95);
+  background: #ffffff;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
   width: 100%;
@@ -7998,7 +8000,7 @@ li.img-150x300 img {
 .records-textBox {
   display: block;
   position: fixed;
-  background: rgba(255, 255, 255, 0.95);
+  background: #ffffff;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
   width: 100%;
@@ -8054,7 +8056,6 @@ li.img-150x300 img {
   left: 0;
   bottom: 0;
   height: 100%;
-  width: 35%;
   z-index: 40;
   text-align: center;
 }
@@ -8091,7 +8092,6 @@ li.img-150x300 img {
   padding-bottom: -3.75em;
   overflow-y: auto;
   height: 100vh;
-  width: 65%;
   z-index: 45;
   text-align: center;
 }
@@ -8148,6 +8148,7 @@ li.img-150x300 img {
 }
 .archive_months,
 .members {
+  font-size: 12px;
   margin-left: 0.556em;
   margin-top: 0;
   margin-bottom: 1em;
@@ -8455,11 +8456,31 @@ li.img-150x300 img {
     width: 32.33%;
   }
   #footer_higher #footer_content {
-    height: 19.443em;
+    height: 25.443em;
   }
   #counties figure img,
   #gilligan figure img {
     width: 45%;
+  }
+}
+@media screen and (max-width: 991px) {
+  #execDiv,
+  #advisDiv {
+    width: 75%;
+  }
+  #execGroup,
+  #advisGroup {
+    width: 75%;
+  }
+  #execGroup li h3,
+  #advisGroup li h3 {
+    font-size: 1em;
+  }
+  .fa-5x {
+    font-size: 3em;
+  }
+  .members li {
+    padding-bottom: 0.556em;
   }
 }
 @media screen and (min-width: 941px) {
@@ -8517,6 +8538,11 @@ li.img-150x300 img {
   #gilligan2 figure img {
     width: 55%;
   }
+  #footer_higher,
+  #footer_content {
+    font-size: 10px;
+    height: 30.443em;
+  }
 }
 @media screen and (max-width: 830px) {
   .membersDiv2 {
@@ -8561,6 +8587,23 @@ li.img-150x300 img {
   .imgHeaderLeft,
   .imgHeaderRight {
     height: 18.668em;
+  }
+}
+@media screen and (max-width: 767px) {
+  #execDiv,
+  #advisDiv {
+    width: 83.333%;
+  }
+  #execGroup,
+  #advisGroup {
+    width: 85%;
+  }
+  #execGroup li h3,
+  #advisGroup li h3 {
+    font-size: .8em;
+  }
+  .fa-5x {
+    font-size: 2.4em;
   }
 }
 @media screen and (max-height: 760px) {
