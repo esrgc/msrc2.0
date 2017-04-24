@@ -8045,7 +8045,6 @@ li.img-150x300 img {
 #leftDiv {
   display: block;
   position: fixed;
-  opacity: 1;
   background: #8c8c8c;
   /* For browsers that do not support gradients*/
   background: -webkit-linear-gradient(left, #333333, #8c8c8c);
@@ -8057,7 +8056,7 @@ li.img-150x300 img {
   background: linear-gradient(to right, #333333, #8c8c8c);
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #e6e6e6;
-  opacity: 0.95;
+  opacity: 1;
   left: 0;
   bottom: 0;
   height: 100%;
@@ -8111,7 +8110,6 @@ li.img-150x300 img {
 #execDiv {
   display: block;
   position: fixed;
-  opacity: 1;
   background: #8c8c8c;
   /* For browsers that do not support gradients*/
   background: -webkit-linear-gradient(right, #333333, #8c8c8c);
@@ -8121,7 +8119,7 @@ li.img-150x300 img {
   background: -moz-linear-gradient(left, #333333, #8c8c8c);
   /* For Firefox 3.6 to 15*/
   background: linear-gradient(to left, #333333, #8c8c8c);
-  opacity: 0.95;
+  opacity: 1;
   top: 0;
   height: 94%;
   width: 66.67%;
@@ -8161,6 +8159,8 @@ li.img-150x300 img {
 }
 .archive_months li,
 .members li {
+  word-wrap: normal;
+  width: 80%;
   padding-bottom: 0.556em;
 }
 .just-left {
@@ -9002,7 +9002,7 @@ li.img-150x300 img {
     font-size: 23px !important;
   }
   #logo_sm {
-    top: 1px;
+    top: 30px;
     font-size: 9px !important;
   }
   #nav-links p {
