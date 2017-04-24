@@ -112,8 +112,12 @@ router for MSRC 2.0.1
 
 /* dual stage click event for nested advisGroup on committees page*/
 const advisGroup = () => {
-  $('#advisGroup').trigger('click');
-  $(location.hash).trigger('click');
+  if ($('#advisDiv').is(':visible')) {
+    $(location.hash).trigger('click');
+  } else {
+    $('#advisGroup').trigger('click');
+    $(location.hash).trigger('click');
+  }
 };
 
 let Router = Backbone.Router.extend({
@@ -176,7 +180,7 @@ $(".years").click(function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_curHash__ = __webpack_require__(27);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_curHash__ = __webpack_require__(42);
 
 /*
  // zAccordion About pop out
@@ -206,10 +210,33 @@ $(".angle_wrapper > div:not(:last-child) h1").on("click", function () {
   /*console.log($attrID);*/
 
   if ($attrID == 'members') {
+    //
+    if ($('#recordsWrapper').is(':visible')) {
+      $("#recordsWrapper, #recordsWrapper2, .records-textBox").hide();
+      $("#workPlan, #meetMinutes, #byLaws").hide();
+      $('.toggle3, #documents').toggleClass('ac_collapse');
+    }
+    //
+    if ($('#spotlight-container').is(':visible')) {
+      $('#spotlight-container, .textBox').hide();
+      $("#broadband, #tech, #health, #gis, #data, #ceds, #f1, #f2, #f3").hide();
+      $('.toggle2, #projects').toggleClass('ac_collapse');
+    }
 
     $("#membersDiv").toggle('slide');
     $("#membersDiv2").toggle('slide');
   } else if ($attrID == 'projects') {
+    //
+    if ($('#membersDiv').is(':visible')) {
+      $("#membersDiv, #membersDiv2, #votingMem, #nonVoting, .membersDiv2_bg").hide();
+      $('.toggle1, #members').toggleClass('ac_collapse');
+    }
+    //
+    if ($('#recordsWrapper').is(':visible')) {
+      $("#recordsWrapper, #recordsWrapper2, .records-textBox").hide();
+      $("#workPlan, #meetMinutes, #byLaws").hide();
+      $('.toggle3, #documents').toggleClass('ac_collapse');
+    }
 
     $('.spotlight-wrapper').css({ "z-index": "1000" });
     $('#spotlight-container').toggle('slide');
@@ -218,6 +245,15 @@ $(".angle_wrapper > div:not(:last-child) h1").on("click", function () {
       $('.textBox').hide("slow");
     }
   } else if ($attrID == 'documents') {
+    if ($('#spotlight-container').is(':visible')) {
+      $('#spotlight-container, .textBox').hide();
+      $("#broadband, #tech, #health, #gis, #data, #ceds, #f1, #f2, #f3").hide();
+      $('.toggle2, #projects').toggleClass('ac_collapse');
+    }
+    if ($('#membersDiv').is(':visible')) {
+      $("#membersDiv, #membersDiv2, #votingMem, #nonVoting, .membersDiv2_bg").hide();
+      $('.toggle1, #members').toggleClass('ac_collapse');
+    }
 
     $('#recordsWrapper, #recordsWrapper2').toggle('slide');
     $('.records-wrapper').css({ "z-index": "1000" });
@@ -448,6 +484,7 @@ $clickSpotlight.on('click', '.gridItem', function (e) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__scripts_hide_divs__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__scripts_hide_divs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__scripts_hide_divs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_about_tabs__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_about_tabs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__scripts_about_tabs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scripts_spotlight__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scripts_spotlight___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__scripts_spotlight__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__scripts_records__ = __webpack_require__(13);
@@ -495,7 +532,22 @@ Backbone.history.start();
 /* 24 */,
 /* 25 */,
 /* 26 */,
-/* 27 */
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

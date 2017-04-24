@@ -100,8 +100,12 @@ router for MSRC 2.0.1
 
 /* dual stage click event for nested advisGroup on committees page*/
 const advisGroup = () => {
-  $('#advisGroup').trigger('click');
-  $(location.hash).trigger('click');
+  if ($('#advisDiv').is(':visible')) {
+    $(location.hash).trigger('click');
+  } else {
+    $('#advisGroup').trigger('click');
+    $(location.hash).trigger('click');
+  }
 };
 
 let Router = Backbone.Router.extend({
