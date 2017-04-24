@@ -8330,6 +8330,15 @@ li.img-150x300 img {
   h4 {
     font-size: 1em;
   }
+  #angle1.ac_collapse h1 {
+    left: 50%;
+  }
+  #angle2.ac_collapse h1 {
+    left: 50.7%;
+  }
+  #angle3.ac_collapse h1 {
+    left: 48.5%;
+  }
   .toggle1,
   .toggle2,
   .toggle3,
@@ -8504,7 +8513,7 @@ li.img-150x300 img {
 @media screen and (min-width: 941px) {
   .navbar,
   .navbar-header {
-    min-height: 65px;
+    min-height: 58px;
   }
 }
 @media screen and (max-width: 940px) {
