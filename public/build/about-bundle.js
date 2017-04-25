@@ -280,7 +280,7 @@ $(".angle_wrapper > div:not(:last-child) h1").on("click", function () {
   return false;
 });
 
-$('h1#members, h1#spotlight, h1#records').on('click', function () {});
+// $('h1#members, h1#spotlight, h1#records').on('click', function() {});
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
