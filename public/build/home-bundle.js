@@ -58,7 +58,7 @@ if (navigator.userAgent.match(/Firefox/i)) {
     $(".textBox").css({ "padding-bottom": "30px" });
 
     $("#logo_lrg").css({ "line-height": '35px', "font-size-adjust": "0.375" });
-    $("#logo_med").css({ "line-height": '35px', "font-size-adjust": "0.375" });
+    $("#logo_sm").css({ "line-height": '35px', "font-size-adjust": "0.375" });
 
     // console.log('this is firefox!');
 } else if (navigator.userAgent.match(/Trident/i)) {
