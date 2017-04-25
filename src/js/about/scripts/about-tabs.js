@@ -68,12 +68,14 @@ $(".angle_wrapper > div:not(:last-child) h1").on("click", function() {
     }
 
   } else if ($attrID == 'documents') {
+    //
     if ($('#spotlight-container').is(':visible')) {
       $('#spotlight-container, .textBox').hide();
       $("#broadband, #tech, #health, #gis, #data, #ceds, #f1, #f2, #f3").hide();
       $('.toggle2, #projects').toggleClass('ac_collapse');
       $('#projects').find('.slide-toggle-close').toggleClass("slide-toggle-open");
     }
+    //
     if ($('#membersDiv').is(':visible')) {
       $("#membersDiv, #membersDiv2, #votingMem, #nonVoting, .membersDiv2_bg").hide();
       $('.toggle1, #members').toggleClass('ac_collapse');
