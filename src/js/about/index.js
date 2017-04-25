@@ -1,8 +1,9 @@
 /*import global js functions*/
+import '../scripts/ifBrowser';
 import '../scripts/footer-functions';
 import '../scripts/minutes-archive';
 import '../scripts/downloadLink';
-import '../scripts/ifBrowser';
+
 import {mobileNav} from '../scripts/mobileNav';
 // for small screens
 $('i#mobileNav').on('click', function() {

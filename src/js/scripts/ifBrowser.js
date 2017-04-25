@@ -11,6 +11,7 @@ if (navigator.userAgent.match(/Firefox/i)) {
 
     // console.log('this is firefox!');
 } else if (navigator.userAgent.match(/Trident/i)) {
+    require('babel-polyfill');
     $("#imgcontainer, .textBox-body, .minWrapper").css({"padding-bottom": "130px"});
     $(".textBox").css({"padding-bottom": "30px"});
 
