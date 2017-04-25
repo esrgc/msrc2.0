@@ -4,16 +4,8 @@ April 2017
 
 router for MSRC 2.0.1
 */
+import { advisGroup } from './routine';
 
-/* dual stage click event for nested advisGroup on committees page*/
-const advisGroup = () => {
-   if ($('#advisDiv').is(':visible')) {
-    $(location.hash).trigger('click');
-  } else {
-    $('#advisGroup').trigger('click');
-    $(location.hash).trigger('click');
-  }
-};
 
 let Router = Backbone.Router.extend({
   routes: {

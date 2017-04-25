@@ -1,6 +1,6 @@
-webpackJsonp([1],[
-/* 0 */,
-/* 1 */
+webpackJsonp([1],{
+
+/***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {//
@@ -34,143 +34,8 @@ $("#dropdownMenuButton").click(function (e) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {/*browser compatibility solution for flowType.js and fixed position elements not rendering the same*/
-/*mozilla renders the google font HUGE!!!!*/
-/*This is to tone it down a thousand notches*/
-if (navigator.userAgent.match(/Firefox/i)) {
-    $("#logoBrand").css({ "padding-top": "10px" });
-    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "140px" });
-    $(".textBox").css({ "padding-bottom": "30px" });
-
-    $("#logo_lrg").css({ "line-height": '35px', "font-size-adjust": "0.375" });
-    $("#logo_sm").css({ "line-height": '35px', "font-size-adjust": "0.375" });
-
-    // console.log('this is firefox!');
-} else if (navigator.userAgent.match(/Trident/i)) {
-    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
-    $(".textBox").css({ "padding-bottom": "30px" });
-
-    // console.log('this is internetExplorer');
-} else {}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = mobileNav;
-//
-// Author: Carl Flint, ESRGC
-//
-
-/* responsive nav function */
-function mobileNav() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "nav navbar-nav navbar-right text-vertical-center") {
-        x.className += " responsive";
-    } else {
-        x.className = "nav navbar-nav navbar-right text-vertical-center";
-    }
-}
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 5 */,
-/* 6 */,
-/* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($, Backbone) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Router; });
-/*
-Carl Flint
-April 2017
-
-router for MSRC 2.0.1
-*/
-
-/* dual stage click event for nested advisGroup on committees page*/
-const advisGroup = () => {
-  if ($('#advisDiv').is(':visible')) {
-    $(location.hash).trigger('click');
-  } else {
-    $('#advisGroup').trigger('click');
-    $(location.hash).trigger('click');
-  }
-};
-
-let Router = Backbone.Router.extend({
-  routes: {
-    'comCEDS': 'comCEDS',
-    'comEM': 'comEM',
-    'comGIS': 'comGIS',
-    'comIT': 'comIT',
-    'comMUST': 'comMUST',
-    '*other': 'event' /*catch all other hash change events and fire a click*/
-  },
-  initialize() {
-    console.log('router is being initialized');
-  },
-  comCEDS() {
-    // console.log('caught #comCEDS hashchange event!' + this.route);
-    advisGroup();
-  },
-  comEM() {
-    advisGroup();
-  },
-  comGIS() {
-    advisGroup();
-  },
-  comIT() {
-    advisGroup();
-  },
-  comMUST() {
-    advisGroup();
-  },
-  event() {
-    /*console.log('caught *event with backbone router');*/
-    $(location.hash).trigger('click');
-  }
-});
-
-
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(5)))
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {var $months = $('.archive_months');
-
-$(".archive_months").hide();
-$(".years").click(function () {
-    var $x = $(this).attr('id');
-    /*console.log($x);*/
-    if ($(this).siblings().find('.archive_months').is(':visible')) {
-        /*console.log('i can see you!');*/
-        $(this).siblings().find('.archive_months').hide('slow');
-    }
-    $(this).find('ul').slideToggle(500);
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */
+/***/ 15:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {var $membersUL = $(".members");
@@ -219,7 +84,8 @@ var $comOpen = $(".advisCommittees").click(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 16 */
+
+/***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {/*open advis tab and if exec tab open close it*/
@@ -234,7 +100,8 @@ $("#advisGroup").click(function (e) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 17 */
+
+/***/ 17:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {/* Open exec tab and if advis tab open close it */
@@ -249,7 +116,8 @@ $("#execGroup").click(function (e) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 18 */
+
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$("#execDiv").hide(); /*committees page*/
@@ -259,12 +127,33 @@ $(".members").hide(); /*committees page*/
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */
+
+/***/ 2:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {/*browser compatibility solution for flowType.js and fixed position elements not rendering the same*/
+/*mozilla renders the google font HUGE!!!!*/
+/*This is to tone it down a thousand notches*/
+if (navigator.userAgent.match(/Firefox/i)) {
+    $("#logoBrand").css({ "padding-top": "10px" });
+    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "140px" });
+    $(".textBox").css({ "padding-bottom": "30px" });
+
+    $("#logo_lrg").css({ "line-height": '35px', "font-size-adjust": "0.375" });
+    $("#logo_sm").css({ "line-height": '35px', "font-size-adjust": "0.375" });
+
+    // console.log('this is firefox!');
+} else if (navigator.userAgent.match(/Trident/i)) {
+    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
+    $(".textBox").css({ "padding-bottom": "30px" });
+
+    // console.log('this is internetExplorer');
+} else {}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+
+/***/ 24:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -317,6 +206,127 @@ let appRouter = new __WEBPACK_IMPORTED_MODULE_9__router_main__["a" /* Router */]
 Backbone.history.start();
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(5)))
 
+/***/ }),
+
+/***/ 3:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = mobileNav;
+//
+// Author: Carl Flint, ESRGC
+//
+
+/* responsive nav function */
+function mobileNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav navbar-nav navbar-right text-vertical-center") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav navbar-nav navbar-right text-vertical-center";
+    }
+}
+
+/***/ }),
+
+/***/ 4:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 43:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return advisGroup; });
+/* dual stage click event for nested advisGroup on committees page*/
+const advisGroup = () => {
+  if ($('#advisDiv').is(':visible')) {
+    $(location.hash).trigger('click');
+  } else {
+    $('#advisGroup').trigger('click');
+    $(location.hash).trigger('click');
+  }
+};
+
+
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+
+/***/ }),
+
+/***/ 7:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(Backbone, $) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__routine__ = __webpack_require__(43);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Router; });
+/*
+Carl Flint
+April 2017
+
+router for MSRC 2.0.1
+*/
+
+
+let Router = Backbone.Router.extend({
+  routes: {
+    'comCEDS': 'comCEDS',
+    'comEM': 'comEM',
+    'comGIS': 'comGIS',
+    'comIT': 'comIT',
+    'comMUST': 'comMUST',
+    '*other': 'event' /*catch all other hash change events and fire a click*/
+  },
+  initialize() {
+    console.log('router is being initialized');
+  },
+  comCEDS() {
+    // console.log('caught #comCEDS hashchange event!' + this.route);
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
+  },
+  comEM() {
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
+  },
+  comGIS() {
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
+  },
+  comIT() {
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
+  },
+  comMUST() {
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
+  },
+  event() {
+    /*console.log('caught *event with backbone router');*/
+    $(location.hash).trigger('click');
+  }
+});
+
+
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(5), __webpack_require__(0)))
+
+/***/ }),
+
+/***/ 8:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {var $months = $('.archive_months');
+
+$(".archive_months").hide();
+$(".years").click(function () {
+    var $x = $(this).attr('id');
+    /*console.log($x);*/
+    if ($(this).siblings().find('.archive_months').is(':visible')) {
+        /*console.log('i can see you!');*/
+        $(this).siblings().find('.archive_months').hide('slow');
+    }
+    $(this).find('ul').slideToggle(500);
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
 /***/ })
-],[24]);
+
+},[24]);
 //# sourceMappingURL=committees-bundle.js.map

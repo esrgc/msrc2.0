@@ -102,7 +102,8 @@ function downloadLink(url) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($, Backbone) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Router; });
+/* WEBPACK VAR INJECTION */(function(Backbone, $) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__routine__ = __webpack_require__(43);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Router; });
 /*
 Carl Flint
 April 2017
@@ -110,15 +111,6 @@ April 2017
 router for MSRC 2.0.1
 */
 
-/* dual stage click event for nested advisGroup on committees page*/
-const advisGroup = () => {
-  if ($('#advisDiv').is(':visible')) {
-    $(location.hash).trigger('click');
-  } else {
-    $('#advisGroup').trigger('click');
-    $(location.hash).trigger('click');
-  }
-};
 
 let Router = Backbone.Router.extend({
   routes: {
@@ -134,19 +126,19 @@ let Router = Backbone.Router.extend({
   },
   comCEDS() {
     // console.log('caught #comCEDS hashchange event!' + this.route);
-    advisGroup();
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
   },
   comEM() {
-    advisGroup();
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
   },
   comGIS() {
-    advisGroup();
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
   },
   comIT() {
-    advisGroup();
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
   },
   comMUST() {
-    advisGroup();
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
   },
   event() {
     /*console.log('caught *event with backbone router');*/
@@ -155,7 +147,7 @@ let Router = Backbone.Router.extend({
 });
 
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(5)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(5), __webpack_require__(0)))
 
 /***/ }),
 /* 8 */
@@ -548,6 +540,40 @@ Backbone.history.start();
 function curHash(hash) {
   window.open(hash, '_parent');
 }
+
+/***/ }),
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return advisGroup; });
+/* dual stage click event for nested advisGroup on committees page*/
+const advisGroup = () => {
+  if ($('#advisDiv').is(':visible')) {
+    $(location.hash).trigger('click');
+  } else {
+    $('#advisGroup').trigger('click');
+    $(location.hash).trigger('click');
+  }
+};
+
+
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ })
 ],[23]);
