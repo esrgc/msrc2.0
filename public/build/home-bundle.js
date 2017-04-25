@@ -3,7 +3,10 @@ webpackJsonp([3],{
 /***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {//
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+//
 // Author: Carl Flint
 // ESRGC
 //
@@ -35,21 +38,13 @@ $("#dropdownMenuButton").click(function (e) {
 
 /***/ }),
 
-/***/ 19:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {/*set home page carousel rotation speed*/
-$('.carousel').carousel({
-    interval: 5000 //set speed in ms
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {/*browser compatibility solution for flowType.js and fixed position elements not rendering the same*/
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+/*browser compatibility solution for flowType.js and fixed position elements not rendering the same*/
 /*mozilla renders the google font HUGE!!!!*/
 /*This is to tone it down a thousand notches*/
 if (navigator.userAgent.match(/Firefox/i)) {
@@ -74,7 +69,24 @@ if (navigator.userAgent.match(/Firefox/i)) {
 /***/ 20:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {/*to top button appeasrs after scroll down*/
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+/*set home page carousel rotation speed*/
+$('.carousel').carousel({
+    interval: 5000 //set speed in ms
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+
+/***/ 21:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+/*to top button appeasrs after scroll down*/
 $(window).scroll(function () {
   if ($(this).scrollTop() > 250) {
     $('#to-top').stop(true, true).fadeIn();
@@ -86,46 +98,48 @@ $(window).scroll(function () {
 
 /***/ }),
 
-/***/ 25:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ 26:
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scripts_ifBrowser__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_toTop__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_toTop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__scripts_toTop__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scripts_carousel__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scripts_carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__scripts_carousel__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_style_less__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__css_style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__css_style_less__);
-/*import global js functions*/
+/* WEBPACK VAR INJECTION */(function($) {
 
+__webpack_require__(1);
 
+__webpack_require__(2);
+
+var _mobileNav = __webpack_require__(3);
+
+__webpack_require__(21);
+
+__webpack_require__(20);
+
+__webpack_require__(4);
 
 // for small screens
 $('i#mobileNav').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__scripts_mobileNav__["a" /* mobileNav */])();
+  (0, _mobileNav.mobileNav)();
 });
 
 /* home page specific functions */
-
+/*import global js functions*/
 
 
 /*import css*/
-
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 
 /***/ 3:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = mobileNav;
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.mobileNav = mobileNav;
 //
 // Author: Carl Flint, ESRGC
 //
@@ -149,5 +163,5 @@ function mobileNav() {
 
 /***/ })
 
-},[25]);
+},[26]);
 //# sourceMappingURL=home-bundle.js.map

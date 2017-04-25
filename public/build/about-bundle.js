@@ -3,7 +3,10 @@ webpackJsonp([0],[
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {//
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+//
 // Author: Carl Flint
 // ESRGC
 //
@@ -37,7 +40,10 @@ $("#dropdownMenuButton").click(function (e) {
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {/*browser compatibility solution for flowType.js and fixed position elements not rendering the same*/
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+/*browser compatibility solution for flowType.js and fixed position elements not rendering the same*/
 /*mozilla renders the google font HUGE!!!!*/
 /*This is to tone it down a thousand notches*/
 if (navigator.userAgent.match(/Firefox/i)) {
@@ -59,10 +65,15 @@ if (navigator.userAgent.match(/Firefox/i)) {
 
 /***/ }),
 /* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = mobileNav;
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.mobileNav = mobileNav;
 //
 // Author: Carl Flint, ESRGC
 //
@@ -86,10 +97,15 @@ function mobileNav() {
 /***/ }),
 /* 5 */,
 /* 6 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = downloadLink;
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.downloadLink = downloadLink;
 /*download document function for linking to a div*/
 /*downloadable pdf will open in new windows*/
 /*word.doc and .docx will download without window change*/
@@ -99,20 +115,19 @@ function downloadLink(url) {
 
 /***/ }),
 /* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(Backbone, $) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__routine__ = __webpack_require__(43);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Router; });
-/*
-Carl Flint
-April 2017
+/* WEBPACK VAR INJECTION */(function(Backbone, $) {
 
-router for MSRC 2.0.1
-*/
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Router = undefined;
 
+var _routine = __webpack_require__(9);
 
-let Router = Backbone.Router.extend({
+var Router = Backbone.Router.extend({
   routes: {
     'comCEDS': 'comCEDS',
     'comEM': 'comEM',
@@ -121,39 +136,46 @@ let Router = Backbone.Router.extend({
     'comMUST': 'comMUST',
     '*other': 'event' /*catch all other hash change events and fire a click*/
   },
-  initialize() {
+  initialize: function initialize() {
     console.log('router is being initialized');
   },
-  comCEDS() {
+  comCEDS: function comCEDS() {
     // console.log('caught #comCEDS hashchange event!' + this.route);
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
+    (0, _routine.advisGroup)();
   },
-  comEM() {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
+  comEM: function comEM() {
+    (0, _routine.advisGroup)();
   },
-  comGIS() {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
+  comGIS: function comGIS() {
+    (0, _routine.advisGroup)();
   },
-  comIT() {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
+  comIT: function comIT() {
+    (0, _routine.advisGroup)();
   },
-  comMUST() {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__routine__["a" /* advisGroup */])();
+  comMUST: function comMUST() {
+    (0, _routine.advisGroup)();
   },
-  event() {
+  event: function event() {
     /*console.log('caught *event with backbone router');*/
     $(location.hash).trigger('click');
   }
-});
-
-
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(5), __webpack_require__(0)))
+}); /*
+    Carl Flint
+    April 2017
+    
+    router for MSRC 2.0.1
+    */
+exports.Router = Router;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5), __webpack_require__(0)))
 
 /***/ }),
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {var $months = $('.archive_months');
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+var $months = $('.archive_months');
 
 $(".archive_months").hide();
 $(".years").click(function () {
@@ -169,17 +191,42 @@ $(".years").click(function () {
 
 /***/ }),
 /* 9 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_curHash__ = __webpack_require__(27);
+/* WEBPACK VAR INJECTION */(function($) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* dual stage click event for nested advisGroup on committees page*/
+var advisGroup = function advisGroup() {
+  if ($('#advisDiv').is(':visible')) {
+    $(location.hash).trigger('click');
+  } else {
+    $('#advisGroup').trigger('click');
+    $(location.hash).trigger('click');
+  }
+};
+
+exports.advisGroup = advisGroup;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+var _curHash = __webpack_require__(28);
 
 /*
  // zAccordion About pop out
  // add click toggle to all but last child merely for decoration
  */
 $(".angle_wrapper > div:not(:last-child) h1").on("click", function () {
-  let $attrID = $(this).attr('id');
+  var $attrID = $(this).attr('id');
   // if ($(this).hasClass('ac_collapse')) {
   //   curHash('#' + $attrID);
   // } else {
@@ -273,13 +320,16 @@ $(".angle_wrapper > div:not(:last-child) h1").on("click", function () {
 });
 
 // $('h1#members, h1#spotlight, h1#records').on('click', function() {});
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {/* About page angle tabs */
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+/* About page angle tabs */
 
 /* Members tab*/
 $("#membersDiv, #membersDiv2, #votingMem, #nonVoting, .membersDiv2_bg").hide();
@@ -292,10 +342,13 @@ $("#workPlan, #meetMinutes, #byLaws").hide();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {/* setup expanding divs for voting members*/
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+/* setup expanding divs for voting members*/
 var $votingMem = $('#votingMem-button');
 $votingMem.on('click', function (e) {
   e.preventDefault();
@@ -343,10 +396,13 @@ $nonVoting.on('click', function (e) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {/* setup textBox to close on click*/
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+/* setup textBox to close on click*/
 $(".textBox .textBox-toggle, .records-textBox .textBox-toggle").click(function () {
     var $attrID = $(this).attr('id');
     if ($(this).is(':visible')) {
@@ -356,12 +412,13 @@ $(".textBox .textBox-toggle, .records-textBox .textBox-toggle").click(function (
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 13 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__ = __webpack_require__(6);
+/* WEBPACK VAR INJECTION */(function($) {
 
+var _downloadLink = __webpack_require__(6);
 
 var $clickRecords = $('.imgHeader2');
 /*change size of item on click with toggle class*/
@@ -388,19 +445,22 @@ $clickRecords.on('click', function (e) {
 });
 
 $('div#workPlanLink').on('click', function () {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('./documents/msrc/MSRC_FY17_Work_Plan.pdf');
+    (0, _downloadLink.downloadLink)('./documents/msrc/MSRC_FY17_Work_Plan.pdf');
 });
 
 $('div#byLawsLink').on('click', function () {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_downloadLink__["a" /* downloadLink */])('./documents/msrc/MSRC_Bylaws.pdf');
+    (0, _downloadLink.downloadLink)('./documents/msrc/MSRC_Bylaws.pdf');
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {var $clickSpotlight = $('#spotlight-container');
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+var $clickSpotlight = $('#spotlight-container');
 /*make images clickable*/
 $clickSpotlight.on('click', '.gridItem', function (e) {
     e.preventDefault();
@@ -460,7 +520,6 @@ $clickSpotlight.on('click', '.gridItem', function (e) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 15 */,
 /* 16 */,
 /* 17 */,
 /* 18 */,
@@ -468,45 +527,47 @@ $clickSpotlight.on('click', '.gridItem', function (e) {
 /* 20 */,
 /* 21 */,
 /* 22 */,
-/* 23 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 23 */,
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($, Backbone) {Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__scripts_footer_functions__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_minutes_archive__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_minutes_archive___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__scripts_minutes_archive__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scripts_downloadLink__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_ifBrowser__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_ifBrowser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__scripts_ifBrowser__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scripts_mobileNav__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__scripts_hide_divs__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__scripts_hide_divs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__scripts_hide_divs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_about_tabs__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scripts_spotlight__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scripts_spotlight___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__scripts_spotlight__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__scripts_records__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__scripts_members__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__scripts_members___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__scripts_members__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__scripts_popup_tabs__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__scripts_popup_tabs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__scripts_popup_tabs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__css_style_less__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__css_style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__css_style_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__router_main__ = __webpack_require__(7);
-/*import global js functions*/
+/* WEBPACK VAR INJECTION */(function($, Backbone) {
 
+__webpack_require__(1);
 
+__webpack_require__(8);
 
+__webpack_require__(6);
 
+__webpack_require__(2);
+
+var _mobileNav = __webpack_require__(3);
+
+__webpack_require__(11);
+
+__webpack_require__(10);
+
+__webpack_require__(15);
+
+__webpack_require__(14);
+
+__webpack_require__(12);
+
+__webpack_require__(13);
+
+__webpack_require__(4);
+
+var _main = __webpack_require__(7);
 
 // for small screens
 $('i#mobileNav').on('click', function () {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__scripts_mobileNav__["a" /* mobileNav */])();
+  (0, _mobileNav.mobileNav)();
 });
 
 /*js functions specific to about page*/
 /*hide the sliding tabs on about page*/
+/*import global js functions*/
 
 /*add the functionality to open the tabs by clicking the toggle*/
 
@@ -521,60 +582,28 @@ $('i#mobileNav').on('click', function () {
 
 /*import css*/
 
-
-
-let appRouter = new __WEBPACK_IMPORTED_MODULE_12__router_main__["a" /* Router */]();
+var appRouter = new _main.Router();
 Backbone.history.start();
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0), __webpack_require__(5)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(5)))
 
 /***/ }),
-/* 24 */,
 /* 25 */,
 /* 26 */,
-/* 27 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 27 */,
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* unused harmony export curHash */
 
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.curHash = curHash;
 function curHash(hash) {
   window.open(hash, '_parent');
 }
 
-/***/ }),
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return advisGroup; });
-/* dual stage click event for nested advisGroup on committees page*/
-const advisGroup = () => {
-  if ($('#advisDiv').is(':visible')) {
-    $(location.hash).trigger('click');
-  } else {
-    $('#advisGroup').trigger('click');
-    $(location.hash).trigger('click');
-  }
-};
-
-
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
-
 /***/ })
-],[23]);
+],[24]);
 //# sourceMappingURL=about-bundle.js.map
