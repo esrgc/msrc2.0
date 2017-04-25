@@ -6,7 +6,7 @@ $votingMem.on('click', function(e) {
   /*var attrID = $(this).attr('id');*/
   /*alert(attrID);*/
   if ($("#nonVoting").is(":visible")) {
-    $("#nonVoting, .membersDiv2_bg").toggle("slide");
+    $("#nonVoting, .membersDiv2_bg").hide();
   }
 
   if ($("#votingMem").is(":hidden")) {
@@ -15,10 +15,11 @@ $votingMem.on('click', function(e) {
 
     $("#membersDiv2, #votingMem, .membersDiv2_bg").fadeIn(875);
 
+
   } else {
 
     $("#membersDiv2, #votingMem, .membersDiv2_bg").fadeOut(850);
-    
+
     $("#membersDiv2").animate({"z-index": "0", "opacity": "0"});
 
   }
@@ -31,7 +32,7 @@ $nonVoting.on('click', function(e) {
   /*var attrID = $(this).attr('id');*/
   /*alert(attrID);*/
   if ($("#votingMem").is(":visible")) {
-    $("#votingMem, .membersDiv2_bg").toggle("slide");
+    $("#votingMem, .membersDiv2_bg").hide();
   }
 
   if ($("#nonVoting").is(":hidden")) {

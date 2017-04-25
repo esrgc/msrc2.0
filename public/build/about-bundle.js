@@ -356,7 +356,7 @@ $votingMem.on('click', function (e) {
   /*var attrID = $(this).attr('id');*/
   /*alert(attrID);*/
   if ($("#nonVoting").is(":visible")) {
-    $("#nonVoting, .membersDiv2_bg").toggle("slide");
+    $("#nonVoting, .membersDiv2_bg").hide();
   }
 
   if ($("#votingMem").is(":hidden")) {
@@ -379,7 +379,7 @@ $nonVoting.on('click', function (e) {
   /*var attrID = $(this).attr('id');*/
   /*alert(attrID);*/
   if ($("#votingMem").is(":visible")) {
-    $("#votingMem, .membersDiv2_bg").toggle("slide");
+    $("#votingMem, .membersDiv2_bg").hide();
   }
 
   if ($("#nonVoting").is(":hidden")) {

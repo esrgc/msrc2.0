@@ -8714,6 +8714,13 @@ li.img-150x300 img {
   }
 }
 @media screen and (max-width: 581px) {
+  .navbar,
+  .navbar-header {
+    min-height: 33px;
+  }
+  .navbar-header {
+    height: 2px;
+  }
   #logo_lrg {
     font-size: 18px !important;
   }
