@@ -133,7 +133,7 @@ let Router = Backbone.Router.extend({
     console.log('router is being initialized');
   },
   comCEDS() {
-    console.log('caught #comCEDS hashchange event!' + this.route);
+    // console.log('caught #comCEDS hashchange event!' + this.route);
     advisGroup();
   },
   comEM() {
