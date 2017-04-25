@@ -1,6 +1,70 @@
 webpackJsonp([3],{
 
-/***/ 1:
+/***/ 127:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+__webpack_require__(33);
+
+__webpack_require__(34);
+
+var _mobileNav = __webpack_require__(35);
+
+__webpack_require__(141);
+
+__webpack_require__(140);
+
+__webpack_require__(45);
+
+// for small screens
+$('i#mobileNav').on('click', function () {
+  (0, _mobileNav.mobileNav)();
+});
+
+/* home page specific functions */
+/*import global js functions*/
+
+
+/*import css*/
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+
+/***/ 140:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+/*set home page carousel rotation speed*/
+$('.carousel').carousel({
+    interval: 5000 //set speed in ms
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+
+/***/ 141:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+/*to top button appeasrs after scroll down*/
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 250) {
+    $('#to-top').stop(true, true).fadeIn();
+  } else {
+    $('#to-top').stop(true, true).fadeOut();
+  }
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+
+/***/ 33:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34,11 +98,11 @@ $("#dropdownMenuButton").click(function (e) {
     }
     return false;
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 
-/***/ 2:
+/***/ 34:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62,75 +126,20 @@ if (navigator.userAgent.match(/Firefox/i)) {
 
     // console.log('this is internetExplorer');
 } else {}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 
-/***/ 20:
+/***/ 342:
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
+__webpack_require__(32);
+module.exports = __webpack_require__(127);
 
-/*set home page carousel rotation speed*/
-$('.carousel').carousel({
-    interval: 5000 //set speed in ms
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 
-/***/ 21:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-
-/*to top button appeasrs after scroll down*/
-$(window).scroll(function () {
-  if ($(this).scrollTop() > 250) {
-    $('#to-top').stop(true, true).fadeIn();
-  } else {
-    $('#to-top').stop(true, true).fadeOut();
-  }
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-
-/***/ 26:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-
-__webpack_require__(1);
-
-__webpack_require__(2);
-
-var _mobileNav = __webpack_require__(3);
-
-__webpack_require__(21);
-
-__webpack_require__(20);
-
-__webpack_require__(4);
-
-// for small screens
-$('i#mobileNav').on('click', function () {
-  (0, _mobileNav.mobileNav)();
-});
-
-/* home page specific functions */
-/*import global js functions*/
-
-
-/*import css*/
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-
-/***/ 3:
+/***/ 35:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -156,12 +165,12 @@ function mobileNav() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 45:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
 
-},[26]);
+},[342]);
 //# sourceMappingURL=home-bundle.js.map

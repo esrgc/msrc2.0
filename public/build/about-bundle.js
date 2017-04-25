@@ -1,225 +1,72 @@
-webpackJsonp([0],[
-/* 0 */,
-/* 1 */
+webpackJsonp([0],{
+
+/***/ 125:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($, Backbone) {
+
+__webpack_require__(33);
+
+__webpack_require__(69);
+
+__webpack_require__(55);
+
+__webpack_require__(34);
+
+var _mobileNav = __webpack_require__(35);
+
+__webpack_require__(131);
+
+__webpack_require__(130);
+
+__webpack_require__(135);
+
+__webpack_require__(134);
+
+__webpack_require__(132);
+
+__webpack_require__(133);
+
+__webpack_require__(45);
+
+var _main = __webpack_require__(67);
+
+// for small screens
+$('i#mobileNav').on('click', function () {
+  (0, _mobileNav.mobileNav)();
+});
+
+/*js functions specific to about page*/
+/*hide the sliding tabs on about page*/
+/*import global js functions*/
+
+/*add the functionality to open the tabs by clicking the toggle*/
+
+/*add functionality to spotlight tab based on the clicked image open the corresponding popup*/
+
+/*add functionality to records tab based on clicked div*/
+
+/*add functionality to members tab based on clicked div*/
+
+/*based on the clicked div/image from members/spotlight/records reveal all children of the popup*/
+
+
+/*import css*/
+
+var appRouter = new _main.Router();
+Backbone.history.start();
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(51)))
+
+/***/ }),
+
+/***/ 130:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-//
-// Author: Carl Flint
-// ESRGC
-//
-/* hide the nav footer on page load */
-$(".footer").addClass("hidden");
-/* hide the drop down advisory groups on page load */
-$(".comMenu").addClass("hidden");
-/* footer slide toggle nav pane */
-$("#footer_button").on('click', function (e) {
-    e.preventDefault();
-    $('.footer').toggleClass("hidden");
-    return;
-});
-
-/* footer dropdown menu for advisory committees*/
-$("#dropdownMenuButton").click(function (e) {
-    e.preventDefault();
-
-    $(this).find('.toggle-close').toggleClass('toggle-open');
-    $(".comMenu").toggleClass('hidden');
-
-    if ($(this).hasClass("toggle-open")) {
-        $(this).removeClass("toggle-open").slideUp(500);
-        return;
-    }
-    return false;
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-
-/*browser compatibility solution for flowType.js and fixed position elements not rendering the same*/
-/*mozilla renders the google font HUGE!!!!*/
-/*This is to tone it down a thousand notches*/
-if (navigator.userAgent.match(/Firefox/i)) {
-    $("#logoBrand").css({ "padding-top": "10px" });
-    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "140px" });
-    $(".textBox").css({ "padding-bottom": "30px" });
-
-    $("#logo_lrg").css({ "line-height": '35px', "font-size-adjust": "0.375" });
-    $("#logo_sm").css({ "line-height": '35px', "font-size-adjust": "0.375" });
-
-    // console.log('this is firefox!');
-} else if (navigator.userAgent.match(/Trident/i)) {
-    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
-    $(".textBox").css({ "padding-bottom": "30px" });
-
-    // console.log('this is internetExplorer');
-} else {}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.mobileNav = mobileNav;
-//
-// Author: Carl Flint, ESRGC
-//
-
-/* responsive nav function */
-function mobileNav() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "nav navbar-nav navbar-right text-vertical-center") {
-        x.className += " responsive";
-    } else {
-        x.className = "nav navbar-nav navbar-right text-vertical-center";
-    }
-}
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 5 */,
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.downloadLink = downloadLink;
-/*download document function for linking to a div*/
-/*downloadable pdf will open in new windows*/
-/*word.doc and .docx will download without window change*/
-function downloadLink(url) {
-  window.open(url, '_blank');
-}
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(Backbone, $) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Router = undefined;
-
-var _routine = __webpack_require__(9);
-
-var Router = Backbone.Router.extend({
-  routes: {
-    'comCEDS': 'comCEDS',
-    'comEM': 'comEM',
-    'comGIS': 'comGIS',
-    'comIT': 'comIT',
-    'comMUST': 'comMUST',
-    '*other': 'event' /*catch all other hash change events and fire a click*/
-  },
-  initialize: function initialize() {
-    console.log('router is being initialized');
-  },
-  comCEDS: function comCEDS() {
-    // console.log('caught #comCEDS hashchange event!' + this.route);
-    (0, _routine.advisGroup)();
-  },
-  comEM: function comEM() {
-    (0, _routine.advisGroup)();
-  },
-  comGIS: function comGIS() {
-    (0, _routine.advisGroup)();
-  },
-  comIT: function comIT() {
-    (0, _routine.advisGroup)();
-  },
-  comMUST: function comMUST() {
-    (0, _routine.advisGroup)();
-  },
-  event: function event() {
-    /*console.log('caught *event with backbone router');*/
-    $(location.hash).trigger('click');
-  }
-}); /*
-    Carl Flint
-    April 2017
-    
-    router for MSRC 2.0.1
-    */
-exports.Router = Router;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5), __webpack_require__(0)))
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-
-var $months = $('.archive_months');
-
-$(".archive_months").hide();
-$(".years").click(function () {
-    var $x = $(this).attr('id');
-    /*console.log($x);*/
-    if ($(this).siblings().find('.archive_months').is(':visible')) {
-        /*console.log('i can see you!');*/
-        $(this).siblings().find('.archive_months').hide('slow');
-    }
-    $(this).find('ul').slideToggle(500);
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/* dual stage click event for nested advisGroup on committees page*/
-var advisGroup = function advisGroup() {
-  if ($('#advisDiv').is(':visible')) {
-    $(location.hash).trigger('click');
-  } else {
-    $('#advisGroup').trigger('click');
-    $(location.hash).trigger('click');
-  }
-};
-
-exports.advisGroup = advisGroup;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-
-var _curHash = __webpack_require__(28);
+var _curHash = __webpack_require__(143);
 
 /*
  // zAccordion About pop out
@@ -320,10 +167,11 @@ $(".angle_wrapper > div:not(:last-child) h1").on("click", function () {
 });
 
 // $('h1#members, h1#spotlight, h1#records').on('click', function() {});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 11 */
+
+/***/ 131:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -339,10 +187,11 @@ $("#broadband, #tech, #health, #gis, #data, #ceds, #f1, #f2, #f3").hide();
 /* Records tab */
 $("#recordsWrapper, #recordsWrapper2, .records-textBox").hide();
 $("#workPlan, #meetMinutes, #byLaws").hide();
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 12 */
+
+/***/ 132:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -393,10 +242,11 @@ $nonVoting.on('click', function (e) {
     $("#membersDiv2").css({ "z-index": "0", "opacity": "0" });
   }
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 13 */
+
+/***/ 133:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -409,16 +259,17 @@ $(".textBox .textBox-toggle, .records-textBox .textBox-toggle").click(function (
         $(this).parent().toggle('slide');
     }
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 14 */
+
+/***/ 134:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-var _downloadLink = __webpack_require__(6);
+var _downloadLink = __webpack_require__(55);
 
 var $clickRecords = $('.imgHeader2');
 /*change size of item on click with toggle class*/
@@ -451,10 +302,11 @@ $('div#workPlanLink').on('click', function () {
 $('div#byLawsLink').on('click', function () {
     (0, _downloadLink.downloadLink)('./documents/msrc/MSRC_Bylaws.pdf');
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 15 */
+
+/***/ 135:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -517,80 +369,11 @@ $clickSpotlight.on('click', '.gridItem', function (e) {
         //$sliceID.toggle('slide');
     }
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* WEBPACK VAR INJECTION */(function($, Backbone) {
-
-__webpack_require__(1);
-
-__webpack_require__(8);
-
-__webpack_require__(6);
-
-__webpack_require__(2);
-
-var _mobileNav = __webpack_require__(3);
-
-__webpack_require__(11);
-
-__webpack_require__(10);
-
-__webpack_require__(15);
-
-__webpack_require__(14);
-
-__webpack_require__(12);
-
-__webpack_require__(13);
-
-__webpack_require__(4);
-
-var _main = __webpack_require__(7);
-
-// for small screens
-$('i#mobileNav').on('click', function () {
-  (0, _mobileNav.mobileNav)();
-});
-
-/*js functions specific to about page*/
-/*hide the sliding tabs on about page*/
-/*import global js functions*/
-
-/*add the functionality to open the tabs by clicking the toggle*/
-
-/*add functionality to spotlight tab based on the clicked image open the corresponding popup*/
-
-/*add functionality to records tab based on clicked div*/
-
-/*add functionality to members tab based on clicked div*/
-
-/*based on the clicked div/image from members/spotlight/records reveal all children of the popup*/
-
-
-/*import css*/
-
-var appRouter = new _main.Router();
-Backbone.history.start();
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(5)))
-
-/***/ }),
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */
+/***/ 143:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -604,6 +387,236 @@ function curHash(hash) {
   window.open(hash, '_parent');
 }
 
+/***/ }),
+
+/***/ 33:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+//
+// Author: Carl Flint
+// ESRGC
+//
+/* hide the nav footer on page load */
+$(".footer").addClass("hidden");
+/* hide the drop down advisory groups on page load */
+$(".comMenu").addClass("hidden");
+/* footer slide toggle nav pane */
+$("#footer_button").on('click', function (e) {
+    e.preventDefault();
+    $('.footer').toggleClass("hidden");
+    return;
+});
+
+/* footer dropdown menu for advisory committees*/
+$("#dropdownMenuButton").click(function (e) {
+    e.preventDefault();
+
+    $(this).find('.toggle-close').toggleClass('toggle-open');
+    $(".comMenu").toggleClass('hidden');
+
+    if ($(this).hasClass("toggle-open")) {
+        $(this).removeClass("toggle-open").slideUp(500);
+        return;
+    }
+    return false;
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+
+/***/ 34:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+/*browser compatibility solution for flowType.js and fixed position elements not rendering the same*/
+/*mozilla renders the google font HUGE!!!!*/
+/*This is to tone it down a thousand notches*/
+if (navigator.userAgent.match(/Firefox/i)) {
+    $("#logoBrand").css({ "padding-top": "10px" });
+    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "140px" });
+    $(".textBox").css({ "padding-bottom": "30px" });
+
+    $("#logo_lrg").css({ "line-height": '35px', "font-size-adjust": "0.375" });
+    $("#logo_sm").css({ "line-height": '35px', "font-size-adjust": "0.375" });
+
+    // console.log('this is firefox!');
+} else if (navigator.userAgent.match(/Trident/i)) {
+    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
+    $(".textBox").css({ "padding-bottom": "30px" });
+
+    // console.log('this is internetExplorer');
+} else {}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+
+/***/ 340:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(32);
+module.exports = __webpack_require__(125);
+
+
+/***/ }),
+
+/***/ 35:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.mobileNav = mobileNav;
+//
+// Author: Carl Flint, ESRGC
+//
+
+/* responsive nav function */
+function mobileNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav navbar-nav navbar-right text-vertical-center") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav navbar-nav navbar-right text-vertical-center";
+    }
+}
+
+/***/ }),
+
+/***/ 45:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 55:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.downloadLink = downloadLink;
+/*download document function for linking to a div*/
+/*downloadable pdf will open in new windows*/
+/*word.doc and .docx will download without window change*/
+function downloadLink(url) {
+  window.open(url, '_blank');
+}
+
+/***/ }),
+
+/***/ 67:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(Backbone, $) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Router = undefined;
+
+var _routine = __webpack_require__(68);
+
+var Router = Backbone.Router.extend({
+  routes: {
+    'comCEDS': 'comCEDS',
+    'comEM': 'comEM',
+    'comGIS': 'comGIS',
+    'comIT': 'comIT',
+    'comMUST': 'comMUST',
+    '*other': 'event' /*catch all other hash change events and fire a click*/
+  },
+  initialize: function initialize() {
+    console.log('router is being initialized');
+  },
+  comCEDS: function comCEDS() {
+    // console.log('caught #comCEDS hashchange event!' + this.route);
+    (0, _routine.advisGroup)();
+  },
+  comEM: function comEM() {
+    (0, _routine.advisGroup)();
+  },
+  comGIS: function comGIS() {
+    (0, _routine.advisGroup)();
+  },
+  comIT: function comIT() {
+    (0, _routine.advisGroup)();
+  },
+  comMUST: function comMUST() {
+    (0, _routine.advisGroup)();
+  },
+  event: function event() {
+    /*console.log('caught *event with backbone router');*/
+    $(location.hash).trigger('click');
+  }
+}); /*
+    Carl Flint
+    April 2017
+    
+    router for MSRC 2.0.1
+    */
+exports.Router = Router;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(51), __webpack_require__(1)))
+
+/***/ }),
+
+/***/ 68:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* dual stage click event for nested advisGroup on committees page*/
+var advisGroup = function advisGroup() {
+  if ($('#advisDiv').is(':visible')) {
+    $(location.hash).trigger('click');
+  } else {
+    $('#advisGroup').trigger('click');
+    $(location.hash).trigger('click');
+  }
+};
+
+exports.advisGroup = advisGroup;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+
+/***/ 69:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+var $months = $('.archive_months');
+
+$(".archive_months").hide();
+$(".years").click(function () {
+    var $x = $(this).attr('id');
+    /*console.log($x);*/
+    if ($(this).siblings().find('.archive_months').is(':visible')) {
+        /*console.log('i can see you!');*/
+        $(this).siblings().find('.archive_months').hide('slow');
+    }
+    $(this).find('ul').slideToggle(500);
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
 /***/ })
-],[24]);
+
+},[340]);
 //# sourceMappingURL=about-bundle.js.map

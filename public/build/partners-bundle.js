@@ -1,78 +1,42 @@
 webpackJsonp([2],{
 
-/***/ 1:
+/***/ 128:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-//
-// Author: Carl Flint
-// ESRGC
-//
-/* hide the nav footer on page load */
-$(".footer").addClass("hidden");
-/* hide the drop down advisory groups on page load */
-$(".comMenu").addClass("hidden");
-/* footer slide toggle nav pane */
-$("#footer_button").on('click', function (e) {
-    e.preventDefault();
-    $('.footer').toggleClass("hidden");
-    return;
+__webpack_require__(33);
+
+__webpack_require__(34);
+
+var _mobileNav = __webpack_require__(35);
+
+__webpack_require__(142);
+
+__webpack_require__(45);
+
+// for small screens
+$('i#mobileNav').on('click', function () {
+  (0, _mobileNav.mobileNav)();
 });
 
-/* footer dropdown menu for advisory committees*/
-$("#dropdownMenuButton").click(function (e) {
-    e.preventDefault();
+/* import logo router */
+/* import global js functions*/
 
-    $(this).find('.toggle-close').toggleClass('toggle-open');
-    $(".comMenu").toggleClass('hidden');
 
-    if ($(this).hasClass("toggle-open")) {
-        $(this).removeClass("toggle-open").slideUp(500);
-        return;
-    }
-    return false;
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* import css*/
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 
-/***/ 2:
+/***/ 142:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-/*browser compatibility solution for flowType.js and fixed position elements not rendering the same*/
-/*mozilla renders the google font HUGE!!!!*/
-/*This is to tone it down a thousand notches*/
-if (navigator.userAgent.match(/Firefox/i)) {
-    $("#logoBrand").css({ "padding-top": "10px" });
-    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "140px" });
-    $(".textBox").css({ "padding-bottom": "30px" });
-
-    $("#logo_lrg").css({ "line-height": '35px', "font-size-adjust": "0.375" });
-    $("#logo_sm").css({ "line-height": '35px', "font-size-adjust": "0.375" });
-
-    // console.log('this is firefox!');
-} else if (navigator.userAgent.match(/Trident/i)) {
-    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
-    $(".textBox").css({ "padding-bottom": "30px" });
-
-    // console.log('this is internetExplorer');
-} else {}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-
-/***/ 22:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-
-var _downloadLink = __webpack_require__(6);
+var _downloadLink = __webpack_require__(55);
 
 $('figure#DCED').on('click', function () {
   (0, _downloadLink.downloadLink)('http://choosedorchester.org/');
@@ -121,41 +85,86 @@ $('figure#BEACON').on('click', function () {
 $('figure#MDDLLR').on('click', function () {
   (0, _downloadLink.downloadLink)('http://www.dllr.state.md.us/');
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 
-/***/ 27:
+/***/ 33:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(1);
-
-__webpack_require__(2);
-
-var _mobileNav = __webpack_require__(3);
-
-__webpack_require__(22);
-
-__webpack_require__(4);
-
-// for small screens
-$('i#mobileNav').on('click', function () {
-  (0, _mobileNav.mobileNav)();
+//
+// Author: Carl Flint
+// ESRGC
+//
+/* hide the nav footer on page load */
+$(".footer").addClass("hidden");
+/* hide the drop down advisory groups on page load */
+$(".comMenu").addClass("hidden");
+/* footer slide toggle nav pane */
+$("#footer_button").on('click', function (e) {
+    e.preventDefault();
+    $('.footer').toggleClass("hidden");
+    return;
 });
 
-/* import logo router */
-/* import global js functions*/
+/* footer dropdown menu for advisory committees*/
+$("#dropdownMenuButton").click(function (e) {
+    e.preventDefault();
 
+    $(this).find('.toggle-close').toggleClass('toggle-open');
+    $(".comMenu").toggleClass('hidden');
 
-/* import css*/
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+    if ($(this).hasClass("toggle-open")) {
+        $(this).removeClass("toggle-open").slideUp(500);
+        return;
+    }
+    return false;
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 
-/***/ 3:
+/***/ 34:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+/*browser compatibility solution for flowType.js and fixed position elements not rendering the same*/
+/*mozilla renders the google font HUGE!!!!*/
+/*This is to tone it down a thousand notches*/
+if (navigator.userAgent.match(/Firefox/i)) {
+    $("#logoBrand").css({ "padding-top": "10px" });
+    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "140px" });
+    $(".textBox").css({ "padding-bottom": "30px" });
+
+    $("#logo_lrg").css({ "line-height": '35px', "font-size-adjust": "0.375" });
+    $("#logo_sm").css({ "line-height": '35px', "font-size-adjust": "0.375" });
+
+    // console.log('this is firefox!');
+} else if (navigator.userAgent.match(/Trident/i)) {
+    $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
+    $(".textBox").css({ "padding-bottom": "30px" });
+
+    // console.log('this is internetExplorer');
+} else {}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+
+/***/ 343:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(32);
+module.exports = __webpack_require__(128);
+
+
+/***/ }),
+
+/***/ 35:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -181,14 +190,14 @@ function mobileNav() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 45:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 6:
+/***/ 55:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -207,5 +216,5 @@ function downloadLink(url) {
 
 /***/ })
 
-},[27]);
+},[343]);
 //# sourceMappingURL=partners-bundle.js.map
