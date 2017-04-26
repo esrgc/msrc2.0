@@ -1,8 +1,8 @@
 <section class="records-wrapper" id="recordsWrapper">
     <div class="container-fluid" id="recordsWrapper2">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 tiny-padding text-vertical-center" id="workPlanLink">
-          
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 tiny-padding text-vertical-center" >
+
                 <ul class="list-unstyled text-center imgHeaderLeft imgHeader2" id="grid-item-workPlan">
                     <li>
                         <i class="fa fa-suitcase fa-fw fa-3x"></i>
@@ -12,33 +12,39 @@
                         <h3><strong>Work Plan</strong></h3>
                         <p>
                             <br>Scope of Work - Fiscal Year 2017
-                            <br>Federal Identification Number: 52 - 2340230
+                            <!-- <br>Federal Identification Number: 52 - 2340230 -->
                             <br>
                             <br>
                         </p>
                     </li>
                     <li>
-                      <a href="#">Download Work Plan</a>
+                      <a id="workPlanLink" href="#">Download Work Plan</a>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 tiny-padding text-vertical-center">
-                <ul class="list-unstyled text-center imgHeaderRight imgHeader2" id="grid-item-meetMinutes">
-                    <li>
-                        <i class="fa fa-file fa-fw fa-3x"></i>
-                        <hr>
-                    </li>
-                    <li>
-                        <h3><strong>Meeting Minutes</strong></h3>
-                        <p>
-                            <br>Itemized summary of expenditures
-                            <br>for Fiscal year 2017</p>
-                    </li>
-                </ul>
+              <ul class="list-unstyled text-center imgHeaderRight imgHeader2" id="grid-item-CEDS">
+                  <li>
+                      <i class="fa fa-file-text fa-fw fa-3x"></i>
+                      <hr>
+                  </li>
+                  <li>
+                      <h3><strong>CEDS</strong></h3>
+                      <p>
+                          <!-- <br>Scope of Work - Fiscal Year 2017 -->
+                          <!-- <br>Federal Identification Number: 52 - 2340230 -->
+                          <br>
+                          <br>
+                      </p>
+                  </li>
+                  <li>
+                    <a id="CEDSLink" href="#">Download CEDS</a>
+                  </li>
+              </ul>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 tiny-padding text-vertical-center" id="byLawsLink">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 tiny-padding text-vertical-center" >
 
                 <ul class="list-unstyled text-center imgHeaderLeft imgHeader2" id="grid-item-byLaws">
                     <li>
@@ -48,27 +54,68 @@
                     <li>
                         <h3><strong>Bylaws</strong></h3>
                         <p>
-                            <br>Governing rules defining
-                            <br>all internal affairs
+                            <!-- <br>Governing rules defining
+                            <br>all internal affairs -->
                             <br>
-                            <br><a href="#">Download ByLaws</a>
+                            <br><a id="byLawsLink" href="#">Download ByLaws</a>
                         </p>
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 tiny-padding text-vertical-center">
 
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 tiny-padding text-vertical-center">
+                <ul class="list-unstyled text-center imgHeaderRight imgHeader2" id="grid-item-meetMinutes">
+                    <li>
+                        <i class="fa fa-file fa-fw fa-3x"></i>
+                        <hr>
+                    </li>
+                    <li>
+                        <h3><strong>Meeting Minutes</strong></h3>
+                        <p>
+                          <br>
+                          <br>
+                          <div class="row">
+                          <div class="col-lg-6 col-md-6 col-xs-6 pull-left">
+                            <!-- <button type="button" id="btn-Quarterly" class="btn btn-outline-secondary"> Quarterly Minutes</button> -->
+                            <a id="btn-Quarterly" href="#">Quarterly Minutes</a>
+                          </div>
+
+                          <div class="col-lg-6 col-md-6 col-xs-6 pull-right">
+                            <!-- <button type="button" id="btn-Executive" class="btn btn-outline-secondary"> Executive Board Minutes</button> -->
+                            <a id="btn-Executive" href="#">Executive Board Minutes</a>
+                          </div>
+                            </div>
+                            <!-- <br>Itemized summary of expenditures
+                            <br>for Fiscal year 2017</p> -->
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-    <div class="records-textBox" id="meetMinutes">
+    <div class="records-textBox" id="QuarterlyMin">
         <h4 class="textBox-toggle">Close&nbsp;&nbsp;&nbsp;&nbsp;
         <span class="slide-toggle-open transition-all"></span></h4>
         <hr class="drk">
         <div class="textBox-body">
             <div class="minWrapper">
                 <ul class="list-unstyled just-left tiny-padding">
+                  <!-- quarterly mins template-->
                     {{> quarterly-mins}}
+                    <br>
+                    <br>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="records-textBox" id="ExecutiveMin">
+        <h4 class="textBox-toggle">Close&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="slide-toggle-open transition-all"></span></h4>
+        <hr class="drk">
+        <div class="textBox-body">
+            <div class="minWrapper">
+                <ul class="list-unstyled just-left tiny-padding">
+                  <!-- executive mins template-->
+                    {{> exec_min}}
                     <br>
                     <br>
                 </ul>

@@ -13,7 +13,9 @@
 @lt-from-color: #f2f2f2;
 @lt-to-color: #cccccc;
 @font-drk: #0d0d0d;
-@font-lt: #f2f2f2; ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+@font-lt: #f2f2f2;
+@font-awesome: #e6e6e6;
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // background transition mixin
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -69,6 +71,19 @@
   background: -moz-linear-gradient(left, @lt-from-color, @lt-to-color );
   /* For Firefox 3.6 to 15*/
   background: linear-gradient(to left, @lt-from-color, @lt-to-color );
+}
+
+.shaded_bg-lt2() {
+  opacity: 1;
+  background: @lt-to-color;
+  /* For browsers that do not support gradients*/
+  background: -webkit-linear-gradient(left, @lt-from-color, @lt-to-color );
+  /* For Safari 5.1 to 6.0*/
+  background: -o-linear-gradient(right, @lt-from-color, @lt-to-color );
+  /* For Opera 11.1 to 12.0*/
+  background: -moz-linear-gradient(right, @lt-from-color, @lt-to-color );
+  /* For Firefox 3.6 to 15*/
+  background: linear-gradient(to right, @lt-from-color, @lt-to-color );
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -487,7 +502,7 @@ table#fedFunds {
   width: 100%;
   height: 16.668em;
   padding: 10px;
-  cursor: pointer;
+  // cursor: pointer;
 
   p {
     .font-blocky-lt;
@@ -502,7 +517,7 @@ table#fedFunds {
   width: 100%;
   height: 16.668em;
   padding: 10px;
-  cursor: pointer;
+  // cursor: pointer;
 
   p {
     .font-blocky-lt;
@@ -735,7 +750,7 @@ li.img-150x300 {
 }
 
 #committeeSpacerMid {
-  height: 25%;
+  height: 20%;
 }
 
 #committeeSpacerBtm {
@@ -803,25 +818,27 @@ li.img-150x300 {
   text-align: left;
 }
 
-.archive_months,
-.members {
+.archive_months {
   margin-left: 0.556em;
   margin-top: 0;
   margin-bottom: 1em;
   cursor: pointer;
   z-index: 1000;
-
   li {
-    // word-wrap: normal;
-    // width: 80%;
     padding-bottom: 0.556em;
   }
 }
 
 .members {
+  margin-left: 2em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  cursor: pointer;
+  z-index: 1000;
   li {
     word-wrap: normal;
     width: 80%;
+    padding-bottom: 0.556em;
   }
 }
 
@@ -866,6 +883,19 @@ li.img-150x300 {
       margin: 0 auto;
     }
   }
+}
+
+// font awesome external link
+.externalLink {
+  .no-gutters;
+  font-family: 'FontAwesome';
+  font-size: 0.888em;
+  color: @font-awesome;
+  cursor: pointer;
+}
+
+.externalLink::before {
+  content: "\f08e";
 }
 
 #nested-container {

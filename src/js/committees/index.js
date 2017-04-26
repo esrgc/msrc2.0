@@ -2,6 +2,7 @@
 import '../scripts/ifBrowser';
 import '../scripts/footer-functions';
 import '../scripts/minutes-archive';
+import '../scripts/downloadLink';
 
 import {mobileNav} from '../scripts/mobileNav';
 // for small screens
