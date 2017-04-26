@@ -1,10 +1,11 @@
-/*download document function for linking to a div*/
+/*download document function based on jquery selector*/
 /*downloadable pdf will open in new windows*/
 /*word.doc and .docx will download without window change*/
 export function downloadLink(url) {
  window.open(url, '_blank');
 }
-/* setup downloadable links for pdf documents */
+
+/* setup downloadable links for pdf documents for use on multiple pages */
 // link downloadable document to anchor with id workPlanLink
 $('a#workPlanLink').on('click', function() {
  downloadLink('./documents/msrc/MSRC_FY17_Work_Plan.pdf');

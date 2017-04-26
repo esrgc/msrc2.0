@@ -6,8 +6,8 @@ if (navigator.userAgent.match(/Firefox/i)) {
     $("#imgcontainer, .textBox-body, .minWrapper").css({"padding-bottom": "140px"});
     $(".textBox").css({"padding-bottom": "30px"});
 
-    $("#logo_lrg").css({"line-height": '35px', "font-size-adjust": "0.375"});
-    $("#logo_sm").css({"line-height": '35px', "font-size-adjust": "0.375"});
+    $("#logo_lrg").css({"line-height": '35px', "font-size-adjust": "0.275"});
+    $("#logo_sm").css({"line-height": '20px', "font-size-adjust": "0.375"});
 
     // console.log('this is firefox!');
 } else if (navigator.userAgent.match(/Trident/i)) {
