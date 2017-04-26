@@ -17,6 +17,10 @@ $('a#byLawsLink').on('click', function() {
 $('a#CEDSLink').on('click', function() {
  downloadLink('./documents/reports/CEDS_Full_Document_revised_3-9-17.pdf');
 });
+// link downloadable document to anchor with id broadbandLink
+$('a#broadbandLink').on('click', function() {
+ downloadLink('./documents/reports/Upper_Eastern_Shore_Region_2012.pdf');
+});
 //
 //
 /* setup external links for advisory committee page*/

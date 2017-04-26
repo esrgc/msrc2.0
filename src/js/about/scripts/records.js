@@ -1,5 +1,4 @@
-import { downloadLink } from '../../scripts/downloadLink';
-
+// popout for documents tab when clicking on Quarterly or Executive Minutes buttons
 let $quarterly = $('a#btn-Quarterly');
 // make button open hidden minutes div
 $quarterly.on('click', function(e) {
