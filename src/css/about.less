@@ -14,8 +14,7 @@
 @lt-to-color: #cccccc;
 @font-drk: #0d0d0d;
 @font-lt: #f2f2f2;
-@font-awesome: #e6e6e6;
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+@font-awesome: #e6e6e6; ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // background transition mixin
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -132,6 +131,7 @@
   height: 80vh;
 }
 /* parameters matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+
 .skew-matrix() {
   -webkit-transform: matrix(1, -1.19175, 0, 1, 0, 0);
   /* use px for translate x,y for -moz-  */
@@ -226,10 +226,9 @@
   cursor: pointer;
 }
 
-  h4.textBox-toggle {
-    cursor: pointer;
-  }
-
+h4.textBox-toggle {
+  cursor: pointer;
+}
 
 .toggle-text:not(.ac_collapse) {
   .font-blocky-drk;
@@ -515,7 +514,6 @@ table#fedFunds {
   height: 16.668em;
   padding: 10px;
   // cursor: pointer;
-
   p {
     .font-blocky-lt;
   }
@@ -530,7 +528,6 @@ table#fedFunds {
   height: 16.668em;
   padding: 10px;
   // cursor: pointer;
-
   p {
     .font-blocky-lt;
   }
@@ -672,6 +669,10 @@ li.img-150x300 {
       margin-top: -45px;
     }
   }
+}
+
+#partnerLogos {
+  margin-left: 45px;
 }
 
 .records-textBox {
@@ -836,6 +837,7 @@ li.img-150x300 {
   margin-bottom: 1em;
   cursor: pointer;
   z-index: 1000;
+
   li {
     padding-bottom: 0.556em;
   }
@@ -847,6 +849,7 @@ li.img-150x300 {
   margin-bottom: 1em;
   cursor: pointer;
   z-index: 1000;
+
   li {
     word-wrap: normal;
     width: 80%;
@@ -861,7 +864,6 @@ li.img-150x300 {
 .just-center {
   text-align: center;
 }
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // elements for partners page
@@ -901,8 +903,8 @@ li.img-150x300 {
     }
   }
 }
-
 // font awesome external link
+
 .externalLink {
   .no-gutters;
   font-family: 'FontAwesome';
@@ -981,8 +983,12 @@ li.img-150x300 {
   width: 25%;
 }
 
-#gilligan2 figure {
-  width: 33.33%;
+#gilligan2 {
+  left: 16%;
+
+  figure {
+    width: 33.33%;
+  }
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
