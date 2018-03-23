@@ -7543,6 +7543,9 @@ figure.effect-move:focus h3 {
   z-index: 10000;
   opacity: 0.9;
 }
+#marketing-plan h1 {
+  margin-top: 0;
+}
 #marketing-plan a {
   color: #1DA9DD;
 }
