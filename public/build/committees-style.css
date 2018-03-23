@@ -7536,6 +7536,16 @@ figure.effect-move:focus h3 {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+#marketing-plan {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  z-index: 10000;
+  opacity: 0.9;
+}
+#marketing-plan a {
+  color: #1DA9DD;
+}
 .all_wrapper {
   height: 100%;
   width: 100%;
