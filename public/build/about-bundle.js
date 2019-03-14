@@ -1,12 +1,12 @@
 webpackJsonp([0],{
 
-/***/ 125:
+/***/ 141:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-var _curHash = __webpack_require__(143);
+var _curHash = __webpack_require__(159);
 
 /*
  // zAccordion About pop out
@@ -111,7 +111,7 @@ $(".angle_wrapper > div:not(:last-child) h1").on("click", function () {
 
 /***/ }),
 
-/***/ 126:
+/***/ 142:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -131,7 +131,7 @@ $("#workPlan, #meetMinutes, #byLaws").hide();
 
 /***/ }),
 
-/***/ 127:
+/***/ 143:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -186,7 +186,7 @@ $nonVoting.on('click', function (e) {
 
 /***/ }),
 
-/***/ 128:
+/***/ 144:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -203,7 +203,7 @@ $(".textBox .textBox-toggle, .records-textBox .textBox-toggle").click(function (
 
 /***/ }),
 
-/***/ 129:
+/***/ 145:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -227,7 +227,7 @@ $executive.on('click', function (e) {
 
 /***/ }),
 
-/***/ 130:
+/***/ 146:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -294,37 +294,37 @@ $clickSpotlight.on('click', '.gridItem', function (e) {
 
 /***/ }),
 
-/***/ 139:
+/***/ 155:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($, Backbone) {
 
-__webpack_require__(23);
-
-__webpack_require__(22);
-
-__webpack_require__(56);
-
-__webpack_require__(46);
-
-var _mobileNav = __webpack_require__(24);
-
-__webpack_require__(126);
-
-__webpack_require__(125);
-
-__webpack_require__(130);
-
-__webpack_require__(129);
-
-__webpack_require__(127);
-
-__webpack_require__(128);
-
 __webpack_require__(25);
 
-var _main = __webpack_require__(55);
+__webpack_require__(24);
+
+__webpack_require__(60);
+
+__webpack_require__(49);
+
+var _mobileNav = __webpack_require__(26);
+
+__webpack_require__(142);
+
+__webpack_require__(141);
+
+__webpack_require__(146);
+
+__webpack_require__(145);
+
+__webpack_require__(143);
+
+__webpack_require__(144);
+
+__webpack_require__(27);
+
+var _main = __webpack_require__(59);
 
 // for small screens
 $('i#mobileNav').on('click', function () {
@@ -350,11 +350,11 @@ $('i#mobileNav').on('click', function () {
 
 var appRouter = new _main.Router();
 Backbone.history.start();
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(36)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(37)))
 
 /***/ }),
 
-/***/ 143:
+/***/ 159:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -370,7 +370,7 @@ function curHash(hash) {
 
 /***/ }),
 
-/***/ 22:
+/***/ 24:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -408,7 +408,7 @@ $("#dropdownMenuButton").click(function (e) {
 
 /***/ }),
 
-/***/ 23:
+/***/ 25:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -427,7 +427,7 @@ if (navigator.userAgent.match(/Firefox/i)) {
 
     // console.log('this is firefox!');
 } else if (navigator.userAgent.match(/Trident/i)) {
-    __webpack_require__(57);
+    __webpack_require__(61);
     $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
     $(".textBox").css({ "padding-bottom": "30px" });
 
@@ -437,7 +437,7 @@ if (navigator.userAgent.match(/Firefox/i)) {
 
 /***/ }),
 
-/***/ 24:
+/***/ 26:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -463,14 +463,14 @@ function mobileNav() {
 
 /***/ }),
 
-/***/ 25:
+/***/ 27:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 46:
+/***/ 49:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -517,7 +517,7 @@ $('a#ESRGC').on('click', function () {
 
 /***/ }),
 
-/***/ 55:
+/***/ 59:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -528,7 +528,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Router = undefined;
 
-var _routine = __webpack_require__(69);
+var _routine = __webpack_require__(77);
 
 var Router = Backbone.Router.extend({
   routes: {
@@ -569,11 +569,11 @@ var Router = Backbone.Router.extend({
     router for MSRC 2.0.1
     */
 exports.Router = Router;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(36), __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(37), __webpack_require__(1)))
 
 /***/ }),
 
-/***/ 56:
+/***/ 60:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -595,7 +595,7 @@ $(".years").click(function () {
 
 /***/ }),
 
-/***/ 69:
+/***/ 77:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -619,5 +619,5 @@ exports.advisGroup = advisGroup;
 
 /***/ })
 
-},[139]);
+},[155]);
 //# sourceMappingURL=about-bundle.js.map

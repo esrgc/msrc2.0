@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 131:
+/***/ 147:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53,7 +53,7 @@ var $comOpen = $(".advisCommittees").click(function () {
 
 /***/ }),
 
-/***/ 132:
+/***/ 148:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72,7 +72,7 @@ $("#advisGroup").click(function (e) {
 
 /***/ }),
 
-/***/ 133:
+/***/ 149:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -91,7 +91,7 @@ $("#execGroup").click(function (e) {
 
 /***/ }),
 
-/***/ 134:
+/***/ 150:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -105,33 +105,33 @@ $(".members").hide(); /*committees page*/
 
 /***/ }),
 
-/***/ 140:
+/***/ 156:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($, Backbone) {
 
-__webpack_require__(23);
-
-__webpack_require__(22);
-
-__webpack_require__(56);
-
-__webpack_require__(46);
-
-var _mobileNav = __webpack_require__(24);
-
-__webpack_require__(134);
-
-__webpack_require__(133);
-
-__webpack_require__(132);
-
-__webpack_require__(131);
-
 __webpack_require__(25);
 
-var _main = __webpack_require__(55);
+__webpack_require__(24);
+
+__webpack_require__(60);
+
+__webpack_require__(49);
+
+var _mobileNav = __webpack_require__(26);
+
+__webpack_require__(150);
+
+__webpack_require__(149);
+
+__webpack_require__(148);
+
+__webpack_require__(147);
+
+__webpack_require__(27);
+
+var _main = __webpack_require__(59);
 
 // for small screens
 $('i#mobileNav').on('click', function () {
@@ -157,11 +157,11 @@ $('i#mobileNav').on('click', function () {
 var appRouter = new _main.Router();
 
 Backbone.history.start();
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(36)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(37)))
 
 /***/ }),
 
-/***/ 22:
+/***/ 24:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -199,7 +199,7 @@ $("#dropdownMenuButton").click(function (e) {
 
 /***/ }),
 
-/***/ 23:
+/***/ 25:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -218,7 +218,7 @@ if (navigator.userAgent.match(/Firefox/i)) {
 
     // console.log('this is firefox!');
 } else if (navigator.userAgent.match(/Trident/i)) {
-    __webpack_require__(57);
+    __webpack_require__(61);
     $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
     $(".textBox").css({ "padding-bottom": "30px" });
 
@@ -228,7 +228,7 @@ if (navigator.userAgent.match(/Firefox/i)) {
 
 /***/ }),
 
-/***/ 24:
+/***/ 26:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -254,14 +254,14 @@ function mobileNav() {
 
 /***/ }),
 
-/***/ 25:
+/***/ 27:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 46:
+/***/ 49:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -308,7 +308,7 @@ $('a#ESRGC').on('click', function () {
 
 /***/ }),
 
-/***/ 55:
+/***/ 59:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -319,7 +319,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Router = undefined;
 
-var _routine = __webpack_require__(69);
+var _routine = __webpack_require__(77);
 
 var Router = Backbone.Router.extend({
   routes: {
@@ -360,11 +360,11 @@ var Router = Backbone.Router.extend({
     router for MSRC 2.0.1
     */
 exports.Router = Router;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(36), __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(37), __webpack_require__(1)))
 
 /***/ }),
 
-/***/ 56:
+/***/ 60:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -386,7 +386,7 @@ $(".years").click(function () {
 
 /***/ }),
 
-/***/ 69:
+/***/ 77:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -410,5 +410,5 @@ exports.advisGroup = advisGroup;
 
 /***/ })
 
-},[140]);
+},[156]);
 //# sourceMappingURL=committees-bundle.js.map

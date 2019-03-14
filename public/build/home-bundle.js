@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 135:
+/***/ 151:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14,7 +14,7 @@ $('.carousel').carousel({
 
 /***/ }),
 
-/***/ 136:
+/***/ 152:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32,23 +32,23 @@ $(window).scroll(function () {
 
 /***/ }),
 
-/***/ 141:
+/***/ 157:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(23);
-
-__webpack_require__(22);
-
-var _mobileNav = __webpack_require__(24);
-
-__webpack_require__(136);
-
-__webpack_require__(135);
-
 __webpack_require__(25);
+
+__webpack_require__(24);
+
+var _mobileNav = __webpack_require__(26);
+
+__webpack_require__(152);
+
+__webpack_require__(151);
+
+__webpack_require__(27);
 
 // for small screens
 $('i#mobileNav').on('click', function () {
@@ -64,7 +64,7 @@ $('i#mobileNav').on('click', function () {
 
 /***/ }),
 
-/***/ 22:
+/***/ 24:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102,7 +102,7 @@ $("#dropdownMenuButton").click(function (e) {
 
 /***/ }),
 
-/***/ 23:
+/***/ 25:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -121,7 +121,7 @@ if (navigator.userAgent.match(/Firefox/i)) {
 
     // console.log('this is firefox!');
 } else if (navigator.userAgent.match(/Trident/i)) {
-    __webpack_require__(57);
+    __webpack_require__(61);
     $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
     $(".textBox").css({ "padding-bottom": "30px" });
 
@@ -131,7 +131,7 @@ if (navigator.userAgent.match(/Firefox/i)) {
 
 /***/ }),
 
-/***/ 24:
+/***/ 26:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -157,12 +157,12 @@ function mobileNav() {
 
 /***/ }),
 
-/***/ 25:
+/***/ 27:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
 
-},[141]);
+},[157]);
 //# sourceMappingURL=home-bundle.js.map

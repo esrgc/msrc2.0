@@ -1,12 +1,12 @@
 webpackJsonp([2],{
 
-/***/ 137:
+/***/ 153:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-var _downloadLink = __webpack_require__(46);
+var _downloadLink = __webpack_require__(49);
 
 $('figure#DCED').on('click', function () {
   (0, _downloadLink.downloadLink)('http://choosedorchester.org/');
@@ -59,21 +59,21 @@ $('figure#MDDLLR').on('click', function () {
 
 /***/ }),
 
-/***/ 142:
+/***/ 158:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(23);
-
-__webpack_require__(22);
-
-var _mobileNav = __webpack_require__(24);
-
-__webpack_require__(137);
-
 __webpack_require__(25);
+
+__webpack_require__(24);
+
+var _mobileNav = __webpack_require__(26);
+
+__webpack_require__(153);
+
+__webpack_require__(27);
 
 // for small screens
 $('i#mobileNav').on('click', function () {
@@ -89,7 +89,7 @@ $('i#mobileNav').on('click', function () {
 
 /***/ }),
 
-/***/ 22:
+/***/ 24:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -127,7 +127,7 @@ $("#dropdownMenuButton").click(function (e) {
 
 /***/ }),
 
-/***/ 23:
+/***/ 25:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -146,7 +146,7 @@ if (navigator.userAgent.match(/Firefox/i)) {
 
     // console.log('this is firefox!');
 } else if (navigator.userAgent.match(/Trident/i)) {
-    __webpack_require__(57);
+    __webpack_require__(61);
     $("#imgcontainer, .textBox-body, .minWrapper").css({ "padding-bottom": "130px" });
     $(".textBox").css({ "padding-bottom": "30px" });
 
@@ -156,7 +156,7 @@ if (navigator.userAgent.match(/Firefox/i)) {
 
 /***/ }),
 
-/***/ 24:
+/***/ 26:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -182,14 +182,14 @@ function mobileNav() {
 
 /***/ }),
 
-/***/ 25:
+/***/ 27:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 46:
+/***/ 49:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -236,5 +236,5 @@ $('a#ESRGC').on('click', function () {
 
 /***/ })
 
-},[142]);
+},[158]);
 //# sourceMappingURL=partners-bundle.js.map
