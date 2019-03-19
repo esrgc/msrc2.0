@@ -504,6 +504,10 @@ $('a#CEDSLink').on('click', function () {
 $('a#broadbandLink').on('click', function () {
   downloadLink('./documents/reports/Upper_Eastern_Shore_Region_2012.pdf');
 });
+// link downloadable document to anchor with id brochureLink
+$('a#brochureLink').on('click', function () {
+  downloadLink('./documents/MSRC brochure 3-2018.pdf');
+});
 //
 //
 /* setup external links for advisory committee page*/
