@@ -7579,6 +7579,9 @@ figure.effect-move:focus h3 {
 #upper-half {
   height: 500px;
 }
+#brochureLink u {
+  color: #2B4676;
+}
 .angle_wrapper {
   position: relative;
   right: 0;
