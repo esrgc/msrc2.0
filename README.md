@@ -1,8 +1,43 @@
-# [MSRC2.0](http://apps.esrgc.org/msrc2.0/index)
-###### Entry point
-###### [http://apps.esrgc.org/msrc2.0/index](http://apps.esrgc.org/msrc2.0/index)
----
-###### [Mockup](https://app.moqups.com/ESRGC/5Trmy1qbvA/view/page/ac64d30cc?ui=0)
+# [MSRC2.0](http://www.midshore.org/index)
+#### [http://www.midshore.org/index](http://www.midshore.org/index)
+
+
+## Documentation
+This website uses a Node.js back-end with Backbone and Handlebars working to display the front-end views.
+
+In order to run locally, create an `index.js` file in the project's `config/` directory. It should have the following structure:
+
+```javascript
+module.exports = {
+  port: ...
+};
+```
+
+### Versions
+Requires Node.js 6 or later.
+
+Current versions of the front-end components:
+
+- Handlebars (hbs) 2.7.0
+- Backbone 1.3.3
+- jQuery 3.2.1
+- Bootstrap 3.3.7
+- Less 2.7.2
+
+Current versions of the back-end components:
+
+- Express 4.8.6
+- Webpack 2.4.1
+
+### Run Locally
+To run locally, first install dependencies:
+
+```
+npm install
+```
+
+Then run `npm run start` to start the development server.
+
 ---
 ### File structure tree
 *excluding prebuilt libs, node_modules, .git, old-code, etc.
