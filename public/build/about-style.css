@@ -10518,5 +10518,13 @@ li.img-150x300 img {
     min-height: 230px;
   }
 }
+#maintenance-banner {
+  width: 100%;
+  position: absolute;
+  top: 69px;
+  background: #fff;
+  z-index: 10000 !important;
+  text-align: center;
+}
 
 /*# sourceMappingURL=about-style.css.map*/
