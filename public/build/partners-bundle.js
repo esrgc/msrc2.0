@@ -217,7 +217,7 @@ $('a#byLawsLink').on('click', function () {
 });
 // link downloadable document to anchor with id CEDSLink
 $('a#CEDSLink').on('click', function () {
-  downloadLink('./documents/reports/CEDS Full Document revised 3-7-19.pdf');
+  downloadLink('./documents/reports/CEDS Full Document revised 3-5-20.pdf');
 });
 // link downloadable document to anchor with id broadbandLink
 $('a#broadbandLink').on('click', function () {
