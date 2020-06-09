@@ -7108,7 +7108,7 @@ hr.drk {
 }
 /* carousel slides */
 .slide-1 {
-  background: url(1b408580600f6b842435391d02ea5f9a.jpg) no-repeat center center scroll;
+  background: url(67ec6fea235814b4a0aa9f6efe9fba21.jpg) no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -7120,7 +7120,7 @@ hr.drk {
   z-index: -30;
 }
 .slide-2 {
-  background: url(d7371b9297ae2df09db401670187f33d.jpg) no-repeat center center scroll;
+  background: url(3bf13280602c9a9cbbdd9edb05b01f35.jpg) no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -7132,7 +7132,7 @@ hr.drk {
   z-index: -30;
 }
 .slide-3 {
-  background: url(71a2253fa0b4357d2f14aff5ba5261e8.jpg) no-repeat center center scroll;
+  background: url(8d5766cd6bd62ddabc05523e051d9330.jpg) no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -7144,7 +7144,7 @@ hr.drk {
   z-index: -30;
 }
 .slide-4 {
-  background: url(2ee1d0679b413592495121e3e9a9bc83.jpg) no-repeat center center scroll;
+  background: url(b6e555c6590756637e44b6ae01f8e437.jpg) no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -7156,7 +7156,7 @@ hr.drk {
   z-index: -30;
 }
 .slide-5 {
-  background: url(a5efdf4a79b33f7d157eb8aadd952193.jpg) no-repeat center center scroll;
+  background: url(e71b65b29f3395fdef73e12b52c4665d.jpg) no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -7168,7 +7168,7 @@ hr.drk {
   z-index: -30;
 }
 .slide-6 {
-  background: url(0816592fcd83b44b07cb9c3b9208452a.jpg) no-repeat center center scroll;
+  background: url(d87bf035bc19e95e8f9fc2d7e2f87c2c.jpg) no-repeat center center scroll;
   display: block;
   width: 100vw;
   height: 100vh;
@@ -7327,6 +7327,17 @@ div.effect-shade p {
 .aside-float h3 {
   position: relative;
   top: 50%;
+}
+.announcement {
+  background-color: #fff;
+  border-bottom-color: #ccc;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 0.5em 1.5em;
+  border-top-color: #ccc;
+  border-left-color: #fff;
+  border-right-color: #fff;
 }
 figure {
   position: relative;
@@ -7535,7 +7546,7 @@ figure.effect-move:focus h3 {
   width: 100%;
 }
 .about_bg {
-  background: url(41f7331a3167d9060ba283171b1a6fd1.jpg) no-repeat center center;
+  background: url(71dd095260bbbdb99aaba3551ade7a4c.jpg) no-repeat center center;
   background-attachment: fixed;
   display: block;
   width: 100vw;
@@ -7550,7 +7561,7 @@ figure.effect-move:focus h3 {
   overflow-y: hidden;
 }
 .committees_bg {
-  background: url(3ee6e015184d0d558dec05d150d5e727.jpg) no-repeat center center fixed;
+  background: url(8e3e04f95b25143ade2ba99cf502cf1c.jpg) no-repeat center center fixed;
   background-attachment: fixed;
   display: block;
   width: 100vw;
@@ -7564,7 +7575,7 @@ figure.effect-move:focus h3 {
   overflow: hidden;
 }
 .partners_bg {
-  background: url(ec936444af4057ff1030692bd935edf9.jpg) no-repeat center center scroll;
+  background: url(43ba12818cc35179b5325526f7fc0a59.jpg) no-repeat center center scroll;
   overflow-y: auto;
   display: block;
   width: 100vw;
