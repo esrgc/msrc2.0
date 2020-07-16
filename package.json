@@ -18,7 +18,7 @@
     "express-hbs": "^1.0.4",
     "hbs": "~2.7.0",
     "jquery": "^3.2.1",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.19",
     "morgan": "~1.2.3",
     "serve-favicon": "~2.0.1"
   },
